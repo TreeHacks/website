@@ -1,0 +1,26 @@
+{
+  "name": "website-2019",
+  "version": "1.0.0",
+  "description": "TreeHacks 2019 website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TreeHacks/website-2019.git"
+  },
+  "author": "TreeHacks Tech",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
+  },
+  "bugs": {
+    "url": "https://github.com/TreeHacks/website-2019/issues"
+  },
+  "homepage": "https://github.com/TreeHacks/website-2019#readme"
+}
