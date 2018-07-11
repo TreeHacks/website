@@ -5,6 +5,7 @@ const TREEHACKS_DATE = new Date("February 15, 2019 00:00:00").getTime();
 function Section1() {
   return (
     <div id="section1">
+      <Video />
       <Header />
       {calculateTimeUntil() > 0 ? <Timer /> : <Launch />}
       <EmailSignup />
@@ -57,6 +58,7 @@ class Timer extends React.Component {
         <TimerComponent unit="hours" value={this.state.hours} />
         <TimerComponent unit="minutes" value={this.state.minutes} />
         <TimerComponent unit="seconds" value={this.state.seconds} />
+        <div><h2>until TreeHacks 2019</h2></div>
       </div>
     );
   }
@@ -73,10 +75,21 @@ class TimerComponent extends React.Component {
   }
 }
 
+function Video() {
+  return(
+    <div className="videoContainer">
+      <video playsInline autoPlay muted loop>
+        <source src="videos/treehacks-header.mp4" type="video/mp4" />
+      </video>
+    </div>
+  );
+}
+
 function Header() {
   return (
     <div className="header">
-      <p>TreeHacks 2019 begins in</p>
+      <img src="images/logo.png" />
+      <img src="images/text.png" />
     </div>
   );
 }
@@ -84,7 +97,7 @@ function Header() {
 function EmailSignup() {
   return (
     <div className="emailSignup">
-      <p>Receive email updates about TreeHacks 2019.</p>
+      <p></p>
     </div>
   );
 }

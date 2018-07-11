@@ -9,7 +9,7 @@ to install the necessary dependencies for the project. You should see now see th
 ### Run Locally
 Use
 ```
-npm run bundle
+npm run dev
 ```
 to automatically bundle files as you modify them. In a separate command line window, enter
 ```

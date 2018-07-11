@@ -1,0 +1,109 @@
+#section1 {
+  @extend %section;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(255,89,72, .85),rgba(244,71,135, .55) ,rgba(244,71,135, .85) 100%);;
+  color: #FFFCFB;
+  text-align: center;
+
+  > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  video {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.header, .emailSignup {
+  height: 30%;
+  width: 100%;
+}
+
+.header > img {
+  height: 30%;
+  width: auto;
+}
+
+.emailSignup {
+}
+
+#timer {
+  height: 40%;
+  width: 100%;
+
+  > div {
+    flex: 1 0 20%;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}
+
+.timerComponent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h1 {
+    font-size: 12.5vh;
+  }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  body {
+    #section1 > div {
+      flex-flow: column;
+    }
+
+    .header, .emailSignup {
+      height: 15%;
+    }
+
+    #timer {
+      height: 70%;
+
+      h2 {
+        font-size: 3vh;
+        margin-top: 5%;
+      }
+    }
+
+    .timerComponent {
+      flex-flow: row;
+      width: 100%;
+
+      > * {
+        width: 50%;
+        padding: 2%;
+      }
+
+      h1 {
+        font-size: 5vh;
+        text-align: right;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
