@@ -1,1 +1,54 @@
-// Compile this file using command 'sass index.scss index.css'
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+%section {
+  width: 100vw;
+  padding: 10vh 15vw;
+  box-sizing: border-box;
+}
+
+#section1 {
+  @extend %section;
+  height: 100vh;
+  background-color: #FFFCFB;
+  color: #F93952;
+  text-align: center;
+
+  > div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header, .emailSignup {
+  height: 30%;
+  width: 100%;
+}
+
+.header {
+  font-size: 3.5vh;
+  font-weight: bold;
+}
+
+.emailSignup {
+}
+
+#timer {
+  height: 40%;
+  width: 100%;
+}
+
+.timerComponent {
+  display: flex;
+  flex: 1 0 25%;
+  flex-flow: column;
+
+  h1 {
+    font-size: 15vh;
+  }
+}

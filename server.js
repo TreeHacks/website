@@ -32,6 +32,6 @@ app.listen(port, () => {
 });
 
 // Serves the index.html file (our basic frontend)
-app.get('/',(req, res) => {   
+app.get('/',(req, res) => {
 	res.sendFile('index.html', {root: __dirname});
-}); 
+});
