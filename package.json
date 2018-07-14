@@ -14,12 +14,17 @@
   "author": "TreeHacks Tech",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mongoose": "^5.0.3",
     "path": "^0.12.7",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-player": "^1.6.4",
     "request": "^2.83.0"
   },
   "bugs": {

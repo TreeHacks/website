@@ -1,13 +1,40 @@
-* {
-  font-family: sans-serif;
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+
+/* Color Palette */
+$primary: #F93952;
+$off-white: #FFFCFB;
+$typography: #6B1E19;
+
+$font: 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+%no-spacing {
   margin: 0px;
   padding: 0px;
 }
 
 %section {
   width: 100vw;
-  padding: 10vh 15vw;
   box-sizing: border-box;
+  padding: 5vh 10vw;
+
+  @media screen and (min-width: 760px) {
+    padding: 10vh 10vw;
+  }
 }
 
-@import 'sass/section1';
+%grid-gap {
+  margin-top: 10px;
+}
+
+html, body {
+  @extend %no-spacing;
+  font-family: $font;
+}
+
+div, p, h1, h2, h3, h4, h5, h6 {
+  @extend %no-spacing;
+}
+
+@import "sass/section1";
+@import "sass/section2";
+@import "sass/section3";

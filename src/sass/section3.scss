@@ -1,0 +1,46 @@
+#section3 {
+  @extend %section;
+  @extend %grid-gap;
+  background-color: $off-white;
+  color: $typography;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1.5vh;
+  }
+}
+
+.sponsorship, .connect {
+  padding: 5vh 0;
+}
+
+.sponsorship a {
+  color: #276EE3;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.connect {
+  > div {
+    margin-top: 1.5vh;
+  }
+  svg {
+    margin: 10px;
+    opacity: .8;
+  }
+  svg:hover {
+    opacity: 1;
+  }
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-at {
+  color: #dd4b39;
+}

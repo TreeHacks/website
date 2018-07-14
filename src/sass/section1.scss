@@ -1,8 +1,10 @@
+@import url("http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css");
+
 #section1 {
   @extend %section;
   height: 100vh;
   background: linear-gradient(to right, rgba(255,89,72, .85),rgba(244,71,135, .55) ,rgba(244,71,135, .85) 100%);;
-  color: #FFFCFB;
+  color: $off-white;
   text-align: center;
 
   > div {
@@ -42,7 +44,38 @@
   width: auto;
 }
 
-.emailSignup {
+.emailSignup form {
+  div[aria-hidden="true"] {
+    position: absolute;
+    left: -5000px;
+  }
+  #mce-EMAIL {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1.5px solid $off-white;
+    border-radius: 0;
+    color: $off-white;
+    margin: 0px 7.5px;
+  }
+  #mce-EMAIL:focus {
+    outline: 0;
+  }
+  #mc-embedded-subscribe {
+    background-color: inherit;
+    border: 1.5px solid $off-white;
+    border-radius: 0;
+    margin: 0 7.5px;
+    line-height: 0;
+  }
+  #mc-embedded-subscribe:hover {
+    background-color: $off-white;
+    color: $primary;
+  }
+}
+
+::placeholder {
+  color: #e0e0e0;
+  font-style: italic;
 }
 
 #timer {
@@ -54,6 +87,7 @@
   }
 
   h2 {
+    font-size: calc(1.5vh + 1.5vw);
     text-align: left;
   }
 }
@@ -64,25 +98,49 @@
   align-items: center;
 
   h1 {
-    font-size: 12.5vh;
+    font-size: calc(4.5vh + 4.5vw);
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  body #mc_embed_signup {
+    label {
+      font-size: 14px;
+    }
+    input.email {
+      display: inline-block;
+      width: 200px;
+    }
+    .clear {
+      display: inline-block;
+      width: auto;
+    }
+    .button {
+      width: auto;
+    }
   }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
   body {
-    #section1 > div {
-      flex-flow: column;
-    }
-
-    .header, .emailSignup {
+    .header {
       height: 15%;
     }
 
+    header {
+      flex-flow: row;
+    }
+
     #timer {
-      height: 70%;
+      height: 60%;
+      flex-flow: column;
+
+      > div {
+        flex: 0 0 17.5%;
+      }
 
       h2 {
-        font-size: 3vh;
+        font-size: 12px;
         margin-top: 5%;
       }
     }
@@ -93,16 +151,29 @@
 
       > * {
         width: 50%;
-        padding: 2%;
+        padding: 0 2%;
       }
 
       h1 {
-        font-size: 5vh;
+        font-size: 2.5em;
         text-align: right;
       }
 
       p {
         text-align: left;
+      }
+    }
+    .emailSignup {
+      height: 15%;
+
+      label {
+        font-size: 14px !important;
+      }
+      #mce-EMAIL {
+        margin: 0;
+      }
+      #mc-embedded-subscribe {
+        margin: 10px 0 0 0;
       }
     }
   }
