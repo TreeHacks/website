@@ -1,7 +1,6 @@
 {
   "name": "website-2019",
   "scripts": {
-    "postdeploy": "npm run build"
   },
   "env": {
   },
