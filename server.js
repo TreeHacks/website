@@ -33,5 +33,5 @@ app.listen(port, () => {
 
 // Serves the index.html file (our basic frontend)
 app.get('/',(req, res) => {
-  res.sendFile('index.html', {root: path.join(__dirname, 'build')});
+  res.sendFile('index.html', {root: __dirname)});
 });
