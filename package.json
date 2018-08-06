@@ -4,9 +4,9 @@
   "description": "TreeHacks 2019 website",
   "main": "server.js",
   "scripts": {
-    "dev": "webpack -w",
-    "build": "webpack --config webpack.prod.js --display-modules",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -66,11 +66,6 @@
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
   },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
@@ -114,8 +109,13 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "hoek": "^5.0.3",
+    "mongoose": "^5.2.6",
     "node-sass": "^4.9.2",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
     "sass-loader": "^7.0.3"
   }
 }
