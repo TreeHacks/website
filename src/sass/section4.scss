@@ -1,0 +1,50 @@
+#section4 {
+  @extend %section;
+  background-color: $off-white;
+  color: $typography;
+  text-align: center;
+  padding: 5vh 10vw;
+
+  @media screen and (min-width: 760px) {
+    padding: 10vh 10vw;
+  }
+
+  h1 {
+    margin-bottom: 1.5vh;
+  }
+}
+
+.sponsorship, .connect {
+  padding: 5vh 0;
+}
+
+.sponsorship a {
+  color: #276EE3;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.connect {
+  > div {
+    margin-top: 1.5vh;
+  }
+  svg {
+    margin: 10px;
+    opacity: .8;
+  }
+  svg:hover {
+    opacity: 1;
+  }
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-at {
+  color: #dd4b39;
+}

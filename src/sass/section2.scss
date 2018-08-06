@@ -1,31 +1,22 @@
 #section2 {
-  @extend %section;
-  @extend %grid-gap;
+  @extend .columns-container;
   background-color: $off-white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.left, .right {
-  padding: 5vh 0;
-  flex: 0 0 37.5vw;
-}
-
-.left {
-  text-align: right;
   color: $typography;
-  line-height: 1.5;
+  flex-flow: row nowrap;
 
-  h2 {
-    margin-bottom: 2vh;
+  .left {
+    text-align: right;
+    line-height: 1.5;
+
+    h2 {
+      margin-bottom: 2vh;
+    }
   }
-}
 
-.right > div {
-  width: 100% !important;
-  height: 21.1vw !important;
+  .right > div {
+    width: 100% !important;
+    height: 21.1vw !important;
+  }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -34,7 +25,6 @@
 
     .left, .right {
       padding: 2.5vh 0;
-      flex: 0 0 50%;
     }
 
     .left {

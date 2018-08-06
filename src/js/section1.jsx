@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TREEHACKS_DATE = new Date("February 15, 2019 00:00:00").getTime();
+const TREEHACKS_DATE = new Date("February 15, 2019 00:00:00");
 
 function Section1() {
   return (
@@ -14,8 +14,9 @@ function Section1() {
 }
 
 function calculateTimeUntil() {
-  let now = new Date().getTime();
-  return (TREEHACKS_DATE - now) / 1000;
+  let now = new Date();
+  let offset = (TREEHACKS_DATE.getTimezoneOffset() - now.getTimezoneOffset()) * 60;
+  return ((TREEHACKS_DATE.getTime() - now.getTime()) / 1000) - offset;
 }
 
 class Timer extends React.Component {
@@ -88,8 +89,8 @@ function Video() {
 function Header() {
   return (
     <div className="header">
-      <img src="images/logo.png" />
-      <img src="images/text.png" />
+      <img src="images/logo.png" alt="TreeHacks Logo"/>
+      <img src="images/text.png" alt="TreeHacks Title" />
     </div>
   );
 }
@@ -101,7 +102,7 @@ function EmailSignup() {
         <form action="https://treehacks.us8.list-manage.com/subscribe/post?u=e6ff5c7ae36357707280fa752&amp;id=6ec8dfd393" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
           <div id="mc_embed_signup_scroll">
             <label htmlFor="mce-EMAIL">Enter your email to receive updates about TreeHacks 2019</label>
-            <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required />
+            <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Email address" required />
             <div aria-hidden="true"><input type="text" name="b_e6ff5c7ae36357707280fa752_6ec8dfd393" tabIndex="-1" value="" /></div>
             <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
           </div>
@@ -114,7 +115,9 @@ function EmailSignup() {
 class Launch extends React.Component {
   render() {
     return (
-      <div id="launch"></div>
+      <div id="launch">
+        <h1>TreeHacks has begun!</h1>
+      </div>
     );
   }
 }

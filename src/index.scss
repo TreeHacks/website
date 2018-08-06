@@ -3,6 +3,7 @@
 /* Color Palette */
 $primary: #F93952;
 $off-white: #FFFCFB;
+$gray: #EFECEC;
 $typography: #6B1E19;
 
 $font: 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -15,15 +16,11 @@ $font: 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 %section {
   width: 100vw;
   box-sizing: border-box;
-  padding: 5vh 10vw;
+  padding: 10vh 10vw;
 
   @media screen and (min-width: 760px) {
-    padding: 10vh 10vw;
+    padding: 15vh 10vw;
   }
-}
-
-%grid-gap {
-  margin-top: 10px;
 }
 
 html, body {
@@ -35,6 +32,8 @@ div, p, h1, h2, h3, h4, h5, h6 {
   @extend %no-spacing;
 }
 
+@import "sass/columns";
 @import "sass/section1";
 @import "sass/section2";
 @import "sass/section3";
+@import "sass/section4";

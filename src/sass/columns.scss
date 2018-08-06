@@ -1,0 +1,18 @@
+.columns-container {
+  @extend %section;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left, .right {
+  flex: 0 0 37.5vw;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  body .columns-container {
+    .left, .right {
+      flex: 0 0 50%;
+    }
+  }
+}

@@ -1,8 +1,7 @@
-@import url("https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css");
-
 #section1 {
   @extend %section;
   height: 100vh;
+  min-height: 300px;
   background: linear-gradient(to right, rgba(255,89,72, .85),rgba(244,71,135, .55) ,rgba(244,71,135, .85) 100%);;
   color: $off-white;
   text-align: center;
@@ -30,6 +29,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 300px;
   overflow: hidden;
   z-index: -1;
 }
@@ -40,42 +40,67 @@
 }
 
 .header > img {
+  display: inline-block;
   height: 30%;
-  width: auto;
+  width: auto !important;
 }
 
-.emailSignup form {
+#mc_embed_signup_scroll {
+  input {
+    color: $off-white;
+    height: 32px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0px;
+  }
   div[aria-hidden="true"] {
     position: absolute;
     left: -5000px;
   }
-  #mce-EMAIL {
-    background-color: inherit;
-    border: none;
-    border-bottom: 1.5px solid $off-white;
-    border-radius: 0;
-    color: $off-white;
-    margin: 0px 7.5px;
-  }
-  #mce-EMAIL:focus {
-    outline: 0;
-  }
-  #mc-embedded-subscribe {
-    background-color: inherit;
-    border: 1.5px solid $off-white;
-    border-radius: 0;
-    margin: 0 7.5px;
-    line-height: 0;
-  }
-  #mc-embedded-subscribe:hover {
-    background-color: $off-white;
-    color: $primary;
+  .clear {
+    display: inline-block;
   }
 }
 
+#mce-EMAIL {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid $off-white;
+  border-radius: 0;
+  font-size: 14px;
+  margin: 0px 7.5px;
+  width: 300px;
+}
+
+#mce-EMAIL:focus {
+  outline: 0;
+}
+
+#mc-embedded-subscribe {
+  background-color: inherit;
+  border: 1.5px solid $off-white;
+  border-radius: 0;
+  margin: 0 7.5px;
+  line-height: 1;
+  font-size: 12px;
+  width: 100px;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: $off-white;
+  color: $primary;
+}
+
 ::placeholder {
-  color: #e0e0e0;
+  color: $off-white;
   font-style: italic;
+}
+
+#launch {
+  height: 40%;
+  width: 100%;
 }
 
 #timer {
@@ -87,7 +112,7 @@
   }
 
   h2 {
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: calc(1vh + 1vw);
     text-align: left;
   }
 }
@@ -98,7 +123,7 @@
   align-items: center;
 
   h1 {
-    font-size: calc(4.5vh + 4.5vw);
+    font-size: calc(3vh + 3vw);
   }
 }
 
@@ -129,6 +154,10 @@
 
     header {
       flex-flow: row;
+    }
+
+    #launch {
+      height: 60%;
     }
 
     #timer {
@@ -171,8 +200,14 @@
       }
       #mce-EMAIL {
         margin: 0;
+        width: 100%;
+      }
+      .clear {
+        display: block;
+        width: 100%;
       }
       #mc-embedded-subscribe {
+        width: 100%;
         margin: 10px 0 0 0;
       }
     }
