@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/TreeHacks/website-2019/issues"
   },
-  "homepage": "https://github.com/TreeHacks/website-2019",
+  "homepage": "https://website-2019-test.herokuapp.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
