@@ -32,6 +32,12 @@ div, p, h1, h2, h3, h4, h5, h6 {
   @extend %no-spacing;
 }
 
+a {
+  color: #276EE3;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
 @import "sass/columns";
 @import "sass/section1";
 @import "sass/section2";
