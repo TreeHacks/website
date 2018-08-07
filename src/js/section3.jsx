@@ -19,7 +19,7 @@ function Left() {
       </div>
       <div className="qa">
         <h3>Who can come?</h3>
-        <p>TreeHacks applications are open to any enrolled college student (undergrad or grad), from all over the world.</p>
+        <p>TreeHacks applications are open to any enrolled college student (undergrad or grad), from all over the world. Applications will open in the fall. Join our mailing list to be the first to hear when you can apply!</p>
       </div>
       <div className="qa">
         <h3>What if I don’t know how to code?</h3>

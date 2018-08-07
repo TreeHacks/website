@@ -13,8 +13,8 @@ function Section2() {
 function Left() {
   return (
     <div className="left">
-      <h2>Transform crazy ideas into real products.</h2>
-      <p>Join hundreds of hackers from around the globe in an annual hackathon held at Stanford University. At TreeHacks, you can imagine and build incredible projects alongside your fellow creators. Whether you're building software or hardware, have years of experience or are just starting out, we've got you covered.</p>
+      <h2>Join us at TreeHacks 2019!</h2>
+      <p>Yeah, we’ll be hacking for 36 hours straight, but we’ll take a yoga break or hike the Dish. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!</p>
     </div>
   );
 }
