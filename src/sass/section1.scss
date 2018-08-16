@@ -8,7 +8,6 @@
 
   > div {
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
   }
@@ -21,6 +20,10 @@
     min-width: 100vw;
     min-height: 100vh;
   }
+}
+
+video::-webkit-media-controls {
+    display:none !important;
 }
 
 .videoContainer {
@@ -39,10 +42,18 @@
   width: 100%;
 }
 
-.header > img {
-  display: inline-block;
-  height: 30%;
-  width: auto !important;
+.header {
+  flex-flow: column nowrap;
+
+  .logo {
+    height: 30%;
+  }
+
+  img {
+    display: inline-block;
+    height: 100%;
+    width: auto !important;
+  }
 }
 
 #mc_embed_signup_scroll {
@@ -151,10 +162,6 @@
   body {
     .header {
       height: 15%;
-    }
-
-    header {
-      flex-flow: row;
     }
 
     #launch {

@@ -89,8 +89,11 @@ function Video() {
 function Header() {
   return (
     <div className="header">
-      <img src="images/logo.png" alt="TreeHacks Logo"/>
-      <img src="images/text.png" alt="TreeHacks Title" />
+      <div className="logo">
+        <img src="images/logo.png" alt="TreeHacks Logo"/>
+        <img src="images/text.png" alt="TreeHacks Title" />
+      </div>
+      <p>February 15-17, 2019</p>
     </div>
   );
 }
