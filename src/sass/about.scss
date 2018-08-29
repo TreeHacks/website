@@ -1,0 +1,21 @@
+#about {
+  margin: $large-space 0;
+
+  .section-heading {
+    margin-bottom: $small-space;
+  }
+
+  .container {
+    @include flex(row nowrap, space-between, center);
+    margin: 0 $large-space;
+
+    div:first-child {
+      flex: 0 0 40%;
+    }
+
+    div:last-child {
+      flex: 0 0 55%;
+      height: 26.3vw;
+    }
+  }
+}

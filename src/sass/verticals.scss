@@ -1,0 +1,29 @@
+#verticals {
+  .section-heading {
+    margin-bottom: $small-space;
+  }
+
+  .container {
+    @include flex(row nowrap, space-evenly, stretch);
+  }
+}
+
+.vertical {
+  background-color: $light-gray;
+  width: (100vw - 4 * $small-space) / 3;
+  padding: $small-space*2;
+  @include flex(column nowrap, flex-start, center);
+
+  img {
+    margin-bottom: $small-space;
+    width: 50%;
+  }
+
+  h1 {
+    font-family: 'Avenir Black', sans-serif;
+    font-size: $heading-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: $small-space;
+  }
+}

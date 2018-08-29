@@ -1,0 +1,114 @@
+{
+  "home": [
+    "you love to learn",
+    "you want to dance with the Stanford band",
+    "you hack on hardware",
+    "you've never been to a hackathon",
+    "you go to hackathons every weekend",
+    "you want to meet people from all over the world",
+    "you've never written a line of code in your life",
+    "you have ideas you want to make into reality"
+  ],
+  "verticals": [
+    {
+      "name": "safety",
+      "logo": "images/energy-vert-img.jpeg",
+      "description": "A core hope of technology is improving personal and public safety for all. From helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve."
+    },
+    {
+      "name": "health",
+      "logo": "images/health-vert-img.jpeg",
+      "description": "Health tech continues to be one of the most innovative and impactful interdisciplinary applications of technology. Explore bio-technology, medicine, and health-related fields as you hack to improve and solve some of the world's most pressing health issues. You'll hear from incredible speakers (previously a Google Brain researcher!) and work with sponsors at the forefront of health tech."
+    },
+    {
+      "name": "awareness",
+      "logo": "images/security-vert-img.jpg",
+      "description": "Current events have shown that a lack of understanding and transparency can foster unhealthy discourse, divisive climates, and biased decisions, and many have blamed technology for worsening this situation. Tackle the critical challenge of increasing awareness, transparency, and exposure to inspire a better future, showing how technology can be a positive tool to enact public change."
+    }
+  ],
+  "about": "TreeHacks brings 800 hackers from around the world to build apps, hardware, and community in the California sun. Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks, decorate cookies, and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way with all sorts of resources, mentors, workshops, and hardware to learn and develop something you're proud of. Don’t forget your sunscreen!",
+  "projects": [
+    {
+      "title": "Computertop Desk",
+      "path": "images/energy-vert-img.jpeg",
+      "url": "https://devpost.com/software/computertop-desk",
+      "tagline": "Use your desk as your computer: individual pieces of paper are windows!",
+      "description": "Omar learned about computer vision at TreeHacks. He combined a webcam and projector mounted above a desk, along with a splash of OpenCV to locate all the pieces of paper and the keyboard, allowing users to set any piece of paper as a window for the computer. Omar won Most Creative Hack and Best Hardware Hack at TreeHacks 2018!"
+    },
+    {
+      "title": "NeuralHash",
+      "path": "images/health-vert-img.jpeg",
+      "url": "https://devpost.com/software/neuralhash",
+      "tagline": "A new way to prove ownership of media by robustly signing images using adversarial deep learning",
+      "description": "Isaac, Nikhil, Evani, and Rohan used deep neural networks, stochastic connection and layers to develop a decoder model that acted as a robust, cryptographically-secure, transformation-invariant hash function for images, mapping input images to 32-bit codes. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018."
+    },
+    {
+      "title": "#PowerHouse",
+      "path": "images/security-vert-img.jpg",
+      "url": "",
+      "tagline": "Learn which appliances consume the most energy and build your dream home",
+      "description": "Nadya, Lucy, and Diane learned React Native to develop an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home while respecting a a user's budget. TreeHacks 2018 was their first hackathon."
+    },
+    {
+      "title": "The Ultimate Water Heater",
+      "path": "images/",
+      "url": "https://devpost.com/software/ultimate-water-heater",
+      "tagline": "An energy-efficient, smart IoT heating technology that eliminates the need for propane and natural gasses",
+      "description": "Matthew and Amarinder built a system with an Arduino 101, a heating system, and a mobile app that interact over Bluetooth, to build a safe, cheap, and easily accessible water heater that has 90% energy efficiency and could save 5 gallons of water per average shower. They won Most Interdisciplinary Hack and Greatest Impact Hack at TreeHacks 2018."
+    },
+    {
+      "title": "Docodial",
+      "path": "images/",
+      "url": "https://devpost.com/software/docodial",
+      "tagline": "Allow non-native speakers of a language to get the health coverage they need using interpreters",
+      "description": "Jenny and Aidan developed a web interface, utilizing video, live-streaming and speech-to-text APIs. This platform allows doctors to communicate with interpreters who securely provide necessary patient data. They won Best User Interface and Best Live Video App at TreeHacks 2018."
+    },
+    {
+      "title": "Marvel Medical Dictionary",
+      "path": "images/",
+      "url": "https://devpost.com/software/marvel-medical-dictionary",
+      "tagline": "An interactive health dictionary that utilizes mobile AR to make health education fun for kids",
+      "description": "Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows users to learn about different health topics by utilizing natural language processing and data from the Marvel API to match a superhero to a related medical search query.  Image Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a hackathon?",
+      "a": "A hackathon is where you turn your crazy ideas into real projects. We provide hardware, mentors, fun activities, speakers, workshops, food, friends, and so much more. You take care of hacking; we’ll take care of you."
+    },
+    {
+      "q": "Who can come?",
+      "a": "TreeHacks applications are open to any enrolled college student (undergrad or grad) from all over the world. All current Stanford students that register by appropriate deadlines will be guaranteed admission."
+    },
+    {
+      "q": "What if I don’t know how to code?",
+      "a": "TreeHacks is the perfect time and place to learn. We provide starter code “hack packs,” as well as beginner-friendly workshops and mentors to help you build something you can be proud of."
+    },
+    {
+      "q": "What if I don’t have a team or idea?",
+      "a": "Not a problem! We’ll have team-forming activities to help you find teammates and idea brainstorming sessions for all our verticals. Some of our best hacks have been from teams that met and formed an idea on the spot!"
+    },
+    {
+      "q": "What can I build?",
+      "a": "Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we’ll support it. We have three verticals that will have extra resources, sponsored challenges, and even a CTF to inspire you."
+    },
+    {
+      "q": "What does it cost?",
+      "a": "TreeHacks is free for all admitted hackers. We provide meals, caffeine, swag, workspace, and WiFi for the weekend; travel reimbursements or bussing will also be available for qualifying hackers. We're committed to making TreeHacks accessible!"
+    },
+    {
+      "link": "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+      "q": "What is the TreeHacks code of conduct?",
+      "textBefore": "We abide by the ",
+      "textIn": "MLH Code of Conduct",
+      "textAfter": ". Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome <3."
+    },
+    {
+      "link": "mailto:support@treehacks.com",
+      "q": "I have some other question!",
+      "textBefore": "Email us at ",
+      "textIn": "hello@treehacks.com",
+      "textAfter": ". We gotchu."
+    }
+  ]
+}

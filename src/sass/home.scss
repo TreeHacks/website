@@ -1,0 +1,37 @@
+#home {
+  @include flex(column nowrap, flex-start, center);
+  height: 100vh;
+  width: 100vw;
+  padding-top: 33vh;
+
+  img {
+    height: 17.5vh;
+  }
+
+  h1 {
+    font-size: 9vh;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: $base-font-size * 1.5;
+    font-family: $avenir-heavy;
+    color: #A2A2A2;
+  }
+
+  p:first-of-type {
+    margin-top: 7.5vh;
+  }
+
+  .green-button {
+    margin: 2.5vh 0;
+  }
+
+  p {
+    font-size: $heading-font-size;
+  }
+
+  .Typist {
+    display: inline;
+  }
+}

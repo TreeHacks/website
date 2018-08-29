@@ -1,0 +1,50 @@
+#projects.container {
+  @include flex(column nowrap, flex-start, center);
+  background-color: $light-gray;
+  margin: 0 $small-space;
+
+  .section-heading {
+    margin: $medium-space 0;
+  }
+}
+
+.slider-container {
+  @include flex(column nowrap, flex-start, center);
+  width: 100%;
+  h1, p {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: $medium-space;
+  }
+}
+
+#slider {
+  @include flex(row nowrap, space-between, center);
+  width: 100%;
+  overflow-x: hidden;
+  margin-bottom: $medium-space;
+}
+
+.left, .right {
+  flex: 0 1 32vw;
+  height: 18vw;
+  opacity: .6;
+  transition: opacity $transition-speed, background-image $transition-speed*2;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.current {
+  flex: 1 0 40vw;
+  height: 22.5vw;
+  margin: 0 $large-space;
+  transition: background-image $transition-speed*2;
+}
+
+.left, .current, .right {
+  background-size: cover;
+}
