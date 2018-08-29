@@ -1,0 +1,22 @@
+#verticals {
+  padding-bottom: 10vh;
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.vertical {
+  background-color: $light-gray;
+  width: 30vw;
+  padding: $standard-padding*2;
+
+  h1 {
+    font-family: 'Avenir Black';
+    font-size: 3vh;
+    text-align: center;
+    margin: 2.5vh 0;
+  }
+}

@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Section1 from './js/section1.jsx';
-import Section2 from './js/section2.jsx';
-import Section3 from './js/section3.jsx';
-import Section4 from './js/section4.jsx';
+import Navbar from './js/navbar.jsx';
+import Circuit from './js/circuit.jsx';
+import Home from './js/home.jsx';
+import Verticals from './js/verticals.jsx';
+import About from './js/about.jsx';
+import Projects from './js/projects.jsx';
+import FAQ from './js/faq.jsx';
+import Sponsors from './js/sponsors.jsx';
 import './index.scss';
 
 function App() {
   return (
     <div>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
+      <Navbar />
+      <Circuit />
+      <Home />
+      <Verticals />
+      <About />
+      <Projects />
+      <FAQ />
+      <Sponsors />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+#sponsors.container {
+  margin-bottom: 10vh;
+
+  div {
+    text-align: center;
+    @extend %light-gray-background;
+  }
+
+  .section-heading {
+    margin-left: 0;
+  }
+}

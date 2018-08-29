@@ -1,0 +1,60 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+
+  background-color: $dark-gray;
+  height: 100px;
+  width: 100vw;
+  border-bottom: 4px solid $light-gray;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-flow: row nowrap;
+    list-style-type: none;
+  }
+}
+
+#navbar-logo {
+  flex: 1 0 auto;
+  font-size: $navbar-logo-font-size;
+
+  a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  img {
+    height: $navbar-logo-image-height;
+  }
+}
+
+.navbar-item {
+  margin: 0 $navbar-margin;
+  padding: $navbar-padding 0;
+  font-size: $navbar-font-size;
+  border-bottom: $navbar-border $dark-gray;
+  transition: border-bottom .5s;
+}
+
+.navbar-item:hover {
+  border-bottom: $navbar-border $green;
+}
+
+#navbar-apply {
+  margin-left: $navbar-margin;
+  padding: $navbar-padding $navbar-margin*1.5;
+  font-size: $navbar-font-size;
+  border: $navbar-border $green;
+  border-radius: 5px;
+  transition: background-color .5s;
+}
+
+#navbar-apply:hover {
+  background-color: $green;
+}

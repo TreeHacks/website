@@ -1,45 +1,71 @@
-@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+@import "sass/variables";
 
-/* Color Palette */
-$primary: #F93952;
-$off-white: #FFFCFB;
-$gray: #EFECEC;
-$typography: #6B1E19;
-
-$font: 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-
-%no-spacing {
-  margin: 0px;
-  padding: 0px;
+body {
+  background-color: $dark-gray;
+  color: white;
+  font-family: 'Avenir';
+  font-size: 20px;
 }
 
-%section {
-  width: 100vw;
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+nav,
+button {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 10vh 10vw;
-
-  @media screen and (min-width: 760px) {
-    padding: 15vh 10vw;
-  }
 }
 
-html, body {
-  @extend %no-spacing;
-  font-family: $font;
-}
-
-div, p, h1, h2, h3, h4, h5, h6 {
-  @extend %no-spacing;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Heavy';
 }
 
 a {
-  color: #276EE3;
+  color: white;
   text-decoration: none;
-  letter-spacing: 1px;
 }
 
-@import "sass/columns";
-@import "sass/section1";
-@import "sass/section2";
-@import "sass/section3";
-@import "sass/section4";
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 $standard-padding;
+}
+
+%light-gray-background {
+  background-color: $light-gray;
+}
+
+.logo-text-tree {
+  font-family: 'Avenir';
+}
+
+.logo-text-hacks {
+  font-family: 'Avenir Heavy';
+}
+
+.section-heading {
+  font-size: 3vh;
+  margin-left: $standard-indent;
+  text-transform: uppercase;
+  padding: $standard-padding;
+}
+
+@import "sass/navbar";
+@import "sass/circuit";
+@import "sass/home";
+@import "sass/verticals";
+@import "sass/about";
+@import "sass/projects";
+@import "sass/faq";
+@import "sass/sponsors";
