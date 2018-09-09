@@ -21,7 +21,7 @@ class HeaderRow extends React.Component {
   render() {
     var row = [];
     for (var i = this.props.initial; i < this.props.initial + this.props.elements; i++) {
-      row.push(<h1>{faq[i].q}</h1>);
+      row.push(<h1 key={i}>{faq[i].q}</h1>);
     }
     return(
       <div className="header-row">
@@ -36,8 +36,8 @@ class ParagraphRow extends React.Component {
     var row = [];
     for (var i = this.props.initial; i < this.props.initial + this.props.elements; i++) {
       (faq[i].link)
-      ? row.push(<p>{faq[i].textBefore}<a href={faq[i].link}>{faq[i].textIn}</a>{faq[i].textAfter}</p>)
-      : row.push(<p>{faq[i].a}</p>);
+      ? row.push(<p key={i}>{faq[i].textBefore}<a href={faq[i].link}>{faq[i].textIn}</a>{faq[i].textAfter}</p>)
+      : row.push(<p key={i}>{faq[i].a}</p>);
     }
     return(
       <div className="paragraph-row">

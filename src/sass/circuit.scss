@@ -1,7 +1,11 @@
 #circuit {
+  @include flex(row nowrap, center, flex-start);
   position: absolute;
-  top: 10vh;
+  top: 96px;
   width: 100vw;
-  display: none;
-  justify-content: center;
+
+  img {
+    height: calc(42.5vh - 100px);
+    padding-left: 1.125%;
+  }
 }

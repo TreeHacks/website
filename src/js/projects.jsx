@@ -26,10 +26,10 @@ class Slider extends React.Component {
   }
 
   render() {
-    let length = projects.length - 1;
+    let length = projects.length;
     let current = ((this.state.current % length) + length) % length;
-    let left = (current === 0) ? length : current - 1;
-    let right = (current === length) ? 0 : current + 1;
+    let left = (current === 0) ? length - 1: current - 1;
+    let right = (current === length - 1) ? 0 : current + 1;
     return (
       <div className="slider-container">
         <div id="slider">
