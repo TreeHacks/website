@@ -19,10 +19,18 @@ class Slider extends React.Component {
     this.changeSlide = this.changeSlide.bind(this);
   }
 
+  componentDidMount() {
+    this.interval = setInterval(() => this.changeSlide(1), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   changeSlide(direction) {
-    this.setState((state) => ({
-      current: state.current + direction
-    }));
+    clearInterval(this.interval);
+    this.interval = setInterval(() => this.changeSlide(1), 5000);
+    this.setState({current: this.state.current + direction});
   }
 
   render() {
