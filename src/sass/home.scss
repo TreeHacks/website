@@ -19,10 +19,6 @@
     color: #A2A2A2;
   }
 
-  p:first-of-type {
-    margin-top: 7.5vh;
-  }
-
   .green-button {
     margin: 2.5vh 0;
   }
@@ -30,8 +26,23 @@
   p {
     font-size: $heading-font-size;
   }
+}
 
-  .Typist {
-    display: inline;
+#typewriter-container {
+  @include flex(row nowrap, center, center);
+  margin-top: 7.5vh;
+  white-space: nowrap;
+
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    margin: 0 5px;
+    transition: width 1.5s;
+
+    &.show {
+      width: 100%;
+    }
   }
 }

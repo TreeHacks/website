@@ -11,7 +11,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.setState({phrase: (this.state.phrase + 1) % (home.length - 1)}), 7500);
+    this.interval = setInterval(() => this.setState({phrase: (this.state.phrase + 1) % (home.length - 1)}), 7000);
   }
 
   componentWillUnmount() {
@@ -27,7 +27,11 @@ class Home extends React.Component {
           <span className="logo-text-hacks">hacks</span>
         </h1>
         <h2>February 15-17, 2019 at Stanford University</h2>
-        <p>if ( <Typist text={home[this.state.phrase]}/> ) &#123;</p>
+        <div id="typewriter-container">
+          <p>if ( </p>
+          <Typewriter text={home[this.state.phrase]}/>
+          <p> ) &#123;</p>
+        </div>
         <a href="" className="green-button">apply now!</a>
         <p>&#125;</p>
       </div>
@@ -35,54 +39,34 @@ class Home extends React.Component {
   }
 }
 
-class Typist extends React.Component {
+class Typewriter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      position: 0,
-      rate: 80 - this.props.text.length
+      class: "",
+      text: props.text
     }
   }
 
   componentDidMount() {
-    this.type();
+    this.timer = setTimeout(() => {
+      this.setState({class: " show"});
+      clearTimeout(this.timer);
+    }, 2500);
   }
 
   componentDidUpdate(prevProps, type) {
     if (this.props.text !== prevProps.text) {
-      this.setState({rate: 80 - this.props.text.length})
-      this.type();
+      this.setState({class: ""});
+      this.timer = setTimeout(() => {
+        this.setState({class: " show", text: this.props.text});
+        clearTimeout(this.timer);
+      }, 2500);
     }
   }
 
-  type(backspace) {
-    this.interval = setInterval(() => {
-      this.setState({position: this.state.position + 1});
-    }, this.state.rate);
-    this.timeout = setTimeout(() => {
-      clearInterval(this.interval);
-      this.setState({position: this.props.text.length});
-      this.pause = setTimeout(() => {
-        this.backspace();
-        clearTimeout(this.pause);
-      }, 1500);
-      clearTimeout(this.timeout);
-    }, this.state.rate * this.props.text.length);
-  }
-
-  backspace() {
-    this.interval = setInterval(() => {
-      this.setState({position: this.state.position - 1});
-    }, this.state.rate);
-    this.timeout2 = setTimeout(() => {
-      clearInterval(this.interval);
-      this.setState({position: 0});
-      clearTimeout(this.timeout2);
-    }, this.state.rate * this.props.text.length);
-  }
-
   render() {
-    return this.props.text.slice(0, this.state.position);
+    return <p className={"typewriter" + this.state.class}>{this.state.text}</p>;
   }
 }
 
