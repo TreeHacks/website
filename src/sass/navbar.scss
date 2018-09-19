@@ -12,7 +12,7 @@ $navbar-padding: 8px;
   background-color: $dark-gray;
   height: 100px;
   width: 100vw;
-  border-bottom: 4px solid $light-gray;
+  border-bottom: 3px solid $light-gray;
 
   .container {
     @include flex(row nowrap, flex-end, center);
