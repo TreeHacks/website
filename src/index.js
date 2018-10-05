@@ -8,6 +8,7 @@ import About from './js/about.jsx';
 import Projects from './js/projects.jsx';
 import FAQ from './js/faq.jsx';
 import Sponsors from './js/sponsors.jsx';
+import GreenLine from './js/green-line.jsx';
 import './index.scss';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div>
       <Navbar />
       <Circuit />
+      <GreenLine />
       <Home />
       <Verticals />
       <About />
@@ -29,3 +31,4 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
