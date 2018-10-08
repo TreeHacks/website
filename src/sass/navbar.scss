@@ -37,6 +37,10 @@ $navbar-padding: 8px;
   }
 }
 
+#mobile-menu {
+  @include flex(row nowrap, center, center);
+}
+
 .navbar-item {
   margin: 0 $navbar-margin;
   padding: $navbar-padding 0;
@@ -59,5 +63,13 @@ $navbar-padding: 8px;
 
   &:hover {
     background-color: $green;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    #mobile-menu {
+      display: none;
+    }
   }
 }

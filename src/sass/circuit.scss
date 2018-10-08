@@ -9,3 +9,15 @@
     padding-left: 1.5%;
   }
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+  #circuit {
+    top: calc(2.5vh);
+
+    img {
+      height: 45vh;
+      width: auto;
+      padding-left: 3.95%;
+    }
+  }
+}

@@ -5,6 +5,21 @@ $green: #00E174;
 $white: #FFFFFF;
 
 /* Font Styles */
+@font-face {
+  font-family: "Avenir";
+  src: url('fonts/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url('fonts/AvenirLTStd-Heavy.otf');
+}
+
+@font-face {
+  font-family: "Avenir Black";
+  src: url('fonts/AvenirLTStd-Black.otf');
+}
+
 $avenir: 'Avenir', sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;

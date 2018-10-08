@@ -38,7 +38,8 @@
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    margin: 0 5px;
+    margin: 0 10px;
+    border-right: 2px solid white;
     transition: width 1.5s;
 
     &.show {
