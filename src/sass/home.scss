@@ -2,29 +2,30 @@
   @include flex(column nowrap, flex-start, center);
   height: 100vh;
   width: 100vw;
-  padding-top: 33vh;
+  padding-top: 26vh;
 
   img {
     height: 17.5vh;
   }
 
   h1 {
-    font-size: 9vh;
+    font-size: 8vh;
     font-weight: normal;
   }
 
   h2 {
-    font-size: $base-font-size * 1.5;
+    font-size: $base-font-size * 1.4;
     font-family: $avenir-heavy;
     color: #A2A2A2;
   }
 
   .green-button {
     margin: 2.5vh 0;
+    width: 30vh;
   }
 
   p {
-    font-size: $heading-font-size;
+    font-size: 25px;
   }
 }
 
