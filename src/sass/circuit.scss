@@ -1,7 +1,7 @@
 #circuit {
   @include flex(row nowrap, center, flex-start);
   position: absolute;
-  top: calc(33vh - 23vw);
+  top: calc(33vh - 19vw);
   width: 100vw;
 
   img {
@@ -17,7 +17,7 @@
     img {
       height: 45vh;
       width: auto;
-      padding-left: 3.95%;
+      padding-left: 2vh;
     }
   }
 }
