@@ -8,9 +8,10 @@ import About from './js/about.jsx';
 import Projects from './js/projects.jsx';
 import FAQ from './js/faq.jsx';
 import Sponsors from './js/sponsors.jsx';
+import Footer from './js/footer.jsx';
+
 import './favicons/favicons';
 import './index.scss';
-
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
       <Projects />
       <FAQ />
       <Sponsors />
+      <Footer />
     </div>
   );
 }
