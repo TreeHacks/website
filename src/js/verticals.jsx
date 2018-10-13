@@ -4,7 +4,7 @@ import {verticals} from './content.json';
 function Verticals() {
   return(
     <div id="verticals">
-      <h1 className="section-heading">2019 verticals</h1>
+      <h1 className="section-heading">verticals</h1>
       <div className="container">
         <Vertical name={verticals[0].name} logo={verticals[0].logo} description={verticals[0].description} />
         <Vertical name={verticals[1].name} logo={verticals[1].logo} description={verticals[1].description} />

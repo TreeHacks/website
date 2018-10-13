@@ -4,7 +4,7 @@ import {projects} from './content.json';
 function Projects() {
   return(
     <div id="projects" className="container">
-      <h1 className="section-heading">Projects from TreeHacks 2018</h1>
+      <h1 className="section-heading">Past Projects</h1>
       <Slider />
     </div>
   );
