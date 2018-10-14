@@ -20,7 +20,7 @@ class Slider extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.changeSlide(1), 5000);
+    this.interval = setInterval(() => this.changeSlide(1), 10000);
   }
 
   componentWillUnmount() {
@@ -29,7 +29,7 @@ class Slider extends React.Component {
 
   changeSlide(direction) {
     clearInterval(this.interval);
-    this.interval = setInterval(() => this.changeSlide(1), 5000);
+    this.interval = setInterval(() => this.changeSlide(1), 10000);
     this.setState({current: this.state.current + direction});
   }
 
