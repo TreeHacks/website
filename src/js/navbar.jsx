@@ -18,7 +18,7 @@ function Navbar() {
           <li className="navbar-item"><a href="#about">about</a></li>
           <li className="navbar-item"><a href="#faq">faq</a></li>
           <li className="navbar-item"><a href="#sponsors">sponsors</a></li>
-          <a href=""><li id="navbar-apply">apply now!</li></a>
+          <a href="https://apply.treehacks.com"><li id="navbar-apply">apply now!</li></a>
         </div>
       </ul>
     </nav>

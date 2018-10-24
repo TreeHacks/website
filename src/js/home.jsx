@@ -32,7 +32,7 @@ class Home extends React.Component {
           <Typewriter text={home[this.state.phrase]}/>
           <p> ) &#123;</p>
         </div>
-        <a href="" className="green-button">apply now!</a>
+        <a href="https://apply.treehacks.com" className="green-button">apply now!</a>
         <p>&#125;</p>
       </div>
     );
