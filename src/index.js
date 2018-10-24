@@ -13,15 +13,11 @@ import Footer from './js/footer.jsx';
 import './favicons/favicons';
 import './index.scss';
 
-import GreenLine from './js/green-line.jsx';
-
-
 function App() {
   return (
     <div>
       <Navbar />
       <Circuit />
-      <GreenLine />
       <Home />
       <Verticals />
       <About />

@@ -4,6 +4,13 @@
   top: calc(33vh - 19vw);
   width: 100vw;
 
+  #green-line {
+    position: absolute;
+    width: calc(30px + 8vw + 10vh);
+    left: 34px;
+    top: 120px;
+  }
+
   img {
     width: 85vw;
     padding-left: 1.5%;
@@ -19,5 +26,9 @@
       width: auto;
       padding-left: 2vh;
     }
+  }
+
+  #green-line {
+    display: none;
   }
 }
