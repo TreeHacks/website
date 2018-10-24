@@ -1,10 +1,19 @@
 #green-line {
     @include flex(row nowrap, flex-start, flex-start);
+
     position: absolute;
+    top: calc(33vh - 19vw);
+    width: 85vw;
+    padding-left: 1.5%; 
     z-index: -1;
-    margin-top: 8.25%;// TODO: fix the spacing to allow for correct positioning on page
-    margin-left: -22%;
-    width: 100%;
-    height: 100%;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  #green-line {
+    top: calc(2.5vh);
+    height: 45vh;
+    width: auto;
+    padding-left: 2vh;
+  }
 }
   
