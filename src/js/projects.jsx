@@ -4,7 +4,7 @@ import {projects} from './content.json';
 function Projects() {
   return(
     <div id="projects" className="container">
-      <h1 className="section-heading">Projects from TreeHacks 2018</h1>
+      <h1 className="section-heading">Past Projects</h1>
       <Slider />
     </div>
   );
@@ -20,7 +20,7 @@ class Slider extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.changeSlide(1), 5000);
+    this.interval = setInterval(() => this.changeSlide(1), 10000);
   }
 
   componentWillUnmount() {
@@ -29,7 +29,7 @@ class Slider extends React.Component {
 
   changeSlide(direction) {
     clearInterval(this.interval);
-    this.interval = setInterval(() => this.changeSlide(1), 5000);
+    this.interval = setInterval(() => this.changeSlide(1), 10000);
     this.setState({current: this.state.current + direction});
   }
 

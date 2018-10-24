@@ -19,3 +19,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  body #about {
+    .container {
+      @include flex(column-reverse nowrap, flex-start, center);
+
+      div:last-child {
+        width: 100%;
+        height: 35.75vh;
+        margin-bottom: $small-space;
+      }
+    }
+  }
+}

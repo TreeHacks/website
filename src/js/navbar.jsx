@@ -12,12 +12,14 @@ function Navbar() {
             <span className="logo-text-hacks">hacks</span>
           </a>
         </li>
-        <li className="navbar-item"><a href="#home">home</a></li>
-        <li className="navbar-item"><a href="#verticals">verticals</a></li>
-        <li className="navbar-item"><a href="#about">about</a></li>
-        <li className="navbar-item"><a href="#faq">faq</a></li>
-        <li className="navbar-item"><a href="#sponsors">sponsors</a></li>
-        <a href=""><li id="navbar-apply">apply now!</li></a>
+        <div id="mobile-menu">
+          <li className="navbar-item"><a href="#home">home</a></li>
+          <li className="navbar-item"><a href="#verticals">verticals</a></li>
+          <li className="navbar-item"><a href="#about">about</a></li>
+          <li className="navbar-item"><a href="#faq">faq</a></li>
+          <li className="navbar-item"><a href="#sponsors">sponsors</a></li>
+          <a href=""><li id="navbar-apply">apply now!</li></a>
+        </div>
       </ul>
     </nav>
   );

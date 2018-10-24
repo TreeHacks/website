@@ -9,22 +9,23 @@
   }
 
   h1 {
-    font-size: 9vh;
+    font-size: 8vh;
     font-weight: normal;
   }
 
   h2 {
-    font-size: $base-font-size * 1.5;
+    font-size: $base-font-size * 1.4;
     font-family: $avenir-heavy;
     color: #A2A2A2;
   }
 
   .green-button {
     margin: 2.5vh 0;
+    width: 30vh;
   }
 
   p {
-    font-size: $heading-font-size;
+    font-size: 25px;
   }
 }
 
@@ -38,7 +39,8 @@
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    margin: 0 5px;
+    margin: 0 10px;
+    border-right: 2px solid white;
     transition: width 1.5s;
 
     &.show {

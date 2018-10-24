@@ -10,8 +10,8 @@
 
 .vertical {
   background-color: $light-gray;
-  width: (100vw - 4 * $small-space) / 3;
-  padding: $small-space*2;
+  width: (90vw - 4 * $small-space) / 3;
+  padding: $small-space;
   @include flex(column nowrap, flex-start, center);
 
   img {
