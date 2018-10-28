@@ -7,7 +7,22 @@
     margin: $medium-space 0;
   }
 
+  #sub-heading {
+    margin-bottom: 0;
+  }
+
   .green-button {
-    margin: $medium-space 0;
+    margin: $small-space 0;
+  }
+
+  .mlh-trust-badge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    max-width: 35%;
+    height: auto;
+    top:0;
+    padding-bottom: 40px;
   }
 }
