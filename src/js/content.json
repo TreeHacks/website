@@ -13,20 +13,20 @@
     {
       "name": "safety",
       "logo": "images/projects/energy-vert-img.jpeg",
-      "description": "A core hope of technology is improving personal and public safety for all. From helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve. You’ll be inspired by a variety of impactful challenges and speakers to push you forward."
+      "description": "A core hope of technology is improving personal and public safety for all. From helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve."
     },
     {
       "name": "health",
       "logo": "images/projects/health-vert-img.jpeg",
-      "description": "Health tech continues to be one of the most innovative and impactful interdisciplinary applications of technology. Explore bio-technology, medicine, and health-related fields as you hack to improve and solve some of the world's most pressing health issues. You'll hear from incredible speakers (previously a Google Brain researcher!) and work with sponsors at the forefront of health tech."
+      "description": "Health tech continues to be one of the most innovative and impactful interdisciplinary applications of technology. Explore bio-technology, medicine, and health-related fields as you hack to improve and solve some of the world's most pressing health crises."
     },
     {
       "name": "awareness",
       "logo": "images/projects/security-vert-img.jpg",
-      "description": "Current events have shown that a lack of understanding and transparency can foster unhealthy discourse, divisive climates, and biased decisions, and many have blamed technology for worsening this situation. Tackle the critical challenge of increasing awareness, transparency, and exposure to inspire a better future, showing how technology can be a positive tool to enact public change."
+      "description": "Current events have shown that a lack of awareness can foster unhealthy discourse, divisive climates, and biased decisions. Tackle the critical challenge of increasing awareness, transparency, and exposure to inspire a better future and show technology's positive power."
     }
   ],
-  "about": "TreeHacks brings over 800 hackers from around the world to build apps, hardware, and community in the California sun. Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks, decorate cookies, and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way with all sorts of resources, mentors, workshops, and hardware to learn and develop something you're proud of. Don’t forget your sunscreen!",
+  "about": "Join us as we build apps, hardware, and community in the California sun. Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!",
   "projects": [
     {
       "title": "Computertop Desk",
