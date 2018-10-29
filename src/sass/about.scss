@@ -20,6 +20,15 @@
   }
 }
 
+#intro {
+  margin-bottom: $small-space;
+  font-size: $medium-font-size + 4;
+}
+
+#body {
+  font-size: $medium-font-size;
+}
+
 @media screen and (max-width: 1023px) {
   body #about {
     .container {

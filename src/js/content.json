@@ -26,43 +26,44 @@
       "description": "Current events have shown that a lack of awareness can foster unhealthy discourse, divisive climates, and biased decisions. Tackle the critical challenge of increasing awareness, transparency, and exposure to inspire a better future and show technology's positive power."
     }
   ],
-  "about": "Join us as we build apps, hardware, and community in the California sun. Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!",
+  "about_intro": "Join us as we build apps, hardware, and community in the California sun!",
+  "about_body": "Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!",
   "projects": [
     {
       "title": "Computertop Desk",
       "path": "images/projects/computertop_desktop.png",
       "url": "https://devpost.com/software/computertop-desk",
-      "description": "Omar learned about computer vision at TreeHacks. He combined a webcam and projector mounted above a desk, along with a splash of OpenCV to locate all the pieces of paper and the keyboard, allowing users to set any piece of paper as a window for the computer. Omar won Most Creative Hack and Best Hardware Hack at TreeHacks 2018."
+      "description": "Omar combined a webcam and projector mounted above a desk, along with a splash of OpenCV to locate all the pieces of paper and the keyboard, allowing users to set any piece of paper as a window for the computer. Omar won Most Creative Hack and Best Hardware Hack at TreeHacks 2018."
     },
     {
       "title": "NeuralHash",
       "path": "images/projects/neural_hash.png",
       "url": "https://devpost.com/software/neuralhash",
-      "description": "Isaac, Nikhil, Evani, and Rohan used deep neural networks, stochastic connection and layers to develop a decoder model that acted as a robust, cryptographically-secure, transformation-invariant hash function for images, mapping input images to 32-bit codes. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018."
+      "description": "Isaac, Nikhil, Evani, and Rohan used machine learning to develop a decoder model that acts as a cryptographically-secure, transformation-invariant hash function to identify image ownership. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018."
     },
     {
       "title": "#PowerHouse",
       "path": "images/projects/power_house.png",
       "url": "https://devpost.com/software/energy-awareness-app",
-      "description": "Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home while respecting a user's budget. They competed in the energy vertical. TreeHacks 2018 was their first hackathon."
+      "description": "Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon."
     },
     {
       "title": "The Ultimate Water Heater",
       "path": "images/projects/ultimate_water_heater.png",
       "url": "https://devpost.com/software/ultimate-water-heater",
-      "description": "Matthew and Amarinder built a system with an Arduino 101, a heating system, and a mobile app that interact over Bluetooth, to build a safe, cheap, and easily accessible water heater that has 90% energy efficiency and could save 5 gallons of water per average shower. They won Most Interdisciplinary Hack and Greatest Impact Hack at TreeHacks 2018."
+      "description": "Matthew and Amarinder built a heating system and a mobile app to build an accessible water heater that has 90% energy efficiency and could save 5 gallons of water per average shower. They won Most Interdisciplinary Hack and Greatest Impact Hack at TreeHacks 2018."
     },
     {
       "title": "Docodial",
       "path": "images/projects/docodial.png",
       "url": "https://devpost.com/software/docodial",
-      "description": "Jenny and Aidan developed a web interface, utilizing video, live-streaming and speech-to-text APIs. This platform allows doctors to communicate with interpreters who securely provide necessary patient data, empowering non-native speakers to get the health coverage they need. They won Best User Interface and Best Live Video App at TreeHacks 2018."
+      "description": "Jenny and Aidan developed a live-streaming web app that allows doctors to communicate with interpreters, empowering non-native speakers to get the health coverage they need. They won Best User Interface and Best Live Video App at TreeHacks 2018."
     },
     {
       "title": "Marvel Medical Dictionary",
       "path": "images/projects/marvel_medical_dictionary.png",
       "url": "https://devpost.com/software/marvel-medical-dictionary",
-      "description": "Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows users to learn about different health topics by utilizing natural language processing and data from the Marvel API to match a superhero to a related medical search query.  Image Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018."
+      "description": "Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018."
     }
   ],
   "faq": [

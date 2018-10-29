@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import {about} from './content.json';
+import {about_intro} from './content.json';
+import {about_body} from './content.json';
 
 
 function About() {
@@ -9,7 +10,7 @@ function About() {
     <div id="about">
       <h1 className="section-heading">About</h1>
       <div className="container">
-        <div><p>{about}</p></div>
+        <div><p id="intro">{about_intro}</p><p id="body">{about_body}</p></div>
         <div><ReactPlayer url={videoURL} width="100%" height="100%" /></div>
       </div>
     </div>
