@@ -3,6 +3,40 @@
 
   .container {
     margin: 0 $large-space/2;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .container-mobile {
+    display: none;
+
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+
+    .mobile-row {
+      @media screen and (max-width: 750px) {
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+      }
+
+      h1 {
+        @media screen and (max-width: 750px) {
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+
+      p {
+        @media screen and (max-width: 750px) {
+          text-align: center;
+          margin-top: 5px;
+        }
+      }
+    }
   }
 
   a {

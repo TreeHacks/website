@@ -13,6 +13,12 @@
 
   .green-button {
     margin: $small-space 0;
+
+    @media screen and (max-width: 750px) {
+      width: 70%;
+      margin-left: 0px;
+      margin-top: 30px;
+    }
   }
 
   .mlh-trust-badge {
@@ -24,5 +30,10 @@
     height: auto;
     top:0;
     padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    margin-left: 0px;
   }
 }

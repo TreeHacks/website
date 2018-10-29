@@ -3,6 +3,11 @@
 
   .section-heading {
     margin-bottom: $small-space;
+
+    @media screen and (max-width: 750px) {
+      text-align: center;
+      margin-left: 0px;
+    }
   }
 
   .container {

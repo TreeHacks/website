@@ -12,6 +12,9 @@ class FAQ extends React.Component {
           <HeaderRow initial={4} elements={4} />
           <ParagraphRow initial={4} elements={4} />
         </div>
+        <div className="container-mobile">
+          <MobileFAQ />
+        </div>
       </div>
     );
   }
@@ -41,6 +44,23 @@ class ParagraphRow extends React.Component {
     }
     return(
       <div className="paragraph-row">
+        {row}
+      </div>
+    );
+  }
+}
+
+class MobileFAQ extends React.Component {
+  render() {
+    var row = [];
+    for (var i = 0; i < 8; i++) {
+      row.push(<h1 key={i}>{faq[i].q}</h1>);
+      (faq[i].link)
+      ? row.push(<p key={i}>{faq[i].textBefore}<a href={faq[i].link}>{faq[i].textIn}</a>{faq[i].textAfter}</p>)
+      : row.push(<p key={i}>{faq[i].a}</p>);
+    }
+    return(
+      <div className="mobile-row">
         {row}
       </div>
     );

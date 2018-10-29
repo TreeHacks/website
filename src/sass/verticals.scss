@@ -5,6 +5,10 @@
 
   .container {
     @include flex(row nowrap, space-evenly, stretch);
+    @media screen and (max-width: 750px) {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
@@ -13,6 +17,13 @@
   width: (90vw - 4 * $small-space) / 3;
   padding: $small-space;
   @include flex(column nowrap, flex-start, center);
+
+  @media screen and (max-width: 750px) {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
 
   img {
     margin-bottom: $small-space;
