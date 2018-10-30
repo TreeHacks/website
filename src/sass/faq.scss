@@ -54,12 +54,12 @@
   }
 
   .horizontal-line {
-    width: 50vw - $large-space/2;
+    width: calc(50vw - #{$large-space/2} + 2px);
     border-bottom: 4px solid $green;
   }
 
   .vertical-line-1 {
-    margin-top: calc(-7.5vw - 40px);
+    margin-top: calc(-7.5vw - 35px);
     height: calc(7.5vw + 40px);
     width: 0px;
     border-left: 4px solid $green;
@@ -77,6 +77,7 @@
   @include flex(row nowrap, space-between, flex-end);
   border-bottom: 4px solid $green;
   padding-top: $large-space/2;
+  padding-bottom: $small-space/2;
 
   @media screen and (max-width: 1200px) {
     border-bottom: 0px;
