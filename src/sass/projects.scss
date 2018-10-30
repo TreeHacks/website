@@ -49,6 +49,14 @@
   }
 }
 
+.left {
+  background-position-x: 100%;
+}
+
+.right {
+  background-position-x: 0px;
+}
+
 .current {
   flex: 1 0 40vw;
   height: 22.5vw;
