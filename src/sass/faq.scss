@@ -42,11 +42,45 @@
   a {
     color: $green;
   }
+
+  hr {
+    position: relative;
+    left: 50vw;
+    margin: 0;
+    border: 0;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .horizontal-line {
+    width: 50vw - $large-space/2;
+    border-bottom: $border-style $green;
+  }
+
+  .vertical-line-1 {
+    margin-top: calc(-7.5vw - 40px);
+    height: calc(7.5vw + 40px);
+    width: 0px;
+    border-right: $border-style $green;
+  }
+
+  .vertical-line-2 {
+    margin-bottom: -$large-space;
+    height: $large-space;
+    width: 0px;
+    border-right: $border-style $green;
+  }
 }
 
 .header-row {
   @include flex(row nowrap, space-between, flex-end);
-  margin-top: $large-space;
+  border-bottom: $border-style $green;
+  padding-top: $large-space/2;
+
+  @media screen and (max-width: 1200px) {
+    border-bottom: 0px;
+  }
 
   h1 {
     flex: 0 0 25%;
@@ -56,10 +90,23 @@
 
 .paragraph-row {
   @include flex(row nowrap, space-between, flex-start);
-  margin-top: $small-space;
 
   p {
     flex: 0 0 25%;
-    padding: 0 $large-space/2;
+    padding: $small-space $large-space/2 $large-space/2 $large-space/2;
+  }
+}
+
+.border-left {
+  border-left: $border-style $green;
+  @media screen and (max-width: 1200px) {
+    border-left: 0px;
+  }
+}
+
+.border-right {
+  border-right: $border-style $green;
+  @media screen and (max-width: 1200px) {
+    border-right: 0px;
   }
 }

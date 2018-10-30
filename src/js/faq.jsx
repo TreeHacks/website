@@ -6,12 +6,16 @@ class FAQ extends React.Component {
     return(
       <div id="faq">
         <h1 className="section-heading">Frequently Asked Questions</h1>
+        <hr className="vertical-line-1" />
+        <hr className="horizontal-line" />
         <div className="container">
-          <HeaderRow initial={0} elements={4} />
-          <ParagraphRow initial={0} elements={4} />
-          <HeaderRow initial={4} elements={4} />
-          <ParagraphRow initial={4} elements={4} />
+          <HeaderRow border="right" initial={0} elements={4} />
+          <ParagraphRow border="left" initial={0} elements={4} />
+          <HeaderRow border="left" initial={4} elements={4} />
+          <ParagraphRow border="right" initial={4} elements={4} />
         </div>
+        <hr className="horizontal-line" />
+        <hr className="vertical-line-2" />
         <div className="container-mobile">
           <MobileFAQ />
         </div>
@@ -27,7 +31,7 @@ class HeaderRow extends React.Component {
       row.push(<h1 key={i}>{faq[i].q}</h1>);
     }
     return(
-      <div className="header-row">
+      <div className={"header-row border-" + this.props.border}>
         {row}
       </div>
     );
@@ -43,7 +47,7 @@ class ParagraphRow extends React.Component {
       : row.push(<p key={i}>{faq[i].a}</p>);
     }
     return(
-      <div className="paragraph-row">
+      <div className={"paragraph-row border-" + this.props.border}>
         {row}
       </div>
     );
