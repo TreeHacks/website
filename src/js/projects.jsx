@@ -56,7 +56,7 @@ class Slider extends React.Component {
             alt={projects[right].alt}
             onClick={(e) => this.changeSlide(1, e)}></div>
         </div>
-        <h1>{projects[current].title}</h1>
+        <h1><a href={projects[current].url} target={'_blank'}>{projects[current].title}</a></h1>
         <p>{projects[current].description}</p>
       </div>
     );

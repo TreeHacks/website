@@ -23,6 +23,11 @@
     text-align: center;
     margin-bottom: $medium-space;
   }
+
+  h1:hover {
+    text-decoration: underline;
+    text-decoration-color: $green;
+  }
 }
 
 #slider {
