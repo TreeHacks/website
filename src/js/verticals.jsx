@@ -17,7 +17,7 @@ function Verticals() {
 function Vertical(props) {
   return(
     <div className="vertical">
-      <img src={props.logo} alt={props.name + " logo"} />
+      //<img src={props.logo} alt={props.name + " logo"} />
       <h1>{props.name}</h1>
       <p>{props.description}</p>
     </div>
