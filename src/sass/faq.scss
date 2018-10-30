@@ -45,7 +45,7 @@
 
   hr {
     position: relative;
-    left: 50vw;
+    left: calc(50vw - 2px);
     margin: 0;
     border: 0;
     @media screen and (max-width: 1200px) {
@@ -55,27 +55,27 @@
 
   .horizontal-line {
     width: 50vw - $large-space/2;
-    border-bottom: $border-style $green;
+    border-bottom: 4px solid $green;
   }
 
   .vertical-line-1 {
     margin-top: calc(-7.5vw - 40px);
     height: calc(7.5vw + 40px);
     width: 0px;
-    border-right: $border-style $green;
+    border-left: 4px solid $green;
   }
 
   .vertical-line-2 {
     margin-bottom: -$large-space;
     height: $large-space;
     width: 0px;
-    border-right: $border-style $green;
+    border-left: 4px solid $green;
   }
 }
 
 .header-row {
   @include flex(row nowrap, space-between, flex-end);
-  border-bottom: $border-style $green;
+  border-bottom: 4px solid $green;
   padding-top: $large-space/2;
 
   @media screen and (max-width: 1200px) {
@@ -98,14 +98,14 @@
 }
 
 .border-left {
-  border-left: $border-style $green;
+  border-left: 4px solid $green;
   @media screen and (max-width: 1200px) {
     border-left: 0px;
   }
 }
 
 .border-right {
-  border-right: $border-style $green;
+  border-right: 4px solid $green;
   @media screen and (max-width: 1200px) {
     border-right: 0px;
   }
