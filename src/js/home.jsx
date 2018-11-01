@@ -32,7 +32,7 @@ class Home extends React.Component {
           <span className="logo-text-tree">tree</span>
           <span className="logo-text-hacks">hacks</span>
         </h1>
-        <h2>February 15-17, 2019 at Stanford University</h2>
+        <h2>February 15-17, 2019 at&nbsp;Stanford&nbsp;University</h2>
         <div id="typewriter-container">
           <p>if ( </p>
           <Typewriter text={home[this.state.phrase]}/>
