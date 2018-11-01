@@ -4,6 +4,10 @@
   top: calc(33vh - 20vw);
   width: 100vw;
 
+  @media screen and (max-width: 750px) {
+    overflow-x: hidden;
+  }
+
   #green-line {
     position: absolute;
     width: calc(30px + 8vw + 10vh);
