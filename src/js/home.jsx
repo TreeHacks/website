@@ -11,7 +11,13 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.setState({phrase: (this.state.phrase + 1) % (home.length - 1)}), 7000);
+    let width = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (width > 750) {
+      this.interval = setInterval(() => this.setState({phrase: (this.state.phrase + 1) % (home.length - 1)}), 7000);
+    }
   }
 
   componentWillUnmount() {
