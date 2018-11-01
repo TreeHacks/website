@@ -5,7 +5,11 @@ body {
   color: white;
   font-family: $avenir;
   font-size: $base-font-size;
-  overflow-x: hidden;
+
+  @media screen and (max-width: 750px) {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 body,
