@@ -9,20 +9,20 @@ import githubIcon from '../png/githubIcon.png';
 function Footer() {
   return(
     <footer id="footer">
-        <a href="mailto:hello@treehacks.com">
-          <img className="footer-item" src={emailIcon} alt="email"/>
+        <a className="footer-item" href="mailto:hello@treehacks.com">
+          <img src={emailIcon} alt="email"/>
         </a>
-        <a href="https://facebook.com/treehacks" target="_blank" rel="noopener noreferrer">
-          <img className="footer-item" src={facebookIcon} alt="facebook"/>
+        <a className="footer-item" href="https://facebook.com/treehacks" target="_blank" rel="noopener noreferrer">
+          <img src={facebookIcon} alt="facebook"/>
         </a>
-        <a href="https://twitter.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
-          <img className="footer-item" src={twitterIcon} alt="twitter"/>
+        <a className="footer-item" href="https://twitter.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
+          <img src={twitterIcon} alt="twitter"/>
         </a>
-        <a href="https://instagram.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
-          <img className="footer-item" src={instagramIcon} alt="instagram"/>
+        <a className="footer-item" href="https://instagram.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
+          <img src={instagramIcon} alt="instagram"/>
         </a>
-        <a href="https://github.com/treehacks" target="_blank" rel="noopener noreferrer">
-          <img className="footer-item" src={githubIcon} alt="github"/>
+        <a className="footer-item" href="https://github.com/treehacks" target="_blank" rel="noopener noreferrer">
+          <img src={githubIcon} alt="github"/>
         </a>
     </footer>
   );
