@@ -9,6 +9,20 @@
     "you've never written a line of code in your life",
     "you have ideas you want to make into reality"
   ],
+  "deadlines": [
+    {
+      "label": "out-of-state",
+      "date": "2018-11-20T07:59:00.000Z"
+    },
+    {
+      "label": "in-state",
+      "date": "2018-11-27T07:59:00.000Z"
+    },
+    {
+      "label": "Stanford student",
+      "date": "2019-02-14T07:59:00.000Z"
+    }
+  ],
   "verticals": [
     {
       "name": "safety",
