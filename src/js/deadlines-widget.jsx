@@ -6,11 +6,11 @@ export default () => {
 
   return (
     <div className="deadlines-widget">
-      {deadlines.map(({ label, date }) => {
+      {deadlines.map(({ label, date, display_date }) => {
         let d = new Date(date);
         return (
           <div key={label} className={now > d ? 'past' : ''}>
-            {label} deadline: <span>{d.toLocaleDateString('en-US', { month: 'long', year: 'numeric', day: 'numeric' })}</span>
+            {label} deadline: <span>{display_date || d.toLocaleString('en-US', { month: 'long', year: 'numeric', day: 'numeric' })}</span>
           </div>
         );
       })}
