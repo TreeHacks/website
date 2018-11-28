@@ -29,17 +29,17 @@
   "verticals": [
     {
       "name": "safety",
-      "logo": "images/projects/energy-vert-img.jpeg",
+      "logo": "images/projects/safety-vert-img.png",
       "description": "A core hope of technology is improving personal and public safety for all. From helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve."
     },
     {
       "name": "health",
-      "logo": "images/projects/health-vert-img.jpeg",
+      "logo": "images/projects/health-vert-img.png",
       "description": "Health tech continues to be one of the most innovative and impactful interdisciplinary applications of technology. Explore biotechnology, medicine, and health-related fields as you hack to improve and solve some of the world's most pressing health crises."
     },
     {
       "name": "awareness",
-      "logo": "images/projects/security-vert-img.jpg",
+      "logo": "images/projects/awareness-vert-img.png",
       "description": "Current events have shown that a lack of awareness can foster unhealthy discourse, divisive climates, and biased decisions. Tackle the critical challenge of increasing awareness, transparency, and exposure to inspire a better future and show technology's positive power."
     }
   ],
