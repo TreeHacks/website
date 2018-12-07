@@ -1,6 +1,7 @@
 import React from 'react';
 import * as logo from '../svg/logo.svg';
 import {home} from './content.json';
+import DeadlinesWidget from './deadlines-widget.jsx';
 
 class Home extends React.Component {
   constructor(props) {
@@ -38,7 +39,10 @@ class Home extends React.Component {
           <Typewriter text={home[this.state.phrase]}/>
           <p> ) &#123;</p>
         </div>
-        <a href="https://apply.treehacks.com" className="green-button">apply now!</a>
+        <div>
+          <a href="https://apply.treehacks.com" className="green-button">apply now!</a>
+          <DeadlinesWidget />
+        </div>
         <p>&#125;</p>
       </div>
     );

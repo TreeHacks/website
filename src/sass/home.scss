@@ -2,6 +2,7 @@
   @include flex(column nowrap, flex-start, center);
   height: 100vh;
   width: 100vw;
+  min-height: calc(500px + 45vh);
   padding-top: 33vh;
 
   img {
@@ -25,7 +26,11 @@
 
   .green-button {
     margin: 2.5vh 0;
-    width: 30vh;
+    width: 100%;
+  }
+
+  .deadlines-widget {
+    margin-bottom: 2.5vh;
   }
 
   p {
@@ -35,7 +40,7 @@
 
 #typewriter-container {
   @include flex(row nowrap, center, center);
-  margin-top: 7.5vh;
+  margin-top: 4.5vh;
   white-space: nowrap;
 
   .typewriter {
