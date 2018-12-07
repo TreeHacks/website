@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 var path = require("path");
 var request = require('request');
+const forceSsl = require('force-ssl-heroku');
 
 // Set up the Express app
 const app = express();
+app.use(forceSsl);
 
 // If you want to connect to MongoDB - should be running locally
 // mongoose.connect('mongodb://localhost/');
