@@ -28,7 +28,11 @@
 
   img {
     margin-bottom: $small-space;
+    display: block;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   h1 {
