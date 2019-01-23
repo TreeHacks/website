@@ -19,7 +19,7 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
-          <a href="http://apply.treehacks.com"><li id="navbar-apply">apply now!</li></a>
+          <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
         </div>
       </ul>
     </nav>
