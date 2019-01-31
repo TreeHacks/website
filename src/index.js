@@ -40,7 +40,8 @@ function App() {
       <Switch>
         <CustomRedirect from="/slack" to="https://join.slack.com/t/treehacks-2019/shared_invite/enQtNTE5ODY0MDI2NjQ3LWI2YjhlYTU3OTE1ODcyMTdmZWYzYWVjY2NjNzQ2YTBiZDY5YWYwYzhkMDhlZTBmNmNmMzMzZWYxM2QwMTMxMmI" />
         <CustomRedirect from="/volunteer" to="https://goo.gl/forms/pZURr2kMSKwuFar42" />
-        <Route path="/" component={Main} />
+        <Route exact path="/" component={Main} />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );
