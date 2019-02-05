@@ -28,11 +28,11 @@ const SPONSORS = {
     require('../sponsor-logos/cisco.png'),
     require('../sponsor-logos/cerebras.png'),
     require('../sponsor-logos/quip.png'),
-    //require('../sponsor-logos/facebook.png'),
-    require('../sponsor-logos/blockstack.png'),
-    require('../sponsor-logos/twilio.png')
+    require('../sponsor-logos/facebook.png'),
+    require('../sponsor-logos/blockstack.png')
   ],
   smallest: [
+    require('../sponsor-logos/twilio.png'),
     require('../sponsor-logos/xinfin.png'),
     require('../sponsor-logos/xcalar.png'),
     require('../sponsor-logos/expo.png'),
