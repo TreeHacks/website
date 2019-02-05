@@ -1,52 +1,45 @@
 import React from 'react';
 
-import codingitforward from '../sponsor-logos/codingitforward.png';
-import deshaw from '../sponsor-logos/deshaw.png';
-import disney from '../sponsor-logos/disney.svg';
-import docker from '../sponsor-logos/docker.png';
-import drw from '../sponsor-logos/drw.png';
-import esri from '../sponsor-logos/esri.png';
-import eventive from '../sponsor-logos/eventive.png';
-import expo from '../sponsor-logos/expo.svg';
-import gcp from '../sponsor-logos/gcp.png';
-import github from '../sponsor-logos/github.png';
-import microsoft from '../sponsor-logos/microsoft.png';
-import phone2action from '../sponsor-logos/phone2action.svg';
-import soundhound from '../sponsor-logos/soundhound.png';
-import twosigma from '../sponsor-logos/twosigma.png';
-import wix from '../sponsor-logos/wix.png';
-
 const SPONSORS = {
   big: [
-    microsoft
+    require('../sponsor-logos/microsoft.png')
   ],
   medium: [
-    drw,
-    esri,
-    // polarr,
-    deshaw,
-    docker
+    require('../sponsor-logos/disney.png'),
+    require('../sponsor-logos/newrelic.png'),
+    require('../sponsor-logos/neo.png'),
+    require('../sponsor-logos/ibm.png'),
+    require('../sponsor-logos/drw.png'),
+    require('../sponsor-logos/docker.png'),
+    require('../sponsor-logos/axon.png'),
+    require('../sponsor-logos/polarr.png'),
+    require('../sponsor-logos/esri.png'),
+    require('../sponsor-logos/firebase.png'),
+    require('../sponsor-logos/deshaw.png')
   ],
   small: [
-    // oracle,
-    twosigma,
-    expo,
-    // facebook,
-    codingitforward,
-    gcp,
-    soundhound,
-    // firebase,
-    // cerebras,
-    phone2action,
-    // youngleaders,
-    // twilio,
-    wix,
-    eventive
+    require('../sponsor-logos/wix.png'),
+    require('../sponsor-logos/twosigma.png'),
+    require('../sponsor-logos/plusai.png'),
+    require('../sponsor-logos/phone2action.png'),
+    require('../sponsor-logos/oracle.png'),
+    require('../sponsor-logos/gcp.png'),
+    require('../sponsor-logos/codingitforward.png'),
+    require('../sponsor-logos/cisco.png'),
+    require('../sponsor-logos/cerebras.png'),
+    require('../sponsor-logos/quip.png'),
+    //require('../sponsor-logos/facebook.png'),
+    require('../sponsor-logos/blockstack.png'),
+    require('../sponsor-logos/twilio.png')
   ],
   smallest: [
-    // pear,
-    // linode,
-    github
+    require('../sponsor-logos/xinfin.png'),
+    require('../sponsor-logos/xcalar.png'),
+    require('../sponsor-logos/expo.png'),
+    require('../sponsor-logos/eventive.png'),
+    require('../sponsor-logos/soundhound.png'),
+    require('../sponsor-logos/github.png'),
+    require('../sponsor-logos/sara.png')
   ]
 };
 

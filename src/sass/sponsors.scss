@@ -30,34 +30,36 @@
   .level {
     @include flex(row wrap, center, center);
 
+    max-width: 650px;
     width: 70%;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     &.level-big img {
-      width: 40vw;
+      width: 70%;
+      min-width: 250px;
+      margin: -3rem 0;
     }
 
     &.level-medium img {
-      width: 20vw;
+      width: 25%;
+      min-width: 100px;
     }
 
     &.level-small img {
-      width: 12vw;
+      width: 15%;
+      min-width: 70px;
     }
 
     &.level-smallest img {
-      width: 8vw;
+      width: 11%;
+      min-width: 50px;
     }
 
     img {
-      min-width: 100px;
-      margin: 2vw;
+      margin: 0rem;
     }
 
     & + .level {
-      border-top: 1px solid $green;
-      padding-top: 1.5rem;
-      margin-top: 1.5rem;
     }
   }
 }
