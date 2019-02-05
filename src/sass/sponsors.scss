@@ -32,27 +32,43 @@
     margin: 1rem auto;
 
     &.level-big img {
+      width: 100%;
+    }
+
+    &.level-big a {
       width: 70%;
       min-width: 250px;
       margin: -3rem 0;
     }
 
     &.level-medium img {
+      width: 100%;
+    }
+
+    &.level-medium a {
       width: 25%;
       min-width: 100px;
     }
 
     &.level-small img {
+      width: 100%;
+    }
+
+    &.level-small a {
       width: 15%;
       min-width: 70px;
     }
 
     &.level-smallest img {
+      width: 100%;
+    }
+
+    &.level-smallest a {
       width: 11%;
       min-width: 50px;
     }
 
-    img {
+    a {
       margin: 0rem;
     }
 
