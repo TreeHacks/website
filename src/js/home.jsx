@@ -1,6 +1,6 @@
 import React from 'react';
 import * as logo from '../svg/logo.svg';
-import {home} from './content.json';
+import { home, live_cutoff } from './content.json';
 import DeadlinesWidget from './deadlines-widget.jsx';
 
 class Home extends React.Component {
@@ -39,9 +39,17 @@ class Home extends React.Component {
           <Typewriter text={home[this.state.phrase]}/>
           <p> ) &#123;</p>
         </div>
+        {Date.now() > new Date(live_cutoff) ?
+          <div>
+            <a href="https://live.treehacks.com" className="green-button">view live schedule</a>
+          </div>
+        :
+          <div>
+            <a href="https://root.treehacks.com" className="green-button">apply now!</a>
+            <DeadlinesWidget />
+          </div>
+        }
         <div>
-          <a href="https://root.treehacks.com" className="green-button">apply now!</a>
-          <DeadlinesWidget />
         </div>
         <p>&#125;</p>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import * as logo from '../svg/logo.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { live_cutoff } from './content.json';
 
 function Navbar() {
   return(
@@ -19,7 +20,11 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
-          <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
+          {Date.now() > new Date(live_cutoff) ?
+            <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
+          :
+            <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
+          }
         </div>
       </ul>
     </nav>
