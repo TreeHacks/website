@@ -45,7 +45,7 @@ class Home extends React.Component {
           </div>
         :
           <div>
-            <a href="https://root.treehacks.com" className="green-button">apply now!</a>
+            <a href="https://root.treehacks.com" className="green-button">Stanford students register&nbsp;now!</a>
             <DeadlinesWidget />
           </div>
         }
