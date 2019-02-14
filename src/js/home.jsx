@@ -42,6 +42,7 @@ class Home extends React.Component {
         {Date.now() > new Date(live_cutoff) ?
           <div>
             <a href="https://live.treehacks.com" className="green-button">view live schedule</a>
+            <a href="https://root.treehacks.com" className="green-button subtle">go to dashboard</a>
           </div>
         :
           <div>

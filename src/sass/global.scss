@@ -64,12 +64,18 @@ $border-style: 2px solid;
   font-size: $base-font-size * 1.5;
   text-align: center;
   padding: 1vh 0;
-  width: 22.5vw;
-  transition: border $transition-speed, background-color $transition-speed, color $transition-speed;
+  width: 24vw;
+  transition: all $transition-speed;
+  box-sizing: border-box;
 
   &:hover {
+    transform: scale(1.05);
+  }
+
+  &.subtle {
+    background: transparent;
+    color: #fff;
+    font-size: $base-font-size * 1.1;
     border: $border-style $green;
-    background-color: inherit;
-    color: $green;
   }
 }

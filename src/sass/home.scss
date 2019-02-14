@@ -25,14 +25,17 @@
   }
 
   .green-button {
-    margin: 2.5vh auto;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 300px;
     padding-left: 1em;
     padding-right: 1em;
-  }
 
-  .deadlines-widget {
-    margin-bottom: 2.5vh;
+    &.subtle {
+      margin-top: 0.75rem;
+      margin-bottom: 2.5vh;
+    }
   }
 
   p {
