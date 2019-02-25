@@ -18,6 +18,11 @@
     font-size: $base-font-size * 1.4;
     font-family: $avenir-heavy;
     color: #A2A2A2;
+    max-width: 80vw;
+
+    &.ended {
+      font-style: italic;
+    }
 
     @media screen and (max-width: 750px) {
       text-align: center;

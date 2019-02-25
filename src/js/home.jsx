@@ -1,7 +1,8 @@
 import React from 'react';
 import * as logo from '../svg/logo.svg';
-import { home, live_cutoff } from './content.json';
+import { home, live_cutoff, ended_cutoff } from './content.json';
 import DeadlinesWidget from './deadlines-widget.jsx';
+import EmailSignupWidget from './email-signup-widget.jsx';
 
 class Home extends React.Component {
   constructor(props) {
@@ -26,6 +27,9 @@ class Home extends React.Component {
   }
 
   render() {
+    const hasEnded = Date.now() > new Date(ended_cutoff),
+      hasBegun = Date.now() > new Date(live_cutoff);
+
     return(
       <div id="home">
         <img src={logo} alt="treehacks large logo"/>
@@ -34,12 +38,17 @@ class Home extends React.Component {
           <span className="logo-text-hacks">hacks</span>
         </h1>
         <h2>February 15-17, 2019 at&nbsp;Stanford&nbsp;University</h2>
+        {hasEnded ? <h2 className="ended">Thanks for a great 2019 &ndash; stay&nbsp;tuned&nbsp;for&nbsp;2020!</h2> : null}
         <div id="typewriter-container">
           <p>if ( </p>
           <Typewriter text={home[this.state.phrase]}/>
           <p> ) &#123;</p>
         </div>
-        {Date.now() > new Date(live_cutoff) ?
+        {hasEnded ?
+          <div>
+            <EmailSignupWidget />
+          </div>
+        : hasBegun ?
           <div>
             <a href="https://live.treehacks.com" className="green-button">view live schedule</a>
             <a href="https://root.treehacks.com" className="green-button subtle">go to dashboard</a>
