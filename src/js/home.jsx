@@ -45,14 +45,9 @@ class Home extends React.Component {
           <p> ) &#123;</p>
         </div>
         {hasEnded ?
-          <React.Fragment>
-            <div>
-              <EmailSignupWidget />
-            </div>
-            <iframe title="TreeHacks 2019 Video" width="100%" height="315" src="https://www.youtube.com/embed/mSlJTPzSH6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style={{maxWidth: 560, marginBottom: 20}}
-            ></iframe>
-          </React.Fragment>
+          <div>
+            <EmailSignupWidget />
+          </div>
         : hasBegun ?
           <div>
             <a href="https://live.treehacks.com" className="green-button">view live schedule</a>
