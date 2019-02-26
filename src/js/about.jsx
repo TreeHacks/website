@@ -5,7 +5,7 @@ import {about_body} from './content.json';
 
 
 function About() {
-  let videoURL = "https://player.vimeo.com/video/256333276";
+  let videoURL = "https://www.youtube.com/embed/mSlJTPzSH6g";
   return(
     <div id="about">
       <h1 className="section-heading">About</h1>
