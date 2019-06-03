@@ -41,7 +41,7 @@ class Home extends React.Component {
         {hasEnded ? <h2 className="ended">Thanks for a great 2019 &ndash; stay&nbsp;tuned&nbsp;for&nbsp;2020!</h2> : null}
         <div id="typewriter-container">
           <p>if ( </p>
-          {/* <Typewriter text={home[this.state.phrase]}/> */}
+          <Typewriter text={home[this.state.phrase]}/>
           <p> ) &#123;</p>
         </div>
         {hasEnded ?
