@@ -1,5 +1,5 @@
 import React from 'react';
-import * as circuit from '../svg/circuit.svg';
+import circuit from '../svg/circuit.svg';
 
 class Circuit extends React.Component {
   render() {
