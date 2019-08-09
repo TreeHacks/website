@@ -1,5 +1,5 @@
 import React from 'react';
-import * as logo from '../svg/logo.svg';
+import logo from '../svg/logo.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ended_cutoff, live_cutoff } from './content.json';
 

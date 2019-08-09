@@ -1,5 +1,5 @@
 import React from 'react';
-import * as logo from '../svg/logo.svg';
+import logo from '../svg/logo.svg';
 import { home, live_cutoff, ended_cutoff } from './content.json';
 import DeadlinesWidget from './deadlines-widget.jsx';
 import EmailSignupWidget from './email-signup-widget.jsx';
@@ -29,7 +29,7 @@ class Home extends React.Component {
   render() {
     const hasEnded = Date.now() > new Date(ended_cutoff),
       hasBegun = Date.now() > new Date(live_cutoff);
-
+    
     return(
       <div id="home">
         <img src={logo} alt="treehacks large logo"/>
