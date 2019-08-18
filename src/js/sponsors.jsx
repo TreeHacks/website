@@ -61,7 +61,7 @@ function Sponsors() {
       {_makeSponsors('medium')}
       {_makeSponsors('small')}
       {_makeSponsors('smallest')}
-      <a href="mailto:hello@treehacks.com?Subject=Sponsorship%20Interest" className="green-button">become a sponsor!</a>
+      <a href="mailto:hello@treehacks.com?Subject=Sponsorship%20Interest" className="pink-button">become a sponsor!</a>
     </div>
   );
 }
