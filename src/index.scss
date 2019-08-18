@@ -1,8 +1,8 @@
 @import "sass/global";
 
 body {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: $dark-gray;
+  color: white;
   font-family: $avenir;
   font-size: $base-font-size;
 }
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $text-color;
+  color: white;
   text-decoration: none;
 
   &:hover {
@@ -39,7 +39,11 @@ a {
 }
 
 @import "sass/navbar";
+@import "sass/circuit";
+@import "sass/green-line";
 @import "sass/home";
+@import "sass/deadlines-widget";
+@import "sass/email-signup-widget";
 @import "sass/verticals";
 @import "sass/about";
 @import "sass/projects";

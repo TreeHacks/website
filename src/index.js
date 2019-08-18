@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './js/navbar.jsx';
+import Circuit from './js/circuit.jsx';
 import Home from './js/home.jsx';
 import Verticals from './js/verticals.jsx';
 import About from './js/about.jsx';
@@ -17,6 +18,7 @@ function Main() {
   return (
     <div>
       <Navbar />
+      <Circuit />
       <Home />
       <Verticals />
       <About />

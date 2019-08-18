@@ -9,9 +9,10 @@ $navbar-padding: 8px;
   top: 0;
   z-index: 101;
 
-  background-color: $background-color;
+  background-color: $dark-gray;
   height: 80px;
   width: 100vw;
+  border-bottom: 3px solid $light-gray;
 
   .container {
     @include flex(row nowrap, flex-end, center);
@@ -45,9 +46,11 @@ $navbar-padding: 8px;
   margin: 0 $navbar-margin;
   padding: $navbar-padding 0;
   font-size: $navbar-font-size;
+  border-bottom: $border-style $dark-gray;
+  transition: border-bottom $transition-speed;
 
-  &:hover a {
-    color: $pink;
+  &:hover {
+    border-bottom: $border-style $green;
   }
 }
 
@@ -55,6 +58,8 @@ $navbar-padding: 8px;
   margin-left: $navbar-margin;
   padding: $navbar-padding $navbar-margin*1.5;
   font-size: $navbar-font-size;
+  border: $border-style $green;
+  border-radius: 5px;
   font-family: $avenir-heavy;
   transition: background-color $transition-speed;
 

@@ -4,12 +4,6 @@ $light-gray: #696E76;
 $green: #00E174;
 $white: #FFFFFF;
 
-$background-color: white;
-$text-color: black;
-$blue: #A7DDE8;
-$pink: #EE3670;
-$orange: #ECAB4B;
-
 /* Font Styles */
 @font-face {
   font-family: "Avenir";
@@ -60,11 +54,11 @@ $border-style: 2px solid;
   text-transform: uppercase;
 }
 
-.pink-button {
+.green-button {
   display: block;
   border: $border-style #00000000;
   border-radius: .75vh;
-  background-color: $pink;
+  background-color: $green;
   color: white;
   font-family: $avenir-heavy;
   font-size: $base-font-size * 1.5;
