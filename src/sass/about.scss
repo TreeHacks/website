@@ -3,24 +3,15 @@
 
   .section-heading {
     margin-bottom: $small-space;
-
-    @media screen and (max-width: 750px) {
-      text-align: center;
-      margin-left: 0px;
-    }
   }
 
   .container {
-    @include flex(row nowrap, space-between, center);
     margin: 0 $large-space;
 
-    div:first-child {
-      flex: 0 0 40%;
-    }
-
     div:last-child {
-      flex: 0 0 55%;
+      margin: auto;
       height: 26.3vw;
+      width: 50vw;
     }
   }
 }
@@ -32,18 +23,5 @@
 
 #body {
   font-size: $medium-font-size;
-}
-
-@media screen and (max-width: 1023px) {
-  body #about {
-    .container {
-      @include flex(column-reverse nowrap, flex-start, center);
-
-      div:last-child {
-        width: 100%;
-        height: 35.75vh;
-        margin-bottom: $small-space;
-      }
-    }
-  }
+  margin-bottom: 100px;
 }

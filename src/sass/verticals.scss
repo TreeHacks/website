@@ -13,7 +13,6 @@
 }
 
 .vertical {
-  background-color: $light-gray;
   width: (90vw - 4 * $small-space) / 3;
   padding: $small-space;
   @include flex(column nowrap, flex-start, center);

@@ -1,6 +1,5 @@
 #projects.container {
   @include flex(column nowrap, flex-start, center);
-  background-color: $light-gray;
   margin: 0 $small-space;
 
   .section-heading {

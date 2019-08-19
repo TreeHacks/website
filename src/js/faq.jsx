@@ -5,7 +5,7 @@ class FAQ extends React.Component {
   render() {
     return(
       <div id="faq">
-        <h1 className="section-heading">Frequently Asked Questions</h1>
+        <h1 className="section-heading">Any Questions?</h1>
         <hr className="vertical-line-1" />
         <hr className="horizontal-line" />
         <div className="container">

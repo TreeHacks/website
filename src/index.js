@@ -18,8 +18,8 @@ function Main() {
     <div>
       <Navbar />
       <Home />
-      <Verticals />
       <About />
+      <Verticals />
       <Projects />
       <FAQ />
       <Sponsors />
