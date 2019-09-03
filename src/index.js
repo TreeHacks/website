@@ -52,20 +52,18 @@ function App() {
   return (
     <Router>
       <Switch>
-        <CustomRedirect
+        {/* <CustomRedirect
           from="/slack"
           to="https://join.slack.com/t/treehacks-2019/shared_invite/enQtNTE5ODY0MDI2NjQ3LWI2YjhlYTU3OTE1ODcyMTdmZWYzYWVjY2NjNzQ2YTBiZDY5YWYwYzhkMDhlZTBmNmNmMzMzZWYxM2QwMTMxMmI"
         />
         <CustomRedirect
           from="/volunteer"
           to="https://goo.gl/forms/pZURr2kMSKwuFar42"
-        />
-        {/* 
-        ****For when team applications are open****
+        /> */}
         <CustomRedirect
           from="/join"
           to="https://treehacks.typeform.com/to/rK08ej"
-        /> */}
+        />
         <Route exact path="/" component={Main} />
         <Redirect to="/" />
       </Switch>
