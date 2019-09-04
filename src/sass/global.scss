@@ -7,8 +7,8 @@ $white: #FFFFFF;
 $background-color: white;
 $text-color: black;
 $blue: #A7DDE8;
-$pink: #EE3670;
-$orange: #ECAB4B;
+$pink: #E51B5D;
+$orange: #F46E20;
 
 /* Font Styles */
 @font-face {
@@ -30,7 +30,7 @@ $avenir: 'Avenir', sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size + 2;
-$heading-font-size: $base-font-size * 1.8;
+$heading-font-size: $base-font-size * 3;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -56,23 +56,21 @@ $border-style: 2px solid;
 
 .section-heading {
   font-size: $heading-font-size;
-  margin-left: $large-space;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.pink-button {
-  display: block;
+.apply-button {
   border: $border-style #00000000;
-  border-radius: .75vh;
-  background-color: $pink;
-  color: white;
-  font-family: $avenir-heavy;
-  font-size: $base-font-size * 1.5;
-  text-align: center;
-  padding: 1vh 0;
-  width: 24vw;
-  transition: all $transition-speed;
   box-sizing: border-box;
+  background-color: $orange;
+  color: white;
+  display: block;
+  font-family: $avenir-heavy;
+  font-size: $base-font-size * 1.75;
+  padding: 1vh 0;
+  text-align: center;
+  transition: all $transition-speed;
 
   &:hover {
     transform: scale(1.05);
