@@ -1,5 +1,5 @@
 import React from 'react';
-import treehacks_text from '../svg/treehacks_text.svg'
+import treehacks_text from '../svg/treehacks-text.svg'
 import down_arrow from '../svg/sort-down-solid.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
