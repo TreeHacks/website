@@ -1,7 +1,7 @@
 {
-  "name": "website-2019",
+  "name": "website",
   "version": "1.0.0",
-  "description": "TreeHacks 2019 website",
+  "description": "TreeHacks website",
   "private": true,
   "dependencies": {
     "force-ssl-heroku": "^1.0.2",
