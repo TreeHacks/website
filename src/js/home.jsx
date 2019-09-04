@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
 import treehacks_text from '../svg/treehacks_text.svg'
+import down_arrow from '../svg/sort-down-solid.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Home extends React.Component {
   constructor(props) {
@@ -35,39 +36,11 @@ class Home extends React.Component {
         <div>
           <a href="https://live.treehacks.com" className="apply-button">apply here</a>
         </div>
+        <AnchorLink offset='100' href="#about">
+          <img id="down-arrow" src={down_arrow} alt=""/>
+        </AnchorLink>
       </div>
     );
-  }
-}
-
-class Typewriter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      class: "",
-      text: props.text
-    }
-  }
-
-  componentDidMount() {
-    this.timer = setTimeout(() => {
-      this.setState({class: " show"});
-      clearTimeout(this.timer);
-    }, 2500);
-  }
-
-  componentDidUpdate(prevProps, type) {
-    if (this.props.text !== prevProps.text) {
-      this.setState({class: ""});
-      this.timer = setTimeout(() => {
-        this.setState({class: " show", text: this.props.text});
-        clearTimeout(this.timer);
-      }, 2500);
-    }
-  }
-
-  render() {
-    return <p className={"typewriter" + this.state.class}>{this.state.text}</p>;
   }
 }
 
