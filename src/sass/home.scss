@@ -34,12 +34,20 @@
     }
   }
 
-  .apply-button {
+  #pink-box {
+    background-color: $pink;
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .apply-button {
     padding-left: 1em;
     padding-right: 1em;
+    margin: 10px 10px 10px 10px;
   }
 
   p {
@@ -47,22 +55,3 @@
   }
 }
 
-#typewriter-container {
-  @include flex(row nowrap, center, center);
-  margin-top: 4.5vh;
-  white-space: nowrap;
-
-  .typewriter {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    margin: 0 10px;
-    border-right: 2px solid white;
-    transition: width 1.5s;
-
-    &.show {
-      width: 100%;
-    }
-  }
-}

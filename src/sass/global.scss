@@ -72,10 +72,6 @@ $border-style: 2px solid;
   text-align: center;
   transition: all $transition-speed;
 
-  &:hover {
-    transform: scale(1.05);
-  }
-
   &.subtle {
     background: transparent;
     color: #fff;

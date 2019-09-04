@@ -1,0 +1,10 @@
+#countdown {
+  margin: $large-space 0;
+  .container {
+    margin: 0 $large-space/2;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+}
