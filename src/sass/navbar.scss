@@ -2,7 +2,7 @@ $navbar-logo-font-size: 36px;
 $navbar-logo-image-height: 40px;
 $navbar-font-size: $base-font-size * 1.18;
 $navbar-margin: 1.25vw;
-$navbar-padding: 8px;
+$navbar-horizontal-padding: 15px;
 
 #navbar {
   position: fixed;
@@ -14,7 +14,7 @@ $navbar-padding: 8px;
   width: 100vw;
 
   .container {
-    @include flex(row nowrap, flex-end, center);
+    @include flex(row nowrap, center, center);
     display: flex;
     height: 100%;
     width: 100%;
@@ -24,8 +24,8 @@ $navbar-padding: 8px;
 }
 
 #navbar-logo {
-  flex: 1 0 auto;
   font-size: $navbar-logo-font-size;
+  padding: 0 30px 0 30px;
 
   a {
     @include flex(row nowrap, flex-start, center);
@@ -33,17 +33,16 @@ $navbar-padding: 8px;
 
   img {
     height: $navbar-logo-image-height;
-    margin-right: 10px;
   }
 }
 
-#mobile-menu {
+.mobile-menu {
   @include flex(row nowrap, center, center);
 }
 
 .navbar-item {
   margin: 0 $navbar-margin;
-  padding: $navbar-padding 0;
+  padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
   font-size: $navbar-font-size;
 
   &:hover a {
@@ -51,9 +50,14 @@ $navbar-padding: 8px;
   }
 }
 
+.special-link {
+  color: $orange;
+  background-color: $orange;
+}
+
 #navbar-apply {
   margin-left: $navbar-margin;
-  padding: $navbar-padding $navbar-margin*1.5;
+  padding: $navbar-horizontal-padding $navbar-margin*1.5;
   font-size: $navbar-font-size;
   font-family: $avenir-heavy;
   transition: background-color $transition-speed;
@@ -65,7 +69,7 @@ $navbar-padding: 8px;
 
 @media screen and (max-width: 1023px) {
   body {
-    #mobile-menu {
+    .mobile-menu {
       display: none;
     }
   }

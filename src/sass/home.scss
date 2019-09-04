@@ -6,7 +6,7 @@
   padding-top: 33vh;
 
   img {
-    height: 17.5vh;
+    height: 35vh;
   }
 
   h1 {
@@ -29,18 +29,12 @@
     }
   }
 
-  .pink-button {
-    margin-top: 2.5vh;
+  .apply-button {
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    min-width: 300px;
     padding-left: 1em;
     padding-right: 1em;
-
-    &.subtle {
-      margin-top: 0.75rem;
-      margin-bottom: 2.5vh;
-    }
   }
 
   p {

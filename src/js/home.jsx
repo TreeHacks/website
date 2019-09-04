@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../svg/logo.svg';
+import treehacks_text from '../svg/treehacks_text.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
 
 class Home extends React.Component {
@@ -30,14 +31,9 @@ class Home extends React.Component {
 
     return(
       <div id="home">
-        <img src={logo} alt="treehacks large logo"/>
-        <h1>
-          <span className="logo-text-tree">tree</span>
-          <span className="logo-text-hacks">hacks</span>
-        </h1>
-        <h2>February 15-17 at&nbsp;Stanford&nbsp;University</h2>
+        <img src={treehacks_text} alt="treehacks large text"/>
         <div>
-          <a href="https://live.treehacks.com" className="pink-button">apply here</a>
+          <a href="https://live.treehacks.com" className="apply-button">apply here</a>
         </div>
       </div>
     );
