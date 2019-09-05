@@ -1,6 +1,7 @@
 {
   "ended_cutoff": "2019-02-18T08:00:00.000Z",
   "live_cutoff": "2019-02-14T08:00:00.000Z",
+  "hackathon_date": "2020-02-15",
   "home": [
     "you love to learn",
     "you want to dance with the Stanford band",
@@ -13,26 +14,23 @@
   ],
   "deadlines": [
     {
-      "label": "out-of-state",
-      "date": "2018-11-20T07:59:00.000Z",
-      "display_date": "November 19, 2018"
+      "title": "In state deadline",
+      "date": "2019-12-15"
     },
     {
-      "label": "in-state",
-      "date": "2018-11-27T07:59:00.000Z",
-      "display_date": "November 26, 2018"
+      "title": "Out of state deadline",
+      "date": "2019-12-22"
     },
     {
-      "label": "Stanford student",
-      "date": "2019-02-14T07:59:00.000Z",
-      "display_date": "February 13, 2019"
+      "title": "Stanford deadline",
+      "date": "2020-01-03"
     }
   ],
   "verticals": [
     {
       "name": "safety",
       "logo": "images/projects/safety-vert-img.png",
-      "description": "A core hope of technology is improving personal and public safety for all. From helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve."
+      "description": "a core hope of technology is improving personal and public safety for all. from helping recovery operations for natural disasters to rethinking transportation to developing precautions for school shootings, safety offers a breadth of critical, timely problems to solve."
     },
     {
       "name": "health",

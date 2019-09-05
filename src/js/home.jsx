@@ -1,6 +1,7 @@
 import React from 'react';
-import treehacks_text from '../svg/treehacks_text.svg'
+import treehacks_text from '../svg/treehacks-text.svg'
 import down_arrow from '../svg/sort-down-solid.svg'
+import arm2l from '../svg/arm2l.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -40,10 +41,11 @@ class Home extends React.Component {
     return(
       <div id="home">
         <img src={treehacks_text} alt="treehacks large text"/>
+        <img id="arm" src={arm2l} alt=""/>
         <div id="pink-box">
           <a href="https://live.treehacks.com" className="apply-button">apply here</a>
         </div>
-        <AnchorLink offset='100' href="#about">
+        <AnchorLink offset='100' href="#countdown">
           <img id="down-arrow" src={down_arrow} alt=""/>
         </AnchorLink>
       </div>
