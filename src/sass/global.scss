@@ -31,6 +31,7 @@ $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size + 2;
 $heading-font-size: $base-font-size * 3;
+$subheading-font-size: $base-font-size * 1.5;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -54,10 +55,17 @@ $border-style: 2px solid;
   font-family: $avenir-heavy;
 }
 
-.section-heading {
+h1.section-heading {
   font-size: $heading-font-size;
   text-transform: uppercase;
   text-align: center;
+}
+
+h2.section-subheading {
+  font-size: $subheading-font-size;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
 
 .apply-button {
