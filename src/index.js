@@ -9,6 +9,7 @@ import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
 import Footer from "./js/footer.jsx";
+import Team from "./js/team.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -31,6 +32,7 @@ function Main() {
       <FAQ />
       <Sponsors />
       <Footer />
+      {/* <Team /> */}
     </div>
   );
 }
