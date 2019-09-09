@@ -3,7 +3,7 @@
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: $avenir;
+  font-family: $base-font-family;
   font-size: $base-font-size;
 }
 
@@ -25,8 +25,13 @@ button {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $avenir-heavy;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $heavy-font-weight;
 }
 
 a {
@@ -47,3 +52,4 @@ a {
 @import "sass/faq";
 @import "sass/sponsors";
 @import "sass/footer";
+@import "sass/team";
