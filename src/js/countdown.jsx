@@ -31,7 +31,7 @@ class Deadlines extends React.Component {
 
 class SingleDeadline extends React.Component {
   render() {
-    var hackathonDate = new Date(hackathon_date);
+    var currentDate = new Date();
     var deadlineDate = new Date(this.props.date)
     var deadlineDay = deadlineDate.getUTCDate()
     var deadlineMonth = deadlineDate.getUTCMonth()
@@ -45,7 +45,7 @@ class SingleDeadline extends React.Component {
       <div className="single-deadline">
         <p>{this.props.title}</p>
         <p><b>{monthNames[deadlineMonth]} {deadlineDay + dayEndings[deadlineDay.toString().split("").pop()]}</b></p>
-        <h1>{(hackathonDate - deadlineDate) / (1000 * 60 * 60 * 24)}</h1>
+        <h1>{Math.round((deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
         <p className="subtext">days left to apply</p>
       </div>
     )
