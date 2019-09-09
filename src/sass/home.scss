@@ -44,18 +44,14 @@
     }
   }
 
-  #pink-box {
+  .apply-button {
     background-color: $pink;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0.5vh 2vw 0.5vh 2vw;
+    margin: 10px;
+    border-radius: 2px;
     &:hover {
       transform: scale(1.05);
     }
-  }
-
-  .apply-button {
-    padding: 0.5vh 2vw 0.5vh 2vw;
-    margin: 10px;
   }
 
   p {
