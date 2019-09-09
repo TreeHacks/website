@@ -9,6 +9,7 @@
 
   .section-subheading {
     margin-bottom: 25px;
+    cursor: pointer;
   }
 
   .faq-question, .faq-answer {
@@ -22,6 +23,8 @@
   .faq-answer {
     margin-bottom: 15px;
     color: $light-gray;
+    transition: max-height .5s ease-in-out;
+    overflow: hidden;
   }
 
   .faq-container {
