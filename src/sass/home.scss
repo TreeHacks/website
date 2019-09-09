@@ -1,7 +1,7 @@
 #home {
   @include flex(column nowrap, flex-start, center);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   min-height: calc(500px + 45vh);
   padding-top: 30vh;
 
