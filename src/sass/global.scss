@@ -17,7 +17,7 @@ $orange: #F46E20;
 }
 
 @font-face {
-  font-family: "Avenir Heavy";
+  font-family: proxima-nova, sans-serif;
   src: url('fonts/AvenirLTStd-Heavy.otf');
 }
 
@@ -26,7 +26,7 @@ $orange: #F46E20;
   src: url('fonts/AvenirLTStd-Black.otf');
 }
 
-$avenir: 'Avenir', sans-serif;
+$avenir: proxima-nova, sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size + 2;
