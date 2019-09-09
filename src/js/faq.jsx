@@ -26,7 +26,7 @@ class FAQ extends React.Component {
       <div id="faq">
         <h1 className="section-heading">Any Questions?</h1>
         <div className="faq-container">
-          {faq.map(({ q, a }, i) => <div className="faq-item" key={q + a}>
+          {faq.map(({ q, a, link, textBefore, textIn, textAfter }, i) => <div className="faq-item" key={q + a}>
             <h2
               className="section-subheading faq-question"
               onClick={e => this.setState({ selected: { ...this.state.selected, [String(i)]: !this.state.selected[String(i)] } })}>
@@ -35,7 +35,11 @@ class FAQ extends React.Component {
             </h2>
             <p className="faq-answer"
               style={{ maxHeight: this.state.selected[String(i)] ? 9999 : 0 }}
-            >{a}</p>
+            >
+              {link ?
+                <>{textBefore}<a href={link}>{textIn}</a>{textAfter}</>
+              : a}
+            </p>
           </div>)}
         </div>
       </div>
