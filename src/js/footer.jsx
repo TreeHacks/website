@@ -9,6 +9,7 @@ import githubIcon from '../png/githubIcon.png';
 function Footer() {
   return(
     <footer id="footer">
+        <div id="footerImg"></div>
         <a className="footer-item" href="mailto:hello@treehacks.com">
           <img src={emailIcon} alt="email"/>
         </a>

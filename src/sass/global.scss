@@ -11,26 +11,13 @@ $pink: #E51B5D;
 $orange: #F46E20;
 
 /* Font Styles */
-@font-face {
-  font-family: "Avenir";
-  src: url('fonts/AvenirLTStd-Roman.otf');
-}
 
-@font-face {
-  font-family: proxima-nova, sans-serif;
-  src: url('fonts/AvenirLTStd-Heavy.otf');
-}
-
-@font-face {
-  font-family: "Avenir Black";
-  src: url('fonts/AvenirLTStd-Black.otf');
-}
-
-$avenir: proxima-nova, sans-serif;
-$avenir-heavy: 'Avenir Heavy', sans-serif;
+$base-font-family: proxima-nova, sans-serif;
 $base-font-size: 16px;
+$heavy-font-weight: 700;
 $medium-font-size: $base-font-size + 2;
 $heading-font-size: $base-font-size * 3;
+$subheading-font-size: $base-font-size * 1.5;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -47,17 +34,25 @@ $border-style: 2px solid;
 }
 
 .logo-text-tree {
-  font-family: $avenir;
+  font-family: $base-font-family;
 }
 
 .logo-text-hacks {
-  font-family: $avenir-heavy;
+  font-family: $base-font-family;
+  font-weight: $heavy-font-weight;
 }
 
-.section-heading {
+h1.section-heading {
   font-size: $heading-font-size;
   text-transform: uppercase;
   text-align: center;
+}
+
+h2.section-subheading {
+  font-size: $subheading-font-size;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
 
 .apply-button {
@@ -66,7 +61,7 @@ $border-style: 2px solid;
   background-color: $orange;
   color: white;
   display: block;
-  font-family: $avenir-heavy;
+  font-weight: $heavy-font-weight;
   font-size: $base-font-size * 1.75;
   padding: 1vh 0;
   text-align: center;

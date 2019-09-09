@@ -62,7 +62,7 @@ $navbar-horizontal-padding: 15px;
   margin-left: $navbar-margin;
   padding: $navbar-horizontal-padding $navbar-margin*1.5;
   font-size: $navbar-font-size;
-  font-family: $avenir-heavy;
+  font-weight: $heavy-font-weight;
   transition: background-color $transition-speed;
 
   &:hover {
