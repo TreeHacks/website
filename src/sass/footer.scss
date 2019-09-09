@@ -1,6 +1,16 @@
 #footer {
   position: relative;
   text-align: center;
+
+  #footerImg {
+    width: 100%;
+    background-image: url("svg/main-quad.svg");
+    background-size: cover;
+    background-position-x: center;
+    height: 23.87vw; // h/w ratio of image * 100%
+    margin-bottom: 40px;
+    opacity: .6;
+  }
 }
 
 .footer-item {
