@@ -3,7 +3,7 @@
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: $avenir;
+  font-family: $base-font-family;
   font-size: $base-font-size;
 }
 
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $avenir-heavy;
+  font-weight: $heavy-font-weight;
 }
 
 a {
