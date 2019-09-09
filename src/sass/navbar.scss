@@ -45,14 +45,17 @@ $navbar-horizontal-padding: 15px;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
   font-size: $navbar-font-size;
 
+  a {
+    color: $light-gray;
+  }
+
   &:hover a {
     color: $pink;
   }
 }
 
-.special-link {
+.special-link a {
   color: $orange;
-  background-color: $orange;
 }
 
 #navbar-apply {

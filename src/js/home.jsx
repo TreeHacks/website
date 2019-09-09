@@ -42,9 +42,7 @@ class Home extends React.Component {
       <div id="home">
         <img src={treehacks_text} alt="treehacks large text"/>
         <img id="arm" src={arm2l} alt=""/>
-        <div id="pink-box">
-          <a href="https://live.treehacks.com" className="apply-button">apply here</a>
-        </div>
+        <a href="https://live.treehacks.com" className="apply-button">apply here</a>
         <AnchorLink offset='100' href="#countdown">
           <img id="down-arrow" src={down_arrow} alt=""/>
         </AnchorLink>
