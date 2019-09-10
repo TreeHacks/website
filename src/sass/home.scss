@@ -6,7 +6,14 @@
   padding-top: 25vh;
 
   img {
-    height: 35vh;
+    max-height: 35vh;
+    max-width: 80vw;
+  }
+  @media screen and (max-width: 450px) {
+    padding-top: 20vh;
+    img {
+      margin-bottom: 25px;
+    }
   }
 
   a {
