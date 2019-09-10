@@ -45,7 +45,10 @@ class GridItem extends React.Component {
       textClass = "text";
     }
     return(
-      <div className="grid-item" style={{backgroundColor: this.props.color}} onMouseOver={() => this.mouseOver()} onMouseOut={() => this.mouseOut()}>
+      <div key={this.props.title} className="grid-item"
+           style={{backgroundColor: this.props.color}}
+           onMouseOver={() => this.mouseOver()}
+           onMouseOut={() => this.mouseOut()}>
         <p className={textClass}>{label}</p>
       </div>
     );
