@@ -27,7 +27,7 @@ function Main() {
       <Home />
       <Countdown />
       <About />
-      <Verticals />
+      {/*<Verticals />*/}
       <Projects />
       <FAQ />
       <Sponsors />
