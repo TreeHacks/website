@@ -4,6 +4,14 @@ import down_arrow from '../svg/sort-down-solid.svg'
 import arm2l from '../svg/arm2l.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import EmailSignupWidget from "./email-signup-widget.jsx";
+
+const STATUSES = {
+  beforeRegistration: 1,
+  registration: 2
+}
+
+const STATUS = STATUSES.beforeRegistration;
 
 class Home extends React.Component {
   constructor(props) {
@@ -43,7 +51,12 @@ class Home extends React.Component {
         <img src={treehacks_text} alt="treehacks large text"/>
         <img id="arm" src={arm2l} alt=""/>
         <div id="date-text">February 15-17 at Stanford University</div>
-        <a href="https://live.treehacks.com" className="apply-button">apply here</a>
+        {STATUS === STATUSES.registration && 
+          <a href="https://live.treehacks.com" className="apply-button">apply here</a>
+        }
+        {STATUS === STATUSES.beforeRegistration &&
+          <EmailSignupWidget />
+        }
         <AnchorLink offset='100' href="#countdown">
           <img id="down-arrow" src={down_arrow} alt=""/>
         </AnchorLink>
