@@ -1,5 +1,4 @@
 #projects.container {
-  @include flex(column nowrap, flex-start, center);
   margin: 0 $small-space;
 
   .section-heading {
@@ -12,6 +11,36 @@
     margin-top: 50px;
   }
 }
+
+#projects-grid {
+  @include flex(row wrap, center, center);
+}
+
+.grid-item {
+  width: 25vw;
+  height: 25vw;
+  margin: 2vw;
+  background-color: $light-gray;
+  color: white;
+  @include flex(column nowrap, center, center);
+
+  p {
+    margin: 0 0.5vw 0 0.5vw;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .text {
+    text-align: left;
+  }
+}
+
+
 
 .slider-container {
   @include flex(column nowrap, flex-start, center);
