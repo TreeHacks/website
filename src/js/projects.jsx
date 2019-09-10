@@ -5,59 +5,47 @@ function Projects() {
   return(
     <div id="projects" className="container">
       <h1 className="section-heading">Past Projects</h1>
-      <Slider />
+      <Grid />
     </div>
   );
 }
 
-class Slider extends React.Component {
+class Grid extends React.Component {
+  render() {
+    return (
+      <div id="projects-grid">
+        {projects.map(function (project, i){
+          return <GridItem title={project.title} text={project.description}/>;
+        })}
+      </div>
+    );
+  }
+}
+
+class GridItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      current: 1,
-    }
-    this.changeSlide = this.changeSlide.bind(this);
+    this.state = {hover: false};
   }
 
-  componentDidMount() {
-    this.interval = setInterval(() => this.changeSlide(1), 10000);
+  mouseOver() {
+    this.setState({hover: true});
   }
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
-  changeSlide(direction) {
-    clearInterval(this.interval);
-    this.interval = setInterval(() => this.changeSlide(1), 10000);
-    this.setState({current: this.state.current + direction});
+  mouseOut() {
+    this.setState({hover: false});
   }
 
   render() {
-    let length = projects.length;
-    let current = ((this.state.current % length) + length) % length;
-    let left = (current === 0) ? length - 1: current - 1;
-    let right = (current === length - 1) ? 0 : current + 1;
-    return (
-      <div className="slider-container">
-        <div id="slider">
-          <div
-            className="left"
-            style={{backgroundImage: 'url(' + projects[left].path + ')'}}
-            alt={projects[left].alt}
-            onClick={(e) => this.changeSlide(-1, e)}></div>
-          <div
-            className="current"
-            style={{backgroundImage: 'url(' + projects[current].path + ')'}}
-            alt={projects[current].alt}></div>
-          <div
-            className="right"
-            style={{backgroundImage: 'url(' + projects[right].path + ')'}}
-            alt={projects[right].alt}
-            onClick={(e) => this.changeSlide(1, e)}></div>
-        </div>
-        <h1><a href={projects[current].url} target={'_blank'}>{projects[current].title}</a></h1>
-        <p>{projects[current].description}</p>
+    var label = this.props.title;
+    var textClass = "title";
+    if (this.state.hover) {
+      label = this.props.text;
+      textClass = "text";
+    }
+    return(
+      <div className="grid-item" onMouseOver={() => this.mouseOver()} onMouseOut={() => this.mouseOut()}>
+        <p className={textClass}>{label}</p>
       </div>
     );
   }

@@ -57,10 +57,12 @@ function Sponsors() {
   return(
     <div id="sponsors" className="container">
       <h1 className="section-heading" id="sub-heading">sponsors</h1>
+      {/*
       {_makeSponsors('big')}
       {_makeSponsors('medium')}
       {_makeSponsors('small')}
       {_makeSponsors('smallest')}
+      */}
       <a href="mailto:hello@treehacks.com?Subject=Sponsorship%20Interest" className="apply-button">become a sponsor!</a>
     </div>
   );
