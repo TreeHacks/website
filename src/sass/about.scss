@@ -19,10 +19,12 @@
 
 #intro {
   margin-bottom: $small-space;
-  font-size: $medium-font-size + 4;
+  font-size: $medium-font-size;
+  text-align: center;
 }
 
 #body {
   font-size: $medium-font-size;
-  margin-bottom: 100px;
+  margin-bottom: $medium-space;
+  text-align: center;
 }
