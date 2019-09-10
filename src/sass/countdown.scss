@@ -3,15 +3,13 @@
   text-align: center;
 
   .container {
-    margin: 0 $large-space;
-
     @media screen and (max-width: 750px) {
       display: none;
     }
   }
 
   img {
-    margin-top: 10vw;
+    margin: 10vw 0 5vw 0;
     width: 35vw;
     transform: rotate(90deg);
   }
@@ -19,10 +17,10 @@
 
 #deadlines {
   @include flex(row nowrap, center, flex-end);
-  margin-top: 5vw;
 }
 
 .single-deadline {
+  color: $light-gray;
   margin: 0 5vw 0 5vw;
 
   h1 {

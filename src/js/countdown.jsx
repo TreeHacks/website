@@ -7,7 +7,6 @@ class Countdown extends React.Component {
   render() {
     return(
       <div id="countdown">
-        <h1 className="section-heading">February 15-17 at Stanford</h1>
         <div className="container">
           <Deadlines />
           <img src={hands_with_computer} alt="Hands with computer"/>
