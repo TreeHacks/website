@@ -11,6 +11,10 @@ function Navbar() {
           <li id="navbar-logo">
             <a href="/">
               <img src={logo} alt="treehacks small logo"/>
+              <div id="title">
+                <span className="logo-text-tree">tree</span>
+                <span className="logo-text-hacks">hacks</span>
+              </div>
             </a>
           </li>
           <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>

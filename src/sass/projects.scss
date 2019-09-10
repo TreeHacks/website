@@ -20,9 +20,12 @@
   width: 25vw;
   height: 25vw;
   margin: 2vw;
-  background-color: $light-gray;
   color: white;
   @include flex(column nowrap, center, center);
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+  }
 
   p {
     margin: 0 0.5vw 0 0.5vw;
@@ -33,65 +36,12 @@
     font-size: 2.5vw;
     text-align: center;
     text-transform: uppercase;
+    opacity: 1;
   }
 
   .text {
     text-align: left;
-  }
-}
-
-
-
-.slider-container {
-  @include flex(column nowrap, flex-start, center);
-  width: 100%;
-  h1, p {
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: $medium-space;
+    font-size: 1.5vw;
   }
 
-  h1:hover {
-    text-decoration: underline;
-    text-decoration-color: $green;
-  }
-}
-
-#slider {
-  @include flex(row nowrap, space-between, center);
-  width: 100%;
-  overflow-x: hidden;
-  margin-bottom: $medium-space;
-}
-
-.left, .right {
-  flex: 0 1 32vw;
-  height: 18vw;
-  opacity: .6;
-  transition: opacity $transition-speed, background-image $transition-speed*2;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 1;
-  }
-}
-
-.left {
-  background-position-x: 100%;
-}
-
-.right {
-  background-position-x: 0px;
-}
-
-.current {
-  flex: 1 0 40vw;
-  height: 22.5vw;
-  margin: 0 $large-space;
-  transition: background-image $transition-speed*2;
-}
-
-.left, .current, .right {
-  background-size: cover;
 }

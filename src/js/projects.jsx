@@ -12,10 +12,11 @@ function Projects() {
 
 class Grid extends React.Component {
   render() {
+    var colors = ["#A7DDE8", "#E51B5D", "#F46E20"]
     return (
       <div id="projects-grid">
-        {projects.map(function (project, i){
-          return <GridItem title={project.title} text={project.description}/>;
+        {projects.map(function (project){
+          return <GridItem color={colors[Math.round(Math.random() * 2)]} title={project.title} text={project.description}/>;
         })}
       </div>
     );
@@ -44,7 +45,10 @@ class GridItem extends React.Component {
       textClass = "text";
     }
     return(
-      <div className="grid-item" onMouseOver={() => this.mouseOver()} onMouseOut={() => this.mouseOut()}>
+      <div key={this.props.title} className="grid-item"
+           style={{backgroundColor: this.props.color}}
+           onMouseOver={() => this.mouseOver()}
+           onMouseOut={() => this.mouseOut()}>
         <p className={textClass}>{label}</p>
       </div>
     );
