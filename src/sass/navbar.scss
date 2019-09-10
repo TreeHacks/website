@@ -24,8 +24,9 @@ $navbar-horizontal-padding: 15px;
 }
 
 #navbar-logo {
+  margin-top: -0.5vh;
   font-size: $navbar-logo-font-size;
-  padding: 0 30px 0 30px;
+  padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
 
   a {
     @include flex(row nowrap, flex-start, center);
@@ -73,6 +74,11 @@ $navbar-horizontal-padding: 15px;
   &:hover {
     background-color: $green;
   }
+}
+
+#title {
+  color: $pink;
+  margin-left: 1vw;
 }
 
 @media screen and (max-width: 1023px) {
