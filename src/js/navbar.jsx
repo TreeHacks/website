@@ -19,6 +19,7 @@ function Navbar() {
           </li>
           <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
+          <li className="navbar-item"><AnchorLink offset='100' href="#projects">projects</AnchorLink></li>
           {/*<li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>*/}
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
