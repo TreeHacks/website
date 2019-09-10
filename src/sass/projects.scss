@@ -22,6 +22,10 @@
   margin: 2vw;
   color: white;
   @include flex(column nowrap, center, center);
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+  }
 
   p {
     margin: 0 0.5vw 0 0.5vw;
@@ -37,5 +41,7 @@
 
   .text {
     text-align: left;
+    font-size: 1.5vw;
   }
+
 }
