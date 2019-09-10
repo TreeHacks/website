@@ -1,9 +1,9 @@
 #home {
   @include flex(column nowrap, flex-start, center);
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   min-height: calc(500px + 45vh);
-  padding-top: 30vh;
+  padding-top: 25vh;
 
   img {
     height: 35vh;
@@ -13,7 +13,7 @@
     padding: 0;
 
     #down-arrow {
-      margin-top: 2vh;
+      padding-top: 3vh;
       height: 10vh;
     }
   }
@@ -56,6 +56,13 @@
 
   p {
     font-size: 25px;
+  }
+
+  #date-text {
+    color: $blue;
+    font-size: $subheading-font-size;
+    font-weight: bold;
+    padding-bottom: 1vh;
   }
 }
 
