@@ -6,18 +6,20 @@ import { ended_cutoff, live_cutoff } from './content.json';
 function Navbar() {
   return(
     <nav id="navbar">
-      <ul className="container">
-        <div className="mobile-menu">
-          <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
-          <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
-          <li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>
-        </div>
+      <div className="container">
+        <ul className="menu">
           <li id="navbar-logo">
             <a href="/">
               <img src={logo} alt="treehacks small logo"/>
+              <div id="title">
+                <span className="logo-text-tree">tree</span>
+                <span className="logo-text-hacks">hacks</span>
+              </div>
             </a>
           </li>
-        <div className="mobile-menu">
+          <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
+          <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
+          {/*<li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>*/}
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
           <li className="special-link navbar-item"><a href="https://root.treehacks.com">dashboard</a></li>
@@ -28,8 +30,8 @@ function Navbar() {
           :
             <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
           }
-        </div>
-      </ul>
+        </ul>
+      </div>
     </nav>
   );
 }
