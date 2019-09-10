@@ -8,16 +8,14 @@ function Navbar() {
     <nav id="navbar">
       <ul className="container">
         <div className="mobile-menu">
-          <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
-          <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
-          <li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>
-        </div>
           <li id="navbar-logo">
             <a href="/">
               <img src={logo} alt="treehacks small logo"/>
             </a>
           </li>
-        <div className="mobile-menu">
+          <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
+          <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
+          {/*<li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>*/}
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
           <li className="special-link navbar-item"><a href="https://root.treehacks.com">dashboard</a></li>
