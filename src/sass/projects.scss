@@ -1,8 +1,8 @@
 #projects.container {
-  margin: 0 $small-space;
+  margin: $large-space $small-space;
 
   .section-heading {
-    margin: $medium-space 0;
+    margin-bottom: $small-space;
   }
 
   @media screen and (max-width: 750px) {

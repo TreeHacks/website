@@ -1,7 +1,6 @@
 #sponsors.container {
   @include flex(column nowrap, flex-start, center);
   margin: $large-space $small-space;
-  padding: $medium-space 0;
 
   .section-heading {
     margin-bottom: $small-space;
