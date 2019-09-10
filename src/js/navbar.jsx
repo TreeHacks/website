@@ -6,8 +6,8 @@ import { ended_cutoff, live_cutoff } from './content.json';
 function Navbar() {
   return(
     <nav id="navbar">
-      <ul className="container">
-        <div className="mobile-menu">
+      <div className="container">
+        <ul className="menu">
           <li id="navbar-logo">
             <a href="/">
               <img src={logo} alt="treehacks small logo"/>
@@ -26,8 +26,8 @@ function Navbar() {
           :
             <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
           }
-        </div>
-      </ul>
+        </ul>
+      </div>
     </nav>
   );
 }

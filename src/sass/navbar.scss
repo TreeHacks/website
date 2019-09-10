@@ -36,12 +36,17 @@ $navbar-horizontal-padding: 15px;
   }
 }
 
-.mobile-menu {
-  @include flex(row nowrap, center, center);
+.menu {
+  list-style-type: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .navbar-item {
-  margin: 0 $navbar-margin;
+  margin: 10px $navbar-margin;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
   font-size: $navbar-font-size;
 
@@ -71,9 +76,7 @@ $navbar-horizontal-padding: 15px;
 }
 
 @media screen and (max-width: 1023px) {
-  body {
-    .mobile-menu {
-      display: none;
-    }
+  #navbar-logo {
+    display: none;
   }
 }
