@@ -9,7 +9,7 @@ export default () => {
             {/*<label htmlFor="mce-EMAIL">Enter your email to receive updates about TreeHacks 2020</label>*/}
             <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required />
             <div aria-hidden="true"><input type="text" name="b_e6ff5c7ae36357707280fa752_6ec8dfd393" tabIndex="-1" value="" /></div>
-            <div className="apply-button"><input type="submit" value="Update me about TreeHacks 2020" name="subscribe" className="apply-button" /></div>
+            <div className="clear"><input type="submit" value="Update me about TreeHacks 2020" name="subscribe" id="mc-embedded-subscribe" className="apply-button" /></div>
           </div>
         </form>
       </div>
