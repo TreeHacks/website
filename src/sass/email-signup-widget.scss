@@ -22,6 +22,14 @@
   #mce-EMAIL:focus {
     outline: 0;
   }
+  #mc-embedded-subscribe {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 80vw;
+    cursor: pointer;
+  }
 }
 
 ::placeholder {
