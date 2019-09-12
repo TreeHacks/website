@@ -1,7 +1,7 @@
 $navbar-logo-font-size: 36px;
 $navbar-logo-image-height: 40px;
 $navbar-font-size: $base-font-size * 1.18;
-$navbar-margin: 1.25vw;
+$navbar-margin: 0.5vw;
 $navbar-horizontal-padding: 15px;
 
 #navbar {
@@ -25,6 +25,7 @@ $navbar-horizontal-padding: 15px;
 
 #navbar-logo {
   margin-top: -0.5vh;
+  margin-right: $navbar-margin * 5;
   font-size: $navbar-logo-font-size;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
 

@@ -10,8 +10,8 @@ function About() {
       <h1 className="section-heading">About</h1>
       <div className="container">
         <div>
-          <p id="intro">{about_intro}</p>
-          <p id="body">{about_body}</p>
+          <p className="intro">{about_intro}</p>
+          <p className="body">{about_body}</p>
         </div>
         <div>
           <ReactPlayer url={videoURL} width="100%" height="100%" />
