@@ -83,6 +83,10 @@ $navbar-horizontal-padding: 15px;
 }
 
 @media screen and (max-width: 1023px) {
+  .navbar-item {
+    margin: $navbar-margin;
+  }
+
   #navbar-logo {
     display: none;
   }
