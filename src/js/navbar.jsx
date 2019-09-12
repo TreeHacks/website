@@ -23,7 +23,7 @@ function Navbar() {
           {/*<li className="navbar-item"><AnchorLink offset='100' href="#verticals">verticals</AnchorLink></li>*/}
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
-          <li className="special-link navbar-item"><a href="https://root.treehacks.com">dashboard</a></li>
+          {/*<li className="special-link navbar-item"><a href="https://root.treehacks.com">dashboard</a></li>*/}
           {Date.now() > new Date(ended_cutoff) ?
             null
           : Date.now() > new Date(live_cutoff) ?
