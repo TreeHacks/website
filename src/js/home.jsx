@@ -47,9 +47,9 @@ class Home extends React.Component {
 
     return(
       <div id="home">
-        <img src={treehacks_text} alt="treehacks large text"/>
-        <img id="arm" src={arm2l} alt=""/>
-        <div id="date-text">February 15-17 at Stanford University</div>
+        <img className="logo scale-in-center" src={treehacks_text} alt="treehacks large text"/>
+        <img className="slide-in-left" id="arm" src={arm2l} alt=""/>
+        <div id="date-text">February 14-16 at Stanford University</div>
         {STATUS === STATUSES.registration &&
           <a href="https://live.treehacks.com" className="apply-button">apply here</a>
         }
