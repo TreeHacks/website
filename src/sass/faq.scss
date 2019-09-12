@@ -1,5 +1,7 @@
 #faq {
   margin: $large-space $small-space;
+  max-width: $max-width;
+  margin: auto;
 
   .section-heading {
     margin-bottom: $small-space;

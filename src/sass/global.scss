@@ -11,7 +11,6 @@ $pink: #E51B5D;
 $orange: #F46E20;
 
 /* Font Styles */
-
 $base-font-family: proxima-nova, sans-serif;
 $base-font-size: 16px;
 $heavy-font-weight: 700;
@@ -25,6 +24,7 @@ $medium-space: 5vh;
 $large-space: 7.5vw;
 $transition-speed: .5s;
 $border-style: 2px solid;
+$max-width: 850px;
 
 @mixin flex($flex-flow, $justify, $align) {
   display: flex;

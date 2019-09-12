@@ -4,13 +4,19 @@
   }
 
   .container {
+    max-width: $max-width;
+    margin: 0 auto;
     color: $light-gray;
-    margin: 0 $large-space;
+    @media screen and (max-width: $max-width) {
+      margin: 0 $large-space;
+    }
 
     div:last-child {
       margin: auto;
       height: 39.5vw;
       width: 75vw;
+      max-width: $max-width;
+      max-height: $max-width * 39.5/75;
     }
   }
 }
