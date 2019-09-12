@@ -3,8 +3,10 @@
     margin-bottom: $small-space;
   }
 
+  $about-max-width: $max-width - 50px;
+
   .container {
-    max-width: $max-width;
+    max-width: $about-max-width;
     margin: 0 auto;
     color: $light-gray;
     @media screen and (max-width: $max-width) {
@@ -15,20 +17,21 @@
       margin: auto;
       height: 39.5vw;
       width: 75vw;
-      max-width: $max-width;
+      max-width: $about-max-width;
       max-height: $max-width * 39.5/75;
     }
   }
-}
 
-#intro {
-  margin-bottom: $small-space;
-  font-size: $medium-font-size;
-  text-align: center;
-}
+  .intro {
+    margin-bottom: $small-space;
+    font-size: $subheading-font-size;
+    text-align: center;
+    font-weight: $heavy-font-weight;
+  }
 
-#body {
-  font-size: $medium-font-size;
-  margin-bottom: $medium-space;
-  text-align: center;
+  .body {
+    font-size: $medium-font-size;
+    margin-bottom: $medium-space;
+    text-align: center;
+  }
 }
