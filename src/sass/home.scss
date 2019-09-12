@@ -18,6 +18,9 @@
 
   .logo {
     min-height: 35vh;
+    @media screen and (max-width: 750px) {
+      min-height: 20vh;
+    }
   }
 
   a {
