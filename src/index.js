@@ -9,7 +9,8 @@ import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
 import Footer from "./js/footer.jsx";
-import Team from "./js/team.jsx";
+import CodeOfConduct from "./js/codeofconduct.jsx";
+// import Team from "./js/team.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -37,6 +38,13 @@ function Main() {
   );
 }
 
+function COC() {
+  return (
+    <div>
+      <CodeOfConduct />
+    </div>
+  )
+}
 function CustomRedirect({ from, to }) {
   return (
     <Route
@@ -66,6 +74,7 @@ function App() {
           from="/join"
           to="https://treehacks.typeform.com/to/rK08ej"
         />
+        <Route exact path="/code-of-conduct" component={COC} />
         <Route exact path="/" component={Main} />
         <Redirect to="/" />
       </Switch>

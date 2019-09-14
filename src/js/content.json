@@ -108,11 +108,11 @@
       "a": "TreeHacks is free for all admitted hackers. We provide meals, caffeine, swag, workspace, and WiFi for the weekend; travel reimbursements & bussing is also be available for qualifying hackers. We're committed to making TreeHacks accessible!"
     },
     {
-      "link": "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+      "link": "code-of-conduct",
       "q": "What is the TreeHacks code of conduct?",
-      "textBefore": "We abide by the ",
-      "textIn": "MLH Code of Conduct",
-      "textAfter": ". Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome <3."
+      "textBefore": "TreeHacks abides by ",
+      "textIn": "this Code of Conduct",
+      "textAfter": ", adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome <3."
     },
     {
       "link": "mailto:support@treehacks.com",
