@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100vw;
   min-height: calc(500px + 45vh);
-  padding-top: 25vh;
+  padding-top: 20vh;
 
   img {
     max-height: 35vh;
@@ -17,7 +17,7 @@
   }
 
   .logo {
-    min-height: 35vh;
+    min-height: 45vh;
     @media screen and (max-width: 750px) {
       min-height: 20vh;
     }
