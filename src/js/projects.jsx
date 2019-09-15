@@ -13,10 +13,21 @@ function Projects() {
 class Grid extends React.Component {
   render() {
     var colors = ["#A7DDE8", "#E51B5D", "#F46E20"]
+    var colorsUsed = []
     return (
       <div id="projects-grid">
-        {projects.map(function (project){
-          return <GridItem color={colors[Math.round(Math.random() * 2)]} title={project.title} text={project.description}/>;
+        {projects.map(function (project, i){
+          var color = colors[Math.round(Math.random() * 2)];
+          if (!colorsUsed.includes(color)) {
+            colorsUsed.push(color);
+          }
+          if (i >= projects.length - 2) {
+            if (colorsUsed.length < 3) {
+              var colorsNeeded = colors.filter(function(i) {return colorsUsed.indexOf(i) < 0;});
+              color = colorsNeeded[0];
+            }
+          }
+          return <GridItem color={color} title={project.title} text={project.description}/>;
         })}
       </div>
     );

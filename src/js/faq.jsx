@@ -12,7 +12,7 @@ const plusList = [
 ]
 
 const FAQItem = ({ q, a, link, textBefore, textIn, textAfter, i }) => {
-  const { getCollapseProps, getToggleProps, isOpen } = useCollapse();
+  const { getCollapseProps, getToggleProps, isOpen } = useCollapse({expandStyles: {transitionDuration: '200ms'}, collapseStyles: {transitionDuration: '200ms'}});
   return (<div className="faq-item" key={q + a}>
     <h2
       className="section-subheading faq-question"
