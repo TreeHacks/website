@@ -2,7 +2,6 @@ import React from 'react';
 import treehacks_text from '../svg/treehacks-text.svg'
 import arm2l from '../svg/arm2l.svg'
 import { home, live_cutoff, ended_cutoff } from './content.json';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import EmailSignupWidget from "./email-signup-widget.jsx";
 
 const STATUSES = {

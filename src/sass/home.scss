@@ -1,39 +1,38 @@
 #home {
   @include flex(column nowrap, flex-start, center);
-  height: 100vh;
-  width: 100vw;
-  min-height: calc(500px + 45vh);
-  padding-top: 25vh;
+  @media screen and (min-width: 450px) {
+    height: 100vh;
+    width: 100vw;
+    min-height: calc(500px + 45vh);
+    padding-top: 20vh;
+  }
+  @media screen and (max-width: 450px) {
+    margin: $large-space 0;
+  }
 
   img {
     max-height: 35vh;
     max-width: 80vw;
   }
   @media screen and (max-width: 450px) {
-    padding-top: 20vh;
+    padding-top: 15vh;
     img {
       margin-bottom: 25px;
     }
   }
 
   .logo {
-    min-height: 35vh;
+    min-height: 45vh;
     @media screen and (max-width: 750px) {
       min-height: 20vh;
     }
   }
 
-  a {
-    padding: 0;
-
-    #down-arrow {
-      padding-top: 3vh;
-      height: 10vh;
-    }
-  }
-
   #arm {
     height: 14vh;
+    @media screen and (max-width: 450px) {
+      height: 7vh;
+    }
     margin-right: auto;
     margin-left: -1vw;
   }
