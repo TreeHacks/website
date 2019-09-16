@@ -45,10 +45,10 @@ class Home extends React.Component {
     const hasEnded = Date.now() > new Date(ended_cutoff),
       hasBegun = Date.now() > new Date(live_cutoff);
 
-    return(
+    return (
       <div id="home">
-        <img className="logo scale-in-center" src={treehacks_text} alt="treehacks large text"/>
-        <img className="slide-in-left" id="arm" src={arm2l} alt=""/>
+        <img className="logo scale-in-center" src={treehacks_text} alt="treehacks large text" />
+        <img className="slide-in-left" id="arm" src={arm2l} alt="" />
         <div id="date-text">February 14-16 at Stanford University</div>
         {STATUS === STATUSES.registration &&
           <a href="https://live.treehacks.com" className="apply-button">apply here</a>
