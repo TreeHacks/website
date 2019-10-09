@@ -1,6 +1,8 @@
 import React from 'react';
 import { projects } from './content.json';
 
+const PROJECT_INTERVAL = 2500;
+
 function Projects() {
   return (
     <div id="projects" className="container">
@@ -10,21 +12,42 @@ function Projects() {
   );
 }
 
-class Grid extends React.Component {
-  render() {
-    const colors = ["#A7DDE8", "#E51B5D", "#F46E20"]
+const colors = ["#A7DDE8", "#E51B5D", "#F46E20"];
 
-    var arr = []
+class Grid extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { arr: [] };
+  }
+
+  makeColors() {
+    var arr = [];
     while (arr.length < colors.length && arr.length != projects.length) {
       var r = Math.floor(Math.random() * projects.length);
       if (arr.indexOf(r) === -1) arr.push(r);
     }
+    this.setState({ arr });
+  }
 
+  componentWillMount() {
+    this.makeColors();
+  }
 
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      this.makeColors();
+    }, PROJECT_INTERVAL);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
     return (
       <div id="projects-grid">
         {projects.map((project, i) => {
-          const color = (arr.indexOf(i) !== -1) ? colors[arr.indexOf(i)] : colors[Math.round(Math.random() * 2)];
+          const color = (this.state.arr.indexOf(i) !== -1) ? colors[this.state.arr.indexOf(i)] : colors[Math.round(Math.random() * 2)];
           return <GridItem color={color} title={project.title} text={project.description} />;
         })}
       </div>
