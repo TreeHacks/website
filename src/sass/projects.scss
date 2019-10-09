@@ -12,6 +12,7 @@
 }
 
 .grid-item {
+  transition-duration: 0.5s;
   width: 28vw;
   height: 28vw;
   margin: 2vw;
@@ -24,7 +25,6 @@
   @include flex(column nowrap, center, center);
   &:hover {
     transform: scale(1.05);
-    transition-duration: 0.5s;
   }
 
   p {
