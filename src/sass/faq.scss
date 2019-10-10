@@ -1,7 +1,9 @@
 #faq {
+  position: relative;
   margin: $large-space $small-space;
-  max-width: $max-width;
+  width: 70vw;
   margin: auto;
+  font-size: 1.1rem;
 
   .section-heading {
     margin-bottom: $small-space;
@@ -9,13 +11,13 @@
 
   .faq-plus {
     margin-right: 20px;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
   }
 
   .section-subheading {
     margin-bottom: 25px;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   .faq-question, .faq-answer {
@@ -23,7 +25,9 @@
   }
 
   .faq-question {
+    display: flex;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .faq-answer {
@@ -34,7 +38,18 @@
   }
 
   .faq-container {
-    margin: 0 $large-space/2;
+    margin: -$small-space/1.25;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
+  .faq-item {
+    padding: $small-space/1.25;
+    flex-basis: 50%;
+
+    @media screen and (max-width: 1023px) {
+      flex-basis: 100%;
+    }
+  }
 }

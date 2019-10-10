@@ -6,8 +6,10 @@ const PROJECT_INTERVAL = 2500;
 function Projects() {
   return (
     <div id="projects" className="container">
+      <div className="stripe accent-blue"/>
       <h1 className="section-heading">Past Projects</h1>
       <Grid />
+      <div className="stripe-wrapper"><div className="stripe accent-pink"/></div>
     </div>
   );
 }
@@ -34,13 +36,13 @@ class Grid extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => {
-      this.makeColors();
-    }, PROJECT_INTERVAL);
+    // this.interval = setInterval(() => {
+    //   this.makeColors();
+    // }, PROJECT_INTERVAL);
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    // clearInterval(this.interval);
   }
 
   render() {

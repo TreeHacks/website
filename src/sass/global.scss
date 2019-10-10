@@ -24,7 +24,7 @@ $medium-space: 5vh;
 $large-space: 7.5vw;
 $transition-speed: .5s;
 $border-style: 2px solid;
-$max-width: 850px;
+$max-width: 960px;
 
 @mixin flex($flex-flow, $justify, $align) {
   display: flex;
@@ -46,7 +46,13 @@ h1.section-heading {
   font-size: $heading-font-size;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    padding: 3rem 0 1.5rem;
+    font-size: $heading-font-size * 0.75;
+  }
 }
+
 
 h2.section-subheading {
   font-size: $subheading-font-size;

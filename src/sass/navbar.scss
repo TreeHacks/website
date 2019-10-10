@@ -14,6 +14,8 @@ $navbar-horizontal-padding: 15px;
   height: 80px;
   width: 100vw;
 
+  box-shadow: 0 5px 30px -5px rgba(0,0,0,0.2);
+
   .container {
     @include flex(row nowrap, center, center);
     display: flex;
@@ -26,7 +28,7 @@ $navbar-horizontal-padding: 15px;
 
 #navbar-logo {
   margin-top: -0.5vh;
-  margin-right: $navbar-margin * 20;
+  margin-right: $navbar-margin * 50;
   font-size: $navbar-logo-font-size;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
 

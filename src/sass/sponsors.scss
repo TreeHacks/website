@@ -1,9 +1,11 @@
 #sponsors.container {
   @include flex(column nowrap, flex-start, center);
   margin: $large-space $small-space;
+  min-height: 300px;
 
   .section-heading {
     margin-bottom: $small-space;
+    padding-top: 100px;
   }
 
   #sub-heading {

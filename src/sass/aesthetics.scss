@@ -1,0 +1,117 @@
+body {
+  background-color: #e51c5e02 !important;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .stripe, .stripe-wrapper {
+    display: none;
+  }
+}
+
+
+.stripe {
+  background-image: radial-gradient(#b8b7b7 30%, #ffffff00 20%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  height: 200px;
+  width: 120vw;
+  transform: rotate(-5deg);
+  left: -50px;
+  position: absolute;
+  z-index: -1;
+  margin-top: -16%;
+
+  &.accent-blue {
+    background-image: radial-gradient(#A7DDE8 30%, #ffffff00 20%);
+  }
+
+  &.accent-pink {
+    background-image: radial-gradient(#E51B5D 30%, #ffffff00 20%);
+  }
+
+  &.accent-orange {
+    background-image: radial-gradient(#F46E20 30%, #ffffff00 20%);
+  }
+}
+
+.stripe-wrapper {
+  margin: 10vw 0 200px;
+
+  &.sponsors {
+    margin: 12vw 0 1vw;
+  }
+}
+
+.floating-illustration {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 13vw;
+    min-width: 150px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: updown;
+    animation-timing-function: ease;
+  }
+
+  &.drone {
+    img {
+      margin-top: -120px;
+    }
+  }
+
+  &.clouds {
+    img {
+      margin-top: 300px;
+      left: 4%;
+      right: auto;
+    }
+  }
+
+  &.relax {
+    img {
+      margin-top: 700px;
+    }
+  }
+
+  &.hand-point {
+    width: 100vw;
+    margin-left: -15.5vw;
+    img {
+      animation-name: leftright;
+      left: 0;
+    }
+  }
+
+  &.lightbulb {
+    width: 100vw;
+    top: 70%;
+    img {
+      animation-name: leftright;
+      right: 14vw;
+      width: 15vw;
+    }
+  }
+
+  @keyframes updown {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+  }
+  @keyframes leftright {
+      0%   { transform: translateX(0); }
+      50%  { transform: translateX(-10px); }
+      100% { transform: translateX(0); }
+  }
+}
