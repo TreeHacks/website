@@ -1,4 +1,6 @@
 #verticals {
+  margin: $large-space 0;
+
   .section-heading {
     margin-bottom: $small-space;
   }
@@ -13,7 +15,7 @@
 }
 
 .vertical {
-  width: (90vw - 4 * $small-space) / 3;
+  width: (90vw) / 3;
   padding: $small-space;
   @include flex(column nowrap, flex-start, center);
 
@@ -35,7 +37,7 @@
   }
 
   h1 {
-    font-size: $heading-font-size;
+    font-size: $subheading-font-size;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: $small-space;
