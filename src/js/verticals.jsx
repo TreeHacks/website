@@ -4,6 +4,7 @@ import {verticals} from './content.json';
 function Verticals() {
   return(
     <div id="verticals">
+      <div className="stripe accent-orange"/>
       <h1 className="section-heading">challenges</h1>
       <div className="container">
         {verticals.map((vertical, i) => {

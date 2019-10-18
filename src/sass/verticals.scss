@@ -2,10 +2,13 @@
   margin: $large-space 0;
 
   .section-heading {
+    padding-top: 100px;
     margin-bottom: $small-space;
   }
 
   .container {
+    color: $light-gray;
+
     @include flex(row wrap, center, flex-start);
     @media screen and (max-width: 750px) {
       display: block;
@@ -18,6 +21,7 @@
   width: (90vw) / 3;
   min-width: 300px;
   padding: $small-space;
+  background-color: $background-color;
   @include flex(column nowrap, flex-start, center);
 
   @media screen and (max-width: 750px) {
@@ -42,6 +46,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: $small-space;
+    font-weight: $heavy-font-weight;
   }
 
   p {
