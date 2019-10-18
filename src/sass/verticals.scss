@@ -1,15 +1,10 @@
 #verticals {
-  margin: $large-space 0;
-
   .section-heading {
-    padding-top: 100px;
     margin-bottom: $small-space;
   }
 
   .container {
-    color: $light-gray;
-
-    @include flex(row wrap, center, flex-start);
+    @include flex(row nowrap, space-evenly, stretch);
     @media screen and (max-width: 750px) {
       display: block;
       width: 100%;
@@ -18,10 +13,8 @@
 }
 
 .vertical {
-  width: (90vw) / 3;
-  min-width: 300px;
+  width: (90vw - 4 * $small-space) / 3;
   padding: $small-space;
-  background-color: $background-color;
   @include flex(column nowrap, flex-start, center);
 
   @media screen and (max-width: 750px) {
@@ -42,11 +35,10 @@
   }
 
   h1 {
-    font-size: $subheading-font-size;
+    font-size: $heading-font-size;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: $small-space;
-    font-weight: $heavy-font-weight;
   }
 
   p {
