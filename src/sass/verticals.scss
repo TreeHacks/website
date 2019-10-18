@@ -6,7 +6,7 @@
   }
 
   .container {
-    @include flex(row nowrap, space-evenly, stretch);
+    @include flex(row wrap, center, flex-start);
     @media screen and (max-width: 750px) {
       display: block;
       width: 100%;
@@ -16,6 +16,7 @@
 
 .vertical {
   width: (90vw) / 3;
+  min-width: 300px;
   padding: $small-space;
   @include flex(column nowrap, flex-start, center);
 
