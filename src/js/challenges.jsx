@@ -1,23 +1,23 @@
 import React from 'react';
-import {verticals} from './content.json';
+import {challenges} from './content.json';
 
-function Verticals() {
+function Challenges() {
   return(
-    <div id="verticals">
+    <div id="challenges">
       <div className="stripe accent-orange"/>
       <h1 className="section-heading">challenges</h1>
       <div className="container">
-        {verticals.map((vertical, i) => {
-          return <Vertical name={vertical.name} logo={vertical.logo} description={vertical.description} key={i} />
+        {challenges.map((challenge, i) => {
+          return <Challenge name={challenge.name} logo={challenge.logo} description={challenge.description} key={i} />
         })}
       </div>
     </div>
   );
 }
 
-function Vertical(props) {
+function Challenge(props) {
   return(
-    <div className="vertical">
+    <div className="challenge">
       <img src={props.logo} alt={props.name + " logo"} />
       <h1>{props.name}</h1>
       <p>{props.description}</p>
@@ -25,4 +25,4 @@ function Vertical(props) {
   );
 }
 
-export default Verticals;
+export default Challenges;

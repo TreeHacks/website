@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Navbar from "./js/navbar.jsx";
-import Countdown from "./js/countdown.jsx";
 import Home from "./js/home.jsx";
-import Verticals from "./js/verticals.jsx";
+import Challenges from "./js/challenges.jsx";
 import About from "./js/about.jsx";
 import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
@@ -27,7 +26,7 @@ function Main() {
       <Navbar />
       <Home />
       <About />
-      <Verticals />
+      <Challenges />
       <Projects />
       <FAQ />
       <Sponsors />

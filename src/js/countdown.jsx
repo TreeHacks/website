@@ -1,5 +1,4 @@
 import React from 'react';
-import hands_with_computer from '../svg/hands-with-computer.svg'
 import {deadlines} from './content.json';
 
 class Countdown extends React.Component {

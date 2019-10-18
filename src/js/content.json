@@ -25,7 +25,7 @@
       "date": "2020-01-03"
     }
   ],
-  "verticals": [
+  "challenges": [
     {
       "name": "ar/vr",
       "logo": "svg/challenges/vr.svg",
@@ -112,11 +112,11 @@
     },
     {
       "q": "What if I don’t have a team or idea?",
-      "a": "Not a problem! We’ll have team-forming activities to help you find teammates and idea brainstorming sessions for all our verticals. Some of our best hacks have been from teams that met and formed an idea on the spot!"
+      "a": "Not a problem! We’ll have team-forming activities to help you find teammates and idea brainstorming sessions for all our challenges. Some of our best hacks have been from teams that met and formed an idea on the spot!"
     },
     {
       "q": "What can I build?",
-      "a": "Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we’ll support it. We have three verticals that will have extra resources, sponsored challenges, and even a CTF to inspire you."
+      "a": "Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we’ll support it. We have three challenges that will have extra resources, sponsored challenges, and even a CTF to inspire you."
     },
     {
       "q": "What does it cost?",
