@@ -26,9 +26,8 @@ function Main() {
     <div>
       <Navbar />
       <Home />
-      {/*<Countdown />*/}
       <About />
-      {/*<Verticals />*/}
+      <Verticals />
       <Projects />
       <FAQ />
       <Sponsors />

@@ -8,7 +8,6 @@ class Countdown extends React.Component {
       <div id="countdown">
         <div className="container">
           <Deadlines />
-          <img src={hands_with_computer} alt="Hands with computer"/>
         </div>
       </div>
     );
