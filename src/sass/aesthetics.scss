@@ -85,6 +85,31 @@ body {
     }
   }
 
+  &.tree {
+    img {
+      margin-top: -50px;
+      left: 4%;
+      right: auto;
+    }
+  }
+
+  &.eye {
+    img {
+      margin-top: 750px;
+    }
+  }
+
+  &.computer {
+    transform-origin: center center;
+    transform: rotate(180deg);
+
+    img {
+      margin-top: -200px;
+      right: 4%;
+      left: auto;
+    }
+  }
+
   &.hand-point {
     width: 100vw;
     margin-left: -15.5vw;

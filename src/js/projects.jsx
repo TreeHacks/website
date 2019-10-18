@@ -1,5 +1,7 @@
 import React from 'react';
 import { projects } from './content.json';
+import tree from "../svg/alternate-tree.svg"
+import eye from "../svg/eye.svg"
 
 const PROJECT_INTERVAL = 2500;
 
@@ -7,6 +9,8 @@ function Projects() {
   return (
     <div id="projects" className="container">
       <div className="stripe accent-blue"/>
+      <div className="floating-illustration tree"><img src={tree} /></div>
+      <div className="floating-illustration eye"><img src={eye} /></div>
       <h1 className="section-heading">Past Projects</h1>
       <Grid />
       <div className="stripe-wrapper"><div className="stripe accent-pink"/></div>

@@ -1,10 +1,14 @@
-#projects.container {
-  max-width: $max-width;
-  margin: $large-space auto;
+#projects {
+  position: relative;
 
   .section-heading {
     padding-top: 100px;
     margin-bottom: $small-space;
+  }
+
+  .container {
+    max-width: $max-width;
+    margin: $large-space auto;
   }
 }
 
