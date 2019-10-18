@@ -9,7 +9,6 @@ import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
 import Footer from "./js/footer.jsx";
-import CodeOfConduct from "./js/codeofconduct.jsx";
 // import Team from "./js/team.jsx";
 import {
   BrowserRouter as Router,
@@ -38,13 +37,6 @@ function Main() {
   );
 }
 
-function COC() {
-  return (
-    <div>
-      <CodeOfConduct />
-    </div>
-  )
-}
 function CustomRedirect({ from, to }) {
   return (
     <Route
@@ -69,12 +61,19 @@ function App() {
         <CustomRedirect
           from="/volunteer"
           to="https://goo.gl/forms/pZURr2kMSKwuFar42"
-        /> */}
+        />
         <CustomRedirect
           from="/join"
           to="https://treehacks.typeform.com/to/rK08ej"
+        /> */}
+        <CustomRedirect
+          from="/code-of-conduct"
+          to="https://github.com/TreeHacks/policies/blob/master/code-of-conduct.md"
         />
-        <Route exact path="/code-of-conduct" component={COC} />
+        <CustomRedirect
+          from="/privacy-policy"
+          to="https://github.com/TreeHacks/policies/blob/master/privacy-policy.md"
+        />
         <Route exact path="/" component={Main} />
         <Redirect to="/" />
       </Switch>

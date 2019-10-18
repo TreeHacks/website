@@ -108,7 +108,7 @@
       "a": "TreeHacks is free for all admitted hackers. We provide meals, caffeine, swag, workspace, and WiFi for the weekend; travel reimbursements & bussing will also be available for qualifying hackers. We're committed to making TreeHacks accessible!"
     },
     {
-      "link": "code-of-conduct",
+      "link": "https://github.com/TreeHacks/policies/blob/master/code-of-conduct.md",
       "q": "What is the TreeHacks code of conduct?",
       "textBefore": "TreeHacks abides by ",
       "textIn": "this Code of Conduct",
