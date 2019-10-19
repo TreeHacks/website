@@ -21,7 +21,7 @@
   width: (90vw) / 3;
   min-width: 300px;
   padding: $small-space;
-  background-color: $background-color;
+  filter: alpha(opacity=60);
   @include flex(column nowrap, flex-start, center);
 
   @media screen and (max-width: 750px) {
@@ -51,5 +51,6 @@
 
   p {
     font-size: $medium-font-size;
+    background-color: $transparent-background-color;
   }
 }

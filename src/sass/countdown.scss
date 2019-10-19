@@ -1,11 +1,8 @@
 #countdown {
-  margin: $large-space 0;
+  margin: $small-space 0;
   text-align: center;
 
   .container {
-    @media screen and (max-width: 750px) {
-      display: none;
-    }
   }
 
   img {
@@ -13,21 +10,28 @@
     width: 35vw;
     transform: rotate(90deg);
   }
+
+  sup {
+    vertical-align: 25%;
+  }
 }
 
 #deadlines {
-  @include flex(row nowrap, center, flex-end);
+  @include flex(row nowrap, space-evenly, flex-end);
+  @media screen and (max-width: 550px) {
+    @include flex(column, space-evenly, center);
+    .single-deadline {
+      padding-top: $medium-space;
+    }
+  }
 }
 
 .single-deadline {
   color: $light-gray;
-  margin: 0 5vw 0 5vw;
 
   h1 {
     color: $pink;
-    font-size: 10vw;
-    line-height: 9vw;
-    padding-top: 2vw;
+    font-size: $heading-font-size;
   }
 
   p {

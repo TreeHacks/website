@@ -39,8 +39,10 @@ class SingleDeadline extends React.Component {
 
     return(
       <div className="single-deadline">
-        <p>{this.props.title}</p>
-        <p><b>{monthNames[deadlineMonth]} {deadlineDay + dayEndings[deadlineDay.toString().split("").pop()]}</b></p>
+        <p>{this.props.title} deadline</p>
+        <div className="extra-text">
+        </div>
+        <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
         <h1>{Math.round((deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
         <p className="subtext">days left to apply</p>
       </div>
