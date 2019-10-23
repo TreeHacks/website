@@ -41,7 +41,8 @@ class Slider extends React.Component {
   }
 
   setIndex(i) {
-    this.setState({ index: i % this.projects.length });
+    const { length } = this.projects;
+    this.setState({ index: (i % length + length) % length });
   }
 
   render() {
