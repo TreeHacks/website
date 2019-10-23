@@ -12,7 +12,12 @@
   }
 }
 
-#projects-grid {
+#projects-selector {
+  @include flex(row, center, center);
+  border: 1px solid black;
+}
+
+#projects-carousel {
   @include flex(row wrap, center, center);
 }
 

@@ -49,18 +49,25 @@ class Slider extends React.Component {
     console.log(this.state.index);
     return (
       <div>
-        <Selector />
-        <Viewer />
+        <Selector projects={this.projects} />
+        <Carousel />
       </div>
     );
   }
 }
 
 function Selector(props) {
-  return null;
+  const { projects, setIndex } = props;
+  return (
+    <div id="projects-selector">
+      {projects.map(project =>
+        <div key={project.title}>P</div>
+      )}
+    </div>
+  );
 }
 
-function Viewer(props) {
+function Carousel(props) {
   return null;
 }
 
