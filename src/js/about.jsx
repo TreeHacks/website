@@ -13,11 +13,12 @@ function About() {
     <div id="about">
       <div className="floating-illustration drone"><img src={drone} /></div>
       <div className="floating-illustration clouds"><img src={clouds} /></div>
-      <div className="floating-illustration relax"><img src={relax} /></div>
-      <Countdown />
       <div className="container">
         <div>
           <p className="intro">{about_intro}</p>
+        </div>
+        <Countdown />
+        <div>
           <p className="body">{about_body}</p>
         </div>
         <div className="about-video">

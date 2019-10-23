@@ -37,6 +37,7 @@
   }
 
   .intro {
+    padding: $small-space 0;
     margin-bottom: $small-space;
     font-size: $subheading-font-size;
     text-align: center;
@@ -44,8 +45,8 @@
   }
 
   .body {
+    margin: $medium-space 0;
     font-size: $medium-font-size;
-    margin-bottom: $medium-space;
     text-align: center;
   }
 }

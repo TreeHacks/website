@@ -13,12 +13,12 @@
   ],
   "deadlines": [
     {
-      "title": "In state",
-      "date": "2019-11-25"
-    },
-    {
       "title": "Out of state",
       "date": "2019-11-18"
+    },
+    {
+      "title": "In state",
+      "date": "2019-11-25"
     },
     {
       "title": "Stanford",
