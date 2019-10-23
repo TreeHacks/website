@@ -1,26 +1,34 @@
 import React from 'react';
 import { projects } from './content.json';
-import tree from "../svg/alternate-tree.svg"
-import eye from "../svg/eye.svg"
+// import tree from "../svg/alternate-tree.svg"
+// import eye from "../svg/eye.svg"
 
-const PROJECT_INTERVAL = 2500;
+// const PROJECT_INTERVAL = 2500;
+const colors = ["#A7DDE8", "#E51B5D", "#F46E20"];
+
+function makeColors() {
+  var arr = [];
+  while (arr.length < colors.length && arr.length != projects.length) {
+    var r = Math.floor(Math.random() * projects.length);
+    if (arr.indexOf(r) === -1) arr.push(r);
+  }
+  return arr;
+}
 
 function Projects() {
   return (
     <div id="projects" className="container">
-      <div className="stripe accent-blue"/>
+      <div className="stripe accent-blue" />
       {/*
       <div className="floating-illustration tree"><img src={tree} /></div>
       <div className="floating-illustration eye"><img src={eye} /></div>
       */}
       <h1 className="section-heading">Past Projects</h1>
       <Grid />
-      <div className="stripe-wrapper"><div className="stripe accent-pink"/></div>
+      <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
     </div>
   );
 }
-
-const colors = ["#A7DDE8", "#E51B5D", "#F46E20"];
 
 class Grid extends React.Component {
   constructor(props) {
@@ -28,17 +36,8 @@ class Grid extends React.Component {
     this.state = { arr: [] };
   }
 
-  makeColors() {
-    var arr = [];
-    while (arr.length < colors.length && arr.length != projects.length) {
-      var r = Math.floor(Math.random() * projects.length);
-      if (arr.indexOf(r) === -1) arr.push(r);
-    }
-    this.setState({ arr });
-  }
-
   componentWillMount() {
-    this.makeColors();
+    this.setState({ arr: makeColors() });
   }
 
   componentDidMount() {
