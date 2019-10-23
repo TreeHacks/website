@@ -27,11 +27,6 @@
   ],
   "challenges": [
     {
-      "name": "ar/vr",
-      "logo": "svg/challenges/vr.svg",
-      "description": "The physical world is no longer the end-all be-all of human experiences. The AR/VR challenge pushes hackers to create their own realities and the tools necessary to experience them in order to tackle a breadth of problems and push the boundaries of human experiences."
-    },
-    {
       "name": "education",
       "logo": "svg/challenges/education.svg",
       "description": "Globally, systems and styles of education are evolving everyday, incorporating developments ranging from technology to behavioral science. The education challenge supports hackers in creating new tools for learning and knowledge-sharing across regional borders, language barriers, learning styles, degrees of privilege, and more."
@@ -42,11 +37,6 @@
       "description": "Almost half a billion people across the world still lack access to basic healthcare, disproportionately affecting marginalized communities even in wealthier regions. The medical access challenge pushes hackers to explore accessibility of treatments, innovate in the rapidly growing field of telemedicine, and redefine healthcare as we know it."
     },
     {
-      "name": "geospatial",
-      "logo": "svg/challenges/geospatial.svg",
-      "description": "Every second, we collect terabytes of traffic, satellite, and location data. The geospatial challenge pushes hackers to utilize rich datasets and APIs to better help and understand the world we live in."
-    },
-    {
       "name": "iot",
       "logo": "svg/challenges/iot.svg",
       "description": "The world has 4.5 billion people connected to the internet – but data tells us there are still 700+ billion unconnected things in our society. The IoT challenge encourages hackers to connect devices in novel ways, collect interesting data, and utilize our vast network of things to make the world a better place."
@@ -55,6 +45,16 @@
       "name": "voice assistance",
       "logo": "svg/challenges/voice.svg",
       "description": "With the rise of products like Alexa and Siri, voice assistants are increasingly an integral part of day-to-day life in homes, schools, workplaces, and more. The voice assistance challenge encourages hackers to push the boundaries of voice assistant functionalities, address key privacy concerns, and place more power in the hands of users."
+    },
+    {
+      "name": "ar/vr",
+      "logo": "svg/challenges/vr.svg",
+      "description": "The physical world is no longer the end-all be-all of human experiences. The AR/VR challenge pushes hackers to create their own realities and the tools necessary to experience them in order to tackle a breadth of problems and push the boundaries of human experiences."
+    },
+    {
+      "name": "geospatial",
+      "logo": "svg/challenges/geospatial.svg",
+      "description": "Every second, we collect terabytes of traffic, satellite, and location data. The geospatial challenge pushes hackers to utilize rich datasets and APIs to better help and understand the world we live in."
     }
   ],
   "about_intro": "Join us as we build apps, hardware, and community in the California sun!",

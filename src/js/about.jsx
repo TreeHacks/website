@@ -8,7 +8,7 @@ import relax from "../svg/relax.svg"
 import Countdown from "./countdown.jsx";
 
 function About() {
-  let videoURL = "https://www.youtube.com/embed/mSlJTPzSH6g";
+  let videoURL = "https://player.vimeo.com/video/368159554";
   return (
     <div id="about">
       <div className="floating-illustration drone"><img src={drone} /></div>
