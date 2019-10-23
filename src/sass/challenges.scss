@@ -1,10 +1,15 @@
-#verticals {
+#challenges {
+  margin: $large-space 0;
+
   .section-heading {
+    padding-top: 100px;
     margin-bottom: $small-space;
   }
 
   .container {
-    @include flex(row nowrap, space-evenly, stretch);
+    color: $light-gray;
+
+    @include flex(row wrap, center, flex-start);
     @media screen and (max-width: 750px) {
       display: block;
       width: 100%;
@@ -12,10 +17,26 @@
   }
 }
 
-.vertical {
-  width: (90vw - 4 * $small-space) / 3;
-  padding: $small-space;
+.challenge {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px #e4e4e4;
+  margin: 1vw;
+  border-radius: 20px;
+  width: 27vw;
+  min-width: 300px;
+  padding: 2vw;
+  filter: alpha(opacity=60);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-self: stretch;
+  transition: all 0.5s;
+  cursor: pointer;
   @include flex(column nowrap, flex-start, center);
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media screen and (max-width: 750px) {
     display: block;
@@ -35,10 +56,11 @@
   }
 
   h1 {
-    font-size: $heading-font-size;
+    font-size: $subheading-font-size;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: $small-space;
+    font-weight: $heavy-font-weight;
   }
 
   p {

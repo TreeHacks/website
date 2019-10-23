@@ -1,5 +1,4 @@
 body {
-  background-color: #e51c5e02 !important;
   overflow-x: hidden;
 }
 
@@ -56,7 +55,7 @@ body {
   img {
     position: absolute;
     top: 0;
-    right: 4%;
+    right: 3%;
     width: 13vw;
     min-width: 150px;
     animation-duration: 2s;
@@ -67,21 +66,46 @@ body {
 
   &.drone {
     img {
-      margin-top: -120px;
+      margin-top: 810px;
     }
   }
 
   &.clouds {
     img {
-      margin-top: 300px;
-      left: 4%;
+      margin-top: 400px;
+      left: 3%;
       right: auto;
     }
   }
 
   &.relax {
     img {
-      margin-top: 700px;
+      margin-top: 300px;
+    }
+  }
+
+  &.tree {
+    img {
+      margin-top: -50px;
+      left: 4%;
+      right: auto;
+    }
+  }
+
+  &.eye {
+    img {
+      margin-top: 750px;
+    }
+  }
+
+  &.computer {
+    transform-origin: center center;
+    transform: rotate(180deg);
+
+    img {
+      margin-top: -200px;
+      right: 4%;
+      left: auto;
     }
   }
 

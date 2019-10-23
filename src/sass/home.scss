@@ -1,3 +1,13 @@
+.apply-button {
+  margin-top: $small-space;
+  background-color: $pink;
+  padding: 0.5vh 2vw 0.5vh 2vw;
+  border-radius: 5px;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 #home {
   @include flex(column nowrap, flex-start, center);
   @media screen and (min-width: 450px) {
@@ -57,22 +67,14 @@
     }
   }
 
-  .apply-button {
-    background-color: $pink;
-    padding: 0.5vh 2vw 0.5vh 2vw;
-    border-radius: 2px;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
   p {
     font-size: 25px;
   }
 
   #date-text {
+    max-width: 90vw;
     text-align: center;
-    color: $blue;
+    color: $pink;
     font-size: $subheading-font-size;
     font-weight: bold;
     padding-bottom: 1vh;

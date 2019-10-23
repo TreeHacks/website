@@ -1,5 +1,4 @@
 import React from 'react';
-import hands_with_computer from '../svg/hands-with-computer.svg'
 import {deadlines} from './content.json';
 
 class Countdown extends React.Component {
@@ -8,7 +7,6 @@ class Countdown extends React.Component {
       <div id="countdown">
         <div className="container">
           <Deadlines />
-          <img src={hands_with_computer} alt="Hands with computer"/>
         </div>
       </div>
     );
@@ -30,9 +28,9 @@ class Deadlines extends React.Component {
 class SingleDeadline extends React.Component {
   render() {
     var currentDate = new Date();
-    var deadlineDate = new Date(this.props.date)
-    var deadlineDay = deadlineDate.getUTCDate()
-    var deadlineMonth = deadlineDate.getUTCMonth()
+    var deadlineDate = new Date(this.props.date);
+    var deadlineDay = deadlineDate.getUTCDate();
+    var deadlineMonth = deadlineDate.getUTCMonth();
 
     const monthNames = ["January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December"
@@ -41,9 +39,11 @@ class SingleDeadline extends React.Component {
 
     return(
       <div className="single-deadline">
-        <p>{this.props.title}</p>
-        <p><b>{monthNames[deadlineMonth]} {deadlineDay + dayEndings[deadlineDay.toString().split("").pop()]}</b></p>
-        <h1>{Math.round((deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
+        <p>{this.props.title} deadline</p>
+        <div className="extra-text">
+        </div>
+        <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
+        <h1>{Math.round(1 + (deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
         <p className="subtext">days left to apply</p>
       </div>
     )

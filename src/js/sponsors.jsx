@@ -1,4 +1,5 @@
 import React from 'react';
+import computer from "../svg/computer-arms.svg"
 
 const SPONSORS = {
   big: [
@@ -56,7 +57,8 @@ const _makeSponsors = function (key) {
 function Sponsors() {
   return(
     <div id="sponsors" className="container">
-      <div className="stripe-wrapper sponsors"><div className="stripe accent-orange"/></div>
+      <div className="stripe-wrapper sponsors"><div className="stripe accent-gray"/></div>
+      {/*<div className="floating-illustration computer"><img src={computer} /></div>*/}
       <h1 className="section-heading" id="sub-heading">sponsors</h1>
       {/*
       {_makeSponsors('big')}
