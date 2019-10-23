@@ -1,97 +1,66 @@
 import React from 'react';
 import { projects } from './content.json';
-// import tree from "../svg/alternate-tree.svg"
-// import eye from "../svg/eye.svg"
 
 // const PROJECT_INTERVAL = 2500;
-const colors = ["#A7DDE8", "#E51B5D", "#F46E20"];
+const COLORS = ["#A7DDE8", "#E51B5D", "#F46E20"];
 
-function makeColors() {
+function mapColors() {
   var arr = [];
-  while (arr.length < colors.length && arr.length != projects.length) {
+  while (arr.length < COLORS.length && arr.length !== projects.length) {
     var r = Math.floor(Math.random() * projects.length);
     if (arr.indexOf(r) === -1) arr.push(r);
   }
-  return arr;
+  return projects.map((project, index) => {
+    const i = arr.indexOf(index);
+    return (
+      {
+        ...project,
+        color: (i !== -1) ? COLORS[i] : COLORS[Math.round(Math.random() * (COLORS.length - 1))]
+      }
+    )
+  });
 }
+
 
 function Projects() {
   return (
     <div id="projects" className="container">
       <div className="stripe accent-blue" />
-      {/*
-      <div className="floating-illustration tree"><img src={tree} /></div>
-      <div className="floating-illustration eye"><img src={eye} /></div>
-      */}
       <h1 className="section-heading">Past Projects</h1>
-      <Grid />
+      <Slider />
       <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
     </div>
   );
 }
 
-class Grid extends React.Component {
+class Slider extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { arr: [] };
+    this.projects = mapColors();
+    this.state = { index: 0 };
   }
 
-  componentWillMount() {
-    this.setState({ arr: makeColors() });
-  }
-
-  componentDidMount() {
-    // this.interval = setInterval(() => {
-    //   this.makeColors();
-    // }, PROJECT_INTERVAL);
-  }
-
-  componentWillUnmount() {
-    // clearInterval(this.interval);
+  setIndex(i) {
+    this.setState({ index: i % this.projects.length });
   }
 
   render() {
+    console.log(this.state.index);
     return (
-      <div id="projects-grid">
-        {projects.map((project, i) => {
-          const color = (this.state.arr.indexOf(i) !== -1) ? colors[this.state.arr.indexOf(i)] : colors[Math.round(Math.random() * 2)];
-          return <GridItem color={color} title={project.title} text={project.description} />;
-        })}
+      <div>
+        <Selector />
+        <Viewer />
       </div>
     );
   }
 }
 
-class GridItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hover: false };
-  }
+function Selector(props) {
+  return null;
+}
 
-  mouseOver() {
-    this.setState({ hover: true });
-  }
-
-  mouseOut() {
-    this.setState({ hover: false });
-  }
-
-  render() {
-    var label = this.props.title;
-    var textClass = "title";
-    if (this.state.hover) {
-      label = this.props.text;
-      textClass = "text";
-    }
-    return (
-      <div key={this.props.title} className="grid-item"
-        style={{ backgroundColor: this.props.color }}
-        onMouseOver={() => this.mouseOver()}
-        onMouseOut={() => this.mouseOut()}>
-        <p className={textClass}>{label}</p>
-      </div>
-    );
-  }
+function Viewer(props) {
+  return null;
 }
 
 export default Projects;
