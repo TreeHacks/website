@@ -28,7 +28,7 @@ function Projects() {
       <div className="stripe accent-blue" />
       <h1 className="section-heading">Past Projects</h1>
       <Slider />
-      <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
+      {/* <div className="stripe-wrapper"><div className="stripe accent-pink" /></div> */}
     </div>
   );
 }
@@ -40,16 +40,16 @@ class Slider extends React.Component {
     this.state = { index: 0 };
   }
 
-  setIndex(i) {
+  setIndex = i => {
     const { length } = this.projects;
     this.setState({ index: (i % length + length) % length });
   }
 
   render() {
-    console.log(this.state.index);
+    const { projects, setIndex, state } = this;
     return (
       <div>
-        <Selector projects={this.projects} />
+        <Selector projects={projects} set={(i) => setIndex(i)} selected={state.index} />
         <Carousel />
       </div>
     );
@@ -57,11 +57,16 @@ class Slider extends React.Component {
 }
 
 function Selector(props) {
-  const { projects, setIndex } = props;
+  const { projects, set, selected } = props;
   return (
-    <div id="projects-selector">
-      {projects.map(project =>
-        <div key={project.title}>P</div>
+    <div id="project-selector">
+      {projects.map((project, i) =>
+        <div
+          class="selection-item"
+          key={project.title}
+          style={{ backgroundColor: (i === selected ? '#EE3670' : '#FBCDCD') }}
+          onClick={() => set(i)}
+        />
       )}
     </div>
   );
