@@ -1,6 +1,7 @@
 import React from 'react';
 import treehacks_text from '../svg/treehacks-text.svg'
 import arm2l from '../svg/arm2l.svg'
+import drone from "../svg/drone.svg"
 import { home, live_cutoff, ended_cutoff } from './content.json';
 import EmailSignupWidget from "./email-signup-widget.jsx";
 
@@ -9,7 +10,7 @@ const STATUSES = {
   registration: 2
 }
 
-const STATUS = STATUSES.beforeRegistration;
+const STATUS = STATUSES.registration;
 
 class Home extends React.Component {
   constructor(props) {
@@ -46,11 +47,12 @@ class Home extends React.Component {
 
     return (
       <div id="home">
+        <div className="floating-illustration drone"><img src={drone} /></div>
         <img className="logo scale-in-center" src={treehacks_text} alt="treehacks large text" />
         <img className="slide-in-left" id="arm" src={arm2l} alt="" />
-        <div id="date-text">February 14-16 at Stanford University</div>
+        <div id="date-text">February 14-16 at Stanford&nbsp;University</div>
         {STATUS === STATUSES.registration &&
-          <a href="https://live.treehacks.com" className="apply-button">apply here</a>
+          <a href="https://root.treehacks.com" className="apply-button">apply now</a>
         }
         {STATUS === STATUSES.beforeRegistration &&
           <EmailSignupWidget />

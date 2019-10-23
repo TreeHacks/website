@@ -1,6 +1,6 @@
 #about {
+  margin-top: $medium-space;
   position: relative;
-  padding-bottom: $large-space * 2;
 
   .section-heading {
     margin-bottom: $small-space;
@@ -38,8 +38,7 @@
   }
 
   .intro {
-    padding: $small-space 0;
-    margin-bottom: $small-space;
+    padding: $medium-space 0;
     font-size: $subheading-font-size;
     text-align: center;
     font-weight: $heavy-font-weight;

@@ -1,6 +1,5 @@
 #challenges {
   margin: $large-space 0;
-  padding-bottom: $large-space;
 
   .section-heading {
     padding-top: 100px;
@@ -19,11 +18,25 @@
 }
 
 .challenge {
-  width: (90vw) / 3;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px #e4e4e4;
+  margin: 1vw;
+  border-radius: 20px;
+  width: 27vw;
   min-width: 300px;
-  padding: $small-space;
+  padding: 2vw;
   filter: alpha(opacity=60);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-self: stretch;
+  transition: all 0.5s;
+  cursor: pointer;
   @include flex(column nowrap, flex-start, center);
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media screen and (max-width: 750px) {
     display: block;
