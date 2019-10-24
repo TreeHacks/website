@@ -1,7 +1,7 @@
 import React from 'react';
 import { projects } from './content.json';
 
-// const PROJECT_INTERVAL = 2500;
+const PROJECT_INTERVAL = 10000;
 const COLORS = ["#A7DDE8", "#E51B5D", "#F46E20"];
 
 function mapColors() {
@@ -38,6 +38,16 @@ class Slider extends React.Component {
     super(props);
     this.projects = mapColors();
     this.state = { index: 0 };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      this.setIndex(this.state.index + 1);
+    }, PROJECT_INTERVAL);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   setIndex = i => {
