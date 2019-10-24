@@ -1,7 +1,7 @@
 import React from 'react';
 import { projects } from './content.json';
 
-const PROJECT_INTERVAL = 10000;
+const PROJECT_INTERVAL = 15000;
 const COLORS = ["#A7DDE8", "#E51B5D", "#F46E20"];
 
 function mapColors() {
@@ -60,7 +60,7 @@ class Slider extends React.Component {
     return (
       <div>
         <Selector projects={projects} set={(i) => setIndex(i)} selected={state.index} />
-        <Carousel />
+        <Carousel projects={projects} set={(i) => setIndex(i)} selected={state.index} />
       </div>
     );
   }
@@ -72,7 +72,7 @@ function Selector(props) {
     <div id="project-selector">
       {projects.map((project, i) =>
         <div
-          class="selection-item"
+          className="selection-item"
           key={project.title}
           style={{ backgroundColor: (i === selected ? '#EE3670' : '#FBCDCD') }}
           onClick={() => set(i)}
@@ -83,7 +83,18 @@ function Selector(props) {
 }
 
 function Carousel(props) {
-  return null;
+  const { projects, set, selected } = props;
+  const left_project = projects[(selected - 1 + projects.length) % projects.length];
+  const curr_project = projects[selected];
+  const right_project = projects[(selected + 1) % projects.length];
+
+  return (
+    <div id="project-carousel">
+      <div class="left" style={{ backgroundColor: left_project.color }}>{left_project.title}</div>
+      <div class="main" style={{ backgroundColor: curr_project.color }}>{curr_project.title}</div>
+      <div class="right" style={{ backgroundColor: right_project.color }}>{right_project.title}</div>
+    </div>
+  );
 }
 
 export default Projects;

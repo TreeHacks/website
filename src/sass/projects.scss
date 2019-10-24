@@ -30,8 +30,33 @@
 }
 
 
-#projects-carousel {
-  @include flex(row wrap, center, center);
+#project-carousel {
+  @include flex(row nowrap, space-between, center);
+  overflow-x: hidden;
+  margin: 30px 0;
+  border: 1px solid black;
+  height: 300px;
+
+  .main {
+    height: 100%;
+    width: 40vw;
+    border: 1px solid blue;
+    transition-duration: 0.5s;
+
+    @media screen and (max-width: 800px) {
+      width: 60vw;
+    }
+  }
+
+  .right, .left {
+    height: 75%;
+    width: 20vw;
+    border: 1px solid red;
+
+    @media screen and (max-width: 800px) {
+      visibility: hidden;
+    }
+  }
 }
 
 
