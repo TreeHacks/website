@@ -20,7 +20,7 @@ function Projects() {
       <div className="stripe accent-blue" />
       <h1 className="section-heading">Past Projects</h1>
       <Slider />
-      {/* <div className="stripe-wrapper"><div className="stripe accent-pink" /></div> */}
+      <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
     </div>
   );
 }
@@ -83,12 +83,24 @@ function Carousel(props) {
   const right_color = COLORS[(selected + 1) % COLORS.length];
 
   return (
-    <div id="project-carousel">
-      <div class="carousel-item left" id="left" style={{ backgroundColor: left_color }}>{left_project.title}</div>
-      <div class="carousel-item main" id="main" style={{ backgroundColor: curr_color }}>{curr_project.title}</div>
-      <div class="carousel-item right" id="right" style={{ backgroundColor: right_color }}>{right_project.title}</div>
-    </div>
+    <div id="project-carousel" >
+      <CarouselItem pos="left" color={left_color} onClick={() => set(selected - 1)}>
+        <h1>{left_project.title}</h1>
+      </CarouselItem>
+      <CarouselItem pos="main" color={curr_color} >
+        <h1>{curr_project.title}</h1>
+        <p>{curr_project.description}</p>
+      </CarouselItem>
+      <CarouselItem pos="right" color={right_color} onClick={() => set(selected + 1)}>
+        <h1>{right_project.title}</h1>
+      </CarouselItem>
+    </div >
   );
+}
+
+function CarouselItem(props) {
+  const { onClick, pos, color, children } = props;
+  return <div onClick={onClick} class={`carousel-item ${pos}`} style={{ backgroundColor: color }}>{children}</ div>
 }
 
 export default Projects;
