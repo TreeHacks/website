@@ -31,27 +31,34 @@ class Slider extends React.Component {
     this.state = { index: 0 };
   }
 
-  componentDidMount() {
+  setInterval() {
     this.interval = setInterval(() => {
       this.setIndex(this.state.index + 1);
     }, PROJECT_INTERVAL);
+  }
+  componentDidMount() {
+    this.setInterval();
   }
 
   componentWillUnmount() {
     clearInterval(this.interval);
   }
 
-  setIndex = i => {
+  setIndex = (i, changed) => {
     const { length } = projects;
     this.setState({ index: (i % length + length) % length });
+    if (changed) {
+      clearInterval(this.interval);
+      this.setInterval();
+    }
   }
 
   render() {
     const { setIndex, state } = this;
     return (
       <div className="project-slider">
-        <Selector set={(i) => setIndex(i)} selected={state.index} />
-        <Carousel set={(i) => setIndex(i)} selected={state.index} />
+        <Selector set={(i) => setIndex(i, true)} selected={state.index} />
+        <Carousel set={(i) => setIndex(i, true)} selected={state.index} />
       </div>
     );
   }
