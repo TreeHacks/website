@@ -15,7 +15,6 @@
 #project-selector {
   @include flex(row, space-between, center);
   margin: 0 auto;
-  // border: 1px solid blue;
   width: calc(300px - 2vw);
 
   .selection-item {
@@ -34,13 +33,15 @@
   @include flex(row nowrap, space-between, center);
   overflow-x: hidden;
   margin: 30px 0;
-  border: 1px solid black;
   height: 300px;
+
+  .carousel-item {
+    border: 4px solid white;
+  }
 
   .main {
     height: 100%;
     width: 40vw;
-    border: 1px solid blue;
     transition-duration: 0.5s;
 
     @media screen and (max-width: 800px) {
@@ -51,13 +52,15 @@
   .right, .left {
     height: 75%;
     width: 20vw;
-    border: 1px solid red;
+    opacity: 0.5;
 
     @media screen and (max-width: 800px) {
       visibility: hidden;
     }
   }
 }
+
+
 
 
 // .grid-item {

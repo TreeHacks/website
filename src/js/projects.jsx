@@ -2,25 +2,17 @@ import React from 'react';
 import { projects } from './content.json';
 
 const PROJECT_INTERVAL = 15000;
-const COLORS = ["#A7DDE8", "#E51B5D", "#F46E20"];
+const COLORS = shuffleArray(["#A7DDE8", "#E51B5D", "#F46E20"]);
 
-function mapColors() {
-  var arr = [];
-  while (arr.length < COLORS.length && arr.length !== projects.length) {
-    var r = Math.floor(Math.random() * projects.length);
-    if (arr.indexOf(r) === -1) arr.push(r);
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
   }
-  return projects.map((project, index) => {
-    const i = arr.indexOf(index);
-    return (
-      {
-        ...project,
-        color: (i !== -1) ? COLORS[i] : COLORS[Math.round(Math.random() * (COLORS.length - 1))]
-      }
-    )
-  });
+  return array;
 }
-
 
 function Projects() {
   return (
@@ -36,7 +28,6 @@ function Projects() {
 class Slider extends React.Component {
   constructor(props) {
     super(props);
-    this.projects = mapColors();
     this.state = { index: 0 };
   }
 
@@ -51,23 +42,23 @@ class Slider extends React.Component {
   }
 
   setIndex = i => {
-    const { length } = this.projects;
+    const { length } = projects;
     this.setState({ index: (i % length + length) % length });
   }
 
   render() {
-    const { projects, setIndex, state } = this;
+    const { setIndex, state } = this;
     return (
       <div>
-        <Selector projects={projects} set={(i) => setIndex(i)} selected={state.index} />
-        <Carousel projects={projects} set={(i) => setIndex(i)} selected={state.index} />
+        <Selector set={(i) => setIndex(i)} selected={state.index} />
+        <Carousel set={(i) => setIndex(i)} selected={state.index} />
       </div>
     );
   }
 }
 
 function Selector(props) {
-  const { projects, set, selected } = props;
+  const { set, selected } = props;
   return (
     <div id="project-selector">
       {projects.map((project, i) =>
@@ -83,16 +74,19 @@ function Selector(props) {
 }
 
 function Carousel(props) {
-  const { projects, set, selected } = props;
+  const { set, selected } = props;
   const left_project = projects[(selected - 1 + projects.length) % projects.length];
   const curr_project = projects[selected];
   const right_project = projects[(selected + 1) % projects.length];
+  const left_color = COLORS[(selected - 1 + COLORS.length) % COLORS.length];
+  const curr_color = COLORS[selected % COLORS.length];
+  const right_color = COLORS[(selected + 1) % COLORS.length];
 
   return (
     <div id="project-carousel">
-      <div class="left" style={{ backgroundColor: left_project.color }}>{left_project.title}</div>
-      <div class="main" style={{ backgroundColor: curr_project.color }}>{curr_project.title}</div>
-      <div class="right" style={{ backgroundColor: right_project.color }}>{right_project.title}</div>
+      <div class="carousel-item left" id="left" style={{ backgroundColor: left_color }}>{left_project.title}</div>
+      <div class="carousel-item main" id="main" style={{ backgroundColor: curr_color }}>{curr_project.title}</div>
+      <div class="carousel-item right" id="right" style={{ backgroundColor: right_color }}>{right_project.title}</div>
     </div>
   );
 }
