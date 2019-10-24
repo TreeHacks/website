@@ -96,6 +96,18 @@
       "path": "images/projects/marvel_medical_dictionary.png",
       "url": "https://devpost.com/software/marvel-medical-dictionary",
       "description": "Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018."
+    },
+    {
+      "title": "AEye",
+      "path": "images/projects/docodial.png",
+      "url": "https://devpost.com/software/aeye-p4rkim",
+      "description": "Vamshi, Dhanush, AJ and Aria built a mobile app that lets you take a picture of a patch of skin and analyzes it for potential skin diseases. Their model was trained on hundreds of models from the ISIC public skin database, and upon identification sends the result to a doctor for verification. They won Best Public Health Hack at TreeHacks 2019."
+    },
+    {
+      "title": "Soteria",
+      "path": "images/projects/marvel_medical_dictionary.png",
+      "url": "https://devpost.com/software/soteria-403mgo",
+      "description": "Kevin, Lindsey, Arihant and Christina created a web app designed to help inform travellers by visually providing safety information. They used open source data from the CDC, earning them the Best Hack to Make the World More Informed at TreeHacks 2019."
     }
   ],
   "faq": [

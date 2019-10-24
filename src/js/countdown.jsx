@@ -38,14 +38,14 @@ class SingleDeadline extends React.Component {
     const dayEndings = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"]
 
     return(
-      <div className="single-deadline">
+      <a href="https://root.treehacks.com" target="_blank" className="single-deadline">
         <p>{this.props.title} deadline</p>
         <div className="extra-text">
         </div>
         <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
         <h1>{Math.round(1 + (deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
         <p className="subtext">days left to apply</p>
-      </div>
+      </a>
     )
   }
 }
