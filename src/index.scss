@@ -7,6 +7,10 @@ body {
   font-size: $base-font-size;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 body,
 div,
 h1,
