@@ -79,11 +79,11 @@ $navbar-horizontal-padding: 15px;
   padding: 3px 6px;
   font-weight: bold;
   border-radius: 0.25rem;
-  transition: 0.1s all;
+  transition: $transition-speed all;
   display: inline-block;
 
   &:hover, &:focus {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #fff;
   }
 }

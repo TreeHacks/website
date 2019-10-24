@@ -49,7 +49,7 @@
       max-width: 640px;
       border-radius: 1rem;
       overflow: hidden;
-      transition: 0.1s all;
+      transition: $transition-speed all;
       cursor: pointer;
 
       &:hover {

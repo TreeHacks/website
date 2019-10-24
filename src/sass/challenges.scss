@@ -39,7 +39,7 @@
   justify-content: flex-start;
   align-self: stretch;
   transition: all 0.5s;
-  cursor: pointer;
+  cursor: auto;
   @include flex(column nowrap, flex-start, center);
 
   &:hover {
