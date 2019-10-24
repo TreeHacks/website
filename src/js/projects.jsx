@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectSlider from './projects-slider';
 import { projects } from './content.json';
 
 const PROJECT_INTERVAL = 15000;
@@ -19,6 +20,7 @@ function Projects() {
     <div id="projects" className="container">
       <div className="stripe accent-blue" />
       <h1 className="section-heading">Past Projects</h1>
+      <ProjectSlider />
       <Slider />
       {/* <div className="stripe-wrapper"><div className="stripe accent-pink" /></div> */}
     </div>
