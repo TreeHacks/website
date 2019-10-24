@@ -20,7 +20,7 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#home">home</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#about">about</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#challenges">challenges</AnchorLink></li>
-          <li className="navbar-item"><AnchorLink offset='100' href="#projects">projects</AnchorLink></li>&nbsp;
+          <li className="navbar-item"><AnchorLink offset='100' href="#projects">projects</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>&nbsp;
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
           {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
