@@ -49,6 +49,12 @@
       max-width: 640px;
       border-radius: 1rem;
       overflow: hidden;
+      transition: 0.1s all;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       & > div {
         position: relative;
