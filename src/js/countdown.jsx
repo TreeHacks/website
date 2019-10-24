@@ -39,7 +39,7 @@ class SingleDeadline extends React.Component {
 
     return(
       <a href="https://root.treehacks.com" target="_blank" className="single-deadline">
-        <p>{this.props.title} deadline</p>
+        <p><span className="deadline-title">{this.props.title}</span> deadline</p>
         <div className="extra-text">
         </div>
         <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>

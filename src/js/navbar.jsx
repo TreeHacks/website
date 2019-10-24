@@ -24,7 +24,7 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>&nbsp;
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>
           {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
-          {/* <li className="special-link navbar-item"><a href="https://root.treehacks.com">dashboard</a></li> */}
+          <li className="special-link apply-link navbar-item"><a href="https://root.treehacks.com">apply now</a></li>
           {Date.now() > new Date(ended_cutoff) ?
             null
             : Date.now() > new Date(live_cutoff) ?
