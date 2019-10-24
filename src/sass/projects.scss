@@ -1,5 +1,6 @@
 #projects {
   position: relative;
+  margin-bottom: $large-space;
 
   .section-heading {
     padding-top: 100px;
@@ -37,7 +38,8 @@
   @include flex(row nowrap, space-between, center);
   overflow-x: hidden;
   margin: 30px 0;
-  height: 300px;
+  height: 400px;
+  min-height: 400px;
 
   .carousel-item {
     @include flex(column, center, center);

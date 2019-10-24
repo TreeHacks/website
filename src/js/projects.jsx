@@ -20,7 +20,7 @@ function Projects() {
       <div className="stripe accent-blue" />
       <h1 className="section-heading">Past Projects</h1>
       <Slider />
-      <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
+      {/* <div className="stripe-wrapper"><div className="stripe accent-pink" /></div> */}
     </div>
   );
 }
