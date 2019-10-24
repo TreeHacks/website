@@ -31,14 +31,14 @@
   h1 {
     color: $pink;
     font-size: $heading-font-size * 2;
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 650px) {
       font-size: $heading-font-size * 0.9;
     }
   }
 
   p {
     font-size: $medium-font-size;
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 650px) {
       font-size: $medium-font-size * 0.7;
 
       .deadline-title {
