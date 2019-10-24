@@ -27,8 +27,8 @@ $navbar-horizontal-padding: 15px;
 }
 
 #navbar-logo {
+  flex: 1;
   margin-top: -0.5vh;
-  margin-right: $navbar-margin * 50;
   font-size: $navbar-logo-font-size;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
 
@@ -43,6 +43,10 @@ $navbar-horizontal-padding: 15px;
 }
 
 .menu {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   text-align: center;
   li {
@@ -69,6 +73,21 @@ $navbar-horizontal-padding: 15px;
   color: $orange;
 }
 
+.apply-link a {
+  color: $white;
+  background-color: $pink;
+  padding: 3px 6px;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  transition: 0.1s all;
+  display: inline-block;
+
+  &:hover, &:focus {
+    transform: scale(1.1);
+    color: #fff;
+  }
+}
+
 #navbar-apply {
   margin-left: $navbar-margin;
   padding: $navbar-horizontal-padding $navbar-margin*1.5;
@@ -87,6 +106,10 @@ $navbar-horizontal-padding: 15px;
 }
 
 @media screen and (max-width: 1220px) {
+  .menu {
+    display: block;
+  }
+
   .navbar-item {
     margin: $navbar-margin;
   }
