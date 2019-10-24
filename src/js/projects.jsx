@@ -2,7 +2,7 @@ import React from 'react';
 import { projects } from './content.json';
 
 const PROJECT_INTERVAL = 15000;
-const COLORS = shuffleArray(["#A7DDE8", "#E51B5D", "#F46E20"]);
+const COLORS = shuffleArray(["#96D9E5", "#E51B5D", "#F46E20"]);
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -49,7 +49,7 @@ class Slider extends React.Component {
   render() {
     const { setIndex, state } = this;
     return (
-      <div>
+      <div className="project-slider">
         <Selector set={(i) => setIndex(i)} selected={state.index} />
         <Carousel set={(i) => setIndex(i)} selected={state.index} />
       </div>

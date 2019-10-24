@@ -12,6 +12,10 @@
   }
 }
 
+#project-slider {
+  margin: 20px auto;
+}
+
 #project-selector {
   @include flex(row, space-between, center);
   margin: 0 auto;
@@ -44,13 +48,19 @@
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 20px 0;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   .main {
     height: 100%;
     width: 40vw;
+    padding: 30px;
+    border-radius: 10px;
 
     @media screen and (max-width: 800px) {
       width: 60vw;
@@ -61,10 +71,17 @@
     height: 75%;
     width: 20vw;
     opacity: 0.5;
-
     @media screen and (max-width: 800px) {
       visibility: hidden;
     }
+  }
+
+  .right {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .left {
+    border-radius: 0 15px 15px 0;
   }
 }
 
