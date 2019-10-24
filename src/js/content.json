@@ -25,26 +25,27 @@
       "date": "2020-02-13"
     }
   ],
+  "challenges_intro": "TreeHacks 2020 will be the 6th-ever iteration of TreeHacks. Our theme this year is hacking for the future – addressing deeply impactful problems and building unimaginable solutions. We’ve identified six global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get your brain juices flowing, your code compiling, and your team innovating!",
   "challenges": [
     {
       "name": "education",
       "logo": "svg/challenges/education.svg",
-      "description": "Globally, systems and styles of education are evolving everyday, incorporating developments ranging from technology to behavioral science. The education challenge supports hackers in creating new tools for learning and knowledge-sharing across regional borders, language barriers, learning styles, degrees of privilege, and more."
+      "description": "Systems and styles of education around the world are evolving everyday. The education challenge supports hackers in using technology to democratize access to information and make knowledge accessible across borders and different learning styles."
     },
     {
       "name": "medical access",
       "logo": "svg/challenges/medical-access.svg",
-      "description": "Almost half a billion people across the world still lack access to basic healthcare, disproportionately affecting marginalized communities even in wealthier regions. The medical access challenge pushes hackers to explore accessibility of treatments, innovate in the rapidly growing field of telemedicine, and redefine healthcare as we know it."
+      "description": "Almost half a billion people across the world still lack access to basic healthcare, and even less are able to afford expensive treatments and diagnostics for more severe conditions. The medical access challenge pushes hackers to explore accessibility of treatments, build telemedicine tools, and redefine healthcare as we know it."
     },
     {
       "name": "voice assistance",
       "logo": "svg/challenges/voice.svg",
-      "description": "With the rise of products like Alexa and Siri, voice assistants are increasingly an integral part of day-to-day life in homes, schools, workplaces, and more. The voice assistance challenge encourages hackers to push the boundaries of voice assistant functionalities, address key privacy concerns, and place more power in the hands of users."
+      "description": "With the demonstrated convenience of products like Alexa and Siri, voice assistants are becoming more popular and necessary for day-to-day life in the home, schools, workplaces, and more. The voice assistance challenge encourages hackers to push the boundaries of voice assistant functionalities, address key privacy concerns, and place more power in the hands of users."
     },
     {
       "name": "iot",
       "logo": "svg/challenges/iot.svg",
-      "description": "The world has 4.5 billion people connected to the internet – but data tells us there are still 700+ billion unconnected things in our society. The IoT challenge encourages hackers to connect devices in novel ways, collect interesting data, and utilize our vast network of things to make the world a better place."
+      "description": "As technology becomes more and more integrated with our daily lives, there’s a pressing need to bring previously unconnected objects into the network of devices. The IoT challenge encourages hackers to connect devices in unique ways, collect interesting data about the way we live, and utilize the vast connected network of things to make the world a better place."
     },
     {
       "name": "ar/vr",
@@ -54,7 +55,7 @@
     {
       "name": "geospatial",
       "logo": "svg/challenges/geospatial.svg",
-      "description": "Every second, we collect terabytes of traffic, satellite, and location data. The geospatial challenge pushes hackers to utilize rich datasets and APIs to better help and understand the world we live in."
+      "description": "Every second, we collect terabytes of traffic, satellite, and location data that often goes unused for consumer- and industry-specific applications. The geospatial challenge pushes hackers to utilize rich datasets and APIs to better help and understand the world we live in."
     }
   ],
   "about_intro": "Join us as we build apps, hardware, and community in the California sun!",

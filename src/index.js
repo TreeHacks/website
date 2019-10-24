@@ -4,6 +4,7 @@ import Navbar from "./js/navbar.jsx";
 import Home from "./js/home.jsx";
 import Challenges from "./js/challenges.jsx";
 import About from "./js/about.jsx";
+import Application from "./js/application.jsx";
 import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
@@ -26,6 +27,7 @@ function Main() {
       <Home />
       <About />
       <Challenges />
+      {/*<Application />*/}
       <Projects />
       <FAQ />
       <Sponsors />
