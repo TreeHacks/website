@@ -1,5 +1,5 @@
-# website-2019
-TreeHacks informational website for 2019.
+# website-2020
+TreeHacks informational website for 2020.
 
 See the site at https://www.treehacks.com/.
 

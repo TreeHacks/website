@@ -17,28 +17,48 @@
 
 #deadlines {
   @include flex(row nowrap, space-evenly, flex-end);
+  align-items: center;
   @media screen and (max-width: 550px) {
-    @include flex(column, space-evenly, center);
-    .single-deadline {
-      padding-top: $medium-space;
-    }
+    margin: 0 -14vw;
   }
 }
 
 .single-deadline {
   color: $light-gray;
+  margin: -$small-space / 2;
+  padding: $small-space / 2;
 
   h1 {
     color: $pink;
     font-size: $heading-font-size * 2;
+    @media screen and (max-width: 550px) {
+      font-size: $heading-font-size * 0.9;
+    }
   }
 
   p {
     font-size: $medium-font-size;
+    @media screen and (max-width: 550px) {
+      font-size: $medium-font-size * 0.7;
+
+      .deadline-title {
+        display: block;
+      }
+    }
   }
 
   .subtext {
     color: $pink;
     font-weight: bold;
+  }
+
+  transition: 0.1s all;
+
+  @media screen and (min-width: 551px) {
+    &:hover {
+      box-shadow: 0px 0px 15px 0px #e4e4e4;
+      border-radius: 20px;
+      transform: scale(1.1);
+    }
   }
 }

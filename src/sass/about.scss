@@ -1,4 +1,4 @@
-#about {
+#about, #application {
   margin-top: $medium-space;
   position: relative;
 
@@ -6,7 +6,7 @@
     margin-bottom: $small-space;
   }
 
-  $about-max-width: $max-width - 150px;
+  $about-max-width: $max-width - 160px;
 
   .container {
     max-width: $about-max-width;
@@ -16,10 +16,45 @@
       margin: 0 $large-space;
     }
 
+    .section-intro {
+      margin: $medium-space 0 0;
+      padding: 0;
+    }
+
+    .side-image {
+      max-width: 200px;
+      padding-left: 20px;
+      &.pull-right {
+        float: right;
+      }
+    }
+
+    p.content-text {
+      font-size: $medium-font-size;
+      margin: $small-space 0;
+
+      &.apply {
+        text-align: center;
+
+        .apply-button {
+          display: inline-block;
+          margin: 0 auto;
+        }
+      }
+    }
+
     .about-video {
       margin: 0 auto;
       width: 100%;
       max-width: 640px;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: 0.1s all;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       & > div {
         position: relative;
@@ -40,13 +75,14 @@
   .intro {
     padding: $medium-space 0;
     font-size: $subheading-font-size;
-    text-align: center;
+    text-align: justify;
     font-weight: $heavy-font-weight;
   }
 
   .body {
     margin: $medium-space 0;
     font-size: $medium-font-size;
-    text-align: center;
+    text-align: justify;
   }
 }
+
