@@ -10,6 +10,12 @@
     max-width: $max-width;
     margin: $large-space auto;
   }
+
+  @media screen and (max-width: 750px) {
+    .grid-item {
+      width: 68vw;
+    }
+  }
 }
 
 .slick-track {
@@ -26,9 +32,6 @@
   cursor: pointer;
   width: 26vw;
   height: 100%;
-  @media screen and (max-width: 750px) {
-    width: 75vw;
-  }
 
   @include flex(column nowrap, center, center);
   &:hover {
