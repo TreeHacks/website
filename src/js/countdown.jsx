@@ -35,7 +35,10 @@ class SingleDeadline extends React.Component {
     const monthNames = ["January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December"
                        ];
-    const dayEndings = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"]
+    var dayEndings = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"];
+    if (Math.floor(deadlineDay / 10) == 1) {
+      dayEndings = ["th", "th", "th", "th", "th", "th", "th", "th", "th", "th"];
+    }
 
     return(
       <a href="https://root.treehacks.com" target="_blank" className="single-deadline">
