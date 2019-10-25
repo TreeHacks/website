@@ -3,6 +3,7 @@ import { projects } from './content.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import $ from "jquery";
 // import tree from "../svg/alternate-tree.svg"
 // import eye from "../svg/eye.svg"
 
@@ -36,23 +37,35 @@ function Projects() {
 class ProjectSlider extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { arr: [] };
+    this.state = { arr: [], width: 0 };
   }
 
   componentWillMount() {
     this.setState({ arr: makeColors() });
   }
 
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   render() {
+    var numSlides = 3;
+    if (window.innerWidth < 750) {
+      numSlides = 1;
+    }
     const settings = {
       className: "center",
       centerMode: true,
       infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 3,
+      slidesToShow: numSlides,
       speed: 500
     };
     return (

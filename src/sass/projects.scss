@@ -19,13 +19,16 @@
 .grid-item {
   box-shadow: 0px 0px 15px 0px #e4e4e4;
   border-radius: 20px;
-  transition-duration: 0.5s;
+  transition-duration: $transition-speed;
   color: white;
   margin: 2vh 0;
   padding: $small-space;
   width: 25vw;
-  margin: 2vh auto;
+  margin: 3vh auto;
   cursor: pointer;
+  @media screen and (max-width: 750px) {
+    width: 75vw;
+  }
 
   @include flex(column nowrap, center, center);
   &:hover {
@@ -35,9 +38,6 @@
   p {
     text-align: center;
     margin: 0 1vw;
-    @media screen and (min-width: $max-width) {
-      margin: 0 $max-width * 0.01;
-    }
   }
 
   .title {
