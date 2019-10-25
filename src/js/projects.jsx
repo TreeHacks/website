@@ -1,5 +1,8 @@
 import React from 'react';
 import { projects } from './content.json';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import tree from "../svg/alternate-tree.svg"
 // import eye from "../svg/eye.svg"
 
@@ -24,13 +27,13 @@ function Projects() {
       <div className="floating-illustration eye"><img src={eye} /></div>
       */}
       <h1 className="section-heading">Past Projects</h1>
-      <Grid />
+      <ProjectSlider />
       <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
     </div>
   );
 }
 
-class Grid extends React.Component {
+class ProjectSlider extends React.Component {
   constructor(props) {
     super(props);
     this.state = { arr: [] };
@@ -41,22 +44,25 @@ class Grid extends React.Component {
   }
 
   componentDidMount() {
-    // this.interval = setInterval(() => {
-    //   this.makeColors();
-    // }, PROJECT_INTERVAL);
-  }
-
-  componentWillUnmount() {
-    // clearInterval(this.interval);
   }
 
   render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 3,
+      speed: 500
+    };
     return (
-      <div id="projects-grid">
-        {projects.map((project, i) => {
-          const color = (this.state.arr.indexOf(i) !== -1) ? colors[this.state.arr.indexOf(i)] : colors[Math.round(Math.random() * 2)];
-          return <GridItem color={color} title={project.title} text={project.description} />;
-        })}
+      <div>
+        <Slider {...settings}>
+          {projects.map((project, i) => {
+            const color = colors[i % 3];
+            return <GridItem color={color} title={project.title} text={project.description} />;
+          })}
+        </Slider>
       </div>
     );
   }
@@ -65,30 +71,14 @@ class Grid extends React.Component {
 class GridItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hover: false };
-  }
-
-  mouseOver() {
-    this.setState({ hover: true });
-  }
-
-  mouseOut() {
-    this.setState({ hover: false });
   }
 
   render() {
-    var label = this.props.title;
-    var textClass = "title";
-    if (this.state.hover) {
-      label = this.props.text;
-      textClass = "text";
-    }
     return (
       <div key={this.props.title} className="grid-item"
-        style={{ backgroundColor: this.props.color }}
-        onMouseOver={() => this.mouseOver()}
-        onMouseOut={() => this.mouseOut()}>
-        <p className={textClass}>{label}</p>
+        style={{ backgroundColor: this.props.color }}>
+        <p className="title">{this.props.title}</p>
+        <p className="text">{this.props.text}</p>
       </div>
     );
   }

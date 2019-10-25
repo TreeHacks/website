@@ -17,16 +17,16 @@
 }
 
 .grid-item {
+  box-shadow: 0px 0px 15px 0px #e4e4e4;
+  border-radius: 20px;
   transition-duration: 0.5s;
-  width: 28vw;
-  height: 28vw;
-  margin: 2vw;
-  @media screen and (min-width: $max-width) {
-    width: $max-width * 0.28;
-    height: $max-width * 0.28;
-    margin: $max-width * 0.02;
-  }
   color: white;
+  margin: 2vh 0;
+  padding: $small-space;
+  width: 25vw;
+  margin: 2vh auto;
+  cursor: pointer;
+
   @include flex(column nowrap, center, center);
   &:hover {
     transform: scale(1.05);
@@ -45,6 +45,7 @@
     font-size: 2.5vw;
     text-transform: uppercase;
     opacity: 1;
+    margin: $small-space 0;
     @media screen and (min-width: $max-width) {
       font-size: $max-width * 0.025;
     }
@@ -52,6 +53,7 @@
 
   .text {
     font-size: 1.75vw;
+    margin-bottom: $small-space;
     @media screen and (min-width: $max-width) {
       font-size: $max-width * 0.0175;
     }
