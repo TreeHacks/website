@@ -42,21 +42,15 @@
 
   .title {
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: $subheading-font-size;
     text-transform: uppercase;
     opacity: 1;
     margin: $small-space 0;
-    @media screen and (min-width: $max-width) {
-      font-size: $max-width * 0.025;
-    }
   }
 
   .text {
-    font-size: 1.75vw;
+    font-size: $medium-font-size;
     margin-bottom: $small-space;
-    @media screen and (min-width: $max-width) {
-      font-size: $max-width * 0.0175;
-    }
   }
 
 }
