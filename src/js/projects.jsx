@@ -3,7 +3,6 @@ import { projects } from './content.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import $ from "jquery";
 // import tree from "../svg/alternate-tree.svg"
 // import eye from "../svg/eye.svg"
 
