@@ -12,8 +12,8 @@
   }
 }
 
-#projects-grid {
-  @include flex(row wrap, center, center);
+.slick-track {
+    @include flex(row nowrap, center, center);
 }
 
 .grid-item {
@@ -21,11 +21,11 @@
   border-radius: 20px;
   transition-duration: $transition-speed;
   color: white;
-  margin: 2vh 0;
   padding: $small-space;
-  width: 25vw;
   margin: 3vh auto;
   cursor: pointer;
+  width: 26vw;
+  height: 100%;
   @media screen and (max-width: 750px) {
     width: 75vw;
   }

@@ -55,6 +55,10 @@ class ProjectSlider extends React.Component {
     window.removeEventListener('resize', this.updateDimensions);
   }
 
+  handleClick = i => e => {
+    this.slider.slickGoTo(i);
+  }
+
   render() {
     var numSlides = 3;
     if (window.innerWidth < 750) {
@@ -65,14 +69,15 @@ class ProjectSlider extends React.Component {
       centerMode: true,
       infinite: true,
       slidesToShow: numSlides,
+      swipeToSlide: true,
       speed: 500
     };
     return (
       <div>
-        <Slider {...settings}>
+        <Slider ref={c => (this.slider = c)} {...settings}>
           {projects.map((project, i) => {
             const color = colors[i % 3];
-            return <GridItem color={color} title={project.title} text={project.description} />;
+            return <GridItem color={color} title={project.title} text={project.description} onClick={this.handleClick(i)} />;
           })}
         </Slider>
       </div>
@@ -88,7 +93,8 @@ class GridItem extends React.Component {
   render() {
     return (
       <div key={this.props.title} className="grid-item"
-        style={{ backgroundColor: this.props.color }}>
+        style={{ backgroundColor: this.props.color }}
+        onClick={this.props.onClick}>
         <p className="title">{this.props.title}</p>
         <p className="text">{this.props.text}</p>
       </div>
