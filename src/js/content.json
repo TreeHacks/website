@@ -25,7 +25,7 @@
       "date": "2020-02-13"
     }
   ],
-  "challenges_intro": "TreeHacks 2020 will be the 6th-ever iteration of TreeHacks. Our theme this year is hacking for the future – addressing deeply impactful problems and building unimaginable solutions. We’ve identified six global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get your brain juices flowing, your code compiling, and your team innovating!",
+  "challenges_intro": "TreeHacks 2020 will be the 6th-ever iteration of TreeHacks. Our theme this year is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified six global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. These aren't a strict guideline for what you should work on, but just some of our favorite focus areas.",
   "challenges": [
     {
       "name": "education",
