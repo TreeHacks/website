@@ -21,6 +21,10 @@ body {
   z-index: -1;
   margin-top: -16%;
 
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
   &.accent-blue {
     background-image: radial-gradient(#A7DDE8 30%, #ffffff00 20%);
   }
