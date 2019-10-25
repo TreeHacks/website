@@ -75,7 +75,10 @@
   .intro {
     padding: $medium-space 0;
     font-size: $subheading-font-size;
-    text-align: justify;
+    text-align: center;
+    @media screen and (min-width: $max-width) {
+      text-align: justify; 
+    }
     font-weight: $heavy-font-weight;
   }
 
