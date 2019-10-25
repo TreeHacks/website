@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import eye from "../svg/eye.svg"
 
 // const PROJECT_INTERVAL = 2500;
-const colors = ["#A7DDE8", "#E51B5D", "#F46E20"];
+const colors = ["#34b2cb", "#E51B5D", "#F46E20"];
 
 function makeColors() {
   var arr = [];
