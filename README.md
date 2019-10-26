@@ -1,5 +1,7 @@
-# website
-TreeHacks informational website.
+<img src="https://www.treehacks.com/static/media/logo.53cad43d.svg" height="60" />
+
+
+# TreeHacks Website
 
 See the site at https://www.treehacks.com/.
 
