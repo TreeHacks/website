@@ -27,11 +27,11 @@ class Deadlines extends React.Component {
 
 class SingleDeadline extends React.Component {
   render() {
-    var currentDate = new Date();
+    //const CA_UTC_OFFSET = 8 * 60; // In minutes
+    var currentDate = Date.now();
     var deadlineDate = new Date(this.props.date);
-    var deadlineDay = deadlineDate.getUTCDate();
+    var deadlineDay = deadlineDate.getUTCDate() - 1; // Subtract 1 to account for UTC offset (+8 hours)
     var deadlineMonth = deadlineDate.getUTCMonth();
-
     const monthNames = ["January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December"
                        ];
@@ -39,15 +39,39 @@ class SingleDeadline extends React.Component {
     if (Math.floor(deadlineDay / 10) == 1) {
       dayEndings = ["th", "th", "th", "th", "th", "th", "th", "th", "th", "th"];
     }
+    var minuteDiff = (deadlineDate.getTime() - currentDate) / (1000 * 60);
+    var daysLeft = Math.round(1 + minuteDiff / (60 * 24)); // Add 1 since it is inclusive
+    var timeLeft = daysLeft;
+    var timeElapsed = "not-elapsed";
+    var unit = "days";
+    if (minuteDiff <= 60 * 24 && minuteDiff > 0) {
+      var hoursLeft = Math.round(minuteDiff / (60));
+      timeLeft = hoursLeft;
+      unit = "hours";
+      if (hoursLeft <= 1) {
+        var minutesLeft = Math.round(minuteDiff);
+        timeLeft = minutesLeft;
+        unit = "minutes";
+        if (minutesLeft === 1) {
+          unit = "minute";
+        }
+      }
+    } else if (minuteDiff <= 0) {
+      timeLeft = 0;
+      timeElapsed = "elapsed";
+    }
+    // Make box not hoverable
+    // don't cross out 0
 
     return(
-      <a href="https://root.treehacks.com" target="_blank" className="single-deadline">
-        <p><span className="deadline-title">{this.props.title}</span> deadline</p>
-        <div className="extra-text">
+      <a href="https://root.treehacks.com" target="_blank" className={"single-deadline " + timeElapsed}>
+        <div className={timeElapsed}>
+          <p><span className="deadline-title">{this.props.title}</span> deadline</p>
+          <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
+          <h1 className={timeElapsed}>{timeLeft}</h1>
+          <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
+          <p className={"subtext " + timeElapsed}>left to apply</p>
         </div>
-        <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
-        <h1>{Math.round(1 + (deadlineDate - currentDate) / (1000 * 60 * 60 * 24))}</h1>
-        <p className="subtext">days left to apply</p>
       </a>
     )
   }
