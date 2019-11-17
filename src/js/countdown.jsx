@@ -60,18 +60,14 @@ class SingleDeadline extends React.Component {
       timeLeft = 0;
       timeElapsed = "elapsed";
     }
-    // Make box not hoverable
-    // don't cross out 0
 
     return(
       <a href="https://root.treehacks.com" target="_blank" className={"single-deadline " + timeElapsed}>
-        <div className={timeElapsed}>
-          <p><span className="deadline-title">{this.props.title}</span> deadline</p>
-          <p><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
-          <h1 className={timeElapsed}>{timeLeft}</h1>
-          <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
-          <p className={"subtext " + timeElapsed}>left to apply</p>
-        </div>
+        <p className={timeElapsed}><span className="deadline-title">{this.props.title}</span> deadline</p>
+        <p className={timeElapsed}><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
+        <h1 className={timeElapsed}>{timeLeft}</h1>
+        <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
+        <p className={"subtext " + timeElapsed}>left to apply</p>
       </a>
     )
   }
