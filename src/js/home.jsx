@@ -16,7 +16,8 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phrase: 0
+      phrase: 0,
+      pixel: false
     };
   }
 
@@ -41,9 +42,25 @@ class Home extends React.Component {
     clearInterval(this.interval);
   }
 
+  onClick = () => {
+    this.setState({
+      pixel: true
+    })
+  }
+
   render() {
     const hasEnded = Date.now() > new Date(ended_cutoff),
       hasBegun = Date.now() > new Date(live_cutoff);
+
+    let apply_button;
+    if (!this.state.pixel) {
+      apply_button = <a href="https://root.treehacks.com" onClick={this.onClick} className="apply-button">apply now</a>;
+    } else {
+      apply_button = <div>
+                       <a href="https://root.treehacks.com" onClick={this.onClick} className="apply-button">apply now</a>
+                       <img height="1" width="1" style={{"display":"none"}} alt="" src="https://px.ads.linkedin.com/collect/?pid=1643873&conversionId=1608193&fmt=gif" />
+                     </div>;
+    }
 
     return (
       <div id="home">
@@ -52,7 +69,7 @@ class Home extends React.Component {
         <img className="slide-in-left" id="arm" src={arm2l} alt="" />
         <div id="date-text">February 14&ndash;16, 2020<br/>Stanford&nbsp;University</div>
         {STATUS === STATUSES.registration &&
-          <a href="https://root.treehacks.com" className="apply-button">apply now</a>
+          apply_button
         }
         {STATUS === STATUSES.beforeRegistration &&
           <EmailSignupWidget />
