@@ -67,6 +67,14 @@ function App() {
           to="https://treehacks.typeform.com/to/rK08ej"
         /> */}
         <CustomRedirect
+          from="/judge"
+          to="https://treehacks.typeform.com/to/QyaH8I"
+        />
+        <CustomRedirect
+          from="/mentor"
+          to="https://treehacks.typeform.com/to/OSt3yo"
+        />
+        <CustomRedirect
           from="/code-of-conduct"
           to="https://github.com/TreeHacks/policies/blob/master/code-of-conduct.md"
         />
