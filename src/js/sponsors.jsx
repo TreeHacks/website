@@ -2,45 +2,41 @@ import React from 'react';
 import computer from "../svg/computer-arms.svg"
 
 const SPONSORS = {
+  biggest: [
+    {"img": require('../sponsor-logos/humancapital.png')}
+  ],
   big: [
-    {"link": "https://microsoft.com", "img": require('../sponsor-logos/microsoft.png')}
+    {"link": "https://microsoft.com", "img": require('../sponsor-logos/microsoft.png')},
+    {"img": require('../sponsor-logos/johnsoncontrols.png')},
+    {"img": require('../sponsor-logos/oracle.png')},
+    {"img": require('../sponsor-logos/genentech.png')}
   ],
   medium: [
-    {"link": "https://disney.com", "img": require('../sponsor-logos/disney.png')},
-    {"link": "https://www.newrelic.com/", "img": require('../sponsor-logos/newrelic.png')},
-    {"link": "https://www.neo.com/", "img": require('../sponsor-logos/neo.png')},
-    {"link": "https://ibm.com/", "img": require('../sponsor-logos/ibm.png')},
-    {"link": "https://drw.com/", "img": require('../sponsor-logos/drw.png')},
-    {"link": "https://docker.com/", "img": require('../sponsor-logos/docker.png')},
-    {"link": "https://axon.com/", "img": require('../sponsor-logos/axon.png')},
-    {"link": "https://www.polarr.co/", "img": require('../sponsor-logos/polarr.png')},
-    {"link": "https://esri.com/", "img": require('../sponsor-logos/esri.png')},
-    {"link": "https://firebase.google.com/", "img": require('../sponsor-logos/firebase.png')},
-    {"link": "https://deshaw.com/", "img": require('../sponsor-logos/deshaw.png')}
+    {"img": require('../sponsor-logos/citadel.png')},
+    {"img": require('../sponsor-logos/deshaw.png')},
+    {"img": require('../sponsor-logos/drw.png')},
+    {"img": require('../sponsor-logos/gcp.png')},
+    {"img": require('../sponsor-logos/jpm.png')},
+    {"img": require('../sponsor-logos/alwaysai.png')},
+    {"img": require('../sponsor-logos/fujifilm.png')},
+    {"img": require('../sponsor-logos/goahead.png')}
   ],
   small: [
-    {"link": "https://wix.com", "img": require('../sponsor-logos/wix.png')},
-    {"link": "https://twosigma.com/", "img": require('../sponsor-logos/twosigma.png')},
-    {"link": "https://plus.ai/", "img": require('../sponsor-logos/plusai.png')},
-    {"link": "https://phone2action.com/", "img": require('../sponsor-logos/phone2action.png')},
-    {"link": "https://oracle.com/", "img": require('../sponsor-logos/oracle.png')},
-    {"link": "https://cloud.google.com/", "img": require('../sponsor-logos/gcp.png')},
-    {"link": "https://codingitforward.com/", "img": require('../sponsor-logos/codingitforward.png')},
-    {"link": "https://cisco.com/", "img": require('../sponsor-logos/cisco.png')},
-    {"link": "https://www.cerebras.net/", "img": require('../sponsor-logos/cerebras.png')},
-    {"link": "https://quip.com/", "img": require('../sponsor-logos/quip.png')},
-    {"link": "https://facebook.com/", "img": require('../sponsor-logos/facebook.png')},
-    {"link": "https://blockstack.com/", "img": require('../sponsor-logos/blockstack.png')}
+    {"img": require('../sponsor-logos/facebook.png')},
+    {"img": require('../sponsor-logos/snapchat.png')},
+    {"img": require('../sponsor-logos/mmi.png')},
+    {"img": require('../sponsor-logos/twosigma.png')},
+    {"img": require('../sponsor-logos/checkbook.png')},
+    {"img": require('../sponsor-logos/infosys.png')},
+    {"img": require('../sponsor-logos/sequoia.png')}
   ],
   smallest: [
-    {"link": "https://twilio.com", "img": require('../sponsor-logos/twilio.png')},
-    {"link": "https://www.xinfin.org/", "img": require('../sponsor-logos/xinfin.png')},
-    {"link": "http://www.xcalar.com/", "img": require('../sponsor-logos/xcalar.png')},
-    {"link": "https://expo.io/", "img": require('../sponsor-logos/expo.png')},
-    {"link": "https://eventive.org/", "img": require('../sponsor-logos/eventive.png')},
-    {"link": "https://soundhound.com/", "img": require('../sponsor-logos/soundhound.png')},
-    {"link": "https://github.com/", "img": require('../sponsor-logos/github.png')},
-    {"link": "https://sara.stanford.edu/", "img": require('../sponsor-logos/sara.png')}
+    {"img": require('../sponsor-logos/nvidia.png')},
+    {"img": require('../sponsor-logos/linode.png')},
+    {"img": require('../sponsor-logos/pearvc.png')},
+    {"img": require('../sponsor-logos/soundhound.png')},
+    {"img": require('../sponsor-logos/vatic.png')},
+    {"img": require('../sponsor-logos/voiceflow.png')}
   ]
 };
 
@@ -60,12 +56,11 @@ function Sponsors() {
       <div className="stripe-wrapper sponsors"><div className="stripe accent-gray"/></div>
       {/*<div className="floating-illustration computer"><img src={computer} /></div>*/}
       <h1 className="section-heading" id="sub-heading">sponsors</h1>
-      {/*
+      {_makeSponsors('biggest')}
       {_makeSponsors('big')}
       {_makeSponsors('medium')}
       {_makeSponsors('small')}
       {_makeSponsors('smallest')}
-      */}
       <a href="mailto:hello@treehacks.com?Subject=Sponsorship%20Interest" className="apply-button">become a sponsor!</a>
     </div>
   );
