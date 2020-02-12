@@ -34,9 +34,10 @@ const SPONSORS = {
     {"link": "https://www.nvidia.com", "img": require('../sponsor-logos/nvidia.png')},
     {"link": "https://www.linode.com", "img": require('../sponsor-logos/linode.png')},
     {"link": "https://www.pear.vc", "img": require('../sponsor-logos/pearvc.png')},
-    // {"link": "https://www.soundhound.com", "img": require('../sponsor-logos/soundhound.png')},
+    {"link": "https://www.soundhound.com", "img": require('../sponsor-logos/soundhound.png')},
     {"link": "http://www.vaticlabs.ai", "img": require('../sponsor-logos/vatic.png')},
-    {"link": "https://www.voiceflow.com/", "img": require('../sponsor-logos/voiceflow.png')}
+    {"link": "https://www.voiceflow.com/", "img": require('../sponsor-logos/voiceflow.png')},
+    {"link": "https://neo.com/", "img": require('../sponsor-logos/neo.png')}
   ]
 };
 
