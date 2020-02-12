@@ -37,7 +37,11 @@ const SPONSORS = {
     {"link": "https://www.soundhound.com", "img": require('../sponsor-logos/soundhound.png')},
     {"link": "http://www.vaticlabs.ai", "img": require('../sponsor-logos/vatic.png')},
     {"link": "https://www.voiceflow.com/", "img": require('../sponsor-logos/voiceflow.png')},
-    {"link": "https://neo.com/", "img": require('../sponsor-logos/neo.png')}
+    {"link": "https://neo.com/", "img": require('../sponsor-logos/neo.png')},
+    {"link": "https://www.magicleap.com/", "img": require('../sponsor-logos/ML.png')},
+    {"link": "https://x.company/", "img": require('../sponsor-logos/x.png')},
+    {"link": "https://robinhood.com/us/en/", "img": require('../sponsor-logos/robinhood.png')}
+
   ]
 };
 
