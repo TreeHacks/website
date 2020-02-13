@@ -43,6 +43,7 @@ const SPONSORS = {
     {"link": "https://www.magicleap.com/", "img": require('../sponsor-logos/ML.png')},
     {"link": "https://x.company/", "img": require('../sponsor-logos/x.png')},
     {"link": "https://robinhood.com/us/en/", "img": require('../sponsor-logos/robinhood.png')}
+    {"link": "https://www.samsung.com/us/explore/bixby/", "img": require('../sponsor-logos/samsung.png')}
   ]
 };
 
