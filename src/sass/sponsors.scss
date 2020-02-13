@@ -24,6 +24,11 @@
     width: 70%;
     margin: 1rem auto;
 
+    img:hover {
+      transition: $transition-speed;
+      transform: scale(1.05);
+    }
+
     &.level-biggest img {
       width: 100%;
     }
