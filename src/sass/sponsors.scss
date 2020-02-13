@@ -67,13 +67,12 @@
     }
 
     &.level-small a {
-      max-width: 12%;
+      max-width: 13%;
       margin: 0 5px;
     }
 
     &.level-smallest {
       margin-top: 2rem;
-      margin-bottom: 3rem;
     }
 
     &.level-smallest img {
@@ -81,7 +80,21 @@
     }
 
     &.level-smallest a {
-      width: 9%;
+      width: 10%;
+      min-width: 50px;
+      margin: 0 10px;
+    }
+
+    &.level-tiny {
+      margin-bottom: 3rem;
+    }
+
+    &.level-tiny img {
+      width: 100%;
+    }
+
+    &.level-tiny a {
+      width: 6%;
       min-width: 50px;
       margin: 0 10px;
     }
