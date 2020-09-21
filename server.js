@@ -1,5 +1,5 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const bodyParser = require("body-parser");
 var path = require("path");
 var request = require("request");
 const forceSsl = require("force-ssl-heroku");
@@ -26,6 +26,11 @@ var port = process.env.PORT || 3000;
 // Starts the Express server, which will run locally @ localhost:3000
 app.listen(port, () => {
   console.log("App listening on port 3000!");
+});
+
+// Redirect to team application
+app.get("/join", (req, res) => {
+  res.redirect("https://treehacks.typeform.com/to/bQQqB7Q5");
 });
 
 // Serves the index.html file (our basic frontend)
