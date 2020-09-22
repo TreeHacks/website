@@ -33,6 +33,13 @@ app.get("/join", (req, res) => {
   res.redirect("https://treehacks.typeform.com/to/bQQqB7Q5");
 });
 
+// Redirect to interest meeting
+app.get("/interest", (req, res) => {
+  res.redirect(
+    "https://stanford.zoom.us/j/91243289607?pwd=YU9QSFJaay9WMEkxTHNhWHdMMmp1QT09"
+  );
+});
+
 // Serves the index.html file (our basic frontend)
 app.get("*", (req, res) => {
   res.sendFile("index.html", { root: __dirname + "/build/" });
