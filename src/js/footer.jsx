@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import emailIcon from '../png/emailIcon.png';
-import facebookIcon from '../png/facebookIcon.png';
-import twitterIcon from '../png/twitterIcon.png';
-import instagramIcon from '../png/instagramIcon.png';
-import githubIcon from '../png/githubIcon.png';
+import emailIcon from "../png/emailIcon.png";
+import facebookIcon from "../png/facebookIcon.png";
+import twitterIcon from "../png/twitterIcon.png";
+import instagramIcon from "../png/instagramIcon.png";
+import githubIcon from "../png/githubIcon.png";
 
 function Footer() {
-  return(
+  return (
     <footer id="footer">
       {/*
       <a className="footer-item" href="mailto:hello@treehacks.com">
@@ -26,7 +26,7 @@ function Footer() {
         <img src={githubIcon} alt="github"/>
       </a>
       */}
-      <div id="footerImg"></div>
+      {/* <div id="footerImg"></div> */}
     </footer>
   );
 }

@@ -14,7 +14,7 @@ $navbar-horizontal-padding: 15px;
   height: 80px;
   width: 100vw;
 
-  box-shadow: 0 5px 30px -5px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
 
   .container {
     @include flex(row nowrap, center, center);
@@ -65,7 +65,7 @@ $navbar-horizontal-padding: 15px;
   }
 
   &:hover a {
-    color: $pink;
+    color: $dark-green;
   }
 }
 
@@ -75,14 +75,15 @@ $navbar-horizontal-padding: 15px;
 
 .apply-link a {
   color: $white;
-  background-color: $pink;
+  background-color: $dark-green;
   padding: 3px 6px;
   font-weight: bold;
   border-radius: 0.25rem;
   transition: $transition-speed all;
   display: inline-block;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     transform: scale(1.05);
     color: #fff;
   }
@@ -90,7 +91,7 @@ $navbar-horizontal-padding: 15px;
 
 #navbar-apply {
   margin-left: $navbar-margin;
-  padding: $navbar-horizontal-padding $navbar-margin*1.5;
+  padding: $navbar-horizontal-padding $navbar-margin * 1.5;
   font-size: $navbar-font-size;
   font-weight: $heavy-font-weight;
   transition: background-color $transition-speed;
@@ -101,7 +102,7 @@ $navbar-horizontal-padding: 15px;
 }
 
 #title {
-  color: $pink;
+  color: $dark-green;
   margin-left: 1vw;
 }
 

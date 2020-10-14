@@ -1,5 +1,5 @@
-import React from 'react';
-import { projects } from './content.json';
+import React from "react";
+import { projects } from "./content.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import eye from "../svg/eye.svg"
 
 // const PROJECT_INTERVAL = 2500;
-const colors = ["#34b2cb", "#E51B5D", "#F46E20"];
+const colors = ["#309071", "#dd3b3b", "#ffc623"];
 
 function makeColors() {
   var arr = [];
@@ -28,7 +28,9 @@ function Projects() {
       */}
       <h1 className="section-heading">Past Projects</h1>
       <ProjectSlider />
-      <div className="stripe-wrapper"><div className="stripe accent-pink" /></div>
+      <div className="stripe-wrapper">
+        <div className="stripe accent-pink" />
+      </div>
     </div>
   );
 }
@@ -48,11 +50,11 @@ class ProjectSlider extends React.Component {
   };
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateDimensions);
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions);
+    window.removeEventListener("resize", this.updateDimensions);
   }
 
   render() {
@@ -67,14 +69,20 @@ class ProjectSlider extends React.Component {
       slidesToShow: numSlides,
       swipeToSlide: true,
       focusOnSelect: true,
-      speed: 500
+      speed: 500,
     };
     return (
       <div>
-        <Slider ref={c => (this.slider = c)} {...settings}>
+        <Slider ref={(c) => (this.slider = c)} {...settings}>
           {projects.map((project, i) => {
             const color = colors[i % 3];
-            return <GridItem color={color} title={project.title} text={project.description} />;
+            return (
+              <GridItem
+                color={color}
+                title={project.title}
+                text={project.description}
+              />
+            );
           })}
         </Slider>
       </div>
@@ -89,9 +97,12 @@ class GridItem extends React.Component {
 
   render() {
     return (
-      <div key={this.props.title} className="grid-item"
+      <div
+        key={this.props.title}
+        className="grid-item"
         style={{ backgroundColor: this.props.color }}
-        onClick={this.props.onClick}>
+        onClick={this.props.onClick}
+      >
         <p className="title">{this.props.title}</p>
         <p className="text">{this.props.text}</p>
       </div>
