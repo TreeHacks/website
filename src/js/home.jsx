@@ -50,7 +50,7 @@ class Home extends React.Component {
         <div className="floating-illustration drone"><img src={drone} /></div>
         <img className="logo scale-in-center" src={treehacks_text} alt="treehacks large text" />
         <img className="slide-in-left" id="arm" src={arm2l} alt="" />
-        <div id="date-text">February 14&ndash;16, 2021<br/>Stanford&nbsp;University</div>
+        <div id="date-text">February 12&ndash;14, 2021<br/>Stanford&nbsp;University</div>
         {STATUS === STATUSES.registration &&
           <a href="https://root.treehacks.com" className="apply-button">apply now</a>
         }
