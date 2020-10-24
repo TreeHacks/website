@@ -10,7 +10,7 @@ function About() {
   let videoURL = "https://player.vimeo.com/video/368159554";
   return (
     <div id="about">
-      <div className="floating-illustration clouds"><img src={clouds} /></div>
+      <div className="floating-illustration clouds"></div>
       <div className="container">
         <div>
           <p className="intro">{about_intro}</p>

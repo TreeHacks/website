@@ -47,15 +47,12 @@ class Home extends React.Component {
 
     return (
       <div id="home">
-        <div className="floating-illustration drone">
-          <img src={drone} />
-        </div>
         <img
           className="logo scale-in-center"
           src={treehacks_text}
           alt="treehacks large text"
         />
-        <img className="slide-in-left" id="arm" src={arm2l} alt="" />
+        <div className="slide-in-left" id="arm" alt="" />
         <div id="date-text">
           February 14&ndash;16, 2020
           <br />

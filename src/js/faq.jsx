@@ -45,16 +45,10 @@ const FAQ = () => {
   return (
     <div id="faq">
       <h1 className="section-heading">Any Questions?</h1>
-      <div className="floating-illustration hand-point">
-        <img src={handPoint} />
-      </div>
       <div className="faq-container">
         {faq.map((item, i) => (
           <FAQItem {...item} i={i} />
         ))}
-      </div>
-      <div className="floating-illustration lightbulb">
-        <img src={lightbulb} />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ body {
 
 
 .stripe {
-  background-image: radial-gradient(#b8b7b7 30%, #ffffff00 20%);
+  background-image: radial-gradient($offwhite 30%, #ffffff00 20%);
   background-position: 0 0;
   background-size: 20px 20px;
   height: 200px;
@@ -34,7 +34,7 @@ body {
   }
 
   &.accent-orange {
-    background-image: radial-gradient(#F46E20 30%, #ffffff00 20%);
+    background-image: radial-gradient($yellow 30%, #ffffff00 20%);
   }
 }
 
