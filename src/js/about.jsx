@@ -7,7 +7,7 @@ import computer_arms from "../svg/computer-arms.svg"
 import Countdown from "./countdown.jsx";
 
 function About() {
-  let videoURL = "https://player.vimeo.com/video/368159554";
+  let videoURL = "https://player.vimeo.com/video/391854507";
   return (
     <div id="about">
       <div className="floating-illustration clouds"></div>
