@@ -1,5 +1,5 @@
 import React from "react";
-import treehacks_text from "../svg/treehacks-text.svg";
+import treehacks_text from "../png/treehacks-text.png";
 import arm2l from "../svg/arm2l.svg";
 import drone from "../svg/drone.svg";
 import { home, live_cutoff, ended_cutoff } from "./content.json";
