@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "force-ssl-heroku": "^1.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-collapsed": "^2.2.1",
