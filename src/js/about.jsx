@@ -17,7 +17,7 @@ function About() {
         </div>
         <Countdown />
         <div>
-          <p className="body">Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And laser tag. Lightsaber battles? Maybe even puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!</p>
+          <p className="body">{about_body}</p>
         </div>
         {/*<div>
           <p className="intro section-intro">What the hack is a hackathon?</p>

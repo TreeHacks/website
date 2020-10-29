@@ -56,7 +56,7 @@ class Home extends React.Component {
         <div id="date-text">
           February 14&ndash;16, 2020
           <br />
-          Stanford&nbsp;University
+          The&nbsp;Internet
         </div>
         {STATUS === STATUSES.registration && (
           <a href="https://root.treehacks.com" className="apply-button">
