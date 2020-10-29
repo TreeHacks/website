@@ -54,7 +54,7 @@ class Home extends React.Component {
         />
         <div className="slide-in-left" id="arm" alt="" />
         <div id="date-text">
-          February 14&ndash;16, 2020
+          February 12&ndash;14, 2021
           <br />
           The&nbsp;Internet
         </div>
