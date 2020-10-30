@@ -139,10 +139,10 @@
       "textAfter": ", adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome <3."
     },
     {
-      "link": "mailto:sponsorship@treehacks.com",
+      "link": "mailto:hello@treehacks.com",
       "q": "I have some other question!",
       "textBefore": "Email us at ",
-      "textIn": "sponsorship@treehacks.com",
+      "textIn": "hello@treehacks.com",
       "textAfter": ". We gotchu."
     }
   ]
