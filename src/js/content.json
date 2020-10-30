@@ -11,8 +11,7 @@
     "you've never written a line of code in your life",
     "you have ideas you want to make into reality"
   ],
-  "deadlines": [
-    {
+  "deadlines": [{
       "title": "Out of state",
       "date": "2019-11-18T23:59:59-08:00"
     },
@@ -26,8 +25,7 @@
     }
   ],
   "challenges_intro": "TreeHacks 2020 will be the 6th-ever iteration of TreeHacks. Our theme this year is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified six global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas.",
-  "challenges": [
-    {
+  "challenges": [{
       "name": "education",
       "logo": "svg/challenges/education.svg",
       "description": "Systems and styles of education around the world are evolving everyday. The education challenge supports hackers in using technology to democratize access to information and make knowledge accessible across borders and different learning styles."
@@ -60,8 +58,7 @@
   ],
   "about_intro": "Join us as we build apps, hardware, and community in the California sun!",
   "about_body": "Sure, we’ll be hacking for 36 hours straight, but we’ll also take yoga breaks and play laser tag. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. Don’t forget your sunscreen!",
-  "projects": [
-    {
+  "projects": [{
       "title": "Computertop Desk",
       "path": "images/projects/computertop_desktop.png",
       "url": "https://devpost.com/software/computertop-desk",
@@ -110,8 +107,7 @@
       "description": "Kevin, Lindsey, Arihant and Christina created a web app designed to help inform travellers by visually providing safety information. They used open source data from the CDC, earning them the Best Hack to Make the World More Informed at TreeHacks 2019."
     }
   ],
-  "faq": [
-    {
+  "faq": [{
       "q": "What is a hackathon?",
       "a": "A hackathon is where you turn your crazy ideas into real projects. We provide hardware, mentors, fun activities, speakers, workshops, food, friends, and so much more. You take care of hacking; we’ll take care of you."
     },
@@ -143,7 +139,7 @@
       "textAfter": ", adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome <3."
     },
     {
-      "link": "mailto:support@treehacks.com",
+      "link": "mailto:hello@treehacks.com",
       "q": "I have some other question!",
       "textBefore": "Email us at ",
       "textIn": "hello@treehacks.com",
