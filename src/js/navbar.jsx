@@ -8,7 +8,7 @@ const STATUSES = {
   registration: 2,
 };
 
-const STATUS = STATUSES.beforeRegistration;
+const STATUS = STATUSES.registration;
 
 function Navbar() {
   return (
