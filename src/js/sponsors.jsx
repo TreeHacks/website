@@ -1,5 +1,5 @@
 import React from "react";
-import computer from "../svg/computer-arms.svg";
+import parachute from "../svg/parachute.svg";
 
 const SPONSORS = {
   biggest: [],
@@ -28,7 +28,7 @@ function Sponsors() {
       <div className="stripe-wrapper sponsors">
         {/* <div className="stripe accent-gray" /> */}
       </div>
-      {/*<div className="floating-illustration computer"><img src={computer} /></div>*/}
+      <div className="floating-illustration parachute"><img src={parachute} /></div>
       <h1 className="section-heading" id="sub-heading">
         sponsors coming soon
       </h1>
