@@ -1,5 +1,8 @@
 #projects {
   position: relative;
+  background-color: $main-green;
+  padding-bottom: $small-space * 2;
+
 
   .section-heading {
     padding-top: 100px;
@@ -9,6 +12,7 @@
   .container {
     max-width: $max-width;
     margin: $large-space auto;
+
   }
 
   @media screen and (max-width: 750px) {
@@ -23,7 +27,7 @@
 }
 
 .grid-item {
-  box-shadow: 0px 0px 15px 0px #e4e4e4;
+  // box-shadow: 0px 0px 15px 0px #e4e4e4;
   border-radius: 20px;
   transition-duration: $transition-speed;
   color: white;

@@ -132,6 +132,15 @@ body {
     }
   }
 
+  &.laptop{
+    img {
+      width: 20vw;
+      margin-top: -220px;
+      left: 5%;
+      left: auto;
+    }
+  }
+
   @keyframes updown {
       0%   { transform: translateY(0); }
       50%  { transform: translateY(-10px); }
