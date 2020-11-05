@@ -21,7 +21,7 @@ function makeColors() {
 function Projects() {
   return (
     <div id="projects" className="container">
-      <div className="stripe accent-blue" />
+      {/* <div className="stripe accent-blue" /> */}
       {/*
       <div className="floating-illustration tree"><img src={tree} /></div>
       <div className="floating-illustration eye"><img src={eye} /></div>
@@ -29,7 +29,7 @@ function Projects() {
       <h1 className="section-heading">Past Projects</h1>
       <ProjectSlider />
       <div className="stripe-wrapper">
-        <div className="stripe accent-pink" />
+        {/* <div className="stripe accent-pink" /> */}
       </div>
     </div>
   );

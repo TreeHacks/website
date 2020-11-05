@@ -14,6 +14,7 @@ $orange: #f46e20;
 /* Color Palette 2021 */
 $light-green: #4dd272;
 $dark-green: #309071;
+$dark-dark-green: #1C413A;
 
 $offwhite: #edf5ee;
 $red: #dd3b3b;
@@ -26,7 +27,7 @@ $base-font-family: proxima-nova, sans-serif;
 $base-font-size: 16px;
 $heavy-font-weight: 700;
 $medium-font-size: $base-font-size + 2;
-$heading-font-size: $base-font-size * 3;
+$heading-font-size: $base-font-size * 4;
 $subheading-font-size: $base-font-size * 1.5;
 
 /* Base Styles */
@@ -55,7 +56,7 @@ $max-width: 960px;
 
 h1.section-heading {
   font-size: $heading-font-size;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-align: center;
 
   @media screen and (max-width: 1023px) {
