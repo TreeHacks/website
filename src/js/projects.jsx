@@ -25,8 +25,6 @@ function Projects() {
     <div id="projects" className="container">
       {/* <div className="stripe accent-blue" /> */}
       
-      {/* <div className="floating-illustration tree"><img src={tree} /></div>
-      <div className="floating-illustration eye"><img src={eye} /></div> */}
       <div className="floating-illustration laptop"><img src={laptop} /></div>
 
       <h1 className="section-heading">Past Projects</h1>

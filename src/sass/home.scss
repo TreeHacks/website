@@ -1,6 +1,6 @@
 .apply-button {
   margin-top: $small-space / 2;
-  background-color: $dark-green;
+  background-color: $amaranth;
   padding: 0.5vh 2vw 0.5vh 2vw;
   border-radius: 5px;
   &:hover {
@@ -73,12 +73,27 @@
 
   #date-text {
     max-width: 90vw;
-    text-align: center;
-    color: $dark-green;
+    text-align: left;
+    color: $amaranth;
     font-size: $subheading-font-size;
     font-weight: bold;
     padding-bottom: 1vh;
+    // align at bottom  
+    
   }
+
+  .rowC{
+    @include flex(row wrap, center, flex-start);
+  }
+  
+  .applylaptop {
+    position: relative;
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+  }  
+  
 }
 
 @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}

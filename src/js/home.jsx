@@ -1,9 +1,9 @@
 import React from "react";
 import treehacks_text from "../png/treehacks-text.png";
-import arm2l from "../svg/arm2l.svg";
-import drone from "../svg/drone.svg";
 import { home, live_cutoff, ended_cutoff } from "./content.json";
 import EmailSignupWidget from "./email-signup-widget.jsx";
+import applylaptop from "../svg/apply-laptop.svg";
+
 
 const STATUSES = {
   beforeRegistration: 1,
@@ -52,18 +52,32 @@ class Home extends React.Component {
           src={treehacks_text}
           alt="treehacks large text"
         />
-        <div className="slide-in-left" id="arm" alt="" />
-        <div id="date-text">
-          February 12&ndash;14, 2021
-          <br />
-          The&nbsp;Internet
+
+        <div className='rowC'>
+          {STATUS === STATUSES.registration && (
+            <div className="applylaptop">
+              <a href="https://root.treehacks.com">
+                <img src={applylaptop} />
+              </a>
+            </div>
+          )}
+
+          {/* <div className="slide-in-left" id="arm" alt="" /> */}
+          <div id="date-text">
+            Stanford&nbsp;University
+            <br />
+            february 12&ndash;14, 2021
+
+            {STATUS === STATUSES.registration && (
+              <a href="https://root.treehacks.com" className="apply-button">
+                apply now
+              </a>
+            )}
+            {STATUS === STATUSES.beforeRegistration && <EmailSignupWidget />}
+
+          </div>
         </div>
-        {STATUS === STATUSES.registration && (
-          <a href="https://root.treehacks.com" className="apply-button">
-            apply now
-          </a>
-        )}
-        {STATUS === STATUSES.beforeRegistration && <EmailSignupWidget />}
+
       </div>
     );
   }
