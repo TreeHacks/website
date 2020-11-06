@@ -1,17 +1,20 @@
 #sponsors.container {
   position: relative;
-
+  background-color: $mint-green;
+  // padding-top: $large-space;
+  padding-bottom: $large-space;
   @include flex(column nowrap, flex-start, center);
-  margin: $large-space $small-space;
+  margin-top: $large-space * 1.5;
   min-height: 300px;
 
   .section-heading {
     margin-bottom: $small-space;
-    padding-top: 100px;
+    // padding-top: 100px;
   }
 
   #sub-heading {
     margin-bottom: 1.5rem;
+    color: #0D9071;
   }
 
   @media screen and (max-width: 750px) {
