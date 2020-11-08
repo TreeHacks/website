@@ -23,8 +23,7 @@ function makeColors() {
 function Projects() {
   return (
     <div id="projects" className="container">
-      {/* <div className="stripe accent-blue" /> */}
-      
+      {/* <div className="stripe accent-blue" /> */}      
       <div className="floating-illustration laptop"><img src={laptop} /></div>
 
       <h1 className="section-heading">Past Projects</h1>
@@ -32,6 +31,7 @@ function Projects() {
       {/* <div className="stripe-wrapper"> */}
         {/* <div className="stripe accent-pink" /> */}
       {/* </div> */}
+
     </div>
   );
 }

@@ -60,7 +60,7 @@ body {
     position: absolute;
     top: 0;
     right: 3%;
-    width: 13vw;
+    width: 15vw;
     min-width: 150px;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -68,69 +68,16 @@ body {
     animation-timing-function: ease;
   }
 
-  &.drone {
-    img {
-      margin-top: 85vh;
-    }
+&.parachute{
+  img {
+    width: 20vw;
+    margin-top: -220px;
+    left: 5%;
+    right: auto;
   }
+}
+  
 
-  &.clouds {
-    img {
-      margin-top: 400px;
-      left: 3%;
-      right: auto;
-    }
-  }
-
-  &.relax {
-    img {
-      margin-top: 1000px;
-    }
-  }
-
-  &.tree {
-    img {
-      margin-top: -50px;
-      left: 4%;
-      right: auto;
-    }
-  }
-
-  &.eye {
-    img {
-      margin-top: 750px;
-    }
-  }
-
-  &.computer {
-    transform-origin: center center;
-    transform: rotate(180deg);
-
-    img {
-      margin-top: -200px;
-      right: 4%;
-      left: auto;
-    }
-  }
-
-  &.hand-point {
-    width: 100vw;
-    margin-left: -15.5vw;
-    img {
-      animation-name: leftright;
-      left: 0;
-    }
-  }
-
-  &.lightbulb {
-    width: 100vw;
-    top: 70%;
-    img {
-      animation-name: leftright;
-      right: 14vw;
-      width: 15vw;
-    }
-  }
 
   &.laptop{
     img {

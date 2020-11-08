@@ -1,14 +1,17 @@
 #challenges {
   position: relative;
   margin: $large-space 0;
+  padding-bottom: $small-space * 2;
+  background-color: $dark-dark-green;
 
   .section-heading {
     padding-top: 100px;
     margin-bottom: $small-space;
+    color: white;
   }
 
   .section-intro {
-    color: $light-gray;
+    color: $white;
     font-size: $subheading-font-size * 0.75;
     width: $max-width;
     max-width: 80vw;
@@ -16,8 +19,6 @@
   }
 
   .container {
-    color: $light-gray;
-
     @include flex(row wrap, center, flex-start);
     @media screen and (max-width: 750px) {
       display: block;
@@ -67,7 +68,7 @@
   h1 {
     font-size: $subheading-font-size;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: $small-space;
     font-weight: $heavy-font-weight;
   }
