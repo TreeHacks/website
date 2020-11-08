@@ -1,9 +1,21 @@
 #about, #application {
   margin-top: $medium-space;
+  padding-bottom: $large-space;
   position: relative;
+  background: $lighter-green;
 
   .section-heading {
     margin-bottom: $small-space;
+  }
+
+  .hoover {
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    height: 70%;
+    @media screen and (max-width: 1600px) {
+      display: none;
+    }
   }
 
   $about-max-width: $max-width - 160px;
@@ -51,6 +63,7 @@
       overflow: hidden;
       transition: $transition-speed all;
       cursor: pointer;
+      transform: translateY(20%);
 
       &:hover {
         transform: scale(1.05);

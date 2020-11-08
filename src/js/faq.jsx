@@ -5,11 +5,12 @@ import handPoint from "../svg/hand-point.svg";
 import lightbulb from "../svg/lightbulb.svg";
 
 const plusList = [
-  require("../svg/logo-red.svg"),
-  require("../svg/logo-blue.svg"),
-  require("../svg/logo-yellow.svg"),
-  require("../svg/logo-pink.svg"),
-  require("../svg/logo-green.svg"),
+  require("../svg/faq1.svg"),
+  require("../svg/faq2.svg"),
+  require("../svg/faq3.svg"),
+  require("../svg/faq4.svg"),
+  require("../svg/faq5.svg"),
+  require("../svg/faq6.svg"),
 ];
 
 const FAQItem = ({ q, a, link, textBefore, textIn, textAfter, i }) => {
