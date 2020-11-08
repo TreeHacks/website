@@ -48,7 +48,7 @@ body {
 
 .floating-illustration {
   position: absolute;
-  top: 10%;
+  top: 4%;
   left: 0;
   right: 0;
 
@@ -78,6 +78,15 @@ body {
 }
   
 
+
+  &.laptop{
+    img {
+      width: 20vw;
+      margin-top: -220px;
+      left: 5%;
+      left: auto;
+    }
+  }
 
   @keyframes updown {
       0%   { transform: translateY(0); }
