@@ -2,15 +2,17 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { about_intro } from "./content.json";
 import { about_body } from "./content.json";
-import clouds from "../svg/clouds.svg"
-import computer_arms from "../svg/computer-arms.svg"
+import clouds from "../svg/clouds.svg";
+import hoover from "../svg/hoover.svg";
 import Countdown from "./countdown.jsx";
 
 function About() {
   let videoURL = "https://player.vimeo.com/video/391854507";
   return (
     <div id="about">
-      {/* <div className="floating-illustration clouds"></div> */}
+      <div className="hoover">
+        <img src={hoover} />
+      </div>
       <div className="container">
         <div>
           <p className="intro">{about_intro}</p>

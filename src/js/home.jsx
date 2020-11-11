@@ -66,6 +66,8 @@ class Home extends React.Component {
           <div id="date-text">
             Stanford&nbsp;University
             <br />
+            (Virtual)
+            <br />
             february 12&ndash;14, 2021
 
             {STATUS === STATUSES.registration && (
