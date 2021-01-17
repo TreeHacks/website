@@ -67,6 +67,10 @@ function App() {
           to="https://treehacks.typeform.com/to/rK08ej"
         /> */}
         <CustomRedirect
+          from="/match"
+          to="https://treehacks.typeform.com/to/ZmcLkzFq"
+        />
+        <CustomRedirect
           from="/judge"
           to="https://treehacks.typeform.com/to/QyaH8I"
         />

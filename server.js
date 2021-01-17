@@ -17,23 +17,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-    console.log(err); // To see properties of message in our console
-    res.status(422).send({ error: err.message });
+  console.log(err); // To see properties of message in our console
+  res.status(422).send({ error: err.message });
 });
 
 var port = process.env.PORT || 3000;
 
 // Starts the Express server, which will run locally @ localhost:3000
 app.listen(port, () => {
-    console.log("App listening on port 3000!");
+  console.log("App listening on port 3000!");
 });
 
 // Redirect to stanford matching form
-app.get("/join", (req, res) => {
-    res.redirect("https://treehacks.typeform.com/to/ZmcLkzFq");
+app.get("/match", (req, res) => {
+  res.redirect("https://treehacks.typeform.com/to/ZmcLkzFq");
 });
 
 // Serves the index.html file (our basic frontend)
 app.get("*", (req, res) => {
-    res.sendFile("index.html", { root: __dirname + "/build/" });
+  res.sendFile("index.html", { root: __dirname + "/build/" });
 });
