@@ -38,6 +38,7 @@
 
     &.level-biggest a {
       width: 60%;
+      margin-bottom: 2em;
       min-width: 250px;
     }
 
@@ -61,22 +62,26 @@
 
     &.level-medium img {
       width: 100%;
+
     }
 
     &.level-medium a {
       width: 20%;
       min-width: 70px;
       margin: 0 10px;
+      
     }
 
     &.level-small img {
       max-height: 50px;
       max-width: 100%;
+      
     }
 
     &.level-small a {
       max-width: 13%;
       margin: 0 5px;
+      margin: 15px;
     }
 
     &.level-smallest {
