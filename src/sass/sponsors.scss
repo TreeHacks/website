@@ -24,7 +24,7 @@
 
   .level {
     @include flex(row wrap, center, center);
-    width: 70%;
+    width: 80%;
     margin: 1rem auto;
 
     img:hover {
@@ -37,12 +37,15 @@
     }
 
     &.level-biggest a {
-      width: 60%;
+      width: 40%;
+      margin-left: 50px;
+      margin-right: 50px;
       margin-bottom: 2em;
       min-width: 250px;
     }
 
     &.level-big {
+
       margin-top: 2.5rem;
       margin-bottom: 3.5rem;
     }
@@ -52,36 +55,56 @@
     }
 
     &.level-big a {
+      margin-left: 50px;
+      margin-right: 50px;
       width: 25%;
       min-width: 100px;
     }
 
     &.level-medium {
-      margin-bottom: 0.5rem;
+      margin-bottom: 2.5rem;
+      min-height: 250px;
+      
     }
 
     &.level-medium img {
-      width: 100%;
-
+      width: auto;
+       height: 50px;
     }
 
     &.level-medium a {
-      width: 20%;
-      min-width: 70px;
-      margin: 0 10px;
+      width: auto;
+      height: 50px;
+      min-height: 100px;
+      // width: 20%;
+      // min-width: 70px;
+      margin: 10px 10px;
       
     }
 
-    &.level-small img {
+    &.level-small {
+      vertical-align: middle;
+    }
+    // &.level-small img {
+    //   // max-height: 40px;
+    //   // max-width: 100%;
+    //   // min-height: 150px;
+    //   height: 35px;
+    //   // min-width: 60px;
+    //   width: auto;
+    // }
+
+    &.level-small a img {
+      max-width: 200px;
+      min-height: 45px;
       max-height: 50px;
-      max-width: 100%;
-      
-    }
 
-    &.level-small a {
-      max-width: 13%;
+
+
       margin: 0 5px;
       margin: 15px;
+      top: 50%;
+
     }
 
     &.level-smallest {
