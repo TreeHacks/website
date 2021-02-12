@@ -16,8 +16,7 @@ const SPONSORS = {
     {"link": "https://human.capital", "img": require('../sponsor-logos/hc.png')},
     {"link": "https://neo.com/", "img": require('../sponsor-logos/neo.png')},
     {"link": "https://www.deshaw.com/", "img": require('../sponsor-logos/deshaw.png')},
-    {"link": "https://www.stacks.co/", "img": require('../sponsor-logos/blockstack.png')},
-    {"link": "https://human.capital", "img": require('../sponsor-logos/infosys.png')}
+    {"link": "https://www.stacks.co/", "img": require('../sponsor-logos/stacks.svg')}
   ],
   small: [
     {"link": "https://en.valuenex.com/", "img": require('../sponsor-logos/valuenex.png')},
