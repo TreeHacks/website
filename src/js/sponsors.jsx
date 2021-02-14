@@ -26,6 +26,7 @@ const SPONSORS = {
     {"link": "https://ohyay.co/", "img": require('../sponsor-logos/ohyay.png')},
     {"link": "https://www.nvidia.com/", "img": require('../sponsor-logos/nvidia.png')},
     {"link": "https://cloud.google.com/", "img": require('../sponsor-logos/GoogleCloud.png')},
+    {"link": "https://cloud.google.com/", "img": require('../sponsor-logos/mitsubishi.png')}
   ],
   smallest: [],
   tiny: [],
