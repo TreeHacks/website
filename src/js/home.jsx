@@ -10,7 +10,7 @@ const STATUSES = {
   registration: 2,
 };
 
-const STATUS = STATUSES.registration;
+const STATUS = STATUSES.beforeRegistration;
 
 class Home extends React.Component {
   constructor(props) {
