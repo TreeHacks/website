@@ -30,8 +30,8 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#projects">projects</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>&nbsp;
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>&nbsp;
-          {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
-          { STATUS == STATUSES.registration && 
+          <li className=" apply-link navbar-item"><a href="http://link.treehacks.com/apply">apply to join the team</a></li>
+          {/* { STATUS == STATUSES.registration && 
           <li className="special-link apply-link navbar-item" title="TreeHacks 2022 applications opening in the fall!">coming soon</li>
           }
           {Date.now() > new Date(ended_cutoff) ?
@@ -40,7 +40,7 @@ function Navbar() {
               <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
               :
               <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
-          }
+          } */}
         </ul>
       </div>
     </nav>
