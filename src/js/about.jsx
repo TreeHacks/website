@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { about_intro } from "./content.json";
 import { about_body } from "./content.json";
-import clouds from "../svg/clouds.svg";
+// import clouds from "../svg/clouds.svg";
 import hoover from "../svg/hoover.svg";
 import Countdown from "./countdown.jsx";
 

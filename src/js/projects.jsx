@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import tree from "../svg/alternate-tree.svg"
 // import eye from "../svg/eye.svg"
-import laptop from "../svg/laptop.svg";
+import woman from "../svg/woman.svg";
 
 
 // const PROJECT_INTERVAL = 2500;
@@ -24,7 +24,7 @@ function Projects() {
   return (
     <div id="projects" className="container">
       {/* <div className="stripe accent-blue" /> */}      
-      <div className="floating-illustration laptop"><img src={laptop} /></div>
+      <div className="floating-illustration laptop"><img src={woman} /></div>
 
       <h1 className="section-heading">Past Projects</h1>
       <ProjectSlider />

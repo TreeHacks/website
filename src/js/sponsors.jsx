@@ -1,5 +1,5 @@
 import React from "react";
-import parachute from "../svg/parachute.svg";
+import man from "../svg/man.svg";
 
 const SPONSORS = {
   biggest: [
@@ -50,7 +50,7 @@ function Sponsors() {
       <div className="stripe-wrapper sponsors">
         {/* <div className="stripe accent-gray" /> */}
       </div>
-      <div className="floating-illustration parachute"><img src={parachute} /></div>
+      <div className="floating-illustration parachute"><img src={man} /></div>
       <h1 className="section-heading" id="sub-heading">
         sponsors
       </h1>

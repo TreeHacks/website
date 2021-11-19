@@ -10,24 +10,32 @@ $text-color: black;
 $blue: #a7dde8;
 $pink: #e51b5d;
 $orange: #f46e20;
-
-/* Color Palette 2021 */
-$light-green: #4dd272;
-$lighter-green: #D3FFDB;
-$mint-green: #21CE99;
-$dark-green: #309071;
-$main-green: #21CE99;
 $amaranth: #EF3E65;
-$dark-dark-green: #1C413A;
-
 $offwhite: #edf5ee;
 $red: #dd3b3b;
 $yellow: #ffc623;
 
+/* Color Palette 2021 */
+// $light-green: #4dd272;
+// $lighter-green: #D3FFDB;
+// $mint-green: #21CE99;
+// $main-green: #21CE99;
+// $dark-green: #309071;
+// $darker-green: #1C413A;
+
+/* Color Palette 2022 */
+$lighter-green: #E5FFEA;
+$light-green: #A4ECD2;
+$main-green: #51E1AD;
+$dark-green: #0CB08A;
+$darker-green: #15766A;
+
+
+
 //$background-color: #edf5ee;
 
 /* Font Styles */
-$base-font-family: proxima-nova, sans-serif;
+$base-font-family: 'Avenir', proxima-nova, sans-serif;
 $base-font-size: 16px;
 $heavy-font-weight: 700;
 $medium-font-size: $base-font-size + 2;
