@@ -17,7 +17,7 @@ function Navbar() {
         <ul className="menu">
           <li id="navbar-logo">
             <a href="/">
-              <img src={logo} alt="treehacks small logo"/>
+              <img src={logo} alt="treehacks small logo" style={{ height: 30}}/>
               <div id="title">
                 <span className="logo-text-tree">tree</span>
                 <span className="logo-text-hacks">hacks</span>

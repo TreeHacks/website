@@ -3,6 +3,7 @@ import { faq } from "./content.json";
 
 const plusList = [
   require("../svg/maingreen.svg"),
+  // require("../svg/darkgreen.svg"),
 ];
 
 const FAQItem = ({ q, a, link, textBefore, textIn, textAfter, i }) => {
@@ -11,7 +12,7 @@ const FAQItem = ({ q, a, link, textBefore, textIn, textAfter, i }) => {
       <h2
         className="section-subheading faq-question"
               >
-        <img className="faq-plus" src={plusList[i % plusList.length]} />
+        <img className="faq-plus" src={plusList[i % plusList.length]} style={{ height: 30}}/>
         {q}
       </h2>
       <p
