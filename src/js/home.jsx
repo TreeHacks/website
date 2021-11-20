@@ -2,7 +2,7 @@ import React from "react";
 import treehacks_text from "../png/treehacks-text.png";
 import { home, live_cutoff, ended_cutoff } from "./content.json";
 import EmailSignupWidget from "./email-signup-widget.jsx";
-import applylaptop from "../svg/apply-laptop.svg";
+import applylaptop from "../svg/laptop.svg";
 
 
 const STATUSES = {
@@ -10,7 +10,7 @@ const STATUSES = {
   registration: 2,
 };
 
-const STATUS = STATUSES.beforeRegistration;
+const STATUS = STATUSES.registration;
 
 class Home extends React.Component {
   constructor(props) {
@@ -66,7 +66,7 @@ class Home extends React.Component {
           <div id="date-text">
             Stanford&nbsp;University
             <br />
-            Dates Coming Soon
+            Feb 18-20
 
             {STATUS === STATUSES.registration && (
               <a href="https://root.treehacks.com" className="apply-button">

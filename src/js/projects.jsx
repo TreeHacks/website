@@ -9,7 +9,7 @@ import woman from "../svg/woman.svg";
 
 
 // const PROJECT_INTERVAL = 2500;
-const colors = ["#309071", "#dd3b3b", "#ffc623"];
+const colors = ["#15766A", "#15766A", "#15766A"];
 
 function makeColors() {
   var arr = [];

@@ -9,7 +9,7 @@ import githubIcon from "../png/githubIcon.png";
 function Footer() {
   return (
     <footer id="footer">
-      {/*
+{/*       
       <a className="footer-item" href="mailto:hello@treehacks.com">
         <img src={emailIcon} alt="email"/>
       </a>
@@ -25,9 +25,9 @@ function Footer() {
       <a className="footer-item" href="https://github.com/treehacks" target="_blank" rel="noopener noreferrer">
         <img src={githubIcon} alt="github"/>
       </a>
-      */}
-      {/* <div id="footerImg"></div> */}
-    </footer>
+      
+       <div id="footerImg"></div> */}
+    </footer> 
   );
 }
 

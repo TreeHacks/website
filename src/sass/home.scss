@@ -1,6 +1,6 @@
 .apply-button {
   margin-top: $small-space / 2;
-  background-color: $amaranth;
+  background-color: $darker-green;
   padding: 0.5vh 2vw 0.5vh 2vw;
   border-radius: 5px;
   &:hover {
@@ -74,7 +74,7 @@
   #date-text {
     max-width: 90vw;
     text-align: left;
-    color: $amaranth;
+    color: $darker-green;
     font-size: $subheading-font-size;
     font-weight: bold;
     padding-bottom: 1vh;

@@ -15,13 +15,6 @@ $offwhite: #edf5ee;
 $red: #dd3b3b;
 $yellow: #ffc623;
 
-/* Color Palette 2021 */
-// $light-green: #4dd272;
-// $lighter-green: #D3FFDB;
-// $mint-green: #21CE99;
-// $main-green: #21CE99;
-// $dark-green: #309071;
-// $darker-green: #1C413A;
 
 /* Color Palette 2022 */
 $lighter-green: #E5FFEA;
@@ -87,7 +80,7 @@ h2.section-subheading {
 .apply-button {
   border: $border-style #00000000;
   box-sizing: border-box;
-  background-color: $orange;
+  background-color: $dark-green;
   color: white;
   display: block;
   font-weight: $heavy-font-weight;
