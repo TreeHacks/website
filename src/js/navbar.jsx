@@ -40,7 +40,7 @@ function Navbar() {
               <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
               :
               <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
-          }
+          } 
         </ul>
       </div>
     </nav>
