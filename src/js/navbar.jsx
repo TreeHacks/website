@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
+import logo from '../svg/white.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ended_cutoff, live_cutoff } from './content.json';
 
@@ -17,7 +17,7 @@ function Navbar() {
         <ul className="menu">
           <li id="navbar-logo">
             <a href="/">
-              <img src={logo} alt="treehacks small logo" />
+              <img src={logo} alt="treehacks small logo"/>
               <div id="title">
                 <span className="logo-text-tree">tree</span>
                 <span className="logo-text-hacks">hacks</span>
