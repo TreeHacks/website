@@ -31,15 +31,15 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>&nbsp;
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>&nbsp;
           {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
-          { STATUS == STATUSES.registration && 
-          <li className=" apply-link navbar-item" title="Applications open now"><a href="https://root.treehacks.com">apply now</a></li>
-          }
+          {/* { STATUS == STATUSES.registration && 
+          
+          } */}
           {Date.now() > new Date(ended_cutoff) ?
             null
             : Date.now() > new Date(live_cutoff) ?
               <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
               :
-              <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
+              <li className=" apply-link navbar-item" title="Applications open now"><a href="https://root.treehacks.com">apply now</a></li>
           } 
         </ul>
       </div>

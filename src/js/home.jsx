@@ -54,19 +54,19 @@ class Home extends React.Component {
         />
 
         <div className='rowC'>
-          {STATUS === STATUSES.registration && (
+          {/* {STATUS === STATUSES.registration && (
             <div className="applylaptop">
               <a href="https://root.treehacks.com">
                 <img src={applylaptop} />
               </a>
             </div>
-          )}
+          )} */}
 
           {/* <div className="slide-in-left" id="arm" alt="" /> */}
           <div id="date-text">
-            Stanford&nbsp;University
-            <br />
             Feb 18-20
+            <br />
+            Stanford&nbsp;University
 
             {STATUS === STATUSES.registration && (
               <a href="https://root.treehacks.com" className="apply-button">

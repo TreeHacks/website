@@ -1,6 +1,6 @@
 {
-  "ended_cutoff": "2019-02-18T08:00:00.000Z",
-  "live_cutoff": "2019-02-14T08:00:00.000Z",
+  "ended_cutoff": "2022-02-21T08:00:00.000Z",
+  "live_cutoff": "2022-02-18T08:00:00.000Z",
   "home": [
     "you love to learn",
     "you want to dance with the Stanford band",
@@ -27,17 +27,17 @@
     {
       "name": "privacy, security, & safety",
       "logo": "images/challenges/security.png",
-      "description": ""
+      "description": "Silicon Valley moves quickly, but at the same time, innovators have come to recognize the importance of not breaking things in the pursuit of growth. We need hackers – literal hackers – to rise to the challenge of protecting privacy, security, and free expression on the web. At the same time, we must also work to preserve trust and safety on the web, mitigating the potential for these protections to be misused by bad actors."
     },
     {
       "name": "sustainability",
       "logo": "images/challenges/sustainability.png",
-      "description": ""
+      "description": "As the effects of climate change become increasingly pronounced, we must be thoughtful about how to care for the planet we share. The sustainability challenge urges hackers to create solutions that help individuals or businesses become more aware of the issue and more engaged in addressing it."
     },
     {
       "name": "healthcare",
       "logo": "images/challenges/healthcare.png",
-      "description": ""
+      "description": "Almost half a billion people across the world still lack access to basic healthcare, and even less are able to afford expensive treatments and diagnostics for more severe conditions. The medical access challenge pushes hackers to explore accessibility of treatments, build telemedicine tools, and redefine healthcare as we know it."
     },
     {
       "name": "web 3.0",
@@ -46,7 +46,7 @@
     },
     {
       "name": "accessibility",
-      "logo": "images/challenges/web3.png",
+      "logo": "images/challenges/community.png",
       "description": ""
     }
 
