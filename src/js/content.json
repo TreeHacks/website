@@ -1,6 +1,16 @@
 {
   "ended_cutoff": "2022-02-21T08:00:00.000Z",
   "live_cutoff": "2022-02-18T08:00:00.000Z",
+  "home": [
+    "you love to learn",
+    "you want to dance with the Stanford band",
+    "you hack on hardware",
+    "you've never been to a hackathon",
+    "you go to hackathons every weekend",
+    "you want to meet people from all over the world",
+    "you've never written a line of code in your life",
+    "you have ideas you want to make into reality"
+  ],
   "deadlines": [
     {
       "title": "Non-Stanford Students",
