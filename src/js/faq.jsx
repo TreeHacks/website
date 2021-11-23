@@ -1,32 +1,22 @@
 import React from "react";
 import { faq } from "./content.json";
-import useCollapse from "react-collapsed";
-import handPoint from "../svg/hand-point.svg";
-import lightbulb from "../svg/lightbulb.svg";
 
 const plusList = [
-  require("../svg/faq1.svg"),
-  require("../svg/faq2.svg"),
-  require("../svg/faq3.svg"),
-  require("../svg/faq4.svg"),
-  require("../svg/faq5.svg"),
-  require("../svg/faq6.svg"),
+  require("../svg/maingreen.svg"),
+  // require("../svg/darkgreen.svg"),
 ];
 
 const FAQItem = ({ q, a, link, textBefore, textIn, textAfter, i }) => {
-  // const { getCollapseProps, getToggleProps, isOpen } = useCollapse({expandStyles: {transitionDuration: '200ms'}, collapseStyles: {transitionDuration: '200ms'}});
   return (
     <div className="faq-item" key={q + a}>
       <h2
         className="section-subheading faq-question"
-        //{...getToggleProps()}
-      >
-        <img className="faq-plus" src={plusList[i % plusList.length]} />
+              >
+        <img className="faq-plus" src={plusList[i % plusList.length]} style={{ height: 30}}/>
         {q}
       </h2>
       <p
         className="faq-answer"
-        //{...getCollapseProps()}
       >
         {link ? (
           <>

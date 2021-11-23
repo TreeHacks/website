@@ -1,6 +1,6 @@
 #sponsors.container {
   position: relative;
-  background-color: $mint-green;
+  background-color: $dark-green;
   // padding-top: $large-space;
   padding-bottom: $large-space;
   @include flex(column nowrap, flex-start, center);
@@ -14,13 +14,15 @@
 
   #sub-heading {
     margin-bottom: 1.5rem;
-    color: #0D9071;
+    color: #15766A;
   }
 
   @media screen and (max-width: 750px) {
     width: 100%;
     margin-left: 0px;
   }
+
+
 
   .level {
     @include flex(row wrap, center, center);

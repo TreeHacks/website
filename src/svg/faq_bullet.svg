@@ -1,0 +1,20 @@
+<svg width="317" height="320" viewBox="0 0 317 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="72" y="57" width="160" height="164">
+<ellipse cx="151.825" cy="139.119" rx="68.6699" ry="65.8785" transform="rotate(-102.768 151.825 139.119)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<ellipse cx="104.218" cy="211.965" rx="68.6699" ry="65.8785" transform="rotate(-102.768 104.218 211.965)" fill="#51E1AD"/>
+</g>
+<mask id="mask1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="23" y="97" width="185" height="185">
+<circle cx="115.525" cy="189.926" r="65.8785" transform="rotate(-144.34 115.525 189.926)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<circle cx="126.247" cy="274.579" r="65.8785" transform="rotate(-144.34 126.247 274.579)" fill="#51E1AD"/>
+</g>
+<mask id="mask2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="133" y="52" width="184" height="184">
+<circle cx="224.914" cy="143.95" r="65.8785" transform="rotate(-55.6819 224.914 143.95)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask2)">
+<circle cx="140.552" cy="156.552" r="65.8785" transform="rotate(-55.6819 140.552 156.552)" fill="#51E1AD"/>
+</g>
+</svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
+import logo from '../svg/white.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ended_cutoff, live_cutoff } from './content.json';
 
@@ -17,7 +17,7 @@ function Navbar() {
         <ul className="menu">
           <li id="navbar-logo">
             <a href="/">
-              <img src={logo} alt="treehacks small logo" />
+              <img src={logo} alt="treehacks small logo" style={{ height: 30}}/>
               <div id="title">
                 <span className="logo-text-tree">tree</span>
                 <span className="logo-text-hacks">hacks</span>
@@ -30,17 +30,17 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#projects">projects</AnchorLink></li>
           <li className="navbar-item"><AnchorLink offset='100' href="#faq">faq</AnchorLink></li>&nbsp;
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>&nbsp;
-          <li className=" apply-link navbar-item"><a href="http://link.treehacks.com/apply">apply to join the team</a></li>
+          {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
           {/* { STATUS == STATUSES.registration && 
-          <li className="special-link apply-link navbar-item" title="TreeHacks 2022 applications opening in the fall!">coming soon</li>
-          }
+          
+          } */}
           {Date.now() > new Date(ended_cutoff) ?
             null
             : Date.now() > new Date(live_cutoff) ?
               <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
               :
-              <a href="https://root.treehacks.com"><li id="navbar-apply">apply now!</li></a>
-          } */}
+              <li className=" apply-link navbar-item" title="Applications open now"><a href="https://root.treehacks.com">apply now</a></li>
+          } 
         </ul>
       </div>
     </nav>
