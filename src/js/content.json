@@ -1,7 +1,7 @@
 {
   "ended_cutoff": "2022-02-21T08:00:00.000Z",
   "live_cutoff": "2022-02-18T08:00:00.000Z",
-  "home": [
+    "home": [
     "you love to learn",
     "you want to dance with the Stanford band",
     "you hack on hardware",
@@ -21,7 +21,7 @@
       "date": "2022-01-30T23:59:59-08:00"
     }
   ],
-  "challenges_intro": "TreeHacks 2022 will be the 8th-ever iteration of TreeHacks. Our theme this year is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified five global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas:",
+  "challenges_intro": "TreeHacks 2022 will be the 8th-ever iteration of TreeHacks. Our theme is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified five global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas:",
   "challenges": [
 
     {
@@ -55,6 +55,12 @@
   "about_body": "Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And virtual escape rooms. Among Us? Maybe even a puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way.",
   "projects": [
     {
+      "title": "Catiator",
+      "path": "images/projects/ultimate_water_heater.png",
+      "url": "https://devpost.com/software/catiator",
+      "description": "Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021."
+    },
+    {
       "title": "Computertop Desk",
       "path": "images/projects/computertop_desktop.png",
       "url": "https://devpost.com/software/computertop-desk",
@@ -71,12 +77,6 @@
       "path": "images/projects/power_house.png",
       "url": "https://devpost.com/software/energy-awareness-app",
       "description": "Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon."
-    },
-    {
-      "title": "The Ultimate Water Heater",
-      "path": "images/projects/ultimate_water_heater.png",
-      "url": "https://devpost.com/software/ultimate-water-heater",
-      "description": "Matthew and Amarinder built a heating system and a mobile app to build an accessible water heater that has 90% energy efficiency and could save 5 gallons of water per average shower. They won Most Interdisciplinary Hack and Greatest Impact Hack at TreeHacks 2018."
     },
     {
       "title": "Docodial",
@@ -113,7 +113,7 @@
       "a": "A hackathon is where you turn your crazy ideas into real projects. We provide hardware, mentors, fun activities, speakers, workshops, food, friends, and so much more. You take care of hacking; we’ll take care of you."
     },
     {
-      "q": "Is TreeHacks '22 going to be in-person or virtual?",
+      "q": "Is TreeHacks 2022 going to be in-person or virtual?",
       "a": "We are planning for TreeHacks to be hybrid event. Participants who attend university in or otherwise reside in California may participate in-person, while other applicants will be invited to participate virtually. We will be organizing buses to/from in-state locations with a high density of TreeHacks attendees, which have historically included schools in the Bay Area, LA and its surrounding areas, and San Diego, among others. All plans are however subject to change with evolving public health guidance."
     },
     {
