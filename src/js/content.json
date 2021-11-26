@@ -37,7 +37,7 @@
     {
       "name": "healthcare",
       "logo": "images/challenges/healthcare.png",
-      "description": "Almost half a billion people across the world still lack access to basic healthcare, and even less are able to afford expensive treatments and diagnostics for more severe conditions. The medical access challenge pushes hackers to explore accessibility of treatments, build telemedicine tools, and redefine healthcare as we know it."
+      "description": "Almost half a billion people across the world still lack access to basic healthcare, and even less are able to afford expensive treatments and diagnostics for more severe conditions. The healthcare challenge pushes hackers to explore accessibility of treatments, build telemedicine tools, and redefine healthcare as we know it."
     },
     {
       "name": "web 3.0",
@@ -52,7 +52,7 @@
 
   ],
   "about_intro": "Join us to build apps, hardware, and community as we bring the magic of TreeHacks back to an in-person format!",
-  "about_body": "Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And virtual escape rooms. Among Us? Maybe even a puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way.",
+  "about_body": "TreeHacks is Stanford University’s premier and largest hackathon. We bring together over 1000 students to Stanford every February to build the future. Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And laser tag. Lightsaber battles? Maybe even puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way.",
   "projects": [
     {
       "title": "Catiator",
