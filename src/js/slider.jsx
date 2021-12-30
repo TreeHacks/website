@@ -1,3 +1,5 @@
+// TODO: Slider.jsx is not used anywhere in the project so delete the file
+
 import React from 'react';
 import {deadlines} from './content.json';
 import Slider from "react-slick";
