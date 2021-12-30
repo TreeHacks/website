@@ -8,6 +8,11 @@ To run the site locally, run:
 - `npm install`
 - `npm start`
 
+To generate documentation, run:
+- `npm run doc`
+
+Open `documentation/docs/index.html` to view the documentation.
+
 ## Directory Structure
 
 Most of the important files for the site are in the '/src' directory.
