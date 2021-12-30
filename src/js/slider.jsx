@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-class Slider extends React.Component {
+class Sliders extends React.Component {
   render() {
     const settings = {
       className: "center",
@@ -74,4 +74,4 @@ class Slider extends React.Component {
   }
 }
 
-export default Slider;
+export default Sliders;
