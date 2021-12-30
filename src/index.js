@@ -3,6 +3,8 @@
  * @author TreeHacks Tech Team
  */
 
+
+// Import react packages
 import React from "react";
 import ReactDOM from "react-dom";
 import {
@@ -12,6 +14,7 @@ import {
   BrowserRouter as Router  
 } from "react-router-dom";
 
+// Import custom react components
 import Navbar from "./js/navbar.jsx";
 import Home from "./js/home.jsx";
 import About from "./js/about.jsx";
@@ -23,6 +26,7 @@ import Sponsors from "./js/sponsors.jsx";
 import Footer from "./js/footer.jsx";
 // import Team from "./js/team.jsx";
 
+// Import content
 import "./favicons/favicons";
 import "./index.scss";
 
@@ -115,4 +119,5 @@ function App() {
   );
 }
 
+// Render the TreeHacks website
 ReactDOM.render(<App />, document.getElementById("root"));
