@@ -11,7 +11,7 @@ import React from 'react';
 import {challenges, challenges_intro} from './content.json';
 
 /**
- * @function Challenge
+ * Returns HTML `div` tag with information about a single challenge
  * @param {Object} props Contains the challenge name, logo, and description
  * @returns {HTMLDivElement} HTML `div` tag containing the challenge components
  */
@@ -30,6 +30,7 @@ function Challenge(props) {
  * - Introduction to TreeHacks challenges
  * - Mapping of each challenge to their names, logos, and descriptions
  * @returns {HTMLDivElement} HTML `div` tag containing the challenges components
+ * @see {@link Challenge}
  */
 function Challenges() {
   return(
