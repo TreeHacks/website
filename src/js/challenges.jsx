@@ -1,6 +1,36 @@
+/**
+ * Component containing information about the TreeHacks challenges
+ * along with their respective names, logos, and descriptions
+ * @module Challenges
+ */
+
+// Import react packages
 import React from 'react';
+
+// Import content
 import {challenges, challenges_intro} from './content.json';
 
+/**
+ * @function Challenge
+ * @param {Object} props Contains the challenge name, logo, and description
+ * @returns {HTMLDivElement} HTML `div` tag containing the challenge components
+ */
+function Challenge(props) {
+  return(
+    <div className="challenge">
+      <img src={props.logo} alt={props.name + " logo"} />
+      <h1>{props.name}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+}
+
+/**
+ * Challenges component containing:
+ * - Introduction to TreeHacks challenges
+ * - Mapping of each challenge to their names, logos, and descriptions
+ * @returns {HTMLDivElement} HTML `div` tag containing the challenges components
+ */
 function Challenges() {
   return(
     <div id="challenges">
@@ -16,14 +46,5 @@ function Challenges() {
   );
 }
 
-function Challenge(props) {
-  return(
-    <div className="challenge">
-      <img src={props.logo} alt={props.name + " logo"} />
-      <h1>{props.name}</h1>
-      <p>{props.description}</p>
-    </div>
-  );
-}
-
+// Export the Challenges component
 export default Challenges;
