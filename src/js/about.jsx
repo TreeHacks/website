@@ -24,6 +24,7 @@ import hoover from "../svg/hoover.svg";
  * - Countdowns to application deadlines
  * - Video about TreeHacks
  * @returns {HTMLDivElement} HTML `div` tag containing the about components
+ * @see module:Countdown
  */
 function About() {
   // TreeHacks Vimeo URL
