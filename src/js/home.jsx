@@ -31,7 +31,7 @@ const STATUSES = {
 const STATUS = STATUSES.registration;
 
 /**
- * Contains the home page components:
+ * Home component containing:
  * - TreeHacks banner
  * - TreeHacks dates
  * - Apply button
