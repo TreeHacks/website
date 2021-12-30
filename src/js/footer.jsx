@@ -1,11 +1,27 @@
+/**
+ * Component containing the footer with TreeHacks contact information
+ * @module Footer
+ */
+
+// Import react packages
 import React from "react";
 
-import emailIcon from "../png/emailIcon.png";
-import facebookIcon from "../png/facebookIcon.png";
-import twitterIcon from "../png/twitterIcon.png";
-import instagramIcon from "../png/instagramIcon.png";
-import githubIcon from "../png/githubIcon.png";
+// Import content
+// import emailIcon from "../png/emailIcon.png";
+// import facebookIcon from "../png/facebookIcon.png";
+// import twitterIcon from "../png/twitterIcon.png";
+// import instagramIcon from "../png/instagramIcon.png";
+// import githubIcon from "../png/githubIcon.png";
 
+/**
+ * Footer component containing the following TreeHacks contact links:
+ * - Email
+ * - Facebook
+ * - Twitter
+ * - Instagram
+ * - GitHub
+ * @returns {HtmlFooterElement} HTML `footer` tag containing TreeHacks contact links
+ */
 function Footer() {
   return (
     <footer id="footer">
@@ -31,4 +47,5 @@ function Footer() {
   );
 }
 
+// Export the Footer component
 export default Footer;
