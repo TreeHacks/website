@@ -1,6 +1,19 @@
+/**
+ * Component containing clickable logos with links of all of TreeHacks sponsors
+ * @module Sponsors
+ */
+
+// Import react packages
 import React from "react";
+
+// Import content
 import man from "../svg/man.svg";
 
+/**
+ * @constant {Object} SPONSORS
+ * Object with links and logos for the biggest, big, medium, small, smallest, and tiny sponsors
+ * TODO: Move this to content.jsx
+ */
 const SPONSORS = {
   biggest: [
     // {"link": "https://microsoft.com", "img": require('../sponsor-logos/microsoft.png')},
@@ -32,6 +45,10 @@ const SPONSORS = {
   tiny: [],
 };
 
+/**
+ * @constant {HTMLDivElement} _makeSponsors
+ * Generate HTML `div` tag with clickable sponsor logos
+ */
 const _makeSponsors = function (key) {
   return (
     <div className={`level level-${key}`}>
@@ -44,6 +61,12 @@ const _makeSponsors = function (key) {
   );
 };
 
+/**
+ * Sponsors component containing:
+ * - Clickable logos with links of all of TreeHacks sponsors
+ * - Sponsorship application button
+ * @returns {HTMLDivElement} HTML `div` tag containing the TreeHacks sponsor components
+ */
 function Sponsors() {
   return (
     <div id="sponsors" className="container">
@@ -72,4 +95,5 @@ function Sponsors() {
   );
 }
 
+// Export the Sponsors component
 export default Sponsors;
