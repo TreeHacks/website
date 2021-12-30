@@ -1,6 +1,23 @@
+/**
+ * Component containing information about the TreeHacks
+ * application along with the application button
+ * 
+ * **Component currently not in use**
+ * @module Application
+ */
+
+// Import react packages
 import React from 'react';
+
+// Import content
 import {application_intro, application_body} from './content.json';
 
+/**
+ * Application component containing:
+ * - Information about the TreeHacks application
+ * - Application button
+ * @returns {HTMLDivElement} HTML `div` tag containing the application components
+ */
 function Application() {
   return(
     <div id="application">
@@ -17,4 +34,5 @@ function Application() {
   );
 }
 
+// Export the Application component
 export default Application;
