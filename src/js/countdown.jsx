@@ -15,7 +15,7 @@ import {deadlines} from './content.json';
  */
 class SingleDeadline extends React.Component {
   /**
-   * Render function for rendering the countdown for a single deadline
+   * Renders the countdown for a single deadline
    * @returns {HTMLAnchorElement} HTML `a` tag containing the single deadline components
    */
   render() {
