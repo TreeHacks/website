@@ -20,7 +20,7 @@ import React from "react";
  * - Twitter
  * - Instagram
  * - GitHub
- * @returns {HtmlFooterElement} HTML `footer` tag containing TreeHacks contact links
+ * @returns {HTMLFooterElement} HTML `footer` tag containing TreeHacks contact links
  */
 function Footer() {
   return (
