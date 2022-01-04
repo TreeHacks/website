@@ -27,7 +27,7 @@
 html
 {
     overflow: auto;
-    background-color: #fff;
+    background-color: white;
     font-size: 14px;
 }
 
@@ -35,12 +35,12 @@ body
 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    color: #4d4e53;
+    color: black;
     background-color: white;
 }
 
 a, a:visited, a:active {
-    color: #0095dd;
+    color: #51e1ad;
     text-decoration: none;
 }
 
@@ -74,6 +74,10 @@ tt, code, kbd, samp {
     width: 70%;
 }
 
+.page-title {
+    color: #51e1ad
+}
+
 article dl {
     margin-bottom: 40px;
 }
@@ -85,9 +89,9 @@ article img {
 section
 {
     display: block;
-    background-color: #fff;
+    background-color: white;
     padding: 12px 24px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #939393;
     margin-right: 30px;
 }
 
@@ -109,7 +113,7 @@ nav
     margin-top: 28px;
     width: 30%;
     box-sizing: border-box;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #939393;
     padding-left: 16px;
 }
 
@@ -125,7 +129,7 @@ nav ul {
 nav ul a, nav ul a:visited, nav ul a:active {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     line-height: 18px;
-    color: #4D4E53;
+    color: #454545;
 }
 
 nav h3 {
@@ -155,22 +159,37 @@ h1
     font-size: 48px;
     letter-spacing: -2px;
     margin: 12px 24px 20px;
+    color: #15766a
 }
 
-h2, h3.subsection-title
+article h1 {
+    margin-left: 0px;
+}
+
+h2
 {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: -1px;
     margin-bottom: 12px;
+    color: #454545
 }
 
-h3
+h3.subsection-title, h3
+{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    color: #15766a
+}
+
+/* h3
 {
     font-size: 24px;
     letter-spacing: -0.5px;
     margin-bottom: 12px;
-}
+} */
 
 h4
 {
@@ -186,6 +205,7 @@ h5, .container-overview .subsection-title
     font-weight: bold;
     letter-spacing: -0.01em;
     margin: 8px 0 3px 0;
+    color: #454545
 }
 
 h6
@@ -211,11 +231,16 @@ td, th
     vertical-align: top;
     padding: 4px 6px;
     display: table-cell;
+    color: white
+}
+
+tr td {
+    color: black
 }
 
 thead tr
 {
-    background-color: #ddd;
+    background-color: #15766a;
     font-weight: bold;
 }
 
@@ -245,15 +270,20 @@ tr > th:last-child { border-right: 1px solid #ddd; }
 }
 
 .type-signature {
-    color: #aaa;
+    color: #939393;
 }
 
 .name, .signature {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    color: #454545
 }
 
-.details { margin-top: 14px; border-left: 2px solid #DDD; }
-.details dt { width: 120px; float: left; padding-left: 10px;  padding-top: 6px; }
+dt {
+    color: #454545
+}
+
+.details { margin-top: 14px; border-left: 2px solid #15766a; }
+.details dt { width: 120px; float: left; padding-left: 10px;  padding-top: 6px; color: #939393 }
 .details dd { margin-left: 70px; }
 .details ul { margin: 0; }
 .details ul { list-style-type: none; }

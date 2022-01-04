@@ -290,7 +290,7 @@ function attachModuleSymbols(doclets, modules) {
                     symbol = doop(symbol);
 
                     if (symbol.kind === 'class' || symbol.kind === 'function') {
-                        symbol.name = `${symbol.name.replace('module:', '(require("')}"))`;
+                        symbol.name = `${symbol.name.replace('component:', '(require("')}"))`;
                     }
 
                     return symbol;
@@ -359,7 +359,7 @@ function buildNav(members) {
     const seen = {};
     const seenTutorials = {};
 
-    nav += buildMemberNav(members.modules, 'Modules', {}, linkto);
+    nav += buildMemberNav(members.modules, 'Components', {}, linkto);
     nav += buildMemberNav(members.externals, 'Externals', seen, linktoExternal);
     nav += buildMemberNav(members.namespaces, 'Namespaces', seen, linkto);
     nav += buildMemberNav(members.classes, 'Classes', seen, linkto);
@@ -600,7 +600,7 @@ exports.publish = (taffyData, opts, tutorials) => {
 
     // once for all
     view.nav = buildNav(members);
-    attachModuleSymbols( find({ longname: {left: 'module:'} }), members.modules );
+    attachModuleSymbols( find({ longname: {left: 'component:'} }), members.modules );
 
     // generate the pretty-printed source files first so other pages can link to them
     if (outputSourceFiles) {
@@ -613,7 +613,7 @@ exports.publish = (taffyData, opts, tutorials) => {
     files = find({kind: 'file'});
     packages = find({kind: 'package'});
 
-    generate('Home',
+    generate('TreeHacks Documentation',
         packages.concat(
             [{
                 kind: 'mainpage',
@@ -639,7 +639,7 @@ exports.publish = (taffyData, opts, tutorials) => {
         const myNamespaces = helper.find(namespaces, {longname: longname});
 
         if (myModules.length) {
-            generate(`Module: ${myModules[0].name}`, myModules, helper.longnameToUrl[longname]);
+            generate(`Component: ${myModules[0].name}`, myModules, helper.longnameToUrl[longname]);
         }
 
         if (myClasses.length) {
