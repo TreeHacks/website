@@ -18,7 +18,7 @@ class Deadlines extends React.Component {
     return(
       <div id="deadlines">
         {deadlines.map(function (deadline, i){
-          return <SingleDeadline title={deadline.title} date={deadline.date}/>;
+          return <SingleDeadline title={deadline.title} date={deadline.date} sub={deadline.sub}/>;
         })}
       </div>
     )
@@ -67,7 +67,7 @@ class SingleDeadline extends React.Component {
         <p className={timeElapsed}><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
         <h1 className={timeElapsed}>{timeLeft}</h1>
         <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
-        <p className={"subtext " + timeElapsed}>left to apply</p>
+        <p className={"subtext " + timeElapsed}>{this.props.sub}</p>
       </a>
     )
   }
