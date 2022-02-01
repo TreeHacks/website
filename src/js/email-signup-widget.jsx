@@ -1,16 +1,5 @@
-/**
- * Component containing a widget to sign-up for TreeHacks emails
- * @module EmailSignupWidget
- */
-
-// Import react packages
 import React from 'react';
 
-// Export the EmailSignupWidget component
-/**
- * Render the email sign-up widget
- * @returns {HTMLDivElement} HTML `div` tag containing the EmailSignupWidget components
- */
 export default () => {
   return (
     <div className="emailSignup">
