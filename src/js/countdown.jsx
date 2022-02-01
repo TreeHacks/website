@@ -9,6 +9,7 @@ import React from 'react';
 // Import content
 import {deadlines} from './content.json';
 
+
 /**
  * Contains the countdown for a single deadline
  * @class
@@ -61,7 +62,7 @@ class SingleDeadline extends React.Component {
         <p className={timeElapsed}><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
         <h1 className={timeElapsed}>{timeLeft}</h1>
         <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
-        <p className={"subtext " + timeElapsed}>left to apply</p>
+        <p className={"subtext " + timeElapsed}>{this.props.sub}</p>
       </a>
     )
   }
