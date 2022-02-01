@@ -1,0 +1,18 @@
+{
+    "source": {
+      "include": ["./src"],
+      "includePattern": ".+\\.js(doc|x)?$",
+      "excludePattern": "(node_modules|public|docs)"
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+      "cleverLinks": true,
+      "monospaceLinks": true
+    },
+    "opts": {
+      "recurse": true,
+      "destination": "./documentation/docs/",
+      "template": "./custom-template",
+      "readme": "./readme.md"
+    }
+  }

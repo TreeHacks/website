@@ -1,25 +1,39 @@
+/**
+ * @file TreeHacks homepage containing all the components
+ * @author TreeHacks Tech Team
+ */
+
+
+// Import react packages
 import React from "react";
 import ReactDOM from "react-dom";
+import {
+  Route,
+  Switch,
+  Redirect,
+  BrowserRouter as Router  
+} from "react-router-dom";
+
+// Import custom react components
 import Navbar from "./js/navbar.jsx";
 import Home from "./js/home.jsx";
-import Challenges from "./js/challenges.jsx";
 import About from "./js/about.jsx";
-import Application from "./js/application.jsx";
+import Challenges from "./js/challenges.jsx";
+// import Application from "./js/application.jsx";
 import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
 import Footer from "./js/footer.jsx";
 // import Team from "./js/team.jsx";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
 
+// Import content
 import "./favicons/favicons";
 import "./index.scss";
 
+/**
+ * The main function that renders the website
+ * @returns {HTMLDivElement} HTML `div` tag containing the website components
+ */
 function Main() {
   return (
     <div>
@@ -37,6 +51,13 @@ function Main() {
   );
 }
 
+/**
+ * Create customized redirects
+ * @param {String} from Source path
+ * @param {String} to Destination path
+ * @returns {Route} HTML `Route` tag redirecting from `from` to `to`
+ * @see react-router-dom package
+ */
 function CustomRedirect({ from, to }) {
   return (
     <Route
@@ -50,6 +71,11 @@ function CustomRedirect({ from, to }) {
   );
 }
 
+/**
+ * React router with custom redirects for the homepage
+ * @returns {Router} HTML `Router` tag containing calls to `CustomRedirect`
+ * @see {@link CustomRedirect}
+ */
 function App() {
   return (
     <Router>
@@ -93,4 +119,5 @@ function App() {
   );
 }
 
+// Render the TreeHacks website
 ReactDOM.render(<App />, document.getElementById("root"));
