@@ -1,17 +1,5 @@
-/**
- * Component containing information about the TreeHacks organizing team
- * 
- * **Component currently not in use**
- * @module Team
- */
-
-// Import react packages
 import React from "react";
 
-/**
- * Team component containing information about the TreeHacks organizing team
- * @returns {HTMLDivElement} HTML `div` tag containing the TreeHacks Team components
- */
 function Team() {
   return (
     <div id="team" className="container">
@@ -22,5 +10,4 @@ function Team() {
   );
 }
 
-// Export the Sponsors component
 export default Team;

@@ -1,26 +1,32 @@
-/**
- * Component containing the countdowns to the TreeHacks application deadlines
- * @module Countdown
- */
-
-// Import react packages
 import React from 'react';
-
-// Import content
 import {deadlines} from './content.json';
 
-
-/**
- * Contains the countdown for a single deadline
- * @class
- */
-class SingleDeadline extends React.Component {
-  /**
-   * Renders the countdown for a single deadline
-   * @returns {HTMLAnchorElement} HTML `a` tag containing the single deadline components
-   */
+class Countdown extends React.Component {
   render() {
-    // Deadline variables (date/time)
+    return(
+      <div id="countdown">
+        <div className="container">
+          <Deadlines />
+        </div>
+      </div>
+    );
+  }
+}
+
+class Deadlines extends React.Component {
+  render() {
+    return(
+      <div id="deadlines">
+        {deadlines.map(function (deadline, i){
+          return <SingleDeadline title={deadline.title} date={deadline.date} sub={deadline.sub}/>;
+        })}
+      </div>
+    )
+  }
+}
+
+class SingleDeadline extends React.Component {
+  render() {
     //const CA_UTC_OFFSET = 8 * 60; // In minutes
     var currentDate = Date.now();
     var deadlineDate = new Date(this.props.date);
@@ -38,7 +44,6 @@ class SingleDeadline extends React.Component {
     var timeLeft = daysLeft;
     var timeElapsed = "not-elapsed";
     var unit = "days";
-    // If deadline has not passed
     if (minuteDiff <= 60 * 24 && minuteDiff > 0) {
       var hoursLeft = Math.round(minuteDiff / (60));
       timeLeft = hoursLeft;
@@ -51,11 +56,11 @@ class SingleDeadline extends React.Component {
           unit = "minute";
         }
       }
-    // If deadline has passed
     } else if (minuteDiff <= 0) {
       timeLeft = 0;
       timeElapsed = "elapsed";
     }
+
     return(
       <a href="https://root.treehacks.com" target="_blank" className={"single-deadline " + timeElapsed}>
         <p className={timeElapsed}><span className="deadline-title">{this.props.title}</span> deadline</p>
@@ -68,45 +73,4 @@ class SingleDeadline extends React.Component {
   }
 }
 
-/**
- * Contains the countdowns for both the non-Stanford and Stanford student deadlines
- * @class
- */
-class Deadlines extends React.Component {
-  /**
-   * Render function for rendering the countdowns for both the on-Stanford and Stanford student deadlines
-   * @returns {HTMLAnchorElement} HTML `a` tag containing both the deadline components
-   */
-  render() {
-    return(
-      <div id="deadlines">
-        {deadlines.map(function (deadline, i){
-          return <SingleDeadline title={deadline.title} date={deadline.date}/>;
-        })}
-      </div>
-    )
-  }
-}
-
-/**
- * Contains the container component for a countdown
- * @class
- */
-class Countdown extends React.Component {
-  /**
-   * Render function for rendering a countdown
-   * @returns {HTMLDivElement} HTML `div` tag containing the countdown wrapper
-   */
-  render() {
-    return(
-      <div id="countdown">
-        <div className="container">
-          <Deadlines />
-        </div>
-      </div>
-    );
-  }
-}
-
-// Export the Countdown component
 export default Countdown;

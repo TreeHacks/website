@@ -1,12 +1,10 @@
-// TODO: Slider.jsx is not used anywhere in the project so delete the file
-
 import React from 'react';
 import {deadlines} from './content.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-class Sliders extends React.Component {
+class Slider extends React.Component {
   render() {
     const settings = {
       className: "center",
@@ -76,4 +74,4 @@ class Sliders extends React.Component {
   }
 }
 
-export default Sliders;
+export default Slider;
