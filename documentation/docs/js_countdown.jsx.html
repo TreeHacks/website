@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: js/countdown.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: js/countdown.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Component containing the countdowns to the TreeHacks application deadlines
+ * @module Countdown
+ */
+
+// Import react packages
+import React from 'react';
+
+// Import content
+import {deadlines} from './content.json';
+
+
+/**
+ * Contains the countdown for a single deadline
+ * @class
+ */
+class SingleDeadline extends React.Component {
+  /**
+   * Renders the countdown for a single deadline
+   * @returns {HTMLAnchorElement} HTML `a` tag containing the single deadline components
+   */
+  render() {
+    // Deadline variables (date/time)
+    //const CA_UTC_OFFSET = 8 * 60; // In minutes
+    var currentDate = Date.now();
+    var deadlineDate = new Date(this.props.date);
+    var deadlineDay = deadlineDate.getUTCDate() - 1; // Subtract 1 to account for UTC offset (+8 hours)
+    var deadlineMonth = deadlineDate.getUTCMonth();
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                       ];
+    var dayEndings = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"];
+    if (Math.floor(deadlineDay / 10) == 1) {
+      dayEndings = ["th", "th", "th", "th", "th", "th", "th", "th", "th", "th"];
+    }
+    var minuteDiff = (deadlineDate.getTime() - currentDate) / (1000 * 60);
+    var daysLeft = Math.round(1 + minuteDiff / (60 * 24)); // Add 1 since it is inclusive
+    var timeLeft = daysLeft;
+    var timeElapsed = "not-elapsed";
+    var unit = "days";
+    // If deadline has not passed
+    if (minuteDiff &lt;= 60 * 24 &amp;&amp; minuteDiff > 0) {
+      var hoursLeft = Math.round(minuteDiff / (60));
+      timeLeft = hoursLeft;
+      unit = "hours";
+      if (hoursLeft &lt;= 1) {
+        var minutesLeft = Math.round(minuteDiff);
+        timeLeft = minutesLeft;
+        unit = "minutes";
+        if (minutesLeft === 1) {
+          unit = "minute";
+        }
+      }
+    // If deadline has passed
+    } else if (minuteDiff &lt;= 0) {
+      timeLeft = 0;
+      timeElapsed = "elapsed";
+    }
+    return(
+      &lt;a href="https://root.treehacks.com" target="_blank" className={"single-deadline " + timeElapsed}>
+        &lt;p className={timeElapsed}>&lt;span className="deadline-title">{this.props.title}&lt;/span> deadline&lt;/p>
+        &lt;p className={timeElapsed}>&lt;b>{monthNames[deadlineMonth]} {deadlineDay}&lt;sup>{dayEndings[deadlineDay.toString().split("").pop()]}&lt;/sup>&lt;/b>&lt;/p>
+        &lt;h1 className={timeElapsed}>{timeLeft}&lt;/h1>
+        &lt;p className={"subtext large " + timeElapsed + " " + unit}>{unit}&lt;/p>
+        &lt;p className={"subtext " + timeElapsed}>{this.props.sub}&lt;/p>
+      &lt;/a>
+    )
+  }
+}
+
+/**
+ * Contains the countdowns for both the non-Stanford and Stanford student deadlines
+ * @class
+ */
+class Deadlines extends React.Component {
+  /**
+   * Render function for rendering the countdowns for both the on-Stanford and Stanford student deadlines
+   * @returns {HTMLAnchorElement} HTML `a` tag containing both the deadline components
+   */
+  render() {
+    return(
+      &lt;div id="deadlines">
+        {deadlines.map(function (deadline, i){
+          return &lt;SingleDeadline title={deadline.title} date={deadline.date}/>;
+        })}
+      &lt;/div>
+    )
+  }
+}
+
+/**
+ * Contains the container component for a countdown
+ * @class
+ */
+class Countdown extends React.Component {
+  /**
+   * Render function for rendering a countdown
+   * @returns {HTMLDivElement} HTML `div` tag containing the countdown wrapper
+   */
+  render() {
+    return(
+      &lt;div id="countdown">
+        &lt;div className="container">
+          &lt;Deadlines />
+        &lt;/div>
+      &lt;/div>
+    );
+  }
+}
+
+// Export the Countdown component
+export default Countdown;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Components</h3><ul><li><a href="module-About.html">About</a></li><li><a href="module-Application.html">Application</a></li><li><a href="module-Challenges.html">Challenges</a></li><li><a href="module-Countdown.html">Countdown</a></li><li><a href="module-EmailSignupWidget.html">EmailSignupWidget</a></li><li><a href="module-FAQ.html">FAQ</a></li><li><a href="module-Footer.html">Footer</a></li><li><a href="module-Home.html">Home</a></li><li><a href="module-Navbar.html">Navbar</a></li><li><a href="module-Projects.html">Projects</a></li><li><a href="module-Sponsors.html">Sponsors</a></li><li><a href="module-Team.html">Team</a></li></ul><h3>Classes</h3><ul><li><a href="module-Countdown-Countdown.html">Countdown</a></li><li><a href="module-Countdown-Deadlines.html">Deadlines</a></li><li><a href="module-Countdown-SingleDeadline.html">SingleDeadline</a></li><li><a href="module-Home-Home.html">Home</a></li><li><a href="module-Projects-GridItem.html">GridItem</a></li><li><a href="module-Projects-ProjectSlider.html">ProjectSlider</a></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#CustomRedirect">CustomRedirect</a></li><li><a href="global.html#Main">Main</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Jan 31 2022 18:18:05 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
