@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: js/home.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: js/home.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Component containing the home page with the
+ * TreeHacks information and application button
+ * @module Home
+ */
+
+// Import react packages
+import React from "react";
+
+// Import custom react components
+import EmailSignupWidget from "./email-signup-widget.jsx";
+
+// Import content
+// import applylaptop from "../svg/laptop.svg";
+import treehacks_text from "../png/treehacks-text.png";
+import { home, live_cutoff, ended_cutoff } from "./content.json";
+
+/**
+ * @constant {Object} STATUSES
+ * TreeHacks registration status options
+ */
+const STATUSES = {
+  beforeRegistration: 1,
+  registration: 2,
+};
+
+/**
+ * @constant {Number} STATUS
+ * Current TreeHacks registration status
+ */
+const STATUS = STATUSES.registration;
+
+/**
+ * Home component containing:
+ * - TreeHacks banner
+ * - TreeHacks dates
+ * - Apply button
+ * @class
+ */
+class Home extends React.Component {
+  /**
+   * Home page component constructor
+   * @constructor
+   * @param {Object} props Home constructor properties
+   */
+  constructor(props) {
+    super(props);
+    // Phrase length changes based on the width of the window
+    this.state = {
+      phrase: 0,
+    };
+  }
+
+  /**
+   * Executed when the Home component is mounted
+   * @function componentDidMount
+   */
+  componentDidMount() {
+    // Width of the document window
+    let width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    // Use longer phrase if the width is greater than 750
+    if (width > 750) {
+      this.interval = setInterval(
+        () =>
+          this.setState({
+            phrase: (this.state.phrase + 1) % (home.length - 1),
+          }),
+        7000
+      );
+    }
+  }
+
+  /**
+   * Executed when the Home component is about to be unmounted
+   * @function componentWillUnmount
+   */
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  /**
+   * Renders the Home component
+   * @returns {HTMLDivElement} HTML `div` tag containing the home components
+   */
+  render() {
+    // Whether or not TreeHacks has ended
+    const hasEnded = Date.now() > new Date(ended_cutoff),
+      hasBegun = Date.now() > new Date(live_cutoff);
+
+    return (
+      &lt;div id="home">
+        &lt;img
+          className="logo scale-in-center"
+          src={treehacks_text}
+          alt="treehacks large text"
+        />
+
+        &lt;div className="rowC">
+          {/* {STATUS === STATUSES.registration &amp;&amp; (
+            &lt;div className="applylaptop">
+              &lt;a href="https://root.treehacks.com">
+                &lt;img src={applylaptop} />
+              &lt;/a>
+            &lt;/div>
+          )} */}
+          {/* &lt;div className="slide-in-left" id="arm" alt="" /> */}
+
+          &lt;div id="date-text">
+            Feb 18-20
+            &lt;br />
+            Stanford&amp;nbsp;University
+
+            {STATUS === STATUSES.registration &amp;&amp; (
+              &lt;a href="https://root.treehacks.com" className="apply-button">
+                apply now
+              &lt;/a>
+            )}
+            {STATUS === STATUSES.beforeRegistration &amp;&amp; &lt;EmailSignupWidget />}
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    );
+  }
+}
+
+// Export the Home component
+export default Home;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Components</h3><ul><li><a href="module-About.html">About</a></li><li><a href="module-Application.html">Application</a></li><li><a href="module-Challenges.html">Challenges</a></li><li><a href="module-Countdown.html">Countdown</a></li><li><a href="module-EmailSignupWidget.html">EmailSignupWidget</a></li><li><a href="module-FAQ.html">FAQ</a></li><li><a href="module-Footer.html">Footer</a></li><li><a href="module-Home.html">Home</a></li><li><a href="module-Navbar.html">Navbar</a></li><li><a href="module-Projects.html">Projects</a></li><li><a href="module-Sponsors.html">Sponsors</a></li><li><a href="module-Team.html">Team</a></li></ul><h3>Classes</h3><ul><li><a href="module-Countdown-Countdown.html">Countdown</a></li><li><a href="module-Countdown-Deadlines.html">Deadlines</a></li><li><a href="module-Countdown-SingleDeadline.html">SingleDeadline</a></li><li><a href="module-Home-Home.html">Home</a></li><li><a href="module-Projects-GridItem.html">GridItem</a></li><li><a href="module-Projects-ProjectSlider.html">ProjectSlider</a></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#CustomRedirect">CustomRedirect</a></li><li><a href="global.html#Main">Main</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Jan 31 2022 18:18:05 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

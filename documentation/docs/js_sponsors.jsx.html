@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: js/sponsors.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: js/sponsors.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Component containing clickable logos with links of all of TreeHacks sponsors
+ * @module Sponsors
+ */
+
+// Import react packages
+import React from "react";
+
+// Import content
+import man from "../svg/man.svg";
+
+/**
+ * @constant {Object} SPONSORS
+ * Object with links and logos for the biggest, big, medium, small, smallest, and tiny sponsors
+ * TODO: Move this to content.jsx
+ */
+const SPONSORS = {
+  biggest: [
+    // {"link": "https://microsoft.com", "img": require('../sponsor-logos/microsoft.png')},
+    // {"link": "https://www.cadence.com/", "img": require('../sponsor-logos/cadence.png')}
+  ],
+  big: [
+    // {"link": "https://www.esri.com/en-us/home", "img": require('../sponsor-logos/esri1.png')},
+    // {"link": "https://www.citadel.com/", "img": require('../sponsor-logos/citadel.png')}
+  ],
+  medium: [
+    // {"link": "https://checkbook.io/", "img": require('../sponsor-logos/checkbook.png')},
+    // {"link": "https://atsign.com/", "img": require('../sponsor-logos/thecompany.png')},
+    // {"link": "https://human.capital", "img": require('../sponsor-logos/hc.png')},
+    // {"link": "https://neo.com/", "img": require('../sponsor-logos/neo.png')},
+    // {"link": "https://www.deshaw.com/", "img": require('../sponsor-logos/deshaw.png')},
+    // {"link": "https://www.stacks.co/", "img": require('../sponsor-logos/stacks.svg')}
+  ],
+  small: [
+    // {"link": "https://en.valuenex.com/", "img": require('../sponsor-logos/valuenex.png')},
+    // {"link": "https://www.pear.vc/", "img": require('../sponsor-logos/pear.png')},
+    // {"link": "https://repl.it/", "img": require('../sponsor-logos/replit.png')},
+    // {"link": "https://zoom.us//", "img": require('../sponsor-logos/zoom.png')},
+    // {"link": "https://ohyay.co/", "img": require('../sponsor-logos/ohyay.png')},
+    // {"link": "https://www.nvidia.com/", "img": require('../sponsor-logos/nvidia.png')},
+    // {"link": "https://cloud.google.com/", "img": require('../sponsor-logos/GoogleCloud.png')},
+    // {"link": "https://cloud.google.com/", "img": require('../sponsor-logos/mitsubishi.png')}
+  ],
+  smallest: [],
+  tiny: [],
+};
+
+/**
+ * @constant {HTMLDivElement} _makeSponsors
+ * Generate HTML `div` tag with clickable sponsor logos
+ */
+const _makeSponsors = function (key) {
+  return (
+    &lt;div className={`level level-${key}`}>
+      {SPONSORS[key].map((sponsor) => (
+        &lt;a href={sponsor["link"]} target="_blank">
+          &lt;img key={sponsor["img"]} src={sponsor["img"]} alt="sponsor" />
+        &lt;/a>
+      ))}
+    &lt;/div>
+  );
+};
+
+/**
+ * Sponsors component containing:
+ * - Clickable logos with links of all of TreeHacks sponsors
+ * - Sponsorship application button
+ * @returns {HTMLDivElement} HTML `div` tag containing the TreeHacks sponsor components
+ */
+function Sponsors() {
+  return (
+    &lt;div id="sponsors" className="container">
+      &lt;div className="stripe-wrapper sponsors">
+        {/* &lt;div className="stripe accent-gray" /> */}
+      &lt;/div>
+      &lt;div className="floating-illustration parachute">&lt;img src={man} />&lt;/div>
+      &lt;h1 className="section-heading" id="sub-heading">
+        sponsors
+      &lt;/h1>
+      
+      {/* {_makeSponsors("biggest")}
+      {_makeSponsors("big")}
+      {_makeSponsors("medium")}
+      {_makeSponsors("small")} */}
+      {/* {_makeSponsors("smallest")}
+      {_makeSponsors("tiny")} */}
+     
+      &lt;a
+        href="mailto:hello@treehacks.com?Subject=Sponsorship%20Interest"
+        className="apply-button"
+      >
+        become a sponsor!
+      &lt;/a>
+    &lt;/div>
+  );
+}
+
+// Export the Sponsors component
+export default Sponsors;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Components</h3><ul><li><a href="module-About.html">About</a></li><li><a href="module-Application.html">Application</a></li><li><a href="module-Challenges.html">Challenges</a></li><li><a href="module-Countdown.html">Countdown</a></li><li><a href="module-EmailSignupWidget.html">EmailSignupWidget</a></li><li><a href="module-FAQ.html">FAQ</a></li><li><a href="module-Footer.html">Footer</a></li><li><a href="module-Home.html">Home</a></li><li><a href="module-Navbar.html">Navbar</a></li><li><a href="module-Projects.html">Projects</a></li><li><a href="module-Sponsors.html">Sponsors</a></li><li><a href="module-Team.html">Team</a></li></ul><h3>Classes</h3><ul><li><a href="module-Countdown-Countdown.html">Countdown</a></li><li><a href="module-Countdown-Deadlines.html">Deadlines</a></li><li><a href="module-Countdown-SingleDeadline.html">SingleDeadline</a></li><li><a href="module-Home-Home.html">Home</a></li><li><a href="module-Projects-GridItem.html">GridItem</a></li><li><a href="module-Projects-ProjectSlider.html">ProjectSlider</a></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#CustomRedirect">CustomRedirect</a></li><li><a href="global.html#Main">Main</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Jan 31 2022 18:18:05 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

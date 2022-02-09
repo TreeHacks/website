@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: js/navbar.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: js/navbar.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Component containing the navigation bar
+ * @module Navbar
+ */
+
+// Import react packages
+import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+// Import content
+import logo from '../svg/white.svg';
+import { ended_cutoff, live_cutoff } from './content.json';
+
+/**
+ * @constant {Object} STATUSES
+ * TreeHacks registration status options
+ */
+const STATUSES = {
+  beforeRegistration: 1,
+  registration: 2,
+};
+
+/**
+ * @constant {Number} STATUS
+ * Current TreeHacks registration status
+ */
+const STATUS = STATUSES.registration;
+
+/**
+ * Navbar component containing the following TreeHacks webpage links:
+ * - {@link module:Home}
+ * - {@link module:About}
+ * - {@link module:Challenges}
+ * - {@link module:Projects}
+ * - {@link module:FAQ}
+ * - {@link module:Sponsors}
+ * - Apply button
+ * @returns {HTMLNavElement} HTML `nav` tag containing TreeHacks webpage links
+ */
+function Navbar() {
+  return (
+    &lt;nav id="navbar">
+      &lt;div className="container">
+        &lt;ul className="menu">
+          &lt;li id="navbar-logo">
+            &lt;a href="/">
+              &lt;img src={logo} alt="treehacks small logo" style={{ height: 30}}/>
+              &lt;div id="title">
+                &lt;span className="logo-text-tree">tree&lt;/span>
+                &lt;span className="logo-text-hacks">hacks&lt;/span>
+              &lt;/div>
+            &lt;/a>
+          &lt;/li>
+          &lt;li className="navbar-item">&lt;AnchorLink offset='100' href="#home">home&lt;/AnchorLink>&lt;/li>
+          &lt;li className="navbar-item about-link">&lt;AnchorLink offset='100' href="#about">about&lt;/AnchorLink>&lt;/li>
+          &lt;li className="navbar-item">&lt;AnchorLink offset='100' href="#challenges">challenges&lt;/AnchorLink>&lt;/li>
+          &lt;li className="navbar-item">&lt;AnchorLink offset='100' href="#projects">projects&lt;/AnchorLink>&lt;/li>
+          &lt;li className="navbar-item">&lt;AnchorLink offset='100' href="#faq">faq&lt;/AnchorLink>&lt;/li>&amp;nbsp;
+          &lt;li className="navbar-item">&lt;AnchorLink offset='100' href="#sponsors">sponsors&lt;/AnchorLink>&lt;/li>&amp;nbsp;
+          {/* &lt;li className="special-link navbar-item">&lt;a href="https://treehacks.typeform.com/to/rK08ej">join team&lt;/a>&lt;/li> */}
+          {/* { STATUS == STATUSES.registration &amp;&amp; 
+          } */}
+          {Date.now() > new Date(ended_cutoff) ?
+            null
+            : Date.now() > new Date(live_cutoff) ?
+              &lt;a href="https://live.treehacks.com">&lt;li id="navbar-apply">view live schedule&lt;/li>&lt;/a>
+              :
+              &lt;li className=" apply-link navbar-item" title="Applications open now">&lt;a href="https://root.treehacks.com">apply now&lt;/a>&lt;/li>
+          } 
+        &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+  );
+}
+
+// Export the Navbar component
+export default Navbar;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Components</h3><ul><li><a href="module-About.html">About</a></li><li><a href="module-Application.html">Application</a></li><li><a href="module-Challenges.html">Challenges</a></li><li><a href="module-Countdown.html">Countdown</a></li><li><a href="module-EmailSignupWidget.html">EmailSignupWidget</a></li><li><a href="module-FAQ.html">FAQ</a></li><li><a href="module-Footer.html">Footer</a></li><li><a href="module-Home.html">Home</a></li><li><a href="module-Navbar.html">Navbar</a></li><li><a href="module-Projects.html">Projects</a></li><li><a href="module-Sponsors.html">Sponsors</a></li><li><a href="module-Team.html">Team</a></li></ul><h3>Classes</h3><ul><li><a href="module-Countdown-Countdown.html">Countdown</a></li><li><a href="module-Countdown-Deadlines.html">Deadlines</a></li><li><a href="module-Countdown-SingleDeadline.html">SingleDeadline</a></li><li><a href="module-Home-Home.html">Home</a></li><li><a href="module-Projects-GridItem.html">GridItem</a></li><li><a href="module-Projects-ProjectSlider.html">ProjectSlider</a></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#CustomRedirect">CustomRedirect</a></li><li><a href="global.html#Main">Main</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Jan 31 2022 18:18:05 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
