@@ -1,42 +1,15 @@
-/**
- * Component containing the navigation bar
- * @module Navbar
- */
-
-// Import react packages
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-// Import content
 import logo from '../svg/white.svg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ended_cutoff, live_cutoff } from './content.json';
 
-/**
- * @constant {Object} STATUSES
- * TreeHacks registration status options
- */
 const STATUSES = {
   beforeRegistration: 1,
   registration: 2,
 };
 
-/**
- * @constant {Number} STATUS
- * Current TreeHacks registration status
- */
 const STATUS = STATUSES.registration;
 
-/**
- * Navbar component containing the following TreeHacks webpage links:
- * - {@link module:Home}
- * - {@link module:About}
- * - {@link module:Challenges}
- * - {@link module:Projects}
- * - {@link module:FAQ}
- * - {@link module:Sponsors}
- * - Apply button
- * @returns {HTMLNavElement} HTML `nav` tag containing TreeHacks webpage links
- */
 function Navbar() {
   return (
     <nav id="navbar">
@@ -59,6 +32,7 @@ function Navbar() {
           <li className="navbar-item"><AnchorLink offset='100' href="#sponsors">sponsors</AnchorLink></li>&nbsp;
           {/* <li className="special-link navbar-item"><a href="https://treehacks.typeform.com/to/rK08ej">join team</a></li> */}
           {/* { STATUS == STATUSES.registration && 
+          
           } */}
           {Date.now() > new Date(ended_cutoff) ?
             null
@@ -73,5 +47,4 @@ function Navbar() {
   );
 }
 
-// Export the Navbar component
 export default Navbar;

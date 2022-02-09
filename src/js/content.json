@@ -23,7 +23,6 @@
       "sub": "left to register*"
     }
   ],
-
   "challenges_intro": "TreeHacks 2022 will be the 8th-ever iteration of TreeHacks. Our theme is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified five global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas:",
   "challenges": [
 
@@ -110,36 +109,6 @@
       "description": "Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020."
     }
   ],
-  "challenges_intro": "TreeHacks 2022 will be the 8th-ever iteration of TreeHacks. Our theme is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified five global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas:",
-  "challenges": [
-    {
-      "name": "privacy, security, & safety",
-      "logo": "images/challenges/security.png",
-      "description": "Silicon Valley moves quickly, but at the same time, innovators have come to recognize the importance of not breaking things in the pursuit of growth. We need hackers – literal hackers – to rise to the challenge of protecting privacy, security, and free expression on the web. We must also work to preserve trust and safety on the web, mitigating the potential for these protections to be misused by bad actors."
-    },
-    {
-      "name": "sustainability",
-      "logo": "images/challenges/sustainability.png",
-      "description": "As the effects of climate change become increasingly pronounced, we must be thoughtful about how to care for the planet we share. The sustainability challenge urges hackers to create solutions that help individuals or businesses become more aware of the issue and more engaged in addressing it."
-    },
-    {
-      "name": "healthcare",
-      "logo": "images/challenges/healthcare.png",
-      "description": "Almost half a billion people across the world still lack access to basic healthcare, and even less are able to afford expensive treatments and diagnostics for more severe conditions. The healthcare challenge pushes hackers to explore accessibility of treatments, build telemedicine tools, and redefine healthcare as we know it."
-    },
-    {
-      "name": "web 3.0",
-      "logo": "images/challenges/web3.png",
-      "description": "We are in the midst of an exciting transition to a more open and fair way of participating in activities on the internet. The Web 3.0 challenge asks hackers to think about how decentralization fits into their thesis of the future and how we can leverage technology to move towards systems in which we don’t concentrate power in the hands of a few."
-    },
-    {
-      "name": "accessibility",
-      "logo": "images/challenges/community.png",
-      "description": "Technology is growing at an exponential rate, but is it empowering every person in the same capacity? The accessibility challenge encourages hackers to develop new ways to enable all people, regardless of background or ability, to fully interact with modern technologies. This helps ensure that technology is lifting society as a whole rather than widening existing disparities."
-    }
-  ],
-  "application_intro": "Unfortunately, TreeHacks is only able to accommodate so many hackers every year. We do our best to craft a personalized and impactful experience for everyone who attends our event, so naturally, we’re unable to support everyone who’s interested in coming to TreeHacks.",
-  "application_body": "Our application gives you an opportunity to express any past experience you’ve had with building, any problems you’re particularly passionate about, and what you hope to get out of coming to TreeHacks 2020. We don’t assume that you’re a programming expert – in fact, some of the best TreeHacks projects ever have come from self-proclaimed “CS n00bs” who walked out of an introductory CS course at their school and then built something incredible at Stanford. Above all, we want to know what you care about, why you build, and how you can grow at TreeHacks.",
   "faq": [
     {
       "q": "What is a hackathon?",
