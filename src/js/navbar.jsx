@@ -37,7 +37,7 @@ function Navbar() {
           {Date.now() > new Date(ended_cutoff) ?
             null
             : Date.now() > new Date(live_cutoff) ?
-              <a href="https://live.treehacks.com"><li id="navbar-apply">view live schedule</li></a>
+              <a href="https://live.treehacks.com"><li className=" apply-link navbar-item">view live schedule</li></a>
               :
               <li className=" apply-link navbar-item" title="Applications open now"><a href="https://root.treehacks.com">apply now</a></li>
           } 

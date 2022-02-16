@@ -68,13 +68,12 @@ class Home extends React.Component {
             <br />
             Stanford&nbsp;University
 
-            {STATUS === STATUSES.registration && (
+            {/* {STATUS === STATUSES.registration && (
               <a href="https://root.treehacks.com" className="apply-button">
                 apply now
               </a>
             )}
-            {STATUS === STATUSES.beforeRegistration && <EmailSignupWidget />}
-
+            {STATUS === STATUSES.beforeRegistration && <EmailSignupWidget />} */}
           </div>
         </div>
 
