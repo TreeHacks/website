@@ -64,7 +64,8 @@ class Home extends React.Component {
 
           {/* <div className="slide-in-left" id="arm" alt="" /> */}
           <div id="date-text">
-            Feb 18-20
+            Feb 17-19, 2023
+            <br /> Hacker applications will open in December 
             <br />
             Stanford&nbsp;University
 
