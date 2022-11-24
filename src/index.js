@@ -8,13 +8,14 @@ import Application from "./js/application.jsx";
 import Projects from "./js/projects.jsx";
 import FAQ from "./js/faq.jsx";
 import Sponsors from "./js/sponsors.jsx";
+import Why from "./js/why.jsx";
 import Footer from "./js/footer.jsx";
 // import Team from "./js/team.jsx";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 
 import "./favicons/favicons";
@@ -26,12 +27,13 @@ function Main() {
       <Navbar />
       <Home />
       <About />
+      {/* <Why /> */}
       <Challenges />
       {/*<Application />*/}
       <Projects />
       <FAQ />
       <Sponsors />
-      <Footer />
+      {/* <Footer /> */}
       {/* <Team /> */}
     </div>
   );

@@ -1,9 +1,9 @@
-import React from 'react';
-import {deadlines} from './content.json';
+import React from "react";
+import { deadlines } from "./content.json";
 
 class Countdown extends React.Component {
   render() {
-    return(
+    return (
       <div id="countdown">
         <div className="container">
           <Deadlines />
@@ -15,13 +15,19 @@ class Countdown extends React.Component {
 
 class Deadlines extends React.Component {
   render() {
-    return(
+    return (
       <div id="deadlines">
-        {deadlines.map(function (deadline, i){
-          return <SingleDeadline title={deadline.title} date={deadline.date} sub={deadline.sub}/>;
+        {deadlines.map(function (deadline, i) {
+          return (
+            <SingleDeadline
+              title={deadline.title}
+              date={deadline.date}
+              sub={deadline.sub}
+            />
+          );
         })}
       </div>
-    )
+    );
   }
 }
 
@@ -32,10 +38,32 @@ class SingleDeadline extends React.Component {
     var deadlineDate = new Date(this.props.date);
     var deadlineDay = deadlineDate.getUTCDate() - 1; // Subtract 1 to account for UTC offset (+8 hours)
     var deadlineMonth = deadlineDate.getUTCMonth();
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-                        "July", "August", "September", "October", "November", "December"
-                       ];
-    var dayEndings = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"];
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    var dayEndings = [
+      "th",
+      "st",
+      "nd",
+      "rd",
+      "th",
+      "th",
+      "th",
+      "th",
+      "th",
+      "th",
+    ];
     if (Math.floor(deadlineDay / 10) == 1) {
       dayEndings = ["th", "th", "th", "th", "th", "th", "th", "th", "th", "th"];
     }
@@ -45,7 +73,7 @@ class SingleDeadline extends React.Component {
     var timeElapsed = "not-elapsed";
     var unit = "days";
     if (minuteDiff <= 60 * 24 && minuteDiff > 0) {
-      var hoursLeft = Math.round(minuteDiff / (60));
+      var hoursLeft = Math.round(minuteDiff / 60);
       timeLeft = hoursLeft;
       unit = "hours";
       if (hoursLeft <= 1) {
@@ -61,15 +89,22 @@ class SingleDeadline extends React.Component {
       timeElapsed = "elapsed";
     }
 
-    return(
-      <a href="https://root.treehacks.com" target="_blank" className={"single-deadline " + timeElapsed}>
-        <p className={timeElapsed}><span className="deadline-title">{this.props.title}</span> deadline</p>
-        <p className={timeElapsed}><b>{monthNames[deadlineMonth]} {deadlineDay}<sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup></b></p>
+    return (
+      <a target="_blank" className={"single-deadline " + timeElapsed}>
+        <p className={timeElapsed}>
+          <span className="deadline-title">{this.props.title}</span> deadline
+        </p>
+        <p className={timeElapsed}>
+          <b>
+            {monthNames[deadlineMonth]} {deadlineDay}
+            <sup>{dayEndings[deadlineDay.toString().split("").pop()]}</sup>
+          </b>
+        </p>
         <h1 className={timeElapsed}>{timeLeft}</h1>
         <p className={"subtext large " + timeElapsed + " " + unit}>{unit}</p>
         <p className={"subtext " + timeElapsed}>{this.props.sub}</p>
       </a>
-    )
+    );
   }
 }
 

@@ -24,12 +24,12 @@
 }
 
 .single-deadline {
-  color: $light-gray;
+  color: white;
   margin: -$small-space / 2;
   padding: $small-space / 2;
 
   h1 {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: $dark-green;
     font-size: $heading-font-size * 2;
     @media screen and (max-width: 650px) {
@@ -58,7 +58,8 @@
     font-size: $medium-font-size + 5px;
   }
 
-  .days, .day {
+  .days,
+  .day {
     text-transform: lowercase;
   }
 
@@ -75,6 +76,7 @@
       border-radius: 20px;
       transform: scale(1.1);
       background-color: #fff;
+      color: black;
     }
   }
 }

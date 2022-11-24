@@ -10,11 +10,12 @@ $navbar-horizontal-padding: 15px;
   top: 0;
   z-index: 101;
 
-  background-color: $dark-green;
+  //background-color: $dark-mode;
+  background: rgba(17, 24, 39, 0.9); /*  10% opaque green */
+  backdrop-filter: blur(2px);
+
   height: 80px;
   width: 100vw;
-
-  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
 
   .container {
     @include flex(row nowrap, center, center);
@@ -59,7 +60,7 @@ $navbar-horizontal-padding: 15px;
 .navbar-item {
   margin: 10px $navbar-margin;
   padding: 0 $navbar-horizontal-padding 0 $navbar-horizontal-padding;
-  font-size: $navbar-font-size;
+  font-size: $navbar-font-size -2;
 
   a {
     color: $white;
@@ -104,6 +105,7 @@ $navbar-horizontal-padding: 15px;
 
 #title {
   color: $white;
+  text-align: right;
   margin-left: 1vw;
 }
 

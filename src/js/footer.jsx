@@ -1,33 +1,52 @@
 import React from "react";
 
-import emailIcon from "../png/emailIcon.png";
-import facebookIcon from "../png/facebookIcon.png";
-import twitterIcon from "../png/twitterIcon.png";
-import instagramIcon from "../png/instagramIcon.png";
-import githubIcon from "../png/githubIcon.png";
+import { EmailIcon } from "./email";
+import { FacebookIcon } from "./facebook";
+import { TwitterIcon } from "./twitter";
+import { InstagramIcon } from "./instagram";
+import { GithubIcon } from "./github";
 
 function Footer() {
   return (
-    <footer id="footer">
-{/*       
-      <a className="footer-item" href="mailto:hello@treehacks.com">
-        <img src={emailIcon} alt="email"/>
-      </a>
-      <a className="footer-item" href="https://facebook.com/treehacks" target="_blank" rel="noopener noreferrer">
-        <img src={facebookIcon} alt="facebook"/>
-      </a>
-      <a className="footer-item" href="https://twitter.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
-        <img src={twitterIcon} alt="twitter"/>
-      </a>
-      <a className="footer-item" href="https://instagram.com/hackwithtrees" target="_blank" rel="noopener noreferrer">
-        <img src={instagramIcon} alt="instagram"/>
-      </a>
-      <a className="footer-item" href="https://github.com/treehacks" target="_blank" rel="noopener noreferrer">
-        <img src={githubIcon} alt="github"/>
-      </a>
-      
-       <div id="footerImg"></div> */}
-    </footer> 
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        borderTop: "1px solid #E5E7EB",
+        width: "80%",
+        textAlign: "center",
+        backgroundColor: "transparent",
+        padding: "15px",
+        paddingTop: "80px",
+        color: "white",
+      }}
+    >
+      <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+        <a className="footer-item" href="mailto:hello@treehacks.com">
+          <EmailIcon />
+        </a>
+        <a href="https://twitter.com/hackwithtrees" target="_blank">
+          <TwitterIcon />
+        </a>
+        <a href="https://github.com/treehacks" target="_blank">
+          <GithubIcon />
+        </a>
+        <a href="https://instagram.com/hackwithtrees" target="_blank">
+          <InstagramIcon />
+        </a>
+        <a href="https://facebook.com/treehacks" target="_blank">
+          <FacebookIcon />
+        </a>
+      </div>
+
+      <h2 style={{ fontWeight: 400, marginTop: "15px" }} id="linkText">
+        Code of Conduct | Privacy Policy | Travel Guidelines
+      </h2>
+      <h3 style={{ fontWeight: 400, margin: "15px" }}>
+        Copyright © TreeHacks, 2023
+      </h3>
+    </div>
   );
 }
 

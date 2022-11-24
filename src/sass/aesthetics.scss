@@ -3,11 +3,11 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
-  .stripe, .stripe-wrapper {
+  .stripe,
+  .stripe-wrapper {
     display: none;
   }
 }
-
 
 .stripe {
   background-image: radial-gradient($offwhite 30%, #ffffff00 20%);
@@ -26,11 +26,11 @@ body {
   }
 
   &.accent-blue {
-    background-image: radial-gradient(#A7DDE8 30%, #ffffff00 20%);
+    background-image: radial-gradient(#a7dde8 30%, #ffffff00 20%);
   }
 
   &.accent-pink {
-    background-image: radial-gradient(#E51B5D 30%, #ffffff00 20%);
+    background-image: radial-gradient(#e51b5d 30%, #ffffff00 20%);
   }
 
   &.accent-orange {
@@ -68,18 +68,16 @@ body {
     animation-timing-function: ease;
   }
 
-&.parachute{
-  img {
-    width: 20vw;
-    margin-top: -200px;
-    left: 5%;
-    right: auto;
+  &.parachute {
+    img {
+      width: 20vw;
+      margin-top: -200px;
+      left: 5%;
+      right: auto;
+    }
   }
-}
-  
 
-
-  &.laptop{
+  &.laptop {
     img {
       width: 20vw;
       margin-top: -220px;
@@ -89,13 +87,25 @@ body {
   }
 
   @keyframes updown {
-      0%   { transform: translateY(0); }
-      50%  { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   @keyframes leftright {
-      0%   { transform: translateX(0); }
-      50%  { transform: translateX(-10px); }
-      100% { transform: translateX(0); }
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }

@@ -1,8 +1,15 @@
-#about, #application {
-  margin-top: $medium-space;
+#about,
+#application {
   padding-bottom: $large-space;
   position: relative;
-  background: $lighter-green;
+  //background: #1f2937;
+  background: $dark-mode;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
 
   .section-heading {
     margin-bottom: $small-space;
@@ -13,12 +20,13 @@
     bottom: -4%;
     left: 2%;
     height: 70%;
+    display: none;
     @media screen and (max-width: 1600px) {
       display: none;
     }
   }
 
-  $about-max-width: $max-width - 160px;
+  $about-max-width: $max-width + 20px;
 
   .container {
     max-width: $about-max-width;
@@ -88,18 +96,208 @@
   .intro {
     padding: $medium-space 0;
     font-size: $subheading-font-size;
+    color: white;
     text-align: center;
     font-weight: $heavy-font-weight;
   }
+  #stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  #statCard1 {
+    padding: 30px;
+    align-items: center;
+    background-color: #10c695;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    @media screen and (max-width: 1000px) {
+      padding: 20px;
+      font-size: 10px;
+    }
+    @media screen and (max-width: 650px) {
+      padding: 10px;
+      font-size: 5px;
+    }
+  }
+  #statNum {
+    font-size: 35px;
+    @media screen and (max-width: 1000px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 10px;
+    }
+  }
+  #floatingLeaves {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    z-index: 1;
+  }
+  #wrapper {
+    position: relative;
+  }
+  #statCard2 {
+    padding: 30px;
+    align-items: center;
+    background-color: #cfcfcf;
+    color: #2a2e35;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    @media screen and (max-width: 1000px) {
+      padding: 20px;
+      font-size: 10px;
+    }
+    @media screen and (max-width: 650px) {
+      padding: 10px;
+      font-size: 5px;
+    }
+  }
 
+  #statWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // position: absolute;
+  }
+  #statRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 50px;
+    @media screen and (max-width: 650px) {
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    justify-content: center;
+  }
   .body {
     margin: $medium-space 0;
     font-size: $medium-font-size;
     text-align: center;
 
     @media screen and (min-width: $max-width) {
-      text-align: justify; 
+      text-align: center;
+      color: white;
+    }
+  }
+  section {
+    position: relative;
+    width: 100%;
+    height: 115vh;
+    @media screen and (max-width: 1000px) {
+      height: 80vh;
+    }
+    @media screen and (max-width: 650px) {
+      height: 35vh;
+    }
+    @media screen and (max-width: 500px) {
+      height: 40vh;
+    }
+    @media screen and (max-width: 400px) {
+      height: 30vh;
+    }
+    @media screen and (max-width: 380px) {
+      height: 40vh;
+    }
+
+    //border: 2px solid red;
+    overflow: hidden;
+  }
+  section .set {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    pointer-events: none;
+  }
+  section .set div {
+    position: absolute;
+    display: block;
+  }
+  section .set div:nth-child(1) {
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+  }
+  section .set div:nth-child(2) {
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+  }
+  section .set div:nth-child(3) {
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0s;
+  }
+  .set2 {
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+  }
+  .set3 {
+    transform: scale(2) rotateX(180deg);
+    filter: blur(2px);
+  }
+  section .set div:nth-child(4) {
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -5s;
+  }
+  section .set div:nth-child(5) {
+    left: 85%;
+    animation: animate 19s linear infinite;
+    animation-delay: -10s;
+  }
+  section .set div:nth-child(6) {
+    left: 0%;
+    animation: animate 12s linear infinite;
+  }
+  section .set div:nth-child(7) {
+    left: 15%;
+    animation: animate 14s linear infinite;
+  }
+  section .set div:nth-child(8) {
+    left: 60%;
+    animation: animate 15s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      top: -10%;
+      transform: translateX(20px) rotate(0deg);
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+      transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+      transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+      transform: translateX(-20px) rotate(180deg);
+    }
+    100% {
+      top: 110%;
+      transform: translateX(-20px) rotate(225deg);
     }
   }
 }
-

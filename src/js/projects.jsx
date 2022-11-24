@@ -1,12 +1,14 @@
 import React from "react";
-import { projects } from "./content.json";
+import { projects, project_body } from "./content.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LOGO from "./LOGO.png";
+import smalllogo from "./white-logo.png";
+
 // import tree from "../svg/alternate-tree.svg"
 // import eye from "../svg/eye.svg"
 import woman from "../svg/woman.svg";
-
 
 // const PROJECT_INTERVAL = 2500;
 const colors = ["#15766A", "#15766A", "#15766A"];
@@ -23,15 +25,51 @@ function makeColors() {
 function Projects() {
   return (
     <div id="projects" className="container">
-      {/* <div className="stripe accent-blue" /> */}      
-      <div className="floating-illustration laptop"><img src={woman} /></div>
+      {/* <div className="stripe accent-blue" /> */}
+      {/* <div className="floating-illustration laptop">
+        <img src={woman} />
+      </div> */}
 
-      <h1 className="section-heading">Past Projects</h1>
-      <ProjectSlider />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "5%",
+        }}
+      >
+        <div id="text-container">
+          <div>
+            <h1 className="section-heading">
+              the <span id="hook-text">power</span> of treehacks
+            </h1>
+          </div>
+
+          <div>
+            <p className="body">{project_body}</p>
+          </div>
+        </div>
+
+        <div id="project-container">
+          {projects.map((project, i) => {
+            return (
+              <ProjectCard
+                color={i % 2 == 0 ? "dark" : "light"}
+                frontText={project.award}
+                title={project.title}
+                url={project.url}
+                path={project.path}
+                description={project.description}
+                name={"check it out here"}
+              />
+            );
+          })}
+        </div>
+      </div>
+      {/* <ProjectSlider /> */}
+
       {/* <div className="stripe-wrapper"> */}
-        {/* <div className="stripe accent-pink" /> */}
+      {/* <div className="stripe accent-pink" /> */}
       {/* </div> */}
-
     </div>
   );
 }
@@ -110,5 +148,46 @@ class GridItem extends React.Component {
     );
   }
 }
+
+const ProjectCard = ({
+  color,
+  frontText,
+  title,
+  description,
+  name,
+  url,
+  path,
+}) => {
+  return (
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div
+          class="flip-card-front"
+          style={{
+            backgroundColor: color == "dark" ? "#2A2E35" : "#10B981",
+          }}
+        >
+          <h1>{frontText}</h1>
+          <img
+            src={smalllogo}
+            id="projectImage"
+            style={{ width: "80px" }}
+            alt="treehacks small logo"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <br />
+          <a href={url} target="_blank">
+            <p style={{ color: "white", textDecoration: "underline" }}>
+              {name}
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Projects;

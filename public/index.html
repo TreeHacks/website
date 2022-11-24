@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-128561236-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128561236-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-128561236-1");
+    </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#f93952"
+    />
+    <link rel="shortcut icon" href="images/favicon/small_logo.png" />
+    <meta name="msapplication-TileColor" content="#fffcfb" />
+    <meta
+      name="msapplication-config"
+      content="images/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00E174" />
+    <link rel="stylesheet" href="https://use.typekit.net/vam8uoe.css" />
+    <title>TreeHacks 2023</title>
+    <!-- Facebook Pixel Code -->
 
-    gtag('config', 'UA-128561236-1');
-  </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f93952">
-  <link rel="shortcut icon" href="images/favicon/small_logo.png">
-  <meta name="msapplication-TileColor" content="#fffcfb">
-  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#00E174">
-  <link rel="stylesheet" href="https://use.typekit.net/vam8uoe.css">
-  <title>TreeHacks 2022</title>
-  <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
 
-  <script>
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
 
-  !function(f,b,e,v,n,t,s)
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
 
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
 
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
 
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
 
-  n.queue=[];t=b.createElement(e);t.async=!0;
+      fbq("init", "2540911245998201");
 
-  t.src=v;s=b.getElementsByTagName(e)[0];
+      fbq("track", "PageView");
+    </script>
 
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=2540911245998201&ev=PageView
 
-  'https://connect.facebook.net/en_US/fbevents.js');
+  &noscript=1"
+      />
+    </noscript>
 
+    <!-- End Facebook Pixel Code -->
+  </head>
 
-  fbq('init', '2540911245998201'); 
-
-  fbq('track', 'PageView');
-
-  </script>
-
-  <noscript>
-
-  <img height="1" width="1" 
-
-  src="https://www.facebook.com/tr?id=2540911245998201&ev=PageView
-
-  &noscript=1"/>
-
-  </noscript>
-
-  <!-- End Facebook Pixel Code -->
-</head>
-
-<body>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <div id="root"></div>
-</body>
-
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+  </body>
 </html>
