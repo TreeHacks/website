@@ -14,7 +14,8 @@
     height: 100vh;
     width: 100vw;
     min-height: calc(500px + 45vh);
-    padding-top: 20vh;
+    padding-top: 10vh;
+    background: $dark-mode;
   }
   @media screen and (max-width: 450px) {
     margin: $large-space 0;
@@ -38,6 +39,89 @@
     }
   }
 
+  #circleLogo {
+    padding: 100px;
+    padding-top: 150px;
+  }
+
+  #gradient_text {
+    background: linear-gradient(0deg, #10b981 20.11%, #0ea5e9 150.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    background-clip: text;
+    font-family: "Poppins", sans-serif;
+    text-fill-color: transparent;
+  }
+
+  #stanford-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+
+    background: linear-gradient(180deg, #ff0025 50%, #d8d8d8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  #animate1 {
+    background-color: red;
+  }
+
+  #hacker-text {
+    background: linear-gradient(180deg, #347cea 37.63%, #e4e3ff 86.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    text-fill-color: transparent;
+  }
+
+  #year-text {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.47) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  #floatingIcons {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  #in-person_text {
+    font-weight: 600;
+    background: radial-gradient(50% 50% at 50% 50%, #faff00 0%, #ff9900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  #world-text {
+    background: linear-gradient(180deg, #05ff00 37.63%, #e4e3ff 86.73%);
+    -webkit-background-clip: text;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  #next-text {
+    background: linear-gradient(180deg, #5200ff 0%, #dc87fa 100%);
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
   #arm {
     height: 14vh;
     @media screen and (max-width: 450px) {
@@ -81,25 +165,77 @@
     padding-bottom: 1vh;
     text-align: center;
     font-size: xx-large;
-    // align at bottom  
-    
+    // align at bottom
   }
 
-  .rowC{
+  .rowC {
     @include flex(row wrap, center, flex-start);
   }
-  
+
   .applylaptop {
     position: relative;
     &:hover {
       transform: scale(1.05);
     }
-  
-  }  
-  
+  }
 }
 
-@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
-@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
-.scale-in-center{   object-fit: contain; -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both}
-.slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.scale-in-center {
+  object-fit: contain;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
