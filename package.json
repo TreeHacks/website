@@ -9,6 +9,7 @@
     "react": "^16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-collapsed": "^2.2.3",
+    "react-collapsible": "^2.10.0",
     "react-dom": "^16.14.0",
     "react-player": "^1.15.3",
     "react-router": "^5.2.0",
