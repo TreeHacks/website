@@ -1,20 +1,29 @@
 #sponsors.container {
-  position: relative;
-  background-color: $dark-green;
+  //background-color: #1f2937;
+  background: $dark-mode;
   // padding-top: $large-space;
-  padding-bottom: $large-space;
+  padding-bottom: $small-space;
   @include flex(column nowrap, flex-start, center);
-  margin-top: $large-space * 1.5;
   min-height: 300px;
+  justify-content: center;
 
   .section-heading {
     margin-bottom: $small-space;
+    font-size: $heading-font-size;
     // padding-top: 100px;
   }
 
+  .body {
+    margin: $medium-space 0;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: $medium-font-size + 6;
+    text-align: center;
+  }
   #sub-heading {
     margin-bottom: 1.5rem;
-    color: #15766A;
+    color: white;
   }
 
   @media screen and (max-width: 750px) {
@@ -22,11 +31,8 @@
     margin-left: 0px;
   }
 
-
-
   .level {
-    @include flex(row wrap, center, center);
-    width: 80%;
+    //@include flex(row wrap, center, center);
     margin: 1rem auto;
 
     img:hover {
@@ -35,59 +41,36 @@
     }
 
     &.level-biggest img {
-      width: 100%;
-    }
-
-    &.level-biggest a {
-      width: 40%;
-      margin-left: 50px;
-      margin-right: 50px;
-      margin-bottom: 2em;
-      min-width: 250px;
-    }
-
-    &.level-big {
-
-      margin-top: 2.5rem;
-      margin-bottom: 3.5rem;
+      background-color: white;
+      width: 600px;
+      padding: 20px;
+      border-radius: 20px;
     }
 
     &.level-big img {
-      max-width: 70%;
-      max-height: 100px;
-    }
-
-    &.level-big a {
-      margin-left: 50px;
-      margin-right: 50px;
-      width: 25%;
-      min-width: 100px;
-    }
-
-    &.level-medium {
-      margin-bottom: 2.5rem;
-      min-height: 250px;
-      
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      height: 80px;
     }
 
     &.level-medium img {
-      width: auto;
-       height: 50px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 166px;
+      height: 60px;
     }
 
-    &.level-medium a {
-      width: auto;
-      height: 50px;
-      min-height: 100px;
-      // width: 20%;
-      // min-width: 70px;
-      margin: 10px 10px;
-      
+    &.level-small img {
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 90px;
+      height: 40px;
     }
 
-    &.level-small {
-      vertical-align: middle;
-    }
     // &.level-small img {
     //   // max-height: 40px;
     //   // max-width: 100%;
@@ -96,19 +79,6 @@
     //   // min-width: 60px;
     //   width: auto;
     // }
-
-    &.level-small a img {
-      max-width: 200px;
-      min-height: 45px;
-      max-height: 50px;
-
-
-
-      margin: 0 5px;
-      margin: 15px;
-      top: 50%;
-
-    }
 
     &.level-smallest {
       margin-top: 2rem;

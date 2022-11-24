@@ -2,6 +2,10 @@
   position: relative;
   padding-bottom: $small-space * 5;
   background-color: $darker-green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
   .section-heading {
     padding-top: 100px;
@@ -19,7 +23,8 @@
 
   .container {
     @include flex(row wrap, center, flex-start);
-    @media screen and (max-width: 750px) {
+    width: 80%;
+    @media screen and (max-width: 500px) {
       display: block;
       width: 100%;
     }
@@ -27,20 +32,22 @@
 }
 
 .challenge {
-  background-color: #fff;
+  background-color: $dark-mode;
   box-shadow: 0px 0px 15px 0px #e4e4e4;
   margin: 1vw;
   border-radius: 20px;
   width: 27vw;
   min-width: 300px;
   padding: 2vw;
+  color: white;
   filter: alpha(opacity=60);
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-self: stretch;
+  padding-bottom: 20px;
   transition: all 0.5s;
-  cursor: auto;
+  cursor: pointer;
   @include flex(column nowrap, flex-start, center);
 
   &:hover {
@@ -61,7 +68,6 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   h1 {

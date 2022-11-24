@@ -12,6 +12,7 @@
     "react-collapsible": "^2.10.0",
     "react-countup": "^6.3.2",
     "react-dom": "^16.14.0",
+    "react-modal": "^3.16.1",
     "react-player": "^1.15.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
