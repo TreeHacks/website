@@ -4,7 +4,6 @@ import { home, live_cutoff, ended_cutoff } from "./content.json";
 import EmailSignupWidget from "./email-signup-widget.jsx";
 import applylaptop from "../svg/laptop.svg";
 
-
 const STATUSES = {
   beforeRegistration: 1,
   registration: 2,
@@ -53,7 +52,7 @@ class Home extends React.Component {
           alt="treehacks large text"
         />
 
-        <div className='rowC'>
+        <div className="rowC">
           {/* {STATUS === STATUSES.registration && (
             <div className="applylaptop">
               <a href="https://root.treehacks.com">
@@ -64,10 +63,9 @@ class Home extends React.Component {
 
           {/* <div className="slide-in-left" id="arm" alt="" /> */}
           <div id="date-text">
-            Feb 18-20
+            Feb 19-20
             <br />
             Stanford&nbsp;University
-
             {/* {STATUS === STATUSES.registration && (
               <a href="https://root.treehacks.com" className="apply-button">
                 apply now
@@ -76,7 +74,6 @@ class Home extends React.Component {
             {STATUS === STATUSES.beforeRegistration && <EmailSignupWidget />} */}
           </div>
         </div>
-
       </div>
     );
   }
