@@ -1,7 +1,7 @@
 {
   "ended_cutoff": "2022-02-21T08:00:00.000Z",
   "live_cutoff": "2022-02-08T08:00:00.000Z",
-    "home": [
+  "home": [
     "you love to learn",
     "you want to dance with the Stanford band",
     "you hack on hardware",
@@ -13,19 +13,13 @@
   ],
   "deadlines": [
     {
-      "title": "Non-Stanford Students",
-      "date": "2021-12-26T23:59:59-08:00",
-      "sub": "left to apply"
-    },
-    {
-      "title": "Stanford Students",
-      "date": "2022-01-30T23:59:59-08:00",
-      "sub": "left to register*"
+      "title": "Hacker Applications Open",
+      "date": "2022-11-15T12:00:01+0000",
+      "sub": "until Hacker applications open"
     }
   ],
   "challenges_intro": "TreeHacks 2022 will be the 8th-ever iteration of TreeHacks. Our theme is hacking for the future: addressing deeply impactful problems and building creative, unique solutions. We’ve identified five global and technological challenges that we think have tons of potential for innovation. Across each of these challenges, we’ve scaffolded resources like potential project ideas, data sets, APIs and toolkits, and more to help get you get started. There isn't a strict guideline for what you should work on, but here are some of our focus areas:",
   "challenges": [
-
     {
       "name": "privacy, security, & safety",
       "logo": "images/challenges/security.png",
@@ -45,71 +39,70 @@
       "name": "web 3.0",
       "logo": "images/challenges/web3.png",
       "description": "We are in the midst of an exciting transition to a more open and fair way of participating in activities on the internet. The Web 3.0 challenge asks hackers to think about how decentralization fits into their thesis of the future and how we can leverage technology to move towards systems in which we don’t concentrate power in the hands of a few."
-    },
-    {
-      "name": "accessibility",
-      "logo": "images/challenges/community.png",
-      "description": "Technology is growing at an exponential rate, but is it empowering every person in the same capacity? The accessibility challenge encourages hackers to develop new ways to enable all people, regardless of background or ability, to fully interact with modern technologies. This helps ensure that technology is lifting society as a whole rather than widening existing disparities."
     }
-
   ],
   "about_intro": "Join us to build apps, hardware, and community!",
-  "about_body": "TreeHacks is Stanford University’s premier and largest hackathon. We bring together over 1000 students to Stanford every February to build the future. Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And laser tag. Lightsaber battles? Maybe even puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. \n *Stanford students are automatically accepted but need to RSVP",
+  "about_body": "TreeHacks is Stanford University’s premier and largest hackathon. We bring together over 2000 students to Stanford every February to build the future. Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And laser tag. Lightsaber battles? Maybe even puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. \n *Stanford students are automatically accepted but need to RSVP",
+  "project_body": "The amazing projects that have come out of TreeHacks are from all kinds of domains blah blahing together over 2000 students to Stanford every February to build the future. Sure, you’ll be hacking for 36 hours straight. But there will be yoga breaks. And laser tag. Lightsaber battles? Maybe even puppies. Whether you’re a seasoned veteran or just getting started, we’ve got your back every step of the way. \n *Stanford students are automatically accepted but need to RSVP",
+
   "projects": [
     {
       "title": "Catiator",
-      "path": "images/projects/ultimate_water_heater.png",
+      "award": "Moonshot Prize TreeHacks 2021",
+      "path": "art/projects/ultimate_water_heater.png",
       "url": "https://devpost.com/software/catiator",
       "description": "Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021."
     },
     {
       "title": "Computertop Desk",
-      "path": "images/projects/computertop_desktop.png",
+      "award": "Best Hardware Hack TreeHacks 2018",
+      "path": "../../art/projects/computertop_desk.png",
       "url": "https://devpost.com/software/computertop-desk",
       "description": "Omar combined a webcam and projector mounted above a desk, along with a splash of OpenCV to locate all the pieces of paper and the keyboard, allowing users to set any piece of paper as a window for the computer. Omar won Most Creative Hack and Best Hardware Hack at TreeHacks 2018."
     },
     {
       "title": "NeuralHash",
+      "award": "Security Grand Prize TreeHacks 2018",
       "path": "images/projects/neural_hash.png",
       "url": "https://devpost.com/software/neuralhash",
       "description": "Isaac, Nikhil, Evani, and Rohan used machine learning to develop a decoder model that acts as a cryptographically-secure, transformation-invariant hash function to identify image ownership. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018."
     },
     {
       "title": "#PowerHouse",
+      "award": "First Time Hackers",
       "path": "images/projects/power_house.png",
       "url": "https://devpost.com/software/energy-awareness-app",
       "description": "Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon."
     },
     {
       "title": "Docodial",
+      "award": "Best User Interface and Live Video App TreeHacks 2018",
       "path": "images/projects/docodial.png",
       "url": "https://devpost.com/software/docodial",
       "description": "Jenny and Aidan developed a live-streaming web app that allows doctors to communicate with interpreters, empowering non-native speakers to get the health coverage they need. They won Best User Interface and Best Live Video App at TreeHacks 2018."
     },
     {
       "title": "Marvel Medical Dictionary",
+      "award": "Best Mobile AR Hack TreeHacks 2018",
       "path": "images/projects/marvel_medical_dictionary.png",
       "url": "https://devpost.com/software/marvel-medical-dictionary",
       "description": "Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018."
     },
     {
       "title": "AEye",
+      "award": "Best Public Health Hack TreeHacks 2019",
       "path": "images/projects/docodial.png",
       "url": "https://devpost.com/software/aeye-p4rkim",
       "description": "Vamshi, Dhanush, AJ and Aria built a mobile app that lets you take a picture of a patch of skin and analyzes it for potential skin diseases. Their model was trained on hundreds of models from the ISIC public skin database, and upon identification sends the result to a doctor for verification. They won Best Public Health Hack at TreeHacks 2019."
     },
-    {
-      "title": "Soteria",
-      "path": "images/projects/marvel_medical_dictionary.png",
-      "url": "https://devpost.com/software/soteria-403mgo",
-      "description": "Kevin, Lindsey, Arihant and Christina created a web app designed to help inform travellers by visually providing safety information. They used open source data from the CDC, earning them the Best Hack to Make the World More Informed at TreeHacks 2019."
-    },
+
     {
       "title": "Lucid Drums",
+      "award": "Most Creative Hack TreeHacks 2019",
       "description": "Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020."
     }
   ],
-  "faq": [
+  "faq1": [
     {
       "q": "What is a hackathon?",
       "a": "A hackathon is where you turn your crazy ideas into real projects. We provide hardware, mentors, fun activities, speakers, workshops, food, friends, and so much more. You take care of hacking; we’ll take care of you."
@@ -129,7 +122,9 @@
     {
       "q": "What if I don’t have a team or idea?",
       "a": "Not a problem! We’ll have team-forming activities to help you find teammates and idea brainstorming sessions for all our challenges. Some of our best hacks have been from teams that met and formed an idea on the spot!"
-    },
+    }
+  ],
+  "faq2": [
     {
       "q": "What can I build?",
       "a": "Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we’ll support it. We have five challenges that will have extra resources, sponsored challenges, and other events to inspire you."
@@ -147,7 +142,7 @@
     },
     {
       "link": "mailto:hello@treehacks.com",
-      "q": "I have some other question!",
+      "q": "I have another question not answered here!",
       "textBefore": "Email us at ",
       "textIn": "hello@treehacks.com",
       "textAfter": ". We gotchu."
