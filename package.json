@@ -1,30 +1,21 @@
 {
-  "name": "website",
-  "version": "1.0.0",
-  "description": "TreeHacks website",
+  "name": "treehacks-website-v2",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "force-ssl-heroku": "^1.0.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-collapsed": "^2.2.3",
-    "react-collapsible": "^2.10.0",
-    "react-countup": "^6.3.2",
-    "react-dom": "^16.14.0",
-    "react-modal": "^3.16.1",
-    "react-player": "^1.15.3",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.0.1",
-    "react-slick": "^0.25.2",
-    "react-visibility-sensor": "^5.1.1",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.6"
-  },
-  "engines": {
-    "node": "14.18.3",
-    "npm": "6.14.15"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lottie": "^1.2.3",
+    "react-moment": "^1.1.2",
+    "react-moment-countdown": "^0.4.2",
+    "react-moment-proptypes": "^1.8.1",
+    "react-particles-js": "^3.6.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +24,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -46,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
