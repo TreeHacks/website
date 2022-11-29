@@ -95,7 +95,7 @@ function About() {
         </div>
 
         <h1 className="section-heading" style={{ color: "white" }}>
-          numbers of treehacks
+          numbers of treehackss
         </h1>
 
         <div
