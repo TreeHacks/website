@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#outlineBack {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #51DF9B,
+        1px -1px 0 #51DF9B,
+        -1px 1px 0 #51DF9B,
+        1px 1px 0 #51DF9B;
 }
 
-.App-link {
-  color: #61dafb;
+.card__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    transform-style: preserve-3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover .card__content {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: white;
+}
+
+.card__back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.horizontal-scrolling-banner {
+    overflow: hidden;
+}
+
+.horizontal-scrolling-banner__helper-wrapper {
+    align-items: center;
+    display: flex;
+    left: 0;
+    transform: translateZ(0);
+    transition-property: left;
+    transition-timing-function: linear;
+}
+
+
+/* Link underline */
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%
+}
+
+/* Header */
+
+.header.active {
+    background: #fff;
+}
+
+/* FAQ */
+
+.accordion-content {
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+/* APPLY NOW BUTTON */
+
+.background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+@keyframes AnimationName {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+/* Site header */
+#site-header {
+    transition: all 0.5s;
 }
