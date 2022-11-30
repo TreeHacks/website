@@ -260,7 +260,7 @@ function App() {
           <div className="bg-white rounded-sm border shadow-sm flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
             <Accent className='absolute -right-10 -top-6' />
             <Accent2 className='absolute -left-10 -top-6' />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1669849200} interval={1000} /></p>
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1669968000} interval={1000} /></p>
           </div>
           <button
             disabled
