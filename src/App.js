@@ -228,12 +228,14 @@ function App() {
             <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
             <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing.</h1>
             <div className='mt-4'>
-              <button
+              <a
+                href="https://root.treehacks.com"
+                target="_blank"
                 type="button"
                 className="font-CerealMd mb-6 mt-1 flex-shrink-0 max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium border border-emerald-500 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1"
               >
                 Apply Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
