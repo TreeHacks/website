@@ -262,7 +262,7 @@ function App() {
             <Accent2 className='absolute -left-10 -top-6' />
             <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1669968000} interval={1000} /></p>
           </div>
-          <button
+          <a
             href="https://root.treehacks.com"
             target="_blank"
             type="button"
@@ -274,7 +274,7 @@ function App() {
               background-animate"
           >
             Apply Now
-          </button>
+          </a>
 
         </section>
         <div className="flex lg:flex-row flex-col mb-28">
