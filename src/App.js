@@ -205,7 +205,7 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#home'>Home</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#apply'>Apply</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#about'>About</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Challenges</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Tracks</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#projects'>Projects</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
           <a className='ml-8 font-semibold font-display cursor-pointer text-gray-500'>Speakers</a>
@@ -670,7 +670,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Not a problem! We'll have team-forming activities to help you find teammates and idea brainstorming sessions for all our challenges. Some of our best hacks have been from teams that met and formed an idea on the spot!
+                Not a problem! We'll have team-forming activities to help you find teammates and idea brainstorming sessions for all our tracks. Some of our best hacks have been from teams that met and formed an idea on the spot!
               </p>
             </div>
           </div>
