@@ -420,7 +420,7 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Education</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Education is an incredibly powerful tool. How can we improve the education system and make learning more accessible?
+                    How can we improve the education system and make learning more accessible?
                   </p>
                 </div>
               </div>
@@ -428,7 +428,7 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Privacy and Safety</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    As technology becomes increasingly prevalent in our lives, privacy and safety are more important than ever. How can we build a more secure Internet and better protect our personal data?
+                    Privacy and safety are more important than ever. How can we build a more secure Internet and better protect our personal data?
                   </p>
                 </div>
               </div>
