@@ -252,7 +252,7 @@ function App() {
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>What's so special?</h1>
           <p className='font-CerealBK text-slate-500 mb-8 lg:text-center lg:text-lg text-md'>
-            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights, food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world renound guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
+            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights, food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
           </p>
           <p className='font-CerealBK text-slate-500 text-center text-lg'>
             * Applications opening in *
@@ -313,7 +313,7 @@ function App() {
               With Silicon Valley right next door, TreeHacks attracts the world's most cutting edge startups and innovative companies. Looking for an amazing internship this summer? You might just find it here.
             </p>
             <p className='font-CerealBK text-slate-500'>
-              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if you're project can be something more, we'll help you flush out your idea and get you started on the right path.
+              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more, we'll help you flesh out your idea and get you started on the right path.
             </p>
           </div>
         </div>
@@ -330,7 +330,7 @@ function App() {
             </div>
             <div className='lg:w-1/3 lg:aspect-square p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
               <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>36 Hours</h1>
-              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>While the hacking hours of the Hackathon span 36 hours, we have an amazing series of workshops leading up to TreeHacks and a project continuation program to help you keep your idea going after the hackathon ends.</p>
+              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>While the hackathon spans 36 hours, we have an amazing series of workshops leading up to TreeHacks and a project continuation program to help you keep your idea going after the hackathon ends.</p>
             </div>
           </div>
           <div className='flex lg:flex-row flex-col bg-white'>
@@ -373,17 +373,20 @@ function App() {
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>What are you going to build?</h1>
             <p className='text-slate-500 lg:text-xl mb-8 font-CerealBK'>
-              TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also build something completely new. We can't wait to see what you build!
+              TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build!
             </p>
             <p className='text-slate-500 lg:text-xl mb-8 font-CerealBK'>
-              Our goal at TreeHacks 2023 is to empower hackers to build anything they want. We want to see you build something that you're passionate about, and we want to help you do it. At TreeHacks 2023 we will have unparalled resources such as world class mentors, onsite hardware, developer workshops, and cutting edge industry tools provided free by our sponsors.
+              Our goal at TreeHacks 2023 is to empower hackers to build anything they want. We want to see you work on something that you're passionate about, and we want to help you do it. We will have unparalleled resources such as world class mentors, onsite hardware, developer workshops, and cutting-edge industry tools provided free by our sponsors.
+            </p>
+            <p className='text-slate-500 lg:text-xl mb-8 font-CerealBK'>
+              Below are the tracks for TreeHacks 2023:
             </p>
             <div className='flex lg:flex-row flex-col lg:mb-8 mb-4'>
               <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Healthcare</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Trillions each year are spent on healthcare, but the system is broken. How can we improve the healthcare at home and abroad?
+                    Trillions of dollars are spent each year on healthcare, but the system is flawed. How can we improve healthcare at home and abroad?
                   </p>
                 </div>
               </div>
@@ -391,15 +394,15 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Sustainability</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Now more than ever we need to build a better future for our planet. How can we live more sustainably.
+                    Now more than ever, we need to focus on building a better future for our planet. How can we address climate change and live more sustainably?
                   </p>
                 </div>
               </div>
               <div className='lg:w-4/12'>
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Emerging Tech</h1>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>New Frontiers</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    AI/ML, AR/VR, Quantum Computing, and more. What can be build in this new frontier?
+                    AI/ML, AR/VR, Quantum Computing, and more. How can we innovate using new and emerging technologies?
                   </p>
                 </div>
               </div>
@@ -409,7 +412,7 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Web 3.0 and Fintech</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Blockchain, DeFi, and more. How can we build a better financial system?
+                    Blockchain, DeFi, and more. How can we build a better, more transparent financial system?
                   </p>
                 </div>
               </div>
@@ -417,7 +420,7 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Education</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    How can we improve the education system? How can we make learning more accessible?
+                    Education is an incredibly powerful tool. How can we improve the education system and make learning more accessible?
                   </p>
                 </div>
               </div>
@@ -425,7 +428,7 @@ function App() {
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Privacy and Safety</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    How can we build a more secure and private internet? How can we better protect our personal data?
+                    As technology becomes increasingly prevalent in our lives, privacy and safety are more important than ever. How can we build a more secure Internet and better protect our personal data?
                   </p>
                 </div>
               </div>
@@ -461,7 +464,7 @@ function App() {
             <div className="w-full h-96 card">
               <div class="card__content">
                 <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
-                  <h1 className='font-semibold text-xl font-CerealBD text-black'>Caciator</h1>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black'>Catiator</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>Moonshot winner 2021</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -679,7 +682,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have five challenges that will have extra resources, sponsored challenges, and other events to inspire you.</p>
+                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you.</p>
             </div>
           </div>
 
@@ -702,7 +705,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks abides by this Code of Conduct, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
+                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
               </p>
             </div>
           </div>
@@ -710,7 +713,7 @@ function App() {
 
       </section>
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
-        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks 2022 team</h1>
+        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks 2023 team</h1>
       </div>
     </div>
   );
