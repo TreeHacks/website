@@ -263,7 +263,8 @@ function App() {
             <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1669968000} interval={1000} /></p>
           </div>
           <button
-            disabled
+            href="https://root.treehacks.com"
+            target="_blank"
             type="button"
             className="font-CerealMd mb-6 flex-shrink-0 lg:max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-lg mt-8 font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
             bg-gradient-to-r
