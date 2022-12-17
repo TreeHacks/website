@@ -243,7 +243,7 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
             </div>
             <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
-            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing. Applications close 1/3/23.</h1>
+            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing. Applications close soon.</h1>
 
             <div className='mt-6 flex flex-row'>
               <a
@@ -305,12 +305,20 @@ function App() {
             TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights, food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
           </p>
           <p className='font-CerealBK text-slate-500 text-center text-lg'>
-            * Applications close in (Jan 3rd) *
+            * Applications close in *
           </p>
           <div className="bg-white rounded-sm border shadow-sm flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
             <Accent className='absolute -right-10 -top-6' />
             <Accent2 className='absolute -left-10 -top-6' />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1672819199} interval={1000} /></p>
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1672732799} interval={1000} /></p>
+            <p className='font-CerealBK text-slate-500 text-center text-lg'>
+              (Non-Stanford - Jan 2nd)
+            </p>
+            <br />
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1673683199} interval={1000} /></p>
+            <p className='font-CerealBK text-slate-500 text-center text-lg'>
+              (Stanford - Jan 13th)
+            </p>
           </div>
           <a
             href="https://root.treehacks.com"
