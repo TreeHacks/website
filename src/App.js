@@ -27,6 +27,20 @@ import * as animationData from './assets/animations/tree.json';
 import backgroundVideo from './assets/videos/treehacksvideo.mp4';
 import './App.css';
 
+import protocol_labs_logo from './assets/logos/protocol_labs_logo.png';
+import Otsuka_Holdings_logo from './assets/logos/Otsuka_Holdings_logo.png';
+import convex_logo from './assets/logos/convex_logo.png';
+import intersystems_logo from './assets/logos/InterSystems_logo.png';
+import cadence_logo from './assets/logos/cadence_logo.png';
+import citadel_securities from './assets/logos/citadel_securities.png';
+import dolby_io_logo from './assets/logos/dolby_io_logo.jpg';
+import meta_logo from './assets/logos/meta_logo.png';
+import neo_logo from './assets/logos/neo_logo.png';
+import pear_logo from './assets/logos/Pear_VC_logo.png';
+import warp_logo from './assets/logos/warp_logo.png';
+import ycombinator_logo from './assets/logos/ycombinator_logo.png';
+import you_logo from './assets/logos/You.com_Logo.png';
+
 import { RxDiscordLogo } from "react-icons/rx";
 import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai";
 
@@ -622,21 +636,100 @@ function App() {
             <h1 className='font-semibold text-7xl mb-8 font-CerealBD text-black'>Speakers</h1>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-full pl-40 pr-40 pt-20 pb-20 flex flex-col border-b overflow-hidden relative">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative " id="projects">
+        <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
           <Circle />
         </div>
         <div className='flex flex-row'>
           <div>
-            <h1 className='font-semibold text-7xl mb-8 font-CerealBD text-black'>Sponsors</h1>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
+            from-emerald-500 via-indigo-500 to-emerald-500
+            animate-text'>Sponsors</h1>
           </div>
         </div>
-      </div> */}
+        <div className="w-full">
+          <div className='flex flex-row mb-8'>
+            <div className='w-6/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40'>
+                <img src={protocol_labs_logo} />
+              </div>
+            </div>
+            <div className='w-6/12'>
+              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
+                <img src={Otsuka_Holdings_logo} />
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-row mb-8'>
+            <div className='w-4/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 py-8'>
+                <img src={convex_logo} className="rounded-md" />
+              </div>
+            </div>
+            <div className='w-4/12 mr-10'>
+              <div className='w-full flex justify-center p-10 shadow-2xl rounded-md bg-white h-40'>
+                <img src={intersystems_logo} />
+              </div>
+            </div>
+            <div className='w-4/12'>
+              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
+                <img src={citadel_securities} />
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-row mb-8'>
+            <div className='w-4/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-16'>
+                <img src={you_logo} />
+              </div>
+            </div>
+            <div className='w-4/12 mr-10'>
+              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
+                <img src={dolby_io_logo} />
+              </div>
+            </div>
+            <div className='w-4/12'>
+              <div className='w-full flex justify-center p-16 shadow-2xl rounded-md bg-white h-40'>
+                <img src={cadence_logo} />
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-row mb-8 justify-center'>
+            <div className='w-4/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-8'>
+                <img src={warp_logo} />
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-row mb-4'>
+            <div className='w-3/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
+                <img src={meta_logo} />
+              </div>
+            </div>
+            <div className='w-3/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
+                <img src={neo_logo} />
+              </div>
+            </div>
+            <div className='w-3/12 mr-10'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
+                <img src={ycombinator_logo} />
+              </div>
+            </div>
+            <div className='w-3/12'>
+              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
+                <img src={pear_logo} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+        <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
           <CircleIntersection />
         </div>
         <div className='flex flex-row'>
