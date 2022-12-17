@@ -224,9 +224,9 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Tracks</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#projects'>Projects</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#sponsors'>Sponsors</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
           <a className='ml-8 font-semibold font-display cursor-pointer text-gray-500'>Speakers</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer text-gray-500'>Sponsors</a>
         </div>
       </div>
       <section class="bg-[url('./assets/background_1.svg')] bg-cover w-screen lg:h-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex items-center pt-32 lg:pt-0" id="home">
@@ -638,7 +638,7 @@ function App() {
         </div>
       </div> */}
 
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative " id="projects">
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="sponsors">
         <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
           <Circle />
         </div>
