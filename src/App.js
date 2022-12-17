@@ -27,6 +27,9 @@ import * as animationData from './assets/animations/tree.json';
 import backgroundVideo from './assets/videos/treehacksvideo.mp4';
 import './App.css';
 
+import { RxDiscordLogo } from "react-icons/rx";
+import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai";
+
 function App() {
   let count = 0;
   let count2 = 0;
@@ -226,20 +229,51 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
             </div>
             <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
-            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing.</h1>
-            <div className='mt-4'>
+            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing. Applications close 1/3/23.</h1>
+
+            <div className='mt-6 flex flex-row'>
               <a
                 href="https://root.treehacks.com"
                 target="_blank"
                 type="button"
-                className="font-CerealMd mb-6 mt-1 flex-shrink-0 max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium border border-emerald-500 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1"
+                className="font-CerealMd mr-2 flex-shrink-0 lg:max-w-[140px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
+                bg-gradient-to-r
+                from-indigo-500
+                via-emerald-500
+                to-emerald-500
+                background-animate"
               >
                 Apply Now
               </a>
+              <a
+                href="https://discord.gg/StZbQQyC"
+                target="_blank"
+                type="button"
+                className="font-CerealMd flex-shrink-0 lg:max-w-[200px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
+                bg-gradient-to-r
+                from-indigo-500
+                via-emerald-500
+                to-indigo-500
+                background-animate"
+              >
+                <RxDiscordLogo className="mr-2" size={20} color={"white"} />
+                Join our Discord
+              </a>
+            </div>
+
+            <div className="mt-8 mb-6">
+              <span className="font-CerealMd text-gray-400">Have a question? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+            </div>
+            <div className='flex flex-row'>
+              <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-400" size={30} /></a>
+              <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-400" size={30} /></a>
+              <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-400" size={30} /></a>
+              <a href="https://www.instagram.com/stanfordtreehacks/?hl=en" target="_blank"><AiFillInstagram className="mr-4 text-gray-400" size={30} /></a>
+              <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-400" size={30} /></a>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-10 flex flex-col relative" id="about">
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
@@ -257,18 +291,18 @@ function App() {
             TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights, food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
           </p>
           <p className='font-CerealBK text-slate-500 text-center text-lg'>
-            * Applications opening in *
+            * Applications close in (Jan 3rd) *
           </p>
           <div className="bg-white rounded-sm border shadow-sm flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
             <Accent className='absolute -right-10 -top-6' />
             <Accent2 className='absolute -left-10 -top-6' />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1669968000} interval={1000} /></p>
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1672819199} interval={1000} /></p>
           </div>
           <a
             href="https://root.treehacks.com"
             target="_blank"
             type="button"
-            className="font-CerealMd mb-6 flex-shrink-0 lg:max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-lg mt-8 font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
+            className="font-CerealMd mb-6 flex-shrink-0 lg:max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md mt-8 font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
             bg-gradient-to-r
               from-indigo-500
               via-emerald-500
@@ -718,7 +752,7 @@ function App() {
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
         <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks 2023 team</h1>
       </div>
-    </div>
+    </div >
   );
 }
 
