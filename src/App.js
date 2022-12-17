@@ -276,7 +276,7 @@ function App() {
             </div>
 
             <div className="mt-8 mb-6">
-              <span className="font-CerealMd text-gray-400">Have a question? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+              <span className="font-CerealMd text-gray-400">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
             </div>
             <div className='flex flex-row'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-400" size={30} /></a>
@@ -650,76 +650,76 @@ function App() {
           </div>
         </div>
         <div className="w-full">
-          <div className='flex flex-row mb-8'>
-            <div className='w-6/12 mr-10'>
+          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
+            <div className='lg:w-6/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40'>
                 <img src={protocol_labs_logo} />
               </div>
             </div>
-            <div className='w-6/12'>
+            <div className='lg:w-6/12 w-full mb-4 lg:mb-0'>
               <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
                 <img src={Otsuka_Holdings_logo} />
               </div>
             </div>
           </div>
-          <div className='flex flex-row mb-8'>
-            <div className='w-4/12 mr-10'>
+          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
+            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 py-8'>
                 <img src={convex_logo} className="rounded-md" />
               </div>
             </div>
-            <div className='w-4/12 mr-10'>
+            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center p-10 shadow-2xl rounded-md bg-white h-40'>
                 <img src={intersystems_logo} />
               </div>
             </div>
-            <div className='w-4/12'>
+            <div className='lg:w-4/12 w-full mb-4 lg:mb-0'>
               <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
                 <img src={citadel_securities} />
               </div>
             </div>
           </div>
-          <div className='flex flex-row mb-8'>
-            <div className='w-4/12 mr-10'>
+          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
+            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-16'>
                 <img src={you_logo} />
               </div>
             </div>
-            <div className='w-4/12 mr-10'>
+            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
                 <img src={dolby_io_logo} />
               </div>
             </div>
-            <div className='w-4/12'>
+            <div className='lg:w-4/12 w-full mb-4 lg:mb-0'>
               <div className='w-full flex justify-center p-16 shadow-2xl rounded-md bg-white h-40'>
                 <img src={cadence_logo} />
               </div>
             </div>
           </div>
-          <div className='flex flex-row mb-8 justify-center'>
-            <div className='w-4/12 mr-10'>
+          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0 justify-center'>
+            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-8'>
                 <img src={warp_logo} />
               </div>
             </div>
           </div>
-          <div className='flex flex-row mb-4'>
-            <div className='w-3/12 mr-10'>
+          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
+            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
                 <img src={meta_logo} />
               </div>
             </div>
-            <div className='w-3/12 mr-10'>
+            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
                 <img src={neo_logo} />
               </div>
             </div>
-            <div className='w-3/12 mr-10'>
+            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
                 <img src={ycombinator_logo} />
               </div>
             </div>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12 w-full mb-4 lg:mb-0'>
               <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
                 <img src={pear_logo} />
               </div>
