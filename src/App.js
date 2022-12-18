@@ -642,7 +642,7 @@ function App() {
                 <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
                   <LucidSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Lucid Drums</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Most Creative Hack 2019</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Most Creative Hack 2019</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
