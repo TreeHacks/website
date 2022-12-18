@@ -10,6 +10,16 @@ import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
 
+import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
+import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
+import { ReactComponent as NeuralHashSVG } from './assets/neural.svg';
+import { ReactComponent as PowerHouseSVG } from './assets/plug.svg';
+import { ReactComponent as DocodialSVG } from './assets/medical.svg';
+import { ReactComponent as MarvelSCG } from './assets/man.svg';
+import { ReactComponent as AEye } from './assets/skin.svg';
+import { ReactComponent as LucidSVG } from './assets/drum.svg';
+
+
 import mainImage from './assets/photos/Treehacks-129.jpeg';
 import sideImage1 from './assets/photos/Treehacks-181.jpeg';
 import sideImage2 from './assets/photos/Treehacks-347.jpeg';
@@ -522,9 +532,10 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <CatiatorSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Catiator</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Moonshot winner 2021</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Moonshot Winner 2021</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021.</p>
@@ -536,7 +547,8 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <ComputerTopSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Computertop Desk</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>Best Hardware Hack 2018</h1>
                 </div>
@@ -550,7 +562,8 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <NeuralHashSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>NeuralHash</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>Security Grand Prize 2018</h1>
                 </div>
@@ -564,7 +577,8 @@ function App() {
           <div className='lg:w-3/12'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <PowerHouseSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>#PowerHouse</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>First Time Hackers</h1>
                 </div>
@@ -580,9 +594,10 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <DocodialSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Docodial</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Best UI and Live Video App 2018</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Best UI and Live Video App 2018</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Jenny and Aidan developed a live-streaming web app that allows doctors to communicate with interpreters, empowering non-native speakers to get the health coverage they need. They won Best User Interface and Best Live Video App at TreeHacks 2018.</p>
@@ -594,8 +609,9 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
-                  <h1 className='font-semibold text-xl font-CerealBD text-black'>Marvel Medical Dictionary</h1>
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <MarvelSCG className="w-36" />
+                  <h1 className='font-semibold text-xl font-CerealBD text-black text-center'>Marvel Medical Dictionary</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>Best Mobile AR Hack 2018</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -608,9 +624,10 @@ function App() {
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <AEye className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>AEye</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Best Public Health Hack 2019</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Best Public Health Hack 2019</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Vamshi, Dhanush, AJ and Aria built a mobile app that lets you take a picture of a patch of skin and analyzes it for potential skin diseases. Their model was trained on hundreds of models from the ISIC public skin database, and upon identification sends the result to a doctor for verification. They won Best Public Health Hack at TreeHacks 2019.</p>
@@ -622,7 +639,8 @@ function App() {
           <div className='lg:w-3/12'>
             <div className="w-full h-96 card">
               <div class="card__content">
-                <div class="card__front bg-white flex flex-col justify-end p-10 border-black border">
+                <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
+                  <LucidSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Lucid Drums</h1>
                   <h1 className='font-semibold text-lg font-CerealBK text-black'>Most Creative Hack 2019</h1>
                 </div>
