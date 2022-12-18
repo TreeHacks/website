@@ -550,7 +550,7 @@ function App() {
                 <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
                   <ComputerTopSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>Computertop Desk</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Best Hardware Hack 2018</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Best Hardware Hack 2018</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Omar combined a webcam and projector mounted above a desk, along with a splash of OpenCV to locate all the pieces of paper and the keyboard, allowing users to set any piece of paper as a window for the computer. Omar won Most Creative Hack and Best Hardware Hack at TreeHacks 2018.</p>
@@ -565,7 +565,7 @@ function App() {
                 <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
                   <NeuralHashSVG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black'>NeuralHash</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Security Grand Prize 2018</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Security Grand Prize 2018</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Isaac, Nikhil, Evani, and Rohan used machine learning to develop a decoder model that acts as a cryptographically-secure, transformation-invariant hash function to identify image ownership. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018.</p>
@@ -612,7 +612,7 @@ function App() {
                 <div class="card__front bg-white flex flex-col justify-end align-middle items-center p-10 border-black border">
                   <MarvelSCG className="w-36" />
                   <h1 className='font-semibold text-xl font-CerealBD text-black text-center'>Marvel Medical Dictionary</h1>
-                  <h1 className='font-semibold text-lg font-CerealBK text-black'>Best Mobile AR Hack 2018</h1>
+                  <h1 className='font-semibold text-lg font-CerealBK text-black text-center'>Best Mobile AR Hack 2018</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018.</p>
