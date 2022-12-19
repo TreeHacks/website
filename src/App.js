@@ -394,7 +394,7 @@ function App() {
               <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,000+ students from across the nation come to Stanford for 36 hours of hacking. Spots are limited. <span className="underline text-orange-400">Apply now →</span></p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$250,000 in Prizes</h1>
+              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$100,000 in Prizes</h1>
               <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>This year we're going BIG. That means more prizes than we've ever had before. Whatever you're passionate about, we have something for you.</p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
@@ -404,13 +404,13 @@ function App() {
           </div>
           <div className='flex lg:flex-row flex-col bg-white'>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>50+ Universities</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>30+ Universities</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>20+ Countries</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>10+ Countries</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>60+ Companies</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>20+ Companies</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
               <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>200+ Projects</h1>
