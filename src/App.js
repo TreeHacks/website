@@ -312,7 +312,7 @@ function App() {
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>What's so special?</h1>
           <p className='font-CerealBK text-slate-500 mb-8 lg:text-center lg:text-lg text-md'>
-            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights, food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
+            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights (regional caps TBA), food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
           </p>
           <p className='font-CerealBK text-slate-500 text-center text-lg'>
             * Applications close in *
