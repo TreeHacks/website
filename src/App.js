@@ -239,7 +239,10 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer text-gray-500'>Speakers</a>
         </div>
       </div>
-      <section class="bg-[url('./assets/background_1.svg')] bg-cover w-screen lg:h-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex items-center pt-32 lg:pt-0" id="home">
+      <section class="bg-cover w-screen lg:h-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex items-center pt-32 lg:pt-0" id="home">
+        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
+          <CircleIntersection />
+        </div>
         <div className='flex flex-row items-center'>
           <div className="mr-6 z-10 lg:inline-block hidden">
             <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>2</h1>
@@ -270,7 +273,7 @@ function App() {
                 Apply Now
               </a>
               <a
-                href="https://discord.gg/aGysN4x2"
+                href="https://discord.gg/G8T378ja"
                 target="_blank"
                 type="button"
                 className="font-CerealMd flex-shrink-0 lg:max-w-[200px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
