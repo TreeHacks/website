@@ -273,7 +273,7 @@ function App() {
                 Apply Now
               </a>
               <a
-                href="https://discord.gg/G8T378ja"
+                href="https://discord.gg/5GkSSJWr2Z"
                 target="_blank"
                 type="button"
                 className="font-CerealMd flex-shrink-0 lg:max-w-[200px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
