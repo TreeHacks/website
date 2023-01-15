@@ -32,24 +32,45 @@ import scroll5 from './assets/photos/scroll5.jpeg';
 import scroll6 from './assets/photos/scroll6.jpeg';
 import scroll7 from './assets/photos/scroll7.jpeg';
 
-import Lottie from 'react-lottie';
-import * as animationData from './assets/animations/tree.json';
 import backgroundVideo from './assets/videos/treehacksvideo.mp4';
 import './App.css';
 
-import protocol_labs_logo from './assets/logos/protocol_labs_logo.png';
-import Otsuka_Holdings_logo from './assets/logos/Otsuka_Holdings_logo.png';
-import convex_logo from './assets/logos/convex_logo.png';
-import intersystems_logo from './assets/logos/InterSystems_logo.png';
-import cadence_logo from './assets/logos/cadence_logo.png';
-import citadel_securities from './assets/logos/citadel_securities.png';
-import dolby_io_logo from './assets/logos/dolby_io_logo.jpg';
-import meta_logo from './assets/logos/meta_logo.png';
-import neo_logo from './assets/logos/neo_logo.png';
-import pear_logo from './assets/logos/Pear_VC_logo.png';
-import warp_logo from './assets/logos/warp_logo.png';
-import ycombinator_logo from './assets/logos/ycombinator_logo.png';
-import you_logo from './assets/logos/You.com_Logo.png';
+import Otsuka from './assets/logos/otsuka.png';
+import Estuary from './assets/logos/estuary.png';
+import Convex from './assets/logos/convex.png';
+import InterSystems from './assets/logos/intersystems.png';
+import OpenAI from './assets/logos/OpenAI.png';
+import Vercel from './assets/logos/vercel.png';
+import Citadel from './assets/logos/citadel.png';
+import You from './assets/logos/you.png';
+import Skydio from './assets/logos/skydio.png';
+import Cadence from './assets/logos/cadence.png';
+import Arduino from './assets/logos/arduino.png';
+import Zetachain from './assets/logos/zetachain.png';
+import Phri from './assets/logos/phri.png';
+import Mem from './assets/logos/mem.png';
+import Cypherd from './assets/logos/cypherd.png';
+import HRT from './assets/logos/hrt.png';
+import Meta from './assets/logos/meta.png';
+import Cisco from './assets/logos/cisco.png';
+import SquareL from './assets/logos/square.png';
+import Retool from './assets/logos/retool.png';
+import Dolby from './assets/logos/dolby.png';
+import Warp from './assets/logos/warp.png';
+import Bnb from './assets/logos/bnb.jpeg';
+import Checkbook from './assets/logos/checkbook.png';
+import Parrot from './assets/logos/parrot.png';
+import YCombinator from './assets/logos/ycombinator.webp';
+import Neo from './assets/logos/neo.png';
+import Pear from './assets/logos/pear.jpeg';
+import GeneralTask from './assets/logos/generaltask.png';
+import Replit from './assets/logos/replit.png';
+import Algolia from './assets/logos/algolia.png';
+import Wolfram from './assets/logos/wolfram.png';
+import Makerbot from './assets/logos/makerbot.png';
+import Twilio from './assets/logos/twilio.png';
+import Supabase from './assets/logos/supabase.png';
+import Voiceflow from './assets/logos/voiceflow.png';
 
 import { RxDiscordLogo } from "react-icons/rx";
 import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai";
@@ -393,11 +414,11 @@ function App() {
         <div className='border-2 border-black mb-10 z-20'>
           <div className='flex lg:flex-row flex-col border-b-2 border-black bg-white'>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>1000+ Hackers</h1>
+              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>1500+ Hackers</h1>
               <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,000+ students from across the nation come to Stanford for 36 hours of hacking. Spots are limited. <span className="underline text-orange-400">Apply now →</span></p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$100,000 in Prizes</h1>
+              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$160,000 in Prizes</h1>
               <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>This year we're going BIG. That means more prizes than we've ever had before. Whatever you're passionate about, we have something for you.</p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
@@ -410,16 +431,16 @@ function App() {
               <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>30+ Universities</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>10+ Countries</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>12+ Countries</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>20+ Companies</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>40+ Companies</h1>
             </div>
             <div className='lg:w-1/5 lg:border-r-2 border-b-2 lg:border-b-0 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>200+ Projects</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>300+ Projects</h1>
             </div>
             <div className='lg:w-1/5 p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>100+ Mentors</h1>
+              <h1 className='font-semibold text-3xl mb-4 font-CerealBD text-black group-hover:text-white'>200+ Mentors</h1>
             </div>
           </div>
         </div>
@@ -679,79 +700,372 @@ function App() {
           </div>
         </div>
         <div className="w-full">
-          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
-            <div className='lg:w-6/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40'>
-                <img src={protocol_labs_logo} />
-              </div>
-            </div>
-            <div className='lg:w-6/12 w-full mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
-                <img src={Otsuka_Holdings_logo} />
-              </div>
-            </div>
-          </div>
-          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
-            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 py-8'>
-                <img src={convex_logo} className="rounded-md" />
-              </div>
-            </div>
-            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center p-10 shadow-2xl rounded-md bg-white h-40'>
-                <img src={intersystems_logo} />
-              </div>
-            </div>
-            <div className='lg:w-4/12 w-full mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
-                <img src={citadel_securities} />
-              </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-12/12 w-full lg:mb-0'>
+              <a href="https://en.valuenex.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-48 p-10 relative'>
+                  <img src={Otsuka} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-md font-CerealBK mb-2'>
+                      Otsuka Holdings and Valuenex created an innovation lab in Palo Alto to create long-lasting new products/services for better health worldwide with global talents.
+                    </p>
+                    <ul>
+                      <li className='text-md font-CerealBK ml-4 mb-2'>
+                        • Otsuka Holdings: Otsuka Holdings is a healthcare company in the pharmaceutical and nutraceutical business and the parent company of Crystal Geyser Water company, Pharmavite; a dietary supplements company (known for NatureMade), Daiya; a plant-based cheese company, and many others.
+                      </li>
+                      <li className='text-md font-CerealBK ml-4'>
+                        • Valuenex: VALUENEX is a predictive analytics company that specializes in analyzing and visualizing large amounts of text data to help businesses create insights and innovate. They support clients across a wide range of industries and business functions and currently work with over 45% of Japanese Fortune 500 companies.                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
-            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-16'>
-                <img src={you_logo} />
-              </div>
-            </div>
-            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center p-8 shadow-2xl rounded-md bg-white h-40'>
-                <img src={dolby_io_logo} />
-              </div>
-            </div>
-            <div className='lg:w-4/12 w-full mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center p-16 shadow-2xl rounded-md bg-white h-40'>
-                <img src={cadence_logo} />
-              </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-12/12 w-full lg:mb-0'>
+              <a href="https://estuary.tech/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-48 p-10 relative'>
+                  <img src={Estuary} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-md font-CerealBK mb-2'>
+                      Estuary is the easiest way to upload public data to Filecoin, the largest decentralized storage network (DSN) in the world. A DSN allows for worldwide access to your data, a free market for storage and autonomy over your data which does not exist in the centralized storage model of today’s corporations. Using Filecoin, Estuary provides unlimited, free storage in aims of preserving the world’s most important information, like AI training sets, climate data, political records, genetics or medical research and more. Estuary is open source and has many developer tools and APIs. Come by our booth to learn more!                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0 justify-center'>
-            <div className='lg:w-4/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-40 p-8'>
-                <img src={warp_logo} />
-              </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-6/12 w-full lg:mr-4'>
+              <a href="https://convex.dev/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Convex} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK'>
+                      Convex is the stateful application platform that combines a powerful custom database with an integrated execution environment. Easily build fast, scalable, dynamic web and mobile applications without backend engineering or DevOps. Simple to get started, but deeply powerful over time, Convex has established an entirely new way to build applications that’s intuitive and productive for engineering teams of two to 200.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-6/12 w-full'>
+              <a href="https://estuary.tech/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={InterSystems} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      We Are the Engine Behind the World’s Most Important Applications. InterSystems technology is used to:
+                    </p>
+                    <ul>
+                      <li className='text-sm font-CerealBK ml-4 mb-2'>
+                        • Manage more than 1 billion health records worldwide
+                      </li>
+                      <li className='text-sm font-CerealBK ml-4 mb-2'>
+                        • Map over 1 billion stars in the Milky Way with the European Space Agency
+                      </li>
+                      <li className='text-sm font-CerealBK ml-4 mb-2'>
+                        • Process more than 300,000 transactions per day for the 2nd largest shipping company in the world
+                      </li>
+                      <li className='text-sm font-CerealBK ml-4 mb-2'>
+                        • Modernize all 20 institutions in the U.S. News & World Report 2020 Honor Roll of Best Hospitals
+                      </li>
+                      <li className='text-sm font-CerealBK ml-4'>
+                        • Process the world’s stock transactions at 11 of the top 20 global banks
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div className='flex lg:flex-row flex-col lg:mb-8 mb-0'>
-            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
-                <img src={meta_logo} />
-              </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-6/12 w-full lg:mr-4'>
+              <a href="https://mem.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Mem} className="object-contain" />
+                </div>
+              </a>
             </div>
-            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
-                <img src={neo_logo} />
-              </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://openai.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={OpenAI} className="object-contain" />
+                </div>
+              </a>
             </div>
-            <div className='lg:w-3/12 w-full lg:mr-10 mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
-                <img src={ycombinator_logo} />
-              </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://vercel.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Vercel} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      We enable teams to iterate quickly and develop, preview, and ship delightful user experiences. Vercel has zero-configuration support for 35+ frontend frameworks and integrates with your headless content, commerce, or database of choice.
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div className='lg:w-3/12 w-full mb-4 lg:mb-0'>
-              <div className='w-full flex justify-center shadow-2xl rounded-md bg-white h-20 p-6'>
-                <img src={pear_logo} />
-              </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://citadel.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Citadel} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://you.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={You} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://skydio.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Skydio} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://www.cadence.com/en_US/home.html" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Cadence} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Cadence is a pivotal leader in electronic systems design, building upon more than 30 years of computational software expertise. The company applies its underlying Intelligent System Design strategy to deliver software, hardware, and IP that turn design concepts into reality.
+                    </p>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Cadence customers are the world’s most innovative companies, delivering extraordinary electronic products from chips to boards to complete systems for the most dynamic market applications including hyperscale computing, 5G communications, automotive, mobile, aerospace, consumer, industrial, and healthcare.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      For eight years in a row, Fortune magazine has named Cadence one of the 100 Best Companies to Work For.                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://arduino.cc/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Arduino} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://zetachain.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Zetachain} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK'>
+                      ZetaChain is the only decentralized blockchain and smart contract platform built for omnichain interoperability.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="http://www.patientsafetytech.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Phri} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      The Patient Safety Technology Challenge is designed to fuel the engagement of students and innovators in creating solutions and envisioning transformational approaches to reduce preventable harm from medical errors and reimagine a vastly safer healthcare system. The initiative injects patient safety awards into existing local, regional, and national competitions and produce a documentary to help increase awareness of the patient safety crisis.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      Guided by national partners experienced in safety technology and advanced healthcare analytics, the Challenge will fund awards within existing competitions, hackathons, and startup weekends as either an off-the-shelf award package or as a new award.                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://www.cypherwallet.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Cypherd} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.hudsonrivertrading.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={HRT} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://meta.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Meta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://cisco.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Cisco} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://square.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={SquareL} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://retool.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Retool} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://dolby.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Dolby} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://warp.dev/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Warp} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://binance.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Bnb} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://checkbook.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Checkbook} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://parrot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Parrot} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://ycombinator.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={YCombinator} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://neo.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Neo} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://pear.vc/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Pear} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://generaltask.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={GeneralTask} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Special donations from</h1>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://replit.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-4 relative'>
+                  <img src={Replit} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://algolia.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Algolia} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://wolfram.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Wolfram} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://makerbot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Makerbot} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://twilio.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Twilio} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://supabase.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Supabase} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full'>
+              <a href="https://voiceflow.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Voiceflow} className="object-contain" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
