@@ -623,7 +623,7 @@ function App() {
             <div className='bg-white border rounded-md mt-4 flex lg:flex-row flex-col lg:flex-wrap'>
               {prizes.map(prizeData => (
                 <div className='lg:w-4/12 aspect-square relative border'>
-                  <div className='absolute cursor-pointer p-8 z-50 bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                  <div className='absolute cursor-pointer p-8 z-20 bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
                     <p className='text-md font-CerealBK mb-2'>
                       {prizeData.Description}
                     </p>
