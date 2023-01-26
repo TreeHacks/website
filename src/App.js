@@ -74,6 +74,8 @@ import Makerbot from './assets/logos/makerbot.webp';
 import Twilio from './assets/logos/twilio.webp';
 import Supabase from './assets/logos/supabase.webp';
 import Voiceflow from './assets/logos/voiceflow.webp';
+import Aptos from './assets/logos/aptos.webp';
+import Near from './assets/logos/near.webp';
 
 import { prizes } from './prizes';
 import { workshops } from './workshops';
@@ -261,7 +263,7 @@ function App() {
 
   const QuickOption = ({ disabled, title, section, description }) => {
     return (
-      <a disabled={disabled} href={`#${section}`} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full h-32`}>
+      <a disabled={disabled} href={`#${section}`} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full lg:h-32`}>
         <div className={`${disabled ? "opacity-40" : ""}`}>
           <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
@@ -287,7 +289,7 @@ function App() {
               <h1 className='text-lg font-CerealBD -mt-2'>min</h1>
             </div>
             <div className='w-10/12 flex items-center px-4 border-b'>
-              <h1 className='font-CerealXBd text-md bg-gradient-to-r bg-clip-text text-transparent 
+              <h1 className='font-CerealXBd text-sm bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text leading-tight'>{data.Workshop}</h1>
             </div>
@@ -328,7 +330,7 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
         </div>
       </div>
-      <section class="bg-cover w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center pt-24" id="home">
+      <section class="bg-cover w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center lg:pt-24 pt-32" id="home">
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
           <CircleIntersection />
         </div>
@@ -360,8 +362,8 @@ function App() {
         </div>
       </section>
 
-      <section className="w-full lg:h-96 lg:mt-0 mt-14 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-10 flex flex-col relative justify-center items-center" id="about">
-        <h1 className='font-CerealXBd text-4xl text-center mb-4 bg-gradient-to-r bg-clip-text text-transparent 
+      <section className="w-full lg:h-96 lg:mt-0 mt-20 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
+        <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text'>Excited? We are too!</h1>
         <a
@@ -629,26 +631,31 @@ function App() {
                     </p>
                   </div>
                   <a className='absolute z-10 top-4 right-4' href={prizeData['Company Link']} target="_blank">
-                    <div className='p-4 border rounded-lg bg-white border-x flex justify-center items-center flex-col'>
-                      <img src={prizeData['Image Link']} className="object-contain h-4" />
+                    <div className='p-6 shadow-2xl rounded-lg bg-white flex justify-center items-center flex-col'>
+                      <img src={prizeData['Image Link']} className="object-contain h-6" />
                     </div>
                   </a>
                   <img src={prizeData['Prize Image']} className="object-cover h-full w-full" />
-                  <div className='p-4 z-10 bottom-0 w-full absolute bg-black flex justify-center items-center flex-col'>
-                    <span className='flex flex-row items-center justify-center mb-2'>
-                      <AiFillStar className="mr-2 text-yellow-400" size={15} />
-                      <h1 className="font-CerealBD text-center text-sm text-white">{prizeData['Prize Name']}</h1>
-                      <AiFillStar className="ml-2 text-yellow-400" size={15} />
-                    </span>
-                    <p className='text-sm border w-full p-4 rounded-md cursor-pointer text-white font-CerealBD'>
+                  <div className='p-4 z-10 bottom-0 w-full absolute flex justify-center items-center flex-col'>
+                    <p className='text-xs shadow-2xl w-full p-4 rounded-md cursor-pointer text-white font-CerealBD
+                    bg-gradient-to-r
+                    from-indigo-500
+                    via-rose-500
+                    to-emerald-500
+                    background-animate'>
+                      <span className='flex flex-row items-center justify-center mb-2 border-b pb-2'>
+                        <AiFillStar className="mr-2 text-yellow-400" size={15} />
+                        <h1 className="font-CerealBD text-center text-sm text-white">{prizeData['Prize Name']}</h1>
+                        <AiFillStar className="ml-2 text-yellow-400" size={15} />
+                      </span>
                       {typeof prizeData['Prize Contents'] == "string" ? (
                         <>
-                          <li>{prizeData['Prize Count'] && (`${prizeData['Prize Count']} x `)}{prizeData['Prize Contents']}</li>
+                          <>{"- "}{prizeData['Prize Count'] && (`${prizeData['Prize Count']} x `)}{prizeData['Prize Contents']}</>
                         </>
                       ) : (
                         <>
                           {prizeData['Prize Contents'].map(item => (
-                            <li>{item}</li>
+                            <>{"- "}{prizeData['Prize Count'] && (`${prizeData['Prize Count']} x `)}{item}<br /></>
                           ))}
                         </>
                       )}
@@ -694,7 +701,7 @@ function App() {
               </div>
               <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Andrej Karpathy</h1>
               <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
-                Andrej Karpathy is a computer scientist and researcher in the field of artificial intelligence and deep learning. Previously, he was the Director of Artificial Intelligence at <a className='text-indigo-500 underline' href='https://www.tesla.com/' target={"_blank"}>Tesla</a>, where he led the computer vision team of Tesla Autopilot. Prior to joining Tesla, Karpathy was a founding member at <a className='text-indigo-500 underline' href='https://www.openai.com/' target={"_blank"}>OpenAI</a> and a research scientist at the Stanford AI Lab where he focused on convolutional/recurrent neural networks and their applications in computer vision, natural language processing and their intersection. Karpathy is known for his research on deep learning and computer vision, as well as for his popular <a href='http://karpathy.github.io/' className='text-indigo-500 underline' target={"_blank"}>blog</a> on the topic. He also wrote the widely-used neural network library, ConvNetJS.
+                Andrej Karpathy is a computer scientist and researcher in the field of artificial intelligence and deep learning. Previously, he was the Director of Artificial Intelligence at <a className='text-indigo-500 underline' href='https://www.tesla.com/' target={"_blank"}>Tesla</a>, where he led the computer vision team of Tesla Autopilot. Prior to joining Tesla, Karpathy was a founding member at <a className='text-indigo-500 underline' href='https://www.openai.com/' target={"_blank"}>OpenAI</a> and a research scientist at the Stanford AI Lab where he focused on convolutional/recurrent neural networks and their applications in computer vision, natural language processing and their intersection. Karpathy is known for his research on deep learning and computer vision, as well as for his popular <a href='http://karpathy.github.io/' className='text-indigo-500 underline' target={"_blank"}>blog</a> on the topic.
               </p>
             </div>
           </div>
@@ -1092,10 +1099,24 @@ function App() {
           </div>
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-4/12 w-full'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://www.cypherwallet.io/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
                   <img src={Cypherd} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.aptoslabs.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Aptos} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://www.near.org/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Near} className="object-contain" />
                 </div>
               </a>
             </div>

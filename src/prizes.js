@@ -35,6 +35,8 @@ import Makerbot from './assets/logos/makerbot.webp';
 import Twilio from './assets/logos/twilio.webp';
 import Supabase from './assets/logos/supabase.webp';
 import Voiceflow from './assets/logos/voiceflow.webp';
+import Aptos from './assets/logos/aptos.webp';
+import Near from './assets/logos/near.webp';
 
 export const prizes = [
     {
@@ -292,7 +294,7 @@ export const prizes = [
         "Prize Count": null,
         "Prize Contents": "$1000 Cash prize",
         "Link": "",
-        "Image Link": "",
+        "Image Link": Aptos,
         "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
         "Track": "Web3",
         "api": true
@@ -593,6 +595,32 @@ export const prizes = [
         "Link": "",
         "Image Link": Neo,
         "Prize Image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F056e49d0-aa04-449a-8ddc-07814ca31c39_4434x2435.jpeg",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "OpenAI",
+        "Company Link": "https://openai.com/",
+        "Prize Name": "Best Use of OpenAI Models",
+        "Description": "",
+        "Prize Count": null,
+        "Prize Contents": "$2,500 in API credits",
+        "Link": "",
+        "Image Link": OpenAI,
+        "Prize Image": "https://openai.com/content/images/2018/02/socml_3.jpg",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "NEAR",
+        "Company Link": "https://near.org/",
+        "Prize Name": "Top Uses of NEAR Social (3x)",
+        "Description": "This goes to the top 3 teams that implement NEAR Social the best. Whether it is indexing data from NEAR Social into your projects or building composable widgets directly on Near Social. Here are a few ideas: https://devgovgigs.near.social/",
+        "Prize Count": null,
+        "Prize Contents": "$1,000 Cash prize",
+        "Link": "",
+        "Image Link": Near,
+        "Prize Image": "https://near.org/wp-content/uploads/2021/09/brand-horizontal.png",
         "Track": "",
         "api": true
     }
