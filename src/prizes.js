@@ -209,6 +209,100 @@ export const prizes = [
         "api": false
     },
     {
+        "Company": "Estuary",
+        "Company Link": "https://estuary.tech/",
+        "Prize Name": "Best Use of Estuary",
+        "Description": "This prize will go to the students who best demonstrate Estuary's use case and use creative ways to incorporate our API. The first place prize will be iPads and second place will be keyboards.",
+        "Prize Count": 4,
+        "Prize Contents": [
+            "1st Prize - iPads (10th Generation)",
+            "2nd Prize - Mechanical/gaming keyboards"
+        ],
+        "Link": "",
+        "Image Link": Estuary,
+        "Prize Image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-10th-gen-finish-unselect-gallery-1-202212_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=95&.v=1667592096723",
+        "Track": "Web3",
+        "api": false
+    },
+    {
+        "Company": "Convex",
+        "Company Link": "https://convex.dev/",
+        "Prize Name": "Best Use of InterSystems IntegratedML",
+        "Description": "Full stack hack and no back-end? With Convex, easy.\nThis prize goes to the team that makes the best use of the Convex platform to create a novel and compelling web or mobile multi-user app. Real-time or reactive elements are a plus.\nAnd since Convex developers are naturally among the best builders around, we figure it’s only right to throw a few more challenging and exciting builds at the winning team.",
+        "Prize Count": null,
+        "Prize Contents": [
+            "Massive Lego: 5' Eiffel Tower",
+            "2 meter RC Airplane kit: E-flite DRACO 2.0m BNF Basic Electric Airplane",
+            "Arduino-based quadruped robot: Lynxmotion SQ3U",
+            "Various batteries, chargers, and accessories to finish the above projects"
+        ],
+        "Link": "",
+        "Image Link": Convex,
+        "Prize Image": "https://thegadgetflow.com/wp-content/uploads/2022/11/LEGO-Eiffel-Tower-building-block-set-01-1200x900.jpeg",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "Mem",
+        "Company Link": "https://mem.ai/",
+        "Prize Name": "Best Natural Language Hack",
+        "Description": "The project with the best application of natural language processing.",
+        "Prize Count": 4,
+        "Prize Contents": [
+            "1st place: AirPods Maxs",
+            "2nd place: Ember Mug",
+            "3rd place: Amazon Echo Dot (5th gen)"
+        ],
+        "Link": "",
+        "Image Link": Mem,
+        "Prize Image": "https://media.cnn.com/api/v1/images/stellar/prod/221111134854-echo-dot-with-clock-5th-gen-review-cnnu-7.jpg?c=original",
+        "Track": "New_Frontiers",
+        "api": false
+    },
+    {
+        "Company": "InterSystems",
+        "Company Link": "https://intersystems.com/",
+        "Prize Name": "Best Use of InterSystems IntegratedML",
+        "Description": "InterSystems is issuing a challenge to build the most interesting and innovative application using InterSystems IntegratedML -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications.\n To qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts and onsite mentors' support. You will be able to submit your project to one of the main tracks as well.",
+        "Prize Count": null,
+        "Prize Contents": [
+            "1st place: $2000 Cash prize",
+            "2nd place: $1500 Cash prize",
+            "3rd place: $1000 Cash prize"
+        ],
+        "Link": "",
+        "Image Link": InterSystems,
+        "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
+        "Track": "New",
+        "api": true
+    },
+    {
+        "Company": "Otsuka <> Valuenex",
+        "Company Link": "https://en.valuenex.com/",
+        "Prize Name": "Best VALUENEX Radar Hack",
+        "Description": "Best VALUENEX Radar Hack for the best VALUENEX Radar use case to show the world! Each winning team member will be awarded a $250 Amazon gift card and an annual VALUENEX Radar subscription.",
+        "Prize Count": 4,
+        "Prize Contents": "VALUENEX package - Amazon gift card ($250) and VALUENEX Radar 1 year membership",
+        "Link": "",
+        "Image Link": Otsuka,
+        "Prize Image": "https://i.insider.com/5e8e0e60dcd88c5bb0703ca4?width=1136&format=jpeg",
+        "Track": "Healthcare",
+        "api": true
+    },
+    {
+        "Company": "Otsuka <> Valuenex",
+        "Company Link": "https://en.valuenex.com/",
+        "Prize Name": "Best hack to connect with others through food",
+        "Description": "“Best hack to connect with others through food” for the improvement of the world's wellbeing & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We'll make sure to look after your wellbeing as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
+        "Prize Count": 4,
+        "Prize Contents": "Good life package - DoorDash gift card ($500) + Spa gift card ($250)",
+        "Link": "",
+        "Image Link": Otsuka,
+        "Prize Image": "https://techcrunch.com/wp-content/uploads/2019/09/doordash.jpg",
+        "Track": "Healthcare",
+        "api": false
+    },
+    {
         "Company": "Vercel",
         "Company Link": "https://vercel.com",
         "Prize Name": "Best Web Frontend",
@@ -300,72 +394,42 @@ export const prizes = [
         "api": true
     },
     {
-        "Company": "Replit's choice",
-        "Company Link": "https://replit.com/",
-        "Prize Name": "Replit's choice award!",
-        "Description": "This prize goes to the teams that the Replit team thinks made the coolest projects!",
+        "Company": "NEAR",
+        "Company Link": "https://near.org/",
+        "Prize Name": "Top Uses of NEAR Social (3x)",
+        "Description": "This goes to the top 3 teams that implement NEAR Social the best. Whether it is indexing data from NEAR Social into your projects or building composable widgets directly on Near Social. Here are a few ideas: https://devgovgigs.near.social/",
         "Prize Count": null,
-        "Prize Contents": [
-            "1st place: 3,000 Cycles (~3 mo of Hacker)",
-            "2nd place: 2,000 Cycles (~2 mo of Hacker)",
-            "3rd place: 1,000 Cycles (~1 mo of Hacker)"
-        ],
+        "Prize Contents": "$1,000 Cash prize",
         "Link": "",
-        "Image Link": Replit,
-        "Prize Image": "https://replit.com/public/images/ogBanner.png",
+        "Image Link": Near,
+        "Prize Image": "https://near.org/wp-content/uploads/2021/09/brand-horizontal.png",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "Parrot",
+        "Company Link": "https://parrot.com/",
+        "Prize Name": "Best use of Drone Technology",
+        "Description": "Parrot is the European leader in the drone industry building Nano drones (under 2 pounds). As drones continue to find applications in a wide range of verticals, such as, industrial inspections, defense, first responders and surveillance, there is a need for development of innovative and specific software mission or customize accessories relevant for different use case. we are therefore interested by what can be the drone technology of tomorrow, how such a technology would be operated and in which mission contexts. \n This includes Sphinx, the Parrot drone simulator to help developers test and evaluate their custom software, without any dependency on drone hardware. Various other tools, including SDKs, are also made available to support in faster development of complex and powerful drone missions. \n We hope that, through this event, the participants will get an opportunity to familiarize themselves with some of the challenging automation problems in the drone industry, build useful accessories used for drone inspection, explore various tools, and come up with interesting and exciting ideas to address these challenges.",
+        "Prize Count": 1,
+        "Prize Contents": "Anafi AI Drone",
+        "Link": "https://www.parrot.com/us/drones/anafi-ai",
+        "Image Link": Parrot,
+        "Prize Image": "https://www.dpreview.com/files/p/articles/9329060411/Drone___Skycontroller.png",
         "Track": "All",
         "api": false
     },
     {
-        "Company": "Wolfram",
-        "Company Link": "https://wolfram.com/",
-        "Prize Name": "Wolfram Award",
-        "Description": "Everyone on the top twelve teams with a max of 60 individuals.",
-        "Prize Count": null,
-        "Prize Contents": "One year of Wolfram|One Personal Edition + one-year subscription to Wolfram|Alpha Pro ($375 per hacker)",
-        "Link": "",
-        "Image Link": Wolfram,
-        "Prize Image": "https://www.wolfram.com/homepage/img/carousel-wolfram-language.png",
-        "Track": "All",
-        "api": false
-    },
-    {
-        "Company": "Supabase",
-        "Company Link": "https://supabase.com/",
-        "Prize Name": "Best use of Supabase",
-        "Description": "Award to the project that uses more Supabase features in the most creative way.",
+        "Company": "Retool",
+        "Company Link": "https://retool.com",
+        "Prize Name": "Retool Hack Ninjas (tentative)",
+        "Description": "Build your hackathon project faster with the power of Retool, and get your project demo ready in no time. Retool is perfect for beginners or coding veterans alike to build your apps 10x faster than usual. We’re looking for cool apps that utilize Retool in their hack!",
         "Prize Count": 4,
-        "Prize Contents": "A Supabase swag pack (Black mode T-shirt, Supabase hat, cam cover, and stickers).",
-        "Link": "https://store.supabase.com/products/zeta-launch-swag-pack?variant=42149988303003",
-        "Image Link": Supabase,
-        "Prize Image": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png",
+        "Prize Contents": "Ducky One 3 SF Pure White 65% Hotswap RGB Mechanical Keyboard",
+        "Link": "https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=9250",
+        "Image Link": Retool,
+        "Prize Image": "https://mechanicalkeyboards.com/shop/images/products/large_DKON2167ST-USPDPWWWSC1RHP_1.jpg",
         "Track": "All",
-        "api": false
-    },
-    {
-        "Company": "Meta",
-        "Company Link": "https://www.meta.com/",
-        "Prize Name": "Most Innovative Hack",
-        "Description": "",
-        "Prize Count": 4,
-        "Prize Contents": "Backpack, Blankets, Sweat shirts, T-shirts, and beanies!",
-        "Link": "",
-        "Image Link": Meta,
-        "Prize Image": "https://www.bxswagstore.com/s/facebook-demo/meta-backpack1-v2.jpg",
-        "Track": "All",
-        "api": false
-    },
-    {
-        "Company": "Hudson River Trading",
-        "Company Link": "https://www.hudsonrivertrading.com/",
-        "Prize Name": "Best use of Data Hack",
-        "Description": "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
-        "Prize Count": 4,
-        "Prize Contents": "Access to online HRT VIP Swag Store + $150 Amazon Gift Card per team member",
-        "Link": "",
-        "Image Link": HRT,
-        "Prize Image": "https://d3bnk79bkod1sv.cloudfront.net/Organization/2ce76368-85e2-4a71-8237-abf900eb36fe/Images/e4c5a642-0f8c-48b6-977c-ec68466e6ac3.png",
-        "Track": "Web3",
         "api": false
     },
     {
@@ -395,19 +459,6 @@ export const prizes = [
         "api": true
     },
     {
-        "Company": "Parrot",
-        "Company Link": "https://parrot.com/",
-        "Prize Name": "Best use of Drone Technology",
-        "Description": "Parrot is the European leader in the drone industry building Nano drones (under 2 pounds). As drones continue to find applications in a wide range of verticals, such as, industrial inspections, defense, first responders and surveillance, there is a need for development of innovative and specific software mission or customize accessories relevant for different use case. we are therefore interested by what can be the drone technology of tomorrow, how such a technology would be operated and in which mission contexts. \n This includes Sphinx, the Parrot drone simulator to help developers test and evaluate their custom software, without any dependency on drone hardware. Various other tools, including SDKs, are also made available to support in faster development of complex and powerful drone missions. \n We hope that, through this event, the participants will get an opportunity to familiarize themselves with some of the challenging automation problems in the drone industry, build useful accessories used for drone inspection, explore various tools, and come up with interesting and exciting ideas to address these challenges.",
-        "Prize Count": 1,
-        "Prize Contents": "Anafi AI Drone",
-        "Link": "https://www.parrot.com/us/drones/anafi-ai",
-        "Image Link": Parrot,
-        "Prize Image": "https://www.dpreview.com/files/p/articles/9329060411/Drone___Skycontroller.png",
-        "Track": "All",
-        "api": false
-    },
-    {
         "Company": "YCombinator",
         "Company Link": "https://www.ycombinator.com/",
         "Prize Name": "Best Startup",
@@ -434,6 +485,48 @@ export const prizes = [
         "Image Link": Warp,
         "Prize Image": "https://s.yimg.com/uu/api/res/1.2/__dlvfw6BuVdIt.oYQ9XxA--~B/aD0xMzQ0O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-11/b2e72823-1ecb-11eb-9a87-43ba090b869f.cf.jpg",
         "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Neo",
+        "Company Link": "https://neo.com/",
+        "Prize Name": "Most likely to become a business",
+        "Description": "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
+        "Prize Count": null,
+        "Prize Contents": [
+            "$3000 Cash prize",
+            "Airfare + accommodations for your team to visit a summer retreat with Neo scholars, startups, and veteran mentors."
+        ],
+        "Link": "",
+        "Image Link": Neo,
+        "Prize Image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F056e49d0-aa04-449a-8ddc-07814ca31c39_4434x2435.jpeg",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "Meta",
+        "Company Link": "https://www.meta.com/",
+        "Prize Name": "Most Innovative Hack",
+        "Description": "",
+        "Prize Count": 4,
+        "Prize Contents": "Backpack, Blankets, Sweat shirts, T-shirts, and beanies!",
+        "Link": "",
+        "Image Link": Meta,
+        "Prize Image": "https://www.bxswagstore.com/s/facebook-demo/meta-backpack1-v2.jpg",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Hudson River Trading",
+        "Company Link": "https://www.hudsonrivertrading.com/",
+        "Prize Name": "Best use of Data Hack",
+        "Description": "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
+        "Prize Count": 4,
+        "Prize Contents": "Access to online HRT VIP Swag Store + $150 Amazon Gift Card per team member",
+        "Link": "",
+        "Image Link": HRT,
+        "Prize Image": "https://d3bnk79bkod1sv.cloudfront.net/Organization/2ce76368-85e2-4a71-8237-abf900eb36fe/Images/e4c5a642-0f8c-48b6-977c-ec68466e6ac3.png",
+        "Track": "Web3",
         "api": false
     },
     {
@@ -476,129 +569,6 @@ export const prizes = [
         "api": false
     },
     {
-        "Company": "Retool",
-        "Company Link": "https://retool.com",
-        "Prize Name": "Retool Hack Ninjas (tentative)",
-        "Description": "Build your hackathon project faster with the power of Retool, and get your project demo ready in no time. Retool is perfect for beginners or coding veterans alike to build your apps 10x faster than usual. We’re looking for cool apps that utilize Retool in their hack!",
-        "Prize Count": 4,
-        "Prize Contents": "Ducky One 3 SF Pure White 65% Hotswap RGB Mechanical Keyboard",
-        "Link": "https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=9250",
-        "Image Link": Retool,
-        "Prize Image": "https://mechanicalkeyboards.com/shop/images/products/large_DKON2167ST-USPDPWWWSC1RHP_1.jpg",
-        "Track": "All",
-        "api": false
-    },
-    {
-        "Company": "Estuary",
-        "Company Link": "https://estuary.tech/",
-        "Prize Name": "Best Use of Estuary",
-        "Description": "This prize will go to the students who best demonstrate Estuary's use case and use creative ways to incorporate our API. The first place prize will be iPads and second place will be keyboards.",
-        "Prize Count": 4,
-        "Prize Contents": [
-            "1st Prize - iPads (10th Generation)",
-            "2nd Prize - Mechanical/gaming keyboards"
-        ],
-        "Link": "",
-        "Image Link": Estuary,
-        "Prize Image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-10th-gen-finish-unselect-gallery-1-202212_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=95&.v=1667592096723",
-        "Track": "Web3",
-        "api": false
-    },
-    {
-        "Company": "Otsuka <> Valuenex",
-        "Company Link": "https://en.valuenex.com/",
-        "Prize Name": "Best hack to connect with others through food",
-        "Description": "“Best hack to connect with others through food” for the improvement of the world's wellbeing & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We'll make sure to look after your wellbeing as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
-        "Prize Count": 4,
-        "Prize Contents": "Good life package - DoorDash gift card ($500) + Spa gift card ($250)",
-        "Link": "",
-        "Image Link": Otsuka,
-        "Prize Image": "https://techcrunch.com/wp-content/uploads/2019/09/doordash.jpg",
-        "Track": "Healthcare",
-        "api": false
-    },
-    {
-        "Company": "Otsuka <> Valuenex",
-        "Company Link": "https://en.valuenex.com/",
-        "Prize Name": "Best VALUENEX Radar Hack",
-        "Description": "Best VALUENEX Radar Hack for the best VALUENEX Radar use case to show the world! Each winning team member will be awarded a $250 Amazon gift card and an annual VALUENEX Radar subscription.",
-        "Prize Count": 4,
-        "Prize Contents": "VALUENEX package - Amazon gift card ($250) and VALUENEX Radar 1 year membership",
-        "Link": "",
-        "Image Link": Otsuka,
-        "Prize Image": "https://i.insider.com/5e8e0e60dcd88c5bb0703ca4?width=1136&format=jpeg",
-        "Track": "Healthcare",
-        "api": true
-    },
-    {
-        "Company": "Mem",
-        "Company Link": "https://mem.ai/",
-        "Prize Name": "Best Natural Language Hack",
-        "Description": "The project with the best application of natural language processing.",
-        "Prize Count": 4,
-        "Prize Contents": [
-            "1st place: AirPods Maxs",
-            "2nd place: Ember Mug",
-            "3rd place: Amazon Echo Dot (5th gen)"
-        ],
-        "Link": "",
-        "Image Link": Mem,
-        "Prize Image": "https://media.cnn.com/api/v1/images/stellar/prod/221111134854-echo-dot-with-clock-5th-gen-review-cnnu-7.jpg?c=original",
-        "Track": "New_Frontiers",
-        "api": false
-    },
-    {
-        "Company": "InterSystems",
-        "Company Link": "https://intersystems.com/",
-        "Prize Name": "Best Use of InterSystems IntegratedML",
-        "Description": "InterSystems is issuing a challenge to build the most interesting and innovative application using InterSystems IntegratedML -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications.\n To qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts and onsite mentors' support. You will be able to submit your project to one of the main tracks as well.",
-        "Prize Count": null,
-        "Prize Contents": [
-            "1st place: $2000 Cash prize",
-            "2nd place: $1500 Cash prize",
-            "3rd place: $1000 Cash prize"
-        ],
-        "Link": "",
-        "Image Link": InterSystems,
-        "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
-        "Track": "New",
-        "api": true
-    },
-    {
-        "Company": "Convex",
-        "Company Link": "https://convex.dev/",
-        "Prize Name": "Best Use of InterSystems IntegratedML",
-        "Description": "Full stack hack and no back-end? With Convex, easy.\nThis prize goes to the team that makes the best use of the Convex platform to create a novel and compelling web or mobile multi-user app. Real-time or reactive elements are a plus.\nAnd since Convex developers are naturally among the best builders around, we figure it’s only right to throw a few more challenging and exciting builds at the winning team.",
-        "Prize Count": null,
-        "Prize Contents": [
-            "Massive Lego: 5' Eiffel Tower",
-            "2 meter RC Airplane kit: E-flite DRACO 2.0m BNF Basic Electric Airplane",
-            "Arduino-based quadruped robot: Lynxmotion SQ3U",
-            "Various batteries, chargers, and accessories to finish the above projects"
-        ],
-        "Link": "",
-        "Image Link": Convex,
-        "Prize Image": "https://thegadgetflow.com/wp-content/uploads/2022/11/LEGO-Eiffel-Tower-building-block-set-01-1200x900.jpeg",
-        "Track": "",
-        "api": true
-    },
-    {
-        "Company": "Neo",
-        "Company Link": "https://neo.com/",
-        "Prize Name": "Most likely to become a business",
-        "Description": "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
-        "Prize Count": null,
-        "Prize Contents": [
-            "$3000 Cash prize",
-            "Airfare + accommodations for your team to visit a summer retreat with Neo scholars, startups, and veteran mentors."
-        ],
-        "Link": "",
-        "Image Link": Neo,
-        "Prize Image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F056e49d0-aa04-449a-8ddc-07814ca31c39_4434x2435.jpeg",
-        "Track": "",
-        "api": true
-    },
-    {
         "Company": "OpenAI",
         "Company Link": "https://openai.com/",
         "Prize Name": "Best Use of OpenAI Models",
@@ -612,16 +582,46 @@ export const prizes = [
         "api": true
     },
     {
-        "Company": "NEAR",
-        "Company Link": "https://near.org/",
-        "Prize Name": "Top Uses of NEAR Social (3x)",
-        "Description": "This goes to the top 3 teams that implement NEAR Social the best. Whether it is indexing data from NEAR Social into your projects or building composable widgets directly on Near Social. Here are a few ideas: https://devgovgigs.near.social/",
+        "Company": "Replit's choice",
+        "Company Link": "https://replit.com/",
+        "Prize Name": "Replit's choice award!",
+        "Description": "This prize goes to the teams that the Replit team thinks made the coolest projects!",
         "Prize Count": null,
-        "Prize Contents": "$1,000 Cash prize",
+        "Prize Contents": [
+            "1st place: 3,000 Cycles (~3 mo of Hacker)",
+            "2nd place: 2,000 Cycles (~2 mo of Hacker)",
+            "3rd place: 1,000 Cycles (~1 mo of Hacker)"
+        ],
         "Link": "",
-        "Image Link": Near,
-        "Prize Image": "https://near.org/wp-content/uploads/2021/09/brand-horizontal.png",
-        "Track": "",
-        "api": true
-    }
+        "Image Link": Replit,
+        "Prize Image": "https://replit.com/public/images/ogBanner.png",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Wolfram",
+        "Company Link": "https://wolfram.com/",
+        "Prize Name": "Wolfram Award",
+        "Description": "Everyone on the top twelve teams with a max of 60 individuals.",
+        "Prize Count": null,
+        "Prize Contents": "One year of Wolfram|One Personal Edition + one-year subscription to Wolfram|Alpha Pro ($375 per hacker)",
+        "Link": "",
+        "Image Link": Wolfram,
+        "Prize Image": "https://www.wolfram.com/homepage/img/carousel-wolfram-language.png",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Supabase",
+        "Company Link": "https://supabase.com/",
+        "Prize Name": "Best use of Supabase",
+        "Description": "Award to the project that uses more Supabase features in the most creative way.",
+        "Prize Count": 4,
+        "Prize Contents": "A Supabase swag pack (Black mode T-shirt, Supabase hat, cam cover, and stickers).",
+        "Link": "https://store.supabase.com/products/zeta-launch-swag-pack?variant=42149988303003",
+        "Image Link": Supabase,
+        "Prize Image": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png",
+        "Track": "All",
+        "api": false
+    },
 ]
