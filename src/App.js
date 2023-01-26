@@ -20,62 +20,78 @@ import { ReactComponent as AEye } from './assets/skin.svg';
 import { ReactComponent as LucidSVG } from './assets/drum.svg';
 
 
-import mainImage from './assets/photos/Treehacks-129.jpeg';
-import sideImage1 from './assets/photos/Treehacks-181.jpeg';
-import sideImage2 from './assets/photos/Treehacks-347.jpeg';
+import mainImage from './assets/photos/Treehacks-129.webp';
+import sideImage1 from './assets/photos/Treehacks-181.webp';
+import sideImage2 from './assets/photos/Treehacks-347.webp';
 
-import scroll1 from './assets/photos/scroll1.jpeg';
-import scroll2 from './assets/photos/scroll2.jpeg';
-import scroll3 from './assets/photos/scroll3.jpeg';
-import scroll4 from './assets/photos/scroll4.jpeg';
-import scroll5 from './assets/photos/scroll5.jpeg';
-import scroll6 from './assets/photos/scroll6.jpeg';
-import scroll7 from './assets/photos/scroll7.jpeg';
+import sajith from './assets/photos/sajith.webp';
+import karpathy from './assets/photos/karpathy.webp';
+
+import scroll1 from './assets/photos/scroll1.webp';
+import scroll2 from './assets/photos/scroll2.webp';
+import scroll3 from './assets/photos/scroll3.webp';
+import scroll4 from './assets/photos/scroll4.webp';
+import scroll5 from './assets/photos/scroll5.webp';
+import scroll6 from './assets/photos/scroll6.webp';
+import scroll7 from './assets/photos/scroll7.webp';
 
 import backgroundVideo from './assets/videos/treehacksvideo.mp4';
 import './App.css';
 
-import Otsuka from './assets/logos/otsuka.png';
-import Estuary from './assets/logos/estuary.png';
-import Convex from './assets/logos/convex.png';
-import InterSystems from './assets/logos/intersystems.png';
-import OpenAI from './assets/logos/OpenAI.png';
-import Vercel from './assets/logos/vercel.png';
-import Citadel from './assets/logos/citadel.png';
-import You from './assets/logos/you.png';
-import Skydio from './assets/logos/skydio.png';
-import Cadence from './assets/logos/cadence.png';
-import Arduino from './assets/logos/arduino.png';
-import Zetachain from './assets/logos/zetachain.png';
-import Phri from './assets/logos/phri.png';
-import Mem from './assets/logos/mem.png';
-import Cypherd from './assets/logos/cypherd.png';
-import HRT from './assets/logos/hrt.png';
-import Meta from './assets/logos/meta.png';
-import Cisco from './assets/logos/cisco.png';
-import SquareL from './assets/logos/square.png';
-import Retool from './assets/logos/retool.png';
-import Dolby from './assets/logos/dolby.png';
-import Warp from './assets/logos/warp.png';
-import Bnb from './assets/logos/bnb.jpeg';
-import Checkbook from './assets/logos/checkbook.png';
-import Parrot from './assets/logos/parrot.png';
+import Otsuka from './assets/logos/otsuka.webp';
+import Estuary from './assets/logos/estuary.webp';
+import Convex from './assets/logos/convex.webp';
+import InterSystems from './assets/logos/intersystems.webp';
+import OpenAI from './assets/logos/OpenAI.webp';
+import Vercel from './assets/logos/vercel.webp';
+import Citadel from './assets/logos/citadel.webp';
+import You from './assets/logos/you.webp';
+import Skydio from './assets/logos/skydio.webp';
+import Cadence from './assets/logos/cadence.webp';
+import Arduino from './assets/logos/arduino.webp';
+import Zetachain from './assets/logos/zetachain.webp';
+import Phri from './assets/logos/phri.webp';
+import Mem from './assets/logos/mem.webp';
+import Cypherd from './assets/logos/cypherd.webp';
+import HRT from './assets/logos/hrt.webp';
+import Meta from './assets/logos/meta.webp';
+import Cisco from './assets/logos/cisco.webp';
+import SquareL from './assets/logos/square.webp';
+import Retool from './assets/logos/retool.webp';
+import Dolby from './assets/logos/dolby.webp';
+import Warp from './assets/logos/warp.webp';
+import Bnb from './assets/logos/bnb.webp';
+import Checkbook from './assets/logos/checkbook.webp';
+import Parrot from './assets/logos/parrot.webp';
 import YCombinator from './assets/logos/ycombinator.webp';
-import Neo from './assets/logos/neo.png';
-import Pear from './assets/logos/pear.jpeg';
-import GeneralTask from './assets/logos/generaltask.png';
-import Replit from './assets/logos/replit.png';
-import Algolia from './assets/logos/algolia.png';
-import Wolfram from './assets/logos/wolfram.png';
-import Makerbot from './assets/logos/makerbot.png';
-import Twilio from './assets/logos/twilio.png';
-import Supabase from './assets/logos/supabase.png';
-import Voiceflow from './assets/logos/voiceflow.png';
+import Neo from './assets/logos/neo.webp';
+import Pear from './assets/logos/pear.webp';
+import GeneralTask from './assets/logos/generaltask.webp';
+import Replit from './assets/logos/replit.webp';
+import Algolia from './assets/logos/algolia.webp';
+import Wolfram from './assets/logos/wolfram.webp';
+import Makerbot from './assets/logos/makerbot.webp';
+import Twilio from './assets/logos/twilio.webp';
+import Supabase from './assets/logos/supabase.webp';
+import Voiceflow from './assets/logos/voiceflow.webp';
 
-import { RxDiscordLogo } from "react-icons/rx";
-import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter } from "react-icons/ai";
+import { prizes } from './prizes';
+import { workshops } from './workshops';
+
+import { AiOutlineArrowRight, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter, AiFillStar } from "react-icons/ai";
 
 function App() {
+  const Tracks = {
+    "Healthcare": 0,
+    "Sustainability": 1,
+    "New_Frontiers": 2,
+    "Web3": 3,
+    "Education": 4,
+    "Privacy_and_Safety": 5
+  }
+
+  const [activePrize, setActivePrize] = useState(0);
+
   let count = 0;
   let count2 = 0;
   let count3 = 0;
@@ -243,9 +259,59 @@ function App() {
     )
   }
 
+  const QuickOption = ({ disabled, title, section, description }) => {
+    return (
+      <a disabled={disabled} href={`#${section}`} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full h-32`}>
+        <div className={`${disabled ? "opacity-40" : ""}`}>
+          <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
+            from-emerald-500 via-emerald-500 to-indigo-500
+            animate-text'>{title}</h1>
+          <div className="relative flex flex-col justify-center">
+            <p className="font-CerealLt pr-8 text-sm">
+              {description}
+            </p>
+            <AiOutlineArrowRight className="absolute right-0 mb-5" size={20} color={"black"} />
+          </div>
+        </div>
+      </a>
+    )
+  }
+
+  const Workshop = ({ data }) => {
+    return (
+      <div className='lg:w-4/12 w-12/12 p-2'>
+        <div className='border hover:bg-gray-100 cursor-pointer bg-white rounded-md h-64'>
+          <div className='flex flex-row'>
+            <div className='w-2/12 aspect-square border-r border-b flex flex-col justify-center items-center'>
+              <h1 className='text-lg font-CerealBD'>{data.Duration}</h1>
+              <h1 className='text-lg font-CerealBD -mt-2'>min</h1>
+            </div>
+            <div className='w-10/12 flex items-center px-4 border-b'>
+              <h1 className='font-CerealXBd text-md bg-gradient-to-r bg-clip-text text-transparent 
+            from-emerald-500 via-emerald-500 to-indigo-500
+            animate-text leading-tight'>{data.Workshop}</h1>
+            </div>
+          </div>
+          <div className="relative p-4 flex flex-col overflow-scroll h-44">
+            <p className="font-CerealBd text-sm mb-2">
+              <span className='text-indigo-500'>Hosted By:</span> {data.Host}
+            </p>
+            <p className="font-CerealBd text-sm mb-2">
+              <span className='text-indigo-500'>Time:</span> {data.Time}
+            </p>
+            <p className="font-CerealLt text-sm">
+              {data.Description}
+              {data.Description}
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="overflow-hidden scroll-smooth ">
-      <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-40 header w-full fixed" id="site-header">
+      <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
         </div>
@@ -254,13 +320,15 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#apply'>Apply</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Tracks</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#prizes'>Prizes</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#speakers'>Speakers</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#workshops'>Workshops</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#projects'>Projects</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#sponsors'>Sponsors</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer text-gray-500'>Speakers</a>
         </div>
       </div>
-      <section class="bg-cover w-screen lg:h-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex items-center pt-32 lg:pt-0" id="home">
+      <section class="bg-cover w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center pt-24" id="home">
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
           <CircleIntersection />
         </div>
@@ -277,38 +345,7 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
             </div>
             <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
-            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,000 hackers from across the world to build the next big thing. Applications close soon.</h1>
-
-            <div className='mt-6 flex flex-row'>
-              <a
-                href="https://root.treehacks.com"
-                target="_blank"
-                type="button"
-                className="font-CerealMd mr-2 flex-shrink-0 lg:max-w-[140px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
-                bg-gradient-to-r
-                from-indigo-500
-                via-emerald-500
-                to-emerald-500
-                background-animate"
-              >
-                Apply Now
-              </a>
-              <a
-                href="https://discord.gg/5GkSSJWr2Z"
-                target="_blank"
-                type="button"
-                className="font-CerealMd flex-shrink-0 lg:max-w-[200px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
-                bg-gradient-to-r
-                from-indigo-500
-                via-emerald-500
-                to-indigo-500
-                background-animate"
-              >
-                <RxDiscordLogo className="mr-2" size={20} color={"white"} />
-                Join our Discord
-              </a>
-            </div>
-
+            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,600 hackers from across the world to build the next big thing. Applications close soon.</h1>
             <div className="mt-8 mb-6">
               <span className="font-CerealMd text-gray-400">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
             </div>
@@ -321,7 +358,38 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
+
+      <section className="w-full lg:h-96 lg:mt-0 mt-14 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-10 flex flex-col relative justify-center items-center" id="about">
+        <h1 className='font-CerealXBd text-4xl text-center mb-4 bg-gradient-to-r bg-clip-text text-transparent 
+            from-emerald-500 via-emerald-500 to-indigo-500
+            animate-text'>Excited? We are too!</h1>
+        <a
+          href="https://live.treehacks.com/"
+          target="_blank"
+          type="button"
+          disabled
+          className="font-CerealMd mb-4 text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-black border-gray-200 border text-md font-medium bg-white hover:bg-gray-100 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
+        >
+          Hackathon Calendar
+        </a>
+        <div className='z-10 w-full flex lg:flex-row flex-col'>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+            <QuickOption disabled={false} title="Prizes" section="prizes" description="See what prizes will be at TreeHacks 2023! Check out our amazing sponsors and their APIs!" />
+            <QuickOption disabled={false} title="Speakers" section="speakers" description="Check out the world class speakers coming to TreeHacks this year!" />
+          </div>
+
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+            <QuickOption disabled={false} title="Workshops" section="workshops" description="Our sponsors will be running some spectacular events this year! Learn new technologies from the companies that made them." />
+            <QuickOption disabled={true} title="Problem Statements" section="" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
+          </div>
+
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+            <QuickOption disabled={true} title="HackX Events" section="" description="Fun events throughout the hackathon. Lightsaber battles? Puppy Hour? A mocktail bar? WHAT?!" />
+            <QuickOption disabled={false} title="Sponsors" section="sponsors" description="We have some amazing companies helping make TreeHacks a reality this year." />
+          </div>
+        </div>
+      </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-10 flex flex-col relative" id="about">
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
@@ -330,43 +398,25 @@ function App() {
         <div className="absolute -bottom-60 -left-32 opacity-20 scale-150 -z-10">
           <Square />
         </div>
-        <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" />
+        {/* <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" /> */}
         <section className="w-full pt-20 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 lg:pb-32 pb-8 flex flex-col relative lg:items-center" id="apply">
           <h1 className='font-CerealXBd lg:text-5xl text-3xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>What's so special?</h1>
           <p className='font-CerealBK text-slate-500 mb-8 lg:text-center lg:text-lg text-md'>
-            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights (regional caps TBA), food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
+            TreeHacks is one of the biggest hackathons in the <b>world</b>. This year, after being online for the past two due to COVID, we're going all out. <b>TreeHacks covers flights (<a className='text-indigo-500 underline' href="https://docs.google.com/spreadsheets/d/1sQxmLxbQO5ygrYlPqAbxQuV_i2aos_g_k9lnrzt0tBo/edit" target="_blank">regional caps</a>), food, and swag for all hackers.</b> Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event!
           </p>
           <p className='font-CerealBK text-slate-500 text-center text-lg'>
-            * Applications close in *
+            * Hackathon Begins in *
           </p>
           <div className="bg-white rounded-sm border shadow-sm flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
             <Accent className='absolute -right-10 -top-6' />
             <Accent2 className='absolute -left-10 -top-6' />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1672732799} interval={1000} /></p>
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1676592000} interval={1000} /></p>
             <p className='font-CerealBK text-slate-500 text-center text-lg'>
-              (Non-Stanford - Jan 2nd)
-            </p>
-            <br />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1673683199} interval={1000} /></p>
-            <p className='font-CerealBK text-slate-500 text-center text-lg'>
-              (Stanford - Jan 13th)
+              (February 17th)
             </p>
           </div>
-          <a
-            href="https://root.treehacks.com"
-            target="_blank"
-            type="button"
-            className="font-CerealMd mb-6 flex-shrink-0 lg:max-w-[300px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-white text-md mt-8 font-medium bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 sm:flex-1
-            bg-gradient-to-r
-              from-indigo-500
-              via-emerald-500
-              to-emerald-500
-              background-animate"
-          >
-            Apply Now
-          </a>
 
         </section>
         <div className="flex lg:flex-row flex-col mb-28">
@@ -415,7 +465,7 @@ function App() {
           <div className='flex lg:flex-row flex-col border-b-2 border-black bg-white'>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
               <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>1500+ Hackers</h1>
-              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,000+ students from across the nation come to Stanford for 36 hours of hacking. Spots are limited. <span className="underline text-orange-400">Apply now →</span></p>
+              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,500+ students from across the nation come to Stanford for 36 hours of hacking. Spots are limited. <span className="underline text-orange-400">Apply now →</span></p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
               <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$160,000 in Prizes</h1>
@@ -534,6 +584,165 @@ function App() {
               <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>C</h1>
               <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>K</h1>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="prizes">
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex lg:flex-row flex-col'>
+          <div className="lg:w-12/12">
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-4 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
+            from-emerald-500 via-indigo-500 to-emerald-500
+            animate-text'>Prizes</h1>
+            {/* <div className='w-full border p-2 rounded-md flex flex-row flex-wrap'>
+              <button onClick={() => setActivePrize(0)} className={`h-full text-sm m-1 mb-0 ${activePrize == 0 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>All</span>
+              </button>
+              <button onClick={() => setActivePrize(1)} className={`h-full text-sm m-1 mb-0 ${activePrize == 1 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>Healthcare</span>
+              </button>
+              <button onClick={() => setActivePrize(2)} className={`h-full text-sm m-1 mb-0 ${activePrize == 2 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>Sustainability</span>
+              </button>
+              <button onClick={() => setActivePrize(3)} className={`h-full text-sm m-1 mb-0 ${activePrize == 3 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>New Frontiers</span>
+              </button>
+              <button onClick={() => setActivePrize(4)} className={`h-full text-sm m-1 mb-0 ${activePrize == 4 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>Web 3.0 and Fintech</span>
+              </button>
+              <button onClick={() => setActivePrize(5)} className={`h-full text-sm m-1 mb-0 ${activePrize == 5 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>Education</span>
+              </button>
+              <button onClick={() => setActivePrize(6)} className={`h-full text-sm m-1 mb-0 ${activePrize == 6 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
+                <span>Privacy and Safety</span>
+              </button>
+            </div> */}
+            <div className='bg-white border rounded-md mt-4 flex lg:flex-row flex-col lg:flex-wrap'>
+              {prizes.map(prizeData => (
+                <div className='lg:w-4/12 aspect-square relative border'>
+                  <div className='absolute cursor-pointer p-8 z-50 bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-md font-CerealBK mb-2'>
+                      {prizeData.Description}
+                    </p>
+                  </div>
+                  <a className='absolute z-10 top-4 right-4' href={prizeData['Company Link']} target="_blank">
+                    <div className='p-4 border rounded-lg bg-white border-x flex justify-center items-center flex-col'>
+                      <img src={prizeData['Image Link']} className="object-contain h-4" />
+                    </div>
+                  </a>
+                  <img src={prizeData['Prize Image']} className="object-cover h-full w-full" />
+                  <div className='p-4 z-10 bottom-0 w-full absolute bg-black flex justify-center items-center flex-col'>
+                    <span className='flex flex-row items-center justify-center mb-2'>
+                      <AiFillStar className="mr-2 text-yellow-400" size={15} />
+                      <h1 className="font-CerealBD text-center text-sm text-white">{prizeData['Prize Name']}</h1>
+                      <AiFillStar className="ml-2 text-yellow-400" size={15} />
+                    </span>
+                    <p className='text-sm border w-full p-4 rounded-md cursor-pointer text-white font-CerealBD'>
+                      {typeof prizeData['Prize Contents'] == "string" ? (
+                        <>
+                          <li>{prizeData['Prize Count'] && (`${prizeData['Prize Count']} x `)}{prizeData['Prize Contents']}</li>
+                        </>
+                      ) : (
+                        <>
+                          {prizeData['Prize Contents'].map(item => (
+                            <li>{item}</li>
+                          ))}
+                        </>
+                      )}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* <div className='w-2/12 lg:relative absolute lg:top-0 lg:right-0 -top-10 -z-20 right-10 opacity-30 lg:opacity-100'>
+            <div className="inline-block mr-6 z-10 w-full justify-center">
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>B</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>U</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>I</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>L</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>D</h1>
+            </div>
+          </div> */}
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="speakers">
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex flex-col'>
+          <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
+            from-emerald-500 via-indigo-500 to-emerald-500
+            animate-text'>Speakers</h1>
+          <div className='flex lg:flex-row flex-col w-full bg-white rounded-lg'>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={sajith} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Sajith Wickramasekara</h1>
+              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
+                Sajith Wickramasekara is CEO and co-founder of <a className='text-indigo-500 underline' href="https://www.benchling.com/" target={"_blank"}>Benchling</a>, pioneer of the R&D Cloud that powers the biotechnology industry. Since co-founding Benchling in 2012, Sajith has guided the company through significant milestones and remarkable growth. Today, more than 200,000 scientists at over 1,000 companies and 7,500 research institutions globally have adopted Benchling’s R&D Cloud to make breakthrough discoveries and bring the next generation of medicines, food, and materials to market faster than ever before. Prior to Benchling, Sajith studied Computer Science at the Massachusetts Institute of Technology.
+              </p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={karpathy} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Andrej Karpathy</h1>
+              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
+                Andrej Karpathy is a computer scientist and researcher in the field of artificial intelligence and deep learning. Previously, he was the Director of Artificial Intelligence at <a className='text-indigo-500 underline' href='https://www.tesla.com/' target={"_blank"}>Tesla</a>, where he led the computer vision team of Tesla Autopilot. Prior to joining Tesla, Karpathy was a founding member at <a className='text-indigo-500 underline' href='https://www.openai.com/' target={"_blank"}>OpenAI</a> and a research scientist at the Stanford AI Lab where he focused on convolutional/recurrent neural networks and their applications in computer vision, natural language processing and their intersection. Karpathy is known for his research on deep learning and computer vision, as well as for his popular <a href='http://karpathy.github.io/' className='text-indigo-500 underline' target={"_blank"}>blog</a> on the topic. He also wrote the widely-used neural network library, ConvNetJS.
+              </p>
+            </div>
+          </div>
+
+          <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={"https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/g3zan4eijixt8a0vqwfw"} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Ali Partovi</h1>
+              <p className="font-CerealBK text-sm text-center mt-4">
+                CEO of Neo.
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={"https://avatars.githubusercontent.com/u/3744018?v=4"} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Veeral Patel</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Founding Engineer at Ramp
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={"https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/styles/epsa_crop/public/bio_images/boneh_dan.jpg?itok=Kwlyhoer"} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Dan Boneh</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Stanford Professor
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="workshops">
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex flex-col'>
+          <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
+            from-emerald-500 via-indigo-500 to-emerald-500
+            animate-text'>Workshops</h1>
+          <div className='z-10 w-full flex lg:flex-row flex-col lg:flex-wrap'>
+            {workshops.map(item => (
+              <Workshop data={item} />
+            ))}
           </div>
         </div>
       </section>
@@ -677,17 +886,6 @@ function App() {
         </div>
       </section>
 
-      {/* <div className="w-full pl-40 pr-40 pt-20 pb-20 flex flex-col border-b overflow-hidden relative">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
-          <Circle />
-        </div>
-        <div className='flex flex-row'>
-          <div>
-            <h1 className='font-semibold text-7xl mb-8 font-CerealBD text-black'>Speakers</h1>
-          </div>
-        </div>
-      </div> */}
-
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="sponsors">
         <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
           <Circle />
@@ -737,6 +935,16 @@ function App() {
             </div>
           </div>
           {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-12/12 w-full lg:mr-4'>
+              <a href="https://mem.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Mem} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
             <div className='lg:w-6/12 w-full lg:mr-4'>
               <a href="https://convex.dev/" target="_blank">
@@ -751,7 +959,7 @@ function App() {
               </a>
             </div>
             <div className='lg:w-6/12 w-full'>
-              <a href="https://estuary.tech/" target="_blank">
+              <a href="https://intersystems.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
                   <img src={InterSystems} className="object-contain" />
                   <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
@@ -776,16 +984,6 @@ function App() {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          {/* New Row */}
-          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-6/12 w-full lg:mr-4'>
-              <a href="https://mem.ai/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
-                  <img src={Mem} className="object-contain" />
                 </div>
               </a>
             </div>
