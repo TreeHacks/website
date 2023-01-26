@@ -407,6 +407,32 @@ export const prizes = [
         "api": true
     },
     {
+        "Company": "You.com",
+        "Company Link": "https://you.com/",
+        "Prize Name": "Best Chat App",
+        "Description": "The most innovative AI chat application",
+        "Prize Count": null,
+        "Prize Contents": "$2,000 Cash prize",
+        "Link": "",
+        "Image Link": You,
+        "Prize Image": "https://www.reviewpro.com/wp-content/uploads/2020/10/AdobeStock_232438359-scaled-1.jpg",
+        "Track": "",
+        "api": false
+    },
+    {
+        "Company": "You.com",
+        "Company Link": "https://you.com/",
+        "Prize Name": "Best Use of the You.com Open Platform",
+        "Description": "Awarded to the team who creates the best You.com Open Platform Search app using the Developer Dashboard. Documentation and examples can be found at https://you.com/developers",
+        "Prize Count": null,
+        "Prize Contents": "$1,000 Cash prize",
+        "Link": "",
+        "Image Link": You,
+        "Prize Image": "https://i.ytimg.com/vi/gvu6xeLAOe0/maxresdefault.jpg",
+        "Track": "",
+        "api": false
+    },
+    {
         "Company": "Parrot",
         "Company Link": "https://parrot.com/",
         "Prize Name": "Best use of Drone Technology",
