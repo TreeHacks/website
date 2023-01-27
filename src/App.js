@@ -77,6 +77,8 @@ import Voiceflow from './assets/logos/voiceflow.webp';
 import Aptos from './assets/logos/aptos.webp';
 import Near from './assets/logos/near.webp';
 import Aspecta from './assets/logos/aspecta.webp';
+import Brave from './assets/logos/brave.webp';
+import Palantir from './assets/logos/palantir.webp';
 
 import { prizes } from './prizes';
 import { workshops } from './workshops';
@@ -997,6 +999,16 @@ function App() {
             </div>
           </div>
           {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-6/12 w-full'>
+              <a href="https://palantir.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Palantir} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
             <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://openai.com/" target="_blank">
@@ -1101,29 +1113,19 @@ function App() {
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://www.cypherwallet.io/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
-                  <img src={Cypherd} className="object-contain" />
-                </div>
-              </a>
-            </div>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://www.aptoslabs.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
                   <img src={Aptos} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-4/12 w-full'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://www.near.org/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
                   <img src={Near} className="object-contain" />
                 </div>
               </a>
             </div>
-          </div>
-          {/* New Row */}
-          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-4/12 w-full'>
               <a href="https://aspecta.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
@@ -1231,6 +1233,13 @@ function App() {
               <a href="https://pear.vc/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
                   <img src={Pear} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://brave.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Brave} className="object-contain" />
                 </div>
               </a>
             </div>
