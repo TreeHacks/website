@@ -79,6 +79,7 @@ import Near from './assets/logos/near.webp';
 import Aspecta from './assets/logos/aspecta.webp';
 import Brave from './assets/logos/brave.webp';
 import Palantir from './assets/logos/palantir.webp';
+import HumanCapital from './assets/logos/human_capital.webp';
 
 import { prizes } from './prizes';
 import { workshops } from './workshops';
@@ -264,9 +265,9 @@ function App() {
     )
   }
 
-  const QuickOption = ({ disabled, title, section, description }) => {
+  const QuickOption = ({ disabled, title, section, link, description }) => {
     return (
-      <a disabled={disabled} href={`#${section}`} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full lg:h-32`}>
+      <a disabled={disabled} href={section ? "#" + section : link} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full lg:h-32`}>
         <div className={`${disabled ? "opacity-40" : ""}`}>
           <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
@@ -282,38 +283,6 @@ function App() {
     )
   }
 
-  const Workshop = ({ data }) => {
-    return (
-      <div className='lg:w-4/12 w-12/12 p-2'>
-        <div className='border hover:bg-gray-100 cursor-pointer bg-white rounded-md h-64'>
-          <div className='flex flex-row'>
-            <div className='w-2/12 aspect-square border-r border-b flex flex-col justify-center items-center'>
-              <h1 className='text-lg font-CerealBD'>{data.Duration}</h1>
-              <h1 className='text-lg font-CerealBD -mt-2'>min</h1>
-            </div>
-            <div className='w-10/12 flex items-center px-4 border-b'>
-              <h1 className='font-CerealXBd text-sm bg-gradient-to-r bg-clip-text text-transparent 
-            from-emerald-500 via-emerald-500 to-indigo-500
-            animate-text leading-tight'>{data.Workshop}</h1>
-            </div>
-          </div>
-          <div className="relative p-4 flex flex-col overflow-scroll h-44">
-            <p className="font-CerealBd text-sm mb-2">
-              <span className='text-indigo-500'>Hosted By:</span> {data.Host}
-            </p>
-            <p className="font-CerealBd text-sm mb-2">
-              <span className='text-indigo-500'>Time:</span> {data.Time}
-            </p>
-            <p className="font-CerealLt text-sm">
-              {data.Description}
-              {data.Description}
-            </p>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="overflow-hidden scroll-smooth ">
       <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
@@ -325,9 +294,8 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#apply'>Apply</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#prizes'>Prizes</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#speakers'>Speakers</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#workshops'>Workshops</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#prizes'>Prizes</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#projects'>Projects</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#sponsors'>Sponsors</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
@@ -350,7 +318,7 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
             </div>
             <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
-            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join more than 1,600 hackers from across the world to build the next big thing. Applications close soon.</h1>
+            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
             <div className="mt-8 mb-6">
               <span className="font-CerealMd text-gray-400">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
             </div>
@@ -374,8 +342,10 @@ function App() {
           target="_blank"
           type="button"
           disabled
-          className="font-CerealMd mb-4 text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-black border-gray-200 border text-md font-medium bg-white hover:bg-gray-100 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
+          className="font-CerealMd my-6 text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-black border-gray-200 border text-md font-medium bg-white hover:bg-gray-100 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
         >
+          <Accent className='absolute -right-10 -top-6' />
+          <Accent2 className='absolute -left-10 -top-6' />
           Hackathon Calendar
         </a>
         <div className='z-10 w-full flex lg:flex-row flex-col'>
@@ -385,12 +355,12 @@ function App() {
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
-            <QuickOption disabled={false} title="Workshops" section="workshops" description="Our sponsors will be running some spectacular events this year! Learn new technologies from the companies that made them." />
+            <QuickOption disabled={false} title="Devpost" link="https://treehacks-2023.devpost.com/" description="Check out our devpost! Our central hub for submitting projects and documenting your hackathon experience." />
             <QuickOption disabled={true} title="Problem Statements" section="" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
-            <QuickOption disabled={true} title="HackX Events" section="" description="Fun events throughout the hackathon. Lightsaber battles? Puppy Hour? A mocktail bar? WHAT?!" />
+            <QuickOption disabled={false} title="API & Resources" link="https://live.treehacks.com/apisresources" description="We've created some awesome hackpacks and resources for you to boost your productivity! Check them out here!" />
             <QuickOption disabled={false} title="Sponsors" section="sponsors" description="We have some amazing companies helping make TreeHacks a reality this year." />
           </div>
         </div>
@@ -593,6 +563,58 @@ function App() {
         </div>
       </section>
 
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="speakers">
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex flex-col'>
+          <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
+            from-emerald-500 via-indigo-500 to-emerald-500
+            animate-text'>Speakers</h1>
+          <div className='flex lg:flex-row flex-col w-full bg-white rounded-lg'>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={sajith} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Sajith Wickramasekara</h1>
+              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
+                Sajith Wickramasekara is CEO and co-founder of <a className='text-indigo-500 underline' href="https://www.benchling.com/" target={"_blank"}>Benchling</a>, pioneer of the R&D Cloud that powers the biotechnology industry. Since co-founding Benchling in 2012, Sajith has guided the company through significant milestones and remarkable growth. Today, more than 200,000 scientists at over 1,000 companies and 7,500 research institutions globally have adopted Benchling’s R&D Cloud to make breakthrough discoveries and bring the next generation of medicines, food, and materials to market faster than ever before. Prior to Benchling, Sajith studied Computer Science at the Massachusetts Institute of Technology.
+              </p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={karpathy} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Andrej Karpathy</h1>
+              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
+                Andrej Karpathy is a computer scientist and researcher in the field of artificial intelligence and deep learning. Previously, he was the Director of Artificial Intelligence at <a className='text-indigo-500 underline' href='https://www.tesla.com/' target={"_blank"}>Tesla</a>, where he led the computer vision team of Tesla Autopilot. Prior to joining Tesla, Karpathy was a founding member at <a className='text-indigo-500 underline' href='https://www.openai.com/' target={"_blank"}>OpenAI</a> and a research scientist at the Stanford AI Lab where he focused on convolutional/recurrent neural networks and their applications in computer vision, natural language processing and their intersection. Karpathy is known for his research on deep learning and computer vision, as well as for his popular <a href='http://karpathy.github.io/' className='text-indigo-500 underline' target={"_blank"}>blog</a> on the topic.
+              </p>
+            </div>
+          </div>
+
+          <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={"https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/g3zan4eijixt8a0vqwfw"} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Ali Partovi</h1>
+              <p className="font-CerealBK text-sm text-center mt-4">
+                CEO of Neo.
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={"https://avatars.githubusercontent.com/u/3744018?v=4"} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Veeral Patel</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Founding Engineer at Ramp
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="prizes">
         <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
           <Circle />
@@ -602,29 +624,6 @@ function App() {
             <h1 className='font-semibold lg:text-7xl text-3xl mb-4 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>Prizes</h1>
-            {/* <div className='w-full border p-2 rounded-md flex flex-row flex-wrap'>
-              <button onClick={() => setActivePrize(0)} className={`h-full text-sm m-1 mb-0 ${activePrize == 0 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>All</span>
-              </button>
-              <button onClick={() => setActivePrize(1)} className={`h-full text-sm m-1 mb-0 ${activePrize == 1 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>Healthcare</span>
-              </button>
-              <button onClick={() => setActivePrize(2)} className={`h-full text-sm m-1 mb-0 ${activePrize == 2 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>Sustainability</span>
-              </button>
-              <button onClick={() => setActivePrize(3)} className={`h-full text-sm m-1 mb-0 ${activePrize == 3 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>New Frontiers</span>
-              </button>
-              <button onClick={() => setActivePrize(4)} className={`h-full text-sm m-1 mb-0 ${activePrize == 4 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>Web 3.0 and Fintech</span>
-              </button>
-              <button onClick={() => setActivePrize(5)} className={`h-full text-sm m-1 mb-0 ${activePrize == 5 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>Education</span>
-              </button>
-              <button onClick={() => setActivePrize(6)} className={`h-full text-sm m-1 mb-0 ${activePrize == 6 ? "bg-emerald-600 text-white" : "bg-white text-emerald-600 border"} flex flex-col justify-center items-center px-4 py-1 rounded-md`}>
-                <span>Privacy and Safety</span>
-              </button>
-            </div> */}
             <div className='bg-white border rounded-md mt-4 flex lg:flex-row flex-col lg:flex-wrap'>
               {prizes.map(prizeData => (
                 <div className='lg:w-4/12 aspect-square relative border'>
@@ -667,92 +666,6 @@ function App() {
                 </div>
               ))}
             </div>
-          </div>
-          {/* <div className='w-2/12 lg:relative absolute lg:top-0 lg:right-0 -top-10 -z-20 right-10 opacity-30 lg:opacity-100'>
-            <div className="inline-block mr-6 z-10 w-full justify-center">
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>B</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>U</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>I</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>L</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>D</h1>
-            </div>
-          </div> */}
-        </div>
-      </section>
-
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="speakers">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
-          <Circle />
-        </div>
-        <div className='flex flex-col'>
-          <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
-            from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>Speakers</h1>
-          <div className='flex lg:flex-row flex-col w-full bg-white rounded-lg'>
-            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
-              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
-                <img src={sajith} className="object-cover h-full w-full rounded-full" />
-              </div>
-              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Sajith Wickramasekara</h1>
-              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
-                Sajith Wickramasekara is CEO and co-founder of <a className='text-indigo-500 underline' href="https://www.benchling.com/" target={"_blank"}>Benchling</a>, pioneer of the R&D Cloud that powers the biotechnology industry. Since co-founding Benchling in 2012, Sajith has guided the company through significant milestones and remarkable growth. Today, more than 200,000 scientists at over 1,000 companies and 7,500 research institutions globally have adopted Benchling’s R&D Cloud to make breakthrough discoveries and bring the next generation of medicines, food, and materials to market faster than ever before. Prior to Benchling, Sajith studied Computer Science at the Massachusetts Institute of Technology.
-              </p>
-            </div>
-            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
-              <div className="aspect-square lg:h-64 h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
-                <img src={karpathy} className="object-cover h-full w-full rounded-full" />
-              </div>
-              <h1 className='mt-8 font-CerealBD lg:text-3xl text-xl text-gray-600 text-center'>Andrej Karpathy</h1>
-              <p className="font-CerealBK lg:text-md text-sm text-center mt-4">
-                Andrej Karpathy is a computer scientist and researcher in the field of artificial intelligence and deep learning. Previously, he was the Director of Artificial Intelligence at <a className='text-indigo-500 underline' href='https://www.tesla.com/' target={"_blank"}>Tesla</a>, where he led the computer vision team of Tesla Autopilot. Prior to joining Tesla, Karpathy was a founding member at <a className='text-indigo-500 underline' href='https://www.openai.com/' target={"_blank"}>OpenAI</a> and a research scientist at the Stanford AI Lab where he focused on convolutional/recurrent neural networks and their applications in computer vision, natural language processing and their intersection. Karpathy is known for his research on deep learning and computer vision, as well as for his popular <a href='http://karpathy.github.io/' className='text-indigo-500 underline' target={"_blank"}>blog</a> on the topic.
-              </p>
-            </div>
-          </div>
-
-          <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
-              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
-                <img src={"https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/g3zan4eijixt8a0vqwfw"} className="object-cover h-full w-full rounded-full" />
-              </div>
-              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Ali Partovi</h1>
-              <p className="font-CerealBK text-sm text-center mt-4">
-                CEO of Neo.
-              </p>
-            </div>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
-              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
-                <img src={"https://avatars.githubusercontent.com/u/3744018?v=4"} className="object-cover h-full w-full rounded-full" />
-              </div>
-              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Veeral Patel</h1>
-              <p className="font-CerealBK text-center text-sm mt-4">
-                Founding Engineer at Ramp
-              </p>
-            </div>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
-              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
-                <img src={"https://fsi-live.s3.us-west-1.amazonaws.com/s3fs-public/styles/epsa_crop/public/bio_images/boneh_dan.jpg?itok=Kwlyhoer"} className="object-cover h-full w-full rounded-full" />
-              </div>
-              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Dan Boneh</h1>
-              <p className="font-CerealBK text-center text-sm mt-4">
-                Stanford Professor
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="workshops">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
-          <Circle />
-        </div>
-        <div className='flex flex-col'>
-          <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
-            from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>Workshops</h1>
-          <div className='z-10 w-full flex lg:flex-row flex-col lg:flex-wrap'>
-            {workshops.map(item => (
-              <Workshop data={item} />
-            ))}
           </div>
         </div>
       </section>
@@ -1130,6 +1043,16 @@ function App() {
               <a href="https://aspecta.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
                   <img src={Aspecta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://human.capital/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={HumanCapital} className="object-contain" />
                 </div>
               </a>
             </div>

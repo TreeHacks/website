@@ -133,7 +133,7 @@ export const prizes = [
     {
         "Company": "TreeHacks",
         "Company Link": "https://www.treehacks.com/",
-        "Prize Name": "Sustainbility Grand Prize",
+        "Prize Name": "Sustainability Grand Prize",
         "Description": "Best sustainability project.",
         "Prize Count": 4,
         "Prize Contents": "Apeman M4 DLP Projector 1080P",
@@ -188,7 +188,7 @@ export const prizes = [
         "Prize Name": "Privacy and Safety Grand Prize",
         "Description": "Best Privacy and Safety project.",
         "Prize Count": 4,
-        "Prize Contents": "Mark VII + AC Tacitcal Wifi Pineapples",
+        "Prize Contents": "Mark VII + AC Tactical Wifi Pineapples",
         "Link": "https://shop.hak5.org/products/wifi-pineapple?variant=32019576094833",
         "Image Link": Logo,
         "Prize Image": "https://cdn.shopify.com/s/files/1/0068/2142/products/gokit1_800x.jpg?v=1599680489",
