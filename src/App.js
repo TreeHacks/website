@@ -1039,7 +1039,7 @@ function App() {
               </a>
             </div>
             <div className='lg:w-4/12 w-full'>
-              <a href="https://aspecta.com/" target="_blank">
+              <a href="https://aspecta.id/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
                   <img src={Aspecta} className="object-contain" />
                 </div>
