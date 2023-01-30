@@ -595,19 +595,6 @@ export const prizes = [
         "api": false
     },
     {
-        "Company": "Pear VC",
-        "Company Link": "https://pear.vc/",
-        "Prize Name": "Best Hack Using AI/ML",
-        "Description": "Beyond the buzzwords, we have the chance to change the way we interact with computers. We’re at the cusp of a brand new set of possibilities. For hackers looking to push the envelope here with their technical approach or application domain, this is the prize to win!",
-        "Prize Count": null,
-        "Prize Contents": "$1,000 cash prize and upto $100,000 uncapped SAFE",
-        "Link": "",
-        "Image Link": Pear,
-        "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
-        "Track": "New_Frontiers",
-        "api": false
-    },
-    {
         "Company": "Dolby.io",
         "Company Link": "https://dolby.io/",
         "Prize Name": "Best use of Dolby.io",
