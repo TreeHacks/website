@@ -227,7 +227,7 @@ export const prizes = [
     {
         "Company": "Convex",
         "Company Link": "https://convex.dev/",
-        "Prize Name": "Best Use of InterSystems IntegratedML",
+        "Prize Name": "Best use of Convex",
         "Description": "Full stack hack and no back-end? With Convex, easy.\nThis prize goes to the team that makes the best use of the Convex platform to create a novel and compelling web or mobile multi-user app. Real-time or reactive elements are a plus.\nAnd since Convex developers are naturally among the best builders around, we figure it’s only right to throw a few more challenging and exciting builds at the winning team.",
         "Prize Count": null,
         "Prize Contents": [
@@ -293,7 +293,7 @@ export const prizes = [
         "Company": "Otsuka <> Valuenex",
         "Company Link": "https://en.valuenex.com/",
         "Prize Name": "Best hack to connect with others through food",
-        "Description": "“Best hack to connect with others through food” for the improvement of the world's wellbeing & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We'll make sure to look after your wellbeing as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
+        "Description": "Best hack to connect with others through food” for the improvement of the world's wellbeing & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We'll make sure to look after your wellbeing as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
         "Prize Count": 4,
         "Prize Contents": "Good life package - DoorDash gift card ($500) + Spa gift card ($250)",
         "Link": "",
