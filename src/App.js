@@ -1199,7 +1199,7 @@ function App() {
             </div>
             <div className='lg:w-2/12 w-full lg:mr-4'>
               <a href="https://makerbot.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-2 relative'>
                   <img src={Makerbot} className="object-contain" />
                 </div>
               </a>
