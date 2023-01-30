@@ -439,8 +439,8 @@ function App() {
         <div className='border-2 border-black mb-10 z-20'>
           <div className='flex lg:flex-row flex-col border-b-2 border-black bg-white'>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
-              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>1500+ Hackers</h1>
-              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,500+ students from across the nation come to Stanford for 36 hours of hacking.</p>
+              <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>1600+ Hackers</h1>
+              <p className='lg:text-xl mb-4 font-CerealBK text-slate-700 group-hover:text-white'>Every February, 1,600+ students from across the nation come to Stanford for 36 hours of hacking.</p>
             </div>
             <div className='lg:w-1/3 lg:aspect-square lg:border-r-2 lg:border-b-0 border-b-2 border-black p-10 group hover:bg-black ease-in duration-300 cursor-pointer'>
               <h1 className='font-semibold lg:text-6xl text-4xl mb-4 font-CerealBD text-black group-hover:text-white'>$160,000 in Prizes</h1>
