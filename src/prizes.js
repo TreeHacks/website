@@ -250,7 +250,7 @@ export const prizes = [
         "Prize Count": 4,
         "Prize Contents": [
             "1st place: AirPods Maxs",
-            "2nd place: Ember Mug",
+            "2nd place: JBL Flip 6",
             "3rd place: Amazon Echo Dot (5th gen)"
         ],
         "Link": "",
@@ -318,7 +318,7 @@ export const prizes = [
     {
         "Company": "Skydio",
         "Company Link": "https://www.skydio.com/",
-        "Prize Name": "Skydio 2+ Drone",
+        "Prize Name": "Best Drone Hack",
         "Description": "Skydio 2+ does all the shooting so you can concentrate on the adventure at hand. \n Launch Skydio into the air and after just 27 minutes, you will have over 100,000 breathtaking 4K stills to choose from, export and share.\n And when you're ready to take your drone photography to the next level, Skydio Panorama Skills gives you live previews of massive horizontal, vertical and spherical images in up to 72 megapixels.",
         "Prize Count": null,
         "Prize Contents": "Skydio 2+ Drone",
