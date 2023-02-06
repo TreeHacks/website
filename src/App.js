@@ -345,7 +345,7 @@ function App() {
         >
           <Accent className='absolute -right-10 -top-6' />
           <Accent2 className='absolute -left-10 -top-6' />
-          Hackathon Calendar
+          TreeHacks Live
         </a>
         <div className='z-10 w-full flex lg:flex-row flex-col'>
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
