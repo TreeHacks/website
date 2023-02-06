@@ -36,6 +36,9 @@ import scroll6 from './assets/photos/scroll6.webp';
 import scroll7 from './assets/photos/scroll7.webp';
 
 import backgroundVideo from './assets/videos/treehacksvideo.mp4';
+import robotVideo from './assets/videos/robot.MP4';
+import signVideo from './assets/videos/sign.mp4';
+import particlevid from './assets/videos/particlevid3.mp4';
 import './App.css';
 
 import Otsuka from './assets/logos/otsuka.webp';
@@ -267,16 +270,16 @@ function App() {
 
   const QuickOption = ({ disabled, title, section, link, description }) => {
     return (
-      <a disabled={disabled} href={section ? "#" + section : link} className={`border mb-4 py-4 px-6 ${disabled ? "" : "hover:bg-gray-100 cursor-pointer"} bg-white rounded-md w-full lg:h-32`}>
+      <a disabled={disabled} href={section ? "#" + section : link} target={section ? "" : "_blank"} className={`border mb-2 py-4 px-6 ${disabled ? "" : "lg:hover:bg-black hover:bg-gray-100 ease-in duration-300 cursor-pointer"} lg:bg-transparent bg-white w-full lg:h-32`}>
         <div className={`${disabled ? "opacity-40" : ""}`}>
           <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text'>{title}</h1>
           <div className="relative flex flex-col justify-center">
-            <p className="font-CerealLt pr-8 text-sm">
+            <p className="font-CerealMd lg:pr-8 text-sm lg:text-white text-gray-500">
               {description}
             </p>
-            <AiOutlineArrowRight className="absolute right-0 mb-5" size={20} color={"black"} />
+            <AiOutlineArrowRight className="absolute right-0 mb-5 lg:visible invisible" size={20} color={"white"} />
           </div>
         </div>
       </a>
@@ -312,6 +315,7 @@ function App() {
             <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>3</h1>
           </div>
           <div className='lg:w-5/6 z-auto'>
+
             <div className="inline-block">
               <p className='font-semibold text-slate-900 mb-1 font-display lg:text-lg text-xs'>February 17th - 19th @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
@@ -332,35 +336,54 @@ function App() {
         </div>
       </section>
 
-      <section className="w-full lg:h-96 lg:mt-0 mt-20 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
-        <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 bg-gradient-to-r bg-clip-text text-transparent 
-            from-emerald-500 via-emerald-500 to-indigo-500
-            animate-text'>Excited? We are too!</h1>
-        <a
-          href="https://live.treehacks.com/"
-          target="_blank"
-          type="button"
-          disabled
-          className="font-CerealMd my-6 text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm text-black border-gray-200 border text-md font-medium bg-white hover:bg-gray-100 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
-        >
+      <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
+        <span className='text-xs text-center font-CerealMd text-emerald-500'>This is going to our biggest hackathon ever! More Hackerss. More Prizes. More Sponsors. More Everything.</span>
+      </div>
+      <section className="w-full lg:mt-10 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
+        <div className='absolute w-full lg:visible invisible'>
+          <div className='flex lg:flex-row flex-col'>
+            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-50 w-12/12" />
+            <video src={robotVideo} autoPlay muted loop className="lg:w-6/12 brightness-50 w-12/12" />
+          </div>
+          <div className='flex lg:flex-row flex-col'>
+            <video src={backgroundVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
+            <video src={signVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
+          </div>
+        </div>
+        <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 lg:text-gray-200 bg-gradient-to-r bg-clip-text text-transparent
+            from-emerald-500 via-indigo-500 to-emerald-500'>Excited? We are too!</h1>
+        <h3 className='lg:text-xl text-md text-center mb-4 lg:text-gray-200 text-gray-400 max-w-4xl font-CerealBD'>Here's a collection of everything you need and want to know! We absolutely can't wait to meet all you awesome people :)</h3>
+        <div className='my-6'>
           <Accent className='absolute -right-10 -top-6' />
           <Accent2 className='absolute -left-10 -top-6' />
-          TreeHacks Live
-        </a>
-        <div className='z-10 w-full flex lg:flex-row flex-col'>
-          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+          <a
+            href="https://live.treehacks.com/"
+            target="_blank"
+            type="button"
+            disabled
+            className="font-CerealMd text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm lg:text-white lg:border-gray-200 border-black border text-md font-medium hover:opacity-50 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
+          >
+            TreeHacks Live
+          </a>
+        </div>
+        <div className='z-10 w-full flex relative lg:flex-row flex-col'>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
             <QuickOption disabled={false} title="Prizes" section="prizes" description="See what prizes will be at TreeHacks 2023! Check out our amazing sponsors and their APIs!" />
+            <QuickOption disabled={false} title="Sponsors" section="sponsors" description="We have some amazing companies helping make TreeHacks a reality this year." />
             <QuickOption disabled={false} title="Speakers" section="speakers" description="Check out the world class speakers coming to TreeHacks this year!" />
           </div>
 
-          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
             <QuickOption disabled={false} title="Devpost" link="https://treehacks-2023.devpost.com/" description="Check out our devpost! Our central hub for submitting projects and documenting your hackathon experience." />
-            <QuickOption disabled={true} title="Problem Statements" section="" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
+            <QuickOption disabled={true} title="Pre-hackathon workshops" section="pre-hackathon workshops" description="Famous speakers and amazing companies will be running workshops to get you up an running. Fast." />
+            <QuickOption disabled={true} title="Company Connection" section="pre-hackathon workshops" description="Looking for a place to work? Interested in learning more about a company? These companies will be hosting short recruiting talks." />
+            <QuickOption disabled={false} title="Hardware Hackers" link="https://medium.com/@hackwithtrees/hardware-heaven-what-hackers-get-to-build-their-dreams-4bb06a1e503e" description="Planning on hacking on Hardware? We got you. 3D printers, VR headsets, drones, laser cutters, and $20k in on-site hardware got you." />
           </div>
 
-          <div className='flex flex-col lg:w-4/12 w-12/12 pl-2 pr-2'>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
+            <QuickOption disabled={true} title="Problem Statements" section="" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
             <QuickOption disabled={false} title="API & Resources" link="https://live.treehacks.com/apisresources" description="We've created some awesome hackpacks and resources for you to boost your productivity! Check them out here!" />
-            <QuickOption disabled={false} title="Sponsors" section="sponsors" description="We have some amazing companies helping make TreeHacks a reality this year." />
+            <QuickOption disabled={true} title="HackX sneak peaks" section="" description="Lightsaber battles? Puppy Hour? Trivia? Here is a sneak peak of all the fun stuff we have planned." />
           </div>
         </div>
       </section>
@@ -386,7 +409,7 @@ function App() {
           <div className="bg-white rounded-sm border shadow-sm flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
             <Accent className='absolute -right-10 -top-6' />
             <Accent2 className='absolute -left-10 -top-6' />
-            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1676592000} interval={1000} /></p>
+            <p className='font-CerealMd text-black lg:text-2xl text-center'><Countdown eventTime={1676664000} interval={1000} /></p>
             <p className='font-CerealBK text-slate-500 text-center text-lg'>
               (February 17th)
             </p>
