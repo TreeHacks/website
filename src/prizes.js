@@ -31,6 +31,7 @@ import Aptos from './assets/logos/aptos.webp';
 import Near from './assets/logos/near.webp';
 import Palantir from './assets/logos/palantir.webp';
 import HumanCapital from './assets/logos/human_capital.webp';
+import EIS from './assets/logos/EIS.webp';
 
 export const prizes = [
     {
@@ -693,6 +694,19 @@ export const prizes = [
         "Link": "https://store.supabase.com/products/zeta-launch-swag-pack?variant=42149988303003",
         "Image Link": Supabase,
         "Prize Image": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "The McCoy Family Center for Ethics in Society",
+        "Company Link": "https://ethicsinsociety.stanford.edu/undergraduate-offerings-overview",
+        "Prize Name": "Most Ethically Engaged Hack",
+        "Description": "This prize awards the team that can best articulate the ethical tensions and potential hazards latent in their project and create innovative solutions for addressing them. Judging criteria for the prize can be found here: rb.gy/21wpus. Participants are encouraged to attend the Center for Ethics workshop on Saturday at 12:30pm to learn more. To be considered, participants must also include in their devpost submission a written narrative that explains what ethical considerations were most important when developing the project and how they were incorporated into their final product.  You can see a previous winner here: https://devpost.com/software/soteria-58hg6m",
+        "Prize Count": null,
+        "Prize Contents": "$1000 Cash Prize",
+        "Link": "",
+        "Image Link": EIS,
+        "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
         "Track": "All",
         "api": false
     }

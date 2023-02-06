@@ -83,6 +83,7 @@ import Aspecta from './assets/logos/aspecta.webp';
 import Brave from './assets/logos/brave.webp';
 import Palantir from './assets/logos/palantir.webp';
 import HumanCapital from './assets/logos/human_capital.webp';
+import EIS from './assets/logos/EIS.webp';
 
 import { prizes } from './prizes';
 import { workshops } from './workshops';
@@ -1199,6 +1200,16 @@ function App() {
               <a href="http://www.cotopaxi.com" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
                   <img src={Cotopaxi} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://ethicsinsociety.stanford.edu/undergraduate-offerings-overview" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-6 relative'>
+                  <img src={EIS} className="object-contain" />
                 </div>
               </a>
             </div>
