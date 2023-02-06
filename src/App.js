@@ -35,10 +35,10 @@ import scroll5 from './assets/photos/scroll5.webp';
 import scroll6 from './assets/photos/scroll6.webp';
 import scroll7 from './assets/photos/scroll7.webp';
 
-import backgroundVideo from './assets/videos/treehacksvideo.mp4';
-import robotVideo from './assets/videos/robot.MP4';
-import signVideo from './assets/videos/sign.mp4';
-import particlevid from './assets/videos/particlevid3.mp4';
+import backgroundVideo from './assets/videos/treehacks_compressed.mp4';
+import robotVideo from './assets/videos/robot_compressed.mp4';
+import signVideo from './assets/videos/sign_compressed.mp4';
+import particlevid from './assets/videos/particles_compressed.mp4';
 import './App.css';
 
 import Otsuka from './assets/logos/otsuka.webp';
@@ -343,12 +343,12 @@ function App() {
       <section className="w-full lg:mt-10 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
         <div className='absolute w-full lg:visible invisible'>
           <div className='flex lg:flex-row flex-col'>
-            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-50 w-12/12" />
+            <video src={signVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
             <video src={robotVideo} autoPlay muted loop className="lg:w-6/12 brightness-50 w-12/12" />
           </div>
           <div className='flex lg:flex-row flex-col'>
             <video src={backgroundVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
-            <video src={signVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
+            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-50 w-12/12" />
           </div>
         </div>
         <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 lg:text-gray-200 bg-gradient-to-r bg-clip-text text-transparent
