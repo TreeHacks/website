@@ -337,7 +337,7 @@ function App() {
       </section>
 
       <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
-        <span className='text-xs text-center font-CerealMd text-emerald-500'>This is going to our biggest hackathon ever! More Hackerss. More Prizes. More Sponsors. More Everything.</span>
+        <span className='text-xs text-center font-CerealMd text-emerald-500'>This is going to our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
       </div>
       <section className="w-full lg:mt-10 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
         <div className='absolute w-full lg:visible invisible'>
