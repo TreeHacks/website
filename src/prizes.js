@@ -13,30 +13,24 @@ import Arduino from './assets/logos/arduino.webp';
 import Zetachain from './assets/logos/zetachain.webp';
 import Phri from './assets/logos/phri.webp';
 import Mem from './assets/logos/mem.webp';
-import Cypherd from './assets/logos/cypherd.webp';
+import Cotopaxi from './assets/logos/cotopaxi.webp';
 import HRT from './assets/logos/hrt.webp';
 import Meta from './assets/logos/meta.webp';
-import Cisco from './assets/logos/cisco.webp';
-import SquareL from './assets/logos/square.webp';
 import Retool from './assets/logos/retool.webp';
 import Dolby from './assets/logos/dolby.webp';
 import Warp from './assets/logos/warp.webp';
-import Bnb from './assets/logos/bnb.webp';
 import Checkbook from './assets/logos/checkbook.webp';
 import Parrot from './assets/logos/parrot.webp';
 import YCombinator from './assets/logos/ycombinator.webp';
 import Neo from './assets/logos/neo.webp';
 import Pear from './assets/logos/pear.webp';
-import GeneralTask from './assets/logos/generaltask.webp';
 import Replit from './assets/logos/replit.webp';
-import Algolia from './assets/logos/algolia.webp';
 import Wolfram from './assets/logos/wolfram.webp';
-import Makerbot from './assets/logos/makerbot.webp';
-import Twilio from './assets/logos/twilio.webp';
 import Supabase from './assets/logos/supabase.webp';
-import Voiceflow from './assets/logos/voiceflow.webp';
 import Aptos from './assets/logos/aptos.webp';
 import Near from './assets/logos/near.webp';
+import Palantir from './assets/logos/palantir.webp';
+import HumanCapital from './assets/logos/human_capital.webp';
 
 export const prizes = [
     {
@@ -342,6 +336,19 @@ export const prizes = [
         "api": false
     },
     {
+        "Company": "Palantir",
+        "Company Link": "https://www.prhi.org/",
+        "Prize Name": "Palantir Prize",
+        "Description": "",
+        "Prize Count": null,
+        "Prize Contents": "$2,000 Cash prize",
+        "Link": "",
+        "Image Link": Palantir,
+        "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
+        "Track": "New_Frontiers",
+        "api": false
+    },
+    {
         "Company": "ZetaChain",
         "Company Link": "https://www.zetachain.com/",
         "Prize Name": "Best Real-World Crypto Hack",
@@ -430,6 +437,45 @@ export const prizes = [
         "Image Link": You,
         "Prize Image": "https://i.ytimg.com/vi/gvu6xeLAOe0/maxresdefault.jpg",
         "Track": "",
+        "api": false
+    },
+    {
+        "Company": "Dolby.io",
+        "Company Link": "https://dolby.io/",
+        "Prize Name": "Best use of Dolby.io",
+        "Description": "Add high-quality audio & video experiences to your application using Dolby.io Real-time Communications and Streaming.",
+        "Prize Count": null,
+        "Prize Contents": "$1,000 Cash prize (gift cards)",
+        "Link": "",
+        "Image Link": Dolby,
+        "Prize Image": "https://cdn.mos.cms.futurecdn.net/ujeVMDaT2FA3W6HajprRWS-1200-80.jpg",
+        "Track": "",
+        "api": true
+    },
+    {
+        "Company": "OpenAI",
+        "Company Link": "https://openai.com/",
+        "Prize Name": "Best Use of OpenAI Models",
+        "Description": "N/A",
+        "Prize Count": null,
+        "Prize Contents": "$2,500 in API credits",
+        "Link": "https://openai.com/",
+        "Image Link": OpenAI,
+        "Prize Image": "https://openai.com/content/images/2018/02/socml_3.jpg",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Cadence",
+        "Company Link": "https://cadence.com/",
+        "Prize Name": "Highest Frequency Award",
+        "Description": "For the team that makes the best use of RF and microwave design workflows for high-frequency solutions",
+        "Prize Count": 5,
+        "Prize Contents": "True Wireless Earbuds",
+        "Link": "https://www.jbl.com/wireless-earbuds/TUNE230NCTWS-.html",
+        "Image Link": Cadence,
+        "Prize Image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495841cv12d.jpg",
+        "Track": "All",
         "api": false
     },
     {
@@ -556,6 +602,19 @@ export const prizes = [
         "api": false
     },
     {
+        "Company": "Cotopaxi",
+        "Company Link": "https://cotopaxi.com/",
+        "Prize Name": "Cotopaxi's Choice Award",
+        "Description": "The Cotopaxi team will choose a team that is working on a project closely tied to Cotopaxi's values of sustainability and extreme poverty alleviation",
+        "Prize Count": 4,
+        "Prize Contents": "Cotopaxi Allpa 28L Backpack, filled with a Dopp Kit, Cotopaxi hat, and MiiR x Cotopaxi camping mug. $250 value/ea.",
+        "Link": "https://www.cotopaxi.com/collections/all-packs",
+        "Image Link": Cotopaxi,
+        "Prize Image": "https://i.ytimg.com/vi/KFqc3WSfbCM/maxresdefault.jpg",
+        "Track": "All",
+        "api": false
+    },
+    {
         "Company": "Pear VC",
         "Company Link": "https://pear.vc/",
         "Prize Name": "Best Hack Using Frontier Tech",
@@ -593,19 +652,6 @@ export const prizes = [
         "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
         "Track": "New_Frontiers",
         "api": false
-    },
-    {
-        "Company": "Dolby.io",
-        "Company Link": "https://dolby.io/",
-        "Prize Name": "Best use of Dolby.io",
-        "Description": "Add high-quality audio & video experiences to your application using Dolby.io Real-time Communications and Streaming.",
-        "Prize Count": null,
-        "Prize Contents": "$1,000 Cash prize (gift cards)",
-        "Link": "",
-        "Image Link": Dolby,
-        "Prize Image": "https://cdn.mos.cms.futurecdn.net/ujeVMDaT2FA3W6HajprRWS-1200-80.jpg",
-        "Track": "",
-        "api": true
     },
     {
         "Company": "Replit's choice",
@@ -649,5 +695,5 @@ export const prizes = [
         "Prize Image": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png",
         "Track": "All",
         "api": false
-    },
+    }
 ]

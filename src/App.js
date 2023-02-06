@@ -52,7 +52,7 @@ import Arduino from './assets/logos/arduino.webp';
 import Zetachain from './assets/logos/zetachain.webp';
 import Phri from './assets/logos/phri.webp';
 import Mem from './assets/logos/mem.webp';
-import Cypherd from './assets/logos/cypherd.webp';
+import Cotopaxi from './assets/logos/cotopaxi.webp';
 import HRT from './assets/logos/hrt.webp';
 import Meta from './assets/logos/meta.webp';
 import Cisco from './assets/logos/cisco.webp';
@@ -1165,10 +1165,17 @@ function App() {
                 </div>
               </a>
             </div>
-            <div className='lg:w-3/12 w-full'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://generaltask.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
                   <img src={GeneralTask} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="http://www.cotopaxi.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Cotopaxi} className="object-contain" />
                 </div>
               </a>
             </div>
