@@ -277,7 +277,7 @@ function App() {
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text'>{title}</h1>
           <div className="relative flex flex-col justify-center">
-            <p className="font-CerealMd lg:pr-8 text-sm lg:text-white text-gray-500">
+            <p className="font-CerealMd lg:pr-6 text-sm lg:text-white text-gray-500">
               {description}
             </p>
             <AiOutlineArrowRight className="absolute right-0 mb-5 lg:visible invisible" size={20} color={"white"} />
@@ -376,15 +376,15 @@ function App() {
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
             <QuickOption disabled={false} title="Devpost" link="https://treehacks-2023.devpost.com/" description="Check out our devpost! Our central hub for submitting projects and documenting your hackathon experience." />
-            <QuickOption disabled={true} title="Pre-hackathon workshops" section="pre-hackathon workshops" description="Famous speakers and amazing companies will be running workshops to get you up an running. Fast." />
-            <QuickOption disabled={true} title="Company Connection" section="pre-hackathon workshops" description="Looking for a place to work? Interested in learning more about a company? These companies will be hosting short recruiting talks." />
+            <QuickOption disabled={false} title="Pre-hackathon workshops" link="https://treehacks.notion.site/Pre-hackathon-Workshops-be7248185a4a406e99fb238ce624c5d4" description="Famous speakers and amazing companies will be running workshops to get you up an running. Fast." />
+            <QuickOption disabled={false} title="Company Connection" link="https://treehacks.notion.site/Company-Connections-084a44d9f33a4bc08335f59807656d71" description="Looking for a place to work? Interested in learning more about a company? These companies will be hosting short recruiting talks." />
             <QuickOption disabled={false} title="Hardware Hackers" link="https://medium.com/@hackwithtrees/hardware-heaven-what-hackers-get-to-build-their-dreams-4bb06a1e503e" description="Planning on hacking on Hardware? We got you. 3D printers, VR headsets, drones, laser cutters, and $20k in on-site hardware got you." />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={true} title="Problem Statements" section="" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
+            <QuickOption disabled={false} title="Problem Statements" link="https://treehacks.notion.site/Problem-Statements-b51eb030b1934d6c9dcd557de6428652" description="Want to start ideating? We've curated a list of problem statements from our sponsors and mentors!" />
             <QuickOption disabled={false} title="API & Resources" link="https://live.treehacks.com/apisresources" description="We've created some awesome hackpacks and resources for you to boost your productivity! Check them out here!" />
-            <QuickOption disabled={true} title="HackX sneak peaks" section="" description="Lightsaber battles? Puppy Hour? Trivia? Here is a sneak peak of all the fun stuff we have planned." />
+            <QuickOption disabled={false} title="HackX sneak peaks" link="https://treehacks.notion.site/HackX-Events-a18f524a78b147648835224a86c67f38" description="Lightsaber battles? Puppy Hour? Trivia? Here is a sneak peak of all the fun stuff we have planned." />
           </div>
         </div>
       </section>
