@@ -277,10 +277,9 @@ function App() {
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text'>{title}</h1>
           <div className="relative flex flex-col justify-center">
-            <p className="font-CerealMd lg:pr-6 text-sm lg:text-white text-gray-500">
+            <p className="font-CerealMd text-sm lg:text-white text-gray-500">
               {description}
             </p>
-            <AiOutlineArrowRight className="absolute right-0 mb-5 lg:visible invisible" size={20} color={"white"} />
           </div>
         </div>
       </a>
