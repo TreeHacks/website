@@ -1269,6 +1269,17 @@ function App() {
               </a>
             </div>
           </div>
+          <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Technology Partners</h1>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full'>
+              <a href="https://aspecta.id/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-4 relative'>
+                  <img src={Aspecta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
