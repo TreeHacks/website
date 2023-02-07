@@ -362,7 +362,7 @@ function App() {
             target="_blank"
             type="button"
             disabled
-            className="font-CerealMd text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm lg:text-white lg:border-gray-200 border-black border text-md font-medium hover:opacity-50 disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:flex-1"
+            className="font-CerealMd text-center flex-shrink-0 lg:max-w-[250px] inline-flex items-center justify-center px-6 py-1.5 border-transparent rounded-md shadow-sm lg:text-white lg:border-gray-200 border-black border text-md font-medium hover:bg-black disabled:bg-emerald-300 disabled:cursor-not-allowed focus:outline-none sm:flex-1 ease-in duration-300"
           >
             TreeHacks Live
           </a>
