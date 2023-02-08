@@ -400,7 +400,7 @@ function App() {
           <Square />
         </div>
         {/* <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" /> */}
-        <section className="w-full pt-20 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 lg:pb-32 pb-8 flex flex-col relative lg:items-center">
+        <section className="w-full pt-20 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 lg:pb-32 pb-8 flex flex-col relative lg:items-center lg:mt-8">
           <h1 className='font-CerealXBd lg:text-5xl text-3xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
             from-emerald-500 via-indigo-500 to-emerald-500
             animate-text'>What's so special?</h1>
