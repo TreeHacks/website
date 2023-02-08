@@ -341,10 +341,10 @@ function App() {
         </div>
       </section>
 
-      <div className='w-full bg-emerald-100 mt-10 h-20 flex flex-col justify-center items-center'>
-        <span className='lg:text-sm text-xs text-center font-CerealMd text-emerald-500 mt-1 px-4'>This is going to our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
+      <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
+        <span className='lg:text-sm text-xs text-center font-CerealMd text-emerald-500 px-4'>TreeHacks 2023 is slated to be our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
       </div>
-      <section className="w-full lg:mt-12 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
+      <section className="w-full lg:mt-11 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
         <div className='absolute w-full lg:visible invisible'>
           <div className='flex lg:flex-row flex-col'>
             <video src={signVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
