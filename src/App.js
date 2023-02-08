@@ -26,6 +26,11 @@ import sideImage2 from './assets/photos/Treehacks-347.webp';
 
 import sajith from './assets/photos/sajith.webp';
 import karpathy from './assets/photos/karpathy.webp';
+import dan from './assets/photos/dan_schwartz.webp';
+import tim from './assets/photos/tim_chou.webp';
+import katz from './assets/photos/katz.webp';
+import jen from './assets/photos/jen_king.webp';
+
 
 import scroll1 from './assets/photos/scroll1.webp';
 import scroll2 from './assets/photos/scroll2.webp';
@@ -86,9 +91,8 @@ import HumanCapital from './assets/logos/human_capital.webp';
 import EIS from './assets/logos/EIS.webp';
 
 import { prizes } from './prizes';
-import { workshops } from './workshops';
 
-import { AiOutlineArrowRight, AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter, AiFillStar } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter, AiFillStar } from "react-icons/ai";
 
 function App() {
   const Tracks = {
@@ -100,7 +104,7 @@ function App() {
     "Privacy_and_Safety": 5
   }
 
-  const [activePrize, setActivePrize] = useState(0);
+  const [activePrizePage, setActivePrizePage] = useState(1);
 
   let count = 0;
   let count2 = 0;
@@ -614,8 +618,9 @@ function App() {
             </div>
           </div>
 
+          {/* New Row */}
           <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
               <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
                 <img src={"https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/g3zan4eijixt8a0vqwfw"} className="object-cover h-full w-full rounded-full" />
               </div>
@@ -624,13 +629,44 @@ function App() {
                 CEO of Neo.
               </p>
             </div>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
               <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
                 <img src={"https://avatars.githubusercontent.com/u/3744018?v=4"} className="object-cover h-full w-full rounded-full" />
               </div>
               <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Veeral Patel</h1>
               <p className="font-CerealBK text-center text-sm mt-4">
                 Founding Engineer at Ramp
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={dan} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Dan Schwartz</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Dean at Stanford Graduate School of Education
+              </p>
+            </div>
+          </div>
+
+          {/* New Row */}
+          <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={tim} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Tim Chou</h1>
+              <p className="font-CerealBK text-sm text-center mt-4">
+                Former President of Oracle
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={jen} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Jen King</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Privacy and Data Policy Fellow
               </p>
             </div>
           </div>
@@ -645,9 +681,16 @@ function App() {
           <div className="lg:w-12/12">
             <h1 className='font-semibold lg:text-7xl text-3xl mb-4 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
             from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>Prizes</h1>
+            animate-text'>Prizes ({prizes.length})</h1>
+            <div className='flex flex-row items-center justify-center'>
+              {[...Array(Math.ceil(prizes.length / 6))].map((e, i) =>
+                <button onClick={() => setActivePrizePage(i + 1)} className={`h-8 w-8 bg-gray-100 rounded-md flex justify-center items-center hover:bg-gray-200 focus:bg-gray-300 mr-5 ${activePrizePage == i + 1 ? "border-2 border-emerald-500" : ""}`}>
+                  <span className='text-sm'>{i + 1}</span>
+                </button>
+              )}
+            </div>
             <div className='bg-white border rounded-md mt-4 flex lg:flex-row flex-col lg:flex-wrap'>
-              {prizes.map(prizeData => (
+              {prizes.slice((activePrizePage - 1) * 6, ((activePrizePage) * 6)).map(prizeData => (
                 <div className='lg:w-4/12 aspect-square relative border'>
                   <div className='absolute cursor-pointer p-8 z-20 bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
                     <p className='text-md font-CerealBK mb-2'>
