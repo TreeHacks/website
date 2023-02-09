@@ -90,6 +90,8 @@ import Palantir from './assets/logos/palantir.webp';
 import HumanCapital from './assets/logos/human_capital.webp';
 import EIS from './assets/logos/EIS.webp';
 import RDV from './assets/logos/rdv.webp';
+import Modal from './assets/logos/modal.webp';
+import Sequoia from './assets/logos/sequoia.webp';
 
 import { prizes } from './prizes';
 
@@ -1188,16 +1190,16 @@ function App() {
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
-              <a href="https://checkbook.io/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
-                  <img src={Checkbook} className="object-contain" />
+              <a href="https://sequoiacap.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Sequoia} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
-              <a href="https://parrot.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
-                  <img src={Parrot} className="object-contain" />
+              <a href="https://pear.vc/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Pear} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -1219,9 +1221,9 @@ function App() {
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
-              <a href="https://pear.vc/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
-                  <img src={Pear} className="object-contain" />
+              <a href="https://parrot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Parrot} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -1256,10 +1258,24 @@ function App() {
                 </div>
               </a>
             </div>
-            <div className='lg:w-3/12 w-full'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://roughdraft.vc" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
                   <img src={RDV} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://modal.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Modal} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://checkbook.io" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Checkbook} className="object-contain" />
                 </div>
               </a>
             </div>
