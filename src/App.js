@@ -344,11 +344,11 @@ function App() {
       </section>
 
       <div className='w-full flex flex-col justify-center items-center'>
-        <div className="border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-black ease-in duration-150 cursor-pointer">
-          <a target="_blank" className="font-CerealBD lg:text-md text-sm underline group-hover:text-white" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace">
+        <a target="_blank" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace" className="border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-black ease-in duration-150 cursor-pointer">
+          <span className="font-CerealBD lg:text-md text-sm underline group-hover:text-white">
             Hacking at TreeHacks? Here's everything you need to know.
-          </a>
-        </div>
+          </span>
+        </a>
       </div>
 
       <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
