@@ -343,6 +343,14 @@ function App() {
         </div>
       </section>
 
+      <div className='w-full flex flex-col justify-center items-center'>
+        <div className="border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-black ease-in duration-150 cursor-pointer">
+          <a target="_blank" className="font-CerealBD lg:text-md text-sm underline group-hover:text-white" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace">
+            Hacking at TreeHacks? Here's everything you need to know.
+          </a>
+        </div>
+      </div>
+
       <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
         <span className='lg:text-sm text-xs text-center font-CerealMd text-emerald-500 px-4'>TreeHacks 2023 is slated to be our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
       </div>
@@ -359,7 +367,7 @@ function App() {
         </div>
         <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 lg:text-gray-200 bg-gradient-to-r bg-clip-text text-transparent
             from-emerald-500 via-indigo-500 to-emerald-500'>Excited? We are too!</h1>
-        <h3 className='lg:text-xl text-md text-center mb-4 lg:text-gray-200 text-gray-400 max-w-4xl font-CerealBD'>Here's a collection of everything you need and want to know! We absolutely can't wait to meet all you awesome people :)</h3>
+        <h3 className='lg:text-xl text-md text-center mb-4 lg:text-gray-200 text-gray-400 max-w-4xl font-CerealBD'>We absolutely can't wait to meet all you awesome people :)</h3>
         <div className='my-6'>
           <Accent className='absolute -right-10 -top-6' />
           <Accent2 className='absolute -left-10 -top-6' />
