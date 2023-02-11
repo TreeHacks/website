@@ -31,6 +31,7 @@ import Aptos from './assets/logos/aptos.webp';
 import Near from './assets/logos/near.webp';
 import Palantir from './assets/logos/palantir.webp';
 import HumanCapital from './assets/logos/human_capital.webp';
+import Modal from './assets/logos/modal.webp';
 import EIS from './assets/logos/EIS.webp';
 
 export const prizes = [
@@ -707,6 +708,19 @@ export const prizes = [
         "Link": "",
         "Image Link": EIS,
         "Prize Image": "https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200",
+        "Track": "All",
+        "api": false
+    },
+    {
+        "Company": "Modal",
+        "Company Link": "https://modal.com",
+        "Prize Name": "Peak Modal",
+        "Description": "Best project that’s hosted on Modal, or used Modal somewhere along the line for training or data processing.",
+        "Prize Count": null,
+        "Prize Contents": "$1000$/mo in Modal credits for the winning team for life",
+        "Link": "",
+        "Image Link": Modal,
+        "Prize Image": "https://modal.com/assets/social-image.jpg",
         "Track": "All",
         "api": false
     }
