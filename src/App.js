@@ -325,10 +325,10 @@ function App() {
         </div>
         <div className='flex flex-row items-center'>
           <div className="mr-6 z-10 lg:inline-block hidden">
-            <h1 className='lg:text-9xl text-5xl leading-none text-white'>2</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-white'>0</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-white'>2</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-white'>3</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>2</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>0</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>2</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>3</h1>
           </div>
           <div className='lg:w-5/6 z-auto'>
 
@@ -336,10 +336,10 @@ function App() {
               <p className='font-semibold text-white mb-1 font-display lg:text-lg text-xs'>February 17th - 19th @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r bg-white rounded-full mb-4"></div>
             </div>
-            <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-300 via-emerald-300 to-emerald-300 animate-text">TreeHacks is back!</span></h1>
+            <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks is back!</span></h1>
             <h1 className='lg:text-3xl text-md text-white font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
             <div className="mt-8 mb-6">
-              <span className="font-CerealMd text-white">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+              <span className="font-CerealMd text-gray-200">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
             </div>
             <div className='flex flex-row'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200" size={30} /></a>
