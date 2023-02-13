@@ -42,6 +42,7 @@ import scroll7 from './assets/photos/scroll7.webp';
 
 import backgroundVideo from './assets/videos/treehacks_compressed.mp4';
 import robotVideo from './assets/videos/robot_compressed.mp4';
+import introVideo from './assets/videos/compressed_intro.mp4';
 import signVideo from './assets/videos/sign_compressed.mp4';
 import particlevid from './assets/videos/particles_compressed.mp4';
 import './App.css';
@@ -235,6 +236,7 @@ function App() {
   useEffect(() => {
     if (count3 === 0) {
       let header = document.getElementById('site-header');
+      let links = document.getElementsByClassName('link');
 
       document.addEventListener('scroll', function () {
 
@@ -243,8 +245,14 @@ function App() {
 
         if (scrollPos > 100) {
           header.style.backgroundColor = "white";
+          for (let i = 0; i < links.length; i++) {
+            links[i].style.color = "black";
+          }
         } else {
           header.style.backgroundColor = "transparent";
+          for (let i = 0; i < links.length; i++) {
+            links[i].style.color = "white";
+          }
         }
       });
     }
@@ -300,17 +308,50 @@ function App() {
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#about'>About</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#challenges'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#speakers'>Speakers</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#prizes'>Prizes</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#projects'>Projects</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#sponsors'>Sponsors</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black' href='#faqs'>FAQs</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#about'>About</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#challenges'>Tracks</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#speakers'>Speakers</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#prizes'>Prizes</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#projects'>Projects</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#sponsors'>Sponsors</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#faqs'>FAQs</a>
         </div>
       </div>
-      <section class="bg-cover w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center lg:pt-24 pt-32" id="home">
+      <section class="bg-cover lg:flex hidden w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center lg:pt-24 pt-32" id="home">
+        <video src={introVideo} autoPlay muted loop className="brightness-[0.4] w-12/12 absolute" />
+        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
+          <CircleIntersection />
+        </div>
+        <div className='flex flex-row items-center'>
+          <div className="mr-6 z-10 lg:inline-block hidden">
+            <h1 className='lg:text-9xl text-5xl leading-none text-white'>2</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-white'>0</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-white'>2</h1>
+            <h1 className='lg:text-9xl text-5xl leading-none text-white'>3</h1>
+          </div>
+          <div className='lg:w-5/6 z-auto'>
+
+            <div className="inline-block">
+              <p className='font-semibold text-white mb-1 font-display lg:text-lg text-xs'>February 17th - 19th @ Stanford University</p>
+              <div class="h-[2px] bg-gradient-to-r bg-white rounded-full mb-4"></div>
+            </div>
+            <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-300 via-emerald-300 to-emerald-300 animate-text">TreeHacks is back!</span></h1>
+            <h1 className='lg:text-3xl text-md text-white font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
+            <div className="mt-8 mb-6">
+              <span className="font-CerealMd text-white">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+            </div>
+            <div className='flex flex-row'>
+              <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200" size={30} /></a>
+              <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200" size={30} /></a>
+              <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200" size={30} /></a>
+              <a href="https://www.instagram.com/stanfordtreehacks/?hl=en" target="_blank"><AiFillInstagram className="mr-4 text-gray-200" size={30} /></a>
+              <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-200" size={30} /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-cover lg:hidden w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center lg:pt-24 pt-32" id="home">
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
           <CircleIntersection />
         </div>
@@ -344,8 +385,8 @@ function App() {
       </section>
 
       <div className='w-full flex flex-col justify-center items-center'>
-        <a target="_blank" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace" className="border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-black ease-in duration-150 cursor-pointer">
-          <span className="font-CerealBD lg:text-md text-sm underline group-hover:text-white">
+        <a target="_blank" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace" className="lg:border-white border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-emerald-500 ease-in duration-150 cursor-pointer">
+          <span className="font-CerealBD lg:text-md lg:text-white text-sm underline group-hover:text-white">
             Hacking at TreeHacks? Here's everything you need to know.
           </span>
         </a>
@@ -357,12 +398,12 @@ function App() {
       <section className="w-full lg:mt-14 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
         <div className='absolute w-full lg:visible invisible'>
           <div className='flex lg:flex-row flex-col'>
-            <video src={signVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
-            <video src={robotVideo} autoPlay muted loop className="lg:w-6/12 brightness-50 w-12/12" />
+            <video src={signVideo} autoPlay muted loop className="lg:w-6/12 w-12/12 brightness-[0.3]" />
+            <video src={robotVideo} autoPlay muted loop className="lg:w-6/12 brightness-[0.3] w-12/12" />
           </div>
           <div className='flex lg:flex-row flex-col'>
-            <video src={backgroundVideo} autoPlay muted loop className="brightness-50 lg:w-6/12 w-12/12" />
-            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-50 w-12/12" />
+            <video src={backgroundVideo} autoPlay muted loop className="brightness-[0.3] lg:w-6/12 w-12/12" />
+            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-[0.3] w-12/12" />
           </div>
         </div>
         <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 lg:text-gray-200 bg-gradient-to-r bg-clip-text text-transparent

@@ -95,7 +95,7 @@ body {
 }
 
 .link-underline-black {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000)
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#808080, #808080)
 }
 
 .link-underline:hover {
