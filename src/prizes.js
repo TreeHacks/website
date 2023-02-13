@@ -247,7 +247,7 @@ export const prizes = [
         "Prize Contents": [
             "1st place: AirPods Maxs",
             "2nd place: JBL Flip 6",
-            "3rd place: Amazon Echo Dot (5th gen)"
+            "3rd place: Mini Projector"
         ],
         "Link": "",
         "Image Link": Mem,
