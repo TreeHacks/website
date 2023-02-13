@@ -359,6 +359,9 @@ function App() {
         <div className='bg-emerald-100 py-3 flex flex-col justify-center items-center rounded-md w-full lg:mt-8 xl:mt-12 mt-8 xl:mb-0 lg:mb-0 md:mb-8 mb-8'>
           <span className='xl:text-sm lg:text-sm md:text-xs text-xs text-center font-CerealMd text-emerald-500 px-4'>TreeHacks 2023 is slated to be our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
         </div>
+        <div className='w-full h-[1px] bg-white absolute bottom-0'>
+
+        </div>
       </section>
 
       <section className="w-full xl:pt-14 lg:pt-14 md:pt-14 pt-14 xl:pl-40 xl:pr-40 lg:pl-10 lg:pr-10 md:pl-20 md:pr-20 pl-4 pr-4 pb-12 flex flex-col relative justify-center items-center" id="about">
