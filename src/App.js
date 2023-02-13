@@ -308,102 +308,68 @@ function App() {
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#about'>About</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#challenges'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#speakers'>Speakers</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#prizes'>Prizes</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#projects'>Projects</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#sponsors'>Sponsors</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#faqs'>FAQs</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#about'>About</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#challenges'>Tracks</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#speakers'>Speakers</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#prizes'>Prizes</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#projects'>Projects</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#sponsors'>Sponsors</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>FAQs</a>
         </div>
       </div>
-      <section class="bg-cover lg:flex hidden w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center lg:pt-24 pt-32" id="home">
-        <video src={introVideo} autoPlay muted loop className="brightness-[0.4] w-12/12 absolute" />
+      <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
+        <video src={introVideo} autoPlay muted loop className="brightness-[0.4] xl:w-screen xl:h-screen lg:w-screen lg:h-screen md:w-screen h-full object-cover xl:visible lg:visible md:visible visible w-12/12 absolute top-0" />
         <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
           <CircleIntersection />
         </div>
         <div className='flex flex-row items-center'>
-          <div className="mr-6 z-10 lg:inline-block hidden">
-            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>2</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>0</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>2</h1>
-            <h1 className='lg:text-9xl text-5xl leading-none text-gray-200'>3</h1>
+          <div className="xl:mr-14 lg:mr-14 md:mr-10 mr-0 invisible lg:visible xl:visible md:visible z-10">
+            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
+            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>0</h1>
+            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
+            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>3</h1>
           </div>
           <div className='lg:w-5/6 z-auto'>
-
             <div className="inline-block">
-              <p className='font-semibold text-white mb-1 font-display lg:text-lg text-xs'>February 17th - 19th @ Stanford University</p>
-              <div class="h-[2px] bg-gradient-to-r bg-white rounded-full mb-4"></div>
+              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 17th - 19th @ Stanford University</p>
+              <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
             </div>
-            <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks is back!</span></h1>
-            <h1 className='lg:text-3xl text-md text-white font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
-            <div className="mt-8 mb-6">
-              <span className="font-CerealMd text-gray-200">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+            <h1 className='font-semibold xl:text-7xl lg:text-6xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks is back!</span></h1>
+            <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
+            <div className="xl:mt-8 lg:mt-8 md:mt-8 mt-4 mb-6">
+              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
             </div>
             <div className='flex flex-row'>
-              <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200" size={30} /></a>
-              <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200" size={30} /></a>
-              <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200" size={30} /></a>
-              <a href="https://www.instagram.com/stanfordtreehacks/?hl=en" target="_blank"><AiFillInstagram className="mr-4 text-gray-200" size={30} /></a>
-              <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-200" size={30} /></a>
+              <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
+              <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
+              <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
+              <a href="https://www.instagram.com/stanfordtreehacks/?hl=en" target="_blank"><AiFillInstagram className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
+              <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="bg-cover lg:hidden w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex flex-col justify-center items-center lg:pt-24 pt-32" id="home">
-        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
-          <CircleIntersection />
+        <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
+          <a target="_blank" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
+            <span className="font-CerealBD xl:text-md lg:text-sm text-xs xl:text-white lg:text-white md:text-white text-white underline">
+              Hacking at TreeHacks? Here's everything you need to know.
+            </span>
+          </a>
         </div>
-        <div className='flex flex-row items-center'>
-          <div className="mr-6 z-10 lg:inline-block hidden">
-            <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>2</h1>
-            <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>0</h1>
-            <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>2</h1>
-            <h1 id="outlineBack" className='lg:text-9xl text-5xl text-opacity-0 leading-none'>3</h1>
-          </div>
-          <div className='lg:w-5/6 z-auto'>
-
-            <div className="inline-block">
-              <p className='font-semibold text-slate-900 mb-1 font-display lg:text-lg text-xs'>February 17th - 19th @ Stanford University</p>
-              <div class="h-[2px] bg-gradient-to-r bg-black rounded-full mb-4"></div>
-            </div>
-            <h1 className='font-semibold lg:text-7xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-emerald-500 to-emerald-500 animate-text">TreeHacks</span> <span className="text-[#15766A]">is back.</span></h1>
-            <h1 className='lg:text-3xl text-md text-slate-700 font-CerealMd'>We're in-person this year! Join 1,600+ hackers from across the world to build the next big thing.</h1>
-            <div className="mt-8 mb-6">
-              <span className="font-CerealMd text-gray-400">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
-            </div>
-            <div className='flex flex-row'>
-              <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-400" size={30} /></a>
-              <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-400" size={30} /></a>
-              <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-400" size={30} /></a>
-              <a href="https://www.instagram.com/stanfordtreehacks/?hl=en" target="_blank"><AiFillInstagram className="mr-4 text-gray-400" size={30} /></a>
-              <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-400" size={30} /></a>
-            </div>
-          </div>
+        <div className='bg-emerald-100 py-3 flex flex-col justify-center items-center rounded-md w-full lg:mt-8 xl:mt-12 mt-8 xl:mb-0 lg:mb-0 md:mb-8 mb-8'>
+          <span className='xl:text-sm lg:text-sm md:text-xs text-xs text-center font-CerealMd text-emerald-500 px-4'>TreeHacks 2023 is slated to be our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
         </div>
       </section>
 
-      <div className='w-full flex flex-col justify-center items-center'>
-        <a target="_blank" href="https://treehacks.notion.site/Get-Excited-for-TreeHacks-2023-1385bf7df20346fca62796cd26489ace" className="lg:border-white border-black hover:-translate-y-1 lg:border-2 border mx-4 lg:mt-0 mt-6 text-center group rounded-sm p-6 hover:bg-emerald-500 ease-in duration-150 cursor-pointer">
-          <span className="font-CerealBD lg:text-md lg:text-white text-sm underline group-hover:text-white">
-            Hacking at TreeHacks? Here's everything you need to know.
-          </span>
-        </a>
-      </div>
-
-      <div className='w-full bg-emerald-100 mt-10 h-16 flex flex-col justify-center items-center'>
-        <span className='lg:text-sm text-xs text-center font-CerealMd text-emerald-500 px-4'>TreeHacks 2023 is slated to be our biggest hackathon ever! More Hackers. More Prizes. More Sponsors. More Everything.</span>
-      </div>
-      <section className="w-full lg:mt-14 mt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-4 pr-4 pb-4 flex flex-col relative justify-center items-center" id="about">
-        <div className='absolute w-full lg:visible invisible'>
-          <div className='flex lg:flex-row flex-col'>
-            <video src={signVideo} autoPlay muted loop className="lg:w-6/12 w-12/12 brightness-[0.3]" />
-            <video src={robotVideo} autoPlay muted loop className="lg:w-6/12 brightness-[0.3] w-12/12" />
+      <section className="w-full xl:pt-14 lg:pt-14 md:pt-14 pt-14 xl:pl-40 xl:pr-40 lg:pl-10 lg:pr-10 md:pl-20 md:pr-20 pl-4 pr-4 pb-12 flex flex-col relative justify-center items-center" id="about">
+        <div className='absolute top-0 w-full lg:visible invisible h-full'>
+          <div className='flex lg:flex-row xl:flex-row flex-col h-3/6'>
+            <video src={signVideo} autoPlay muted loop className="w-6/12 h-full object-cover brightness-[0.3]" />
+            <video src={robotVideo} autoPlay muted loop className="w-6/12 h-full object-cover brightness-[0.3]" />
           </div>
-          <div className='flex lg:flex-row flex-col'>
-            <video src={backgroundVideo} autoPlay muted loop className="brightness-[0.3] lg:w-6/12 w-12/12" />
-            <video src={particlevid} autoPlay muted loop className="object-cover lg:w-6/12 brightness-[0.3] w-12/12" />
+          <div className='flex lg:flex-row flex-col h-3/6'>
+            <video src={backgroundVideo} autoPlay muted loop className="w-6/12 h-full object-cover brightness-[0.3]" />
+            <video src={particlevid} autoPlay muted loop className="w-6/12 h-full object-cover brightness-[0.3]" />
           </div>
         </div>
         <h1 className='font-CerealXBd lg:text-4xl text-2xl text-center mb-4 lg:text-gray-200 bg-gradient-to-r bg-clip-text text-transparent
@@ -632,10 +598,10 @@ function App() {
           </div>
           <div className='w-2/12 lg:relative absolute lg:top-0 lg:right-0 -top-10 -z-20 right-10 opacity-30 lg:opacity-100'>
             <div className="inline-block mr-6 z-10 w-full justify-center">
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>H</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>A</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>C</h1>
-              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>K</h1>
+              <h1 className='text-9xl text-opacity-0 leading-none text-center'>H</h1>
+              <h1 className='text-9xl text-opacity-0 leading-none text-center'>A</h1>
+              <h1 className='text-9xl text-opacity-0 leading-none text-center'>C</h1>
+              <h1 className='text-9xl text-opacity-0 leading-none text-center'>K</h1>
             </div>
           </div>
         </div>
