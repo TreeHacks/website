@@ -601,10 +601,10 @@ function App() {
           </div>
           <div className='w-2/12 lg:relative absolute lg:top-0 lg:right-0 -top-10 -z-20 right-10 opacity-30 lg:opacity-100'>
             <div className="inline-block mr-6 z-10 w-full justify-center">
-              <h1 className='text-9xl text-opacity-0 leading-none text-center'>H</h1>
-              <h1 className='text-9xl text-opacity-0 leading-none text-center'>A</h1>
-              <h1 className='text-9xl text-opacity-0 leading-none text-center'>C</h1>
-              <h1 className='text-9xl text-opacity-0 leading-none text-center'>K</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>H</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>A</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>C</h1>
+              <h1 id="outlineBack" className='text-9xl text-opacity-0 leading-none text-center'>K</h1>
             </div>
           </div>
         </div>
