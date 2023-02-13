@@ -308,14 +308,14 @@ function App() {
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#about'>About</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#challenges'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#speakers'>Speakers</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#prizes'>Prizes</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#projects'>Projects</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#sponsors'>Sponsors</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black ' href='#faqs'>FAQs</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#about'>About</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#challenges'>Tracks</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#speakers'>Speakers</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#prizes'>Prizes</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#projects'>Projects</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#sponsors'>Sponsors</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black text-white' href='#faqs'>FAQs</a>
         </div>
       </div>
       <section class="bg-cover lg:flex hidden w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center lg:pt-24 pt-32" id="home">
