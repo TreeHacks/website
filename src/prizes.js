@@ -390,6 +390,19 @@ export const prizes = [
         "api": false
     },
     {
+        "Company": "Arduino",
+        "Company Link": "https://www.arduino.cc/",
+        "Prize Name": "Best use of Arduino Cloud/API",
+        "Description": "Integrate the Arduino IoT Cloud in any way to qualify for this prize. Most interesting and creative implementation wins.",
+        "Prize Count": 4,
+        "Prize Contents": "Arduino Make Your UNO Kit",
+        "Link": "https://store-usa.arduino.cc/products/make-your-uno-kit?gclid=Cj0KCQiAxbefBhDfARIsAL4XLRqoXl_AP-6EYAzaEXwjxpY29FqFOOUpAYwu5KuqdWqFWcxijUzWgJQaAqnrEALw_wcB",
+        "Image Link": Arduino,
+        "Prize Image": "https://cdn.shopify.com/s/files/1/0506/1689/3647/products/AKX00037_00.default_1000x750.jpg?v=1666692481",
+        "Track": "All",
+        "api": false
+    },
+    {
         "Company": "Aptos",
         "Company Link": "https://aptoslabs.com/",
         "Prize Name": "Best Use of Aptos",

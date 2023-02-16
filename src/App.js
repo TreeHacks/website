@@ -30,6 +30,8 @@ import dan from './assets/photos/dan_schwartz.webp';
 import tim from './assets/photos/tim_chou.webp';
 import katz from './assets/photos/katz.webp';
 import jen from './assets/photos/jen_king.webp';
+import john from './assets/photos/john.webp';
+import leslie from './assets/photos/leslie.webp';
 
 
 import scroll1 from './assets/photos/scroll1.webp';
@@ -681,13 +683,44 @@ function App() {
                 Former President of Oracle
               </p>
             </div>
-            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
               <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
                 <img src={jen} className="object-cover h-full w-full rounded-full" />
               </div>
               <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Jen King</h1>
               <p className="font-CerealBK text-center text-sm mt-4">
                 Privacy and Data Policy Fellow
+              </p>
+            </div>
+            <div className='lg:w-3/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={john} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>John Hewitt</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                5th year PhD
+              </p>
+            </div>
+          </div>
+
+          {/* New Row */}
+          <div className='flex lg:mt-6 lg:flex-row flex-col bg-white rounded-lg basis-0 justify-center'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={katz} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Matt Katz</h1>
+              <p className="font-CerealBK text-sm text-center mt-4">
+                Founder of Caldera
+              </p>
+            </div>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-32 bg-white rounded-full flex justify-center items-center p-2 border-2">
+                <img src={leslie} className="object-cover h-full w-full rounded-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Leslie Field</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                Climate Professor
               </p>
             </div>
           </div>
