@@ -1120,7 +1120,7 @@ function App() {
             </div>
             <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://www.near.org/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-11 relative'>
                   <img src={Near} className="object-contain" />
                 </div>
               </a>
