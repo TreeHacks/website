@@ -533,6 +533,19 @@ export const prizes = [
         "api": true
     },
     {
+        "Company": "Checkbook.io",
+        "Company Link": "https://checkbook.io/",
+        "Prize Name": "Checkbook Participation Prize",
+        "Description": "For all teams that use the Checkbook API each member will receive a Google Mini.",
+        "Prize Count": 4,
+        "Prize Contents": "Google Mini",
+        "Link": "",
+        "Image Link": Checkbook,
+        "Prize Image": "https://media.wired.com/photos/5db0d4670aa0150008816c96/master/pass/Gear-Nest-Mini-front-view-gray-SOURCE-Google.jpg",
+        "Track": "Web3",
+        "api": true
+    },
+    {
         "Company": "YCombinator",
         "Company Link": "https://www.ycombinator.com/",
         "Prize Name": "Best Startup",
