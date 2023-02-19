@@ -95,6 +95,7 @@ import EIS from './assets/logos/EIS.webp';
 import RDV from './assets/logos/rdv.webp';
 import Modal from './assets/logos/modal.webp';
 import Sequoia from './assets/logos/sequoia.webp';
+import FV from './assets/logos/FVs.webp';
 
 import { prizes } from './prizes';
 
@@ -1327,6 +1328,16 @@ function App() {
               <a href="https://checkbook.io" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
                   <img src={Checkbook} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://www.foresightventures.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={FV} className="object-contain" />
                 </div>
               </a>
             </div>
