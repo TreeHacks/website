@@ -131,7 +131,7 @@ function App() {
         <div className='overflow-x-scroll h-20 flex items-center'>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#home'>Home</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://www.2023.treehacks.com/'>2023 Site</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>2023 Site</a>
         </div>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
@@ -154,7 +154,7 @@ function App() {
             <h1 className='font-semibold xl:text-7xl lg:text-6xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks turns 10!</span></h1>
             <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'>Stanford's premier hackathon is back! Join us for our 10th anniversary with 1,600+ hackers from across the globe</h1>
             <div className="xl:mt-8 lg:mt-8 md:mt-8 mt-4 mb-6">
-              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200">Questions? Contact us: <a className="underline" href="mailto:hello@treehacks.com">hello@treehacks.com</a></span>
+              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200"><a className="underline" href="https://form.typeform.com/to/NXI0OnFX">Get notified when 2024 applications open!</a></span>
             </div>
             <div className='flex flex-row'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -167,11 +167,12 @@ function App() {
         </div>
         <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
           <a target="_blank" style={{ fontSize: 20 }} href="mailto:lmoberly@stannford.edu" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
-            <span style={{ fontSize: 20 }} className="font-CerealBD xl:text-md lg:text-sm text-xs xl:text-white lg:text-white md:text-white text-white underline">
-              Interested in sponsoring? Contact us here!
+            <span style={{ fontSize: 20 }} className="font-CerealBD xl:text-md lg:text-sm text-xs xl:text-white lg:text-white md:text-white text-white">
+              Interested in sponsoring? Contact us!
             </span>
           </a>
         </div>
+
       </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
@@ -235,7 +236,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks is the perfect time and place to learn. We provide starter code “hack packs” on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
+                TreeHacks is the perfect time and place to learn. We provide starter code <a href="https://github.com/TreeHacks" target="_blank" className="underline">“hack packs”</a> on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
             </div>
           </div>
 
@@ -258,7 +259,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you.</p>
+                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! </p>
             </div>
           </div>
 
@@ -281,11 +282,23 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
+                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank" className="underline">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
               </p>
             </div>
           </div>
+
+        <div class="transition hover:bg-indigo-50">
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+
+            <h3>How do travel reimbursements work?</h3>
+          </div>
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+            <p class="leading-6 font-light pl-9 text-justify pb-8">
+              We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon!!
+            </p>
+          </div>
         </div>
+      </div>
 
       </section>
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
