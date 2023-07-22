@@ -167,7 +167,7 @@ function App() {
         </div>
         <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
           <a target="_blank" href="mailto:lmoberly@stannford.edu" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
-            <span className="font-CerealBD xl:text-md lg:text-sm text-xs xl:text-white lg:text-white md:text-white text-white">
+            <span className="font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs">
               Interested in sponsoring? Contact us!
             </span>
           </a>
