@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
+import CustomCursor from './CustomCursor';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
 import { ReactComponent as Branch2 } from './assets/branch2.svg';
@@ -124,6 +125,7 @@ function App() {
 
   return (
     <div className="overflow-hidden scroll-smooth ">
+      <CustomCursor />
       <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
