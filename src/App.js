@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
 import CustomCursor from './CustomCursor';
+import {BrowserView, MobileView} from 'react-device-detect';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
 import { ReactComponent as Branch2 } from './assets/branch2.svg';
@@ -10,7 +11,6 @@ import { ReactComponent as Square } from './assets/squares.svg';
 import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
-
 
 import mainImage from './assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
@@ -125,7 +125,9 @@ function App() {
 
   return (
     <div className="overflow-hidden scroll-smooth ">
-      <CustomCursor />
+      <BrowserView>
+        <CustomCursor />
+      </BrowserView>
       <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
