@@ -1,0 +1,17 @@
+/* CustomCursor.css */
+
+/* Hide the original cursor */
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.custom-cursor img {
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+}
