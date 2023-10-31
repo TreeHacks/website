@@ -137,6 +137,7 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>FAQs</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://2023.treehacks.com/'>2023 Site</a>
         </div>
+        <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
         <video src={introVideo} autoPlay muted loop className="brightness-[0.4] xl:w-screen xl:h-screen lg:w-screen lg:h-screen md:w-screen h-full object-cover xl:visible lg:visible md:visible visible w-12/12 absolute top-0" />
@@ -158,7 +159,7 @@ function App() {
             <h1 className='font-semibold xl:text-7xl lg:text-6xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks turns 10!</span></h1>
             <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'>Stanford's premier hackathon is back! Join us for our 10th anniversary with 1,600+ hackers from across the globe</h1>
             <div className="xl:mt-8 lg:mt-8 md:mt-8 mt-4 mb-6">
-              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200"><a className="underline" href="https://form.typeform.com/to/NXI0OnFX">Get notified when 2024 applications open!</a></span>
+              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200"><a className="underline" href="mailto:lmoberly@stanford.edu">Interested in sponsoring? Contact us!</a></span>
             </div>
             <div className='flex flex-row'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -170,9 +171,9 @@ function App() {
           </div>
         </div>
         <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
-          <a target="_blank" href="mailto:lmoberly@stanford.edu" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
+          <a target="_blank" href="https://root.treehacks.com/" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
             <span className="font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs">
-              Interested in sponsoring? Contact us!
+              APPLY NOW!
             </span>
           </a>
         </div>
@@ -225,7 +226,7 @@ function App() {
           <div class="transition hover:bg-indigo-50">
             <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
 
-              <h3>Who can come?</h3>
+              <h3>Who can attend?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
