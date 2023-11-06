@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
 import CustomCursor from './CustomCursor';
+import Countdown from './Countdown';
 import {BrowserView, MobileView} from 'react-device-detect';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
@@ -133,35 +134,31 @@ function App() {
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://2023.treehacks.com/'>2023 Site</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-white xl:text-white lg:text-white md:text-white text-white' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-white xl:text-white lg:text-white md:text-white text-white' href='#faqs'>FAQs</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-white xl:text-white lg:text-white md:text-white text-white' href='https://2023.treehacks.com/'>2023 Site</a>
         </div>
         <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
-        <video src={introVideo} autoPlay muted loop className="brightness-[0.4] xl:w-screen xl:h-screen lg:w-screen lg:h-screen md:w-screen h-full object-cover xl:visible lg:visible md:visible visible w-12/12 absolute top-0" />
-        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
-          <CircleIntersection />
-        </div>
-        <div className='flex flex-row items-center'>
-          <div className="xl:mr-14 lg:mr-14 md:mr-10 mr-0 invisible lg:visible xl:visible md:visible z-10">
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>0</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>4</h1>
-          </div>
+      <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[2rem] left-1/2 transform -translate-x-1/2">
+        <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full" />
+      </div>
+
+        <div className='flex flex-row items-center w-full justify-content: start'>
           <div className='lg:w-5/6 z-auto'>
             <div className="inline-block">
-              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 2024 @ Stanford University</p>
+              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 16th-18th 2024 @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
-            </div>
-            <h1 className='font-semibold xl:text-7xl lg:text-6xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks turns 10!</span></h1>
-            <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'>Stanford's premier hackathon is back! Join us for our 10th anniversary with 1,600+ hackers from across the globe</h1>
-            <div className="xl:mt-8 lg:mt-8 md:mt-8 mt-4 mb-6">
-              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200"><a className="underline" href="mailto:lmoberly@stanford.edu">Interested in sponsoring? Contact us!</a></span>
-            </div>
-            <div className='flex flex-row'>
+            </div> 
+            <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-11T00:00:00" />
+            <h1 className='mb-8 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
+            <a target="_blank" href="https://root.treehacks.com/" className="rounded-3xl border hover:bg-white text-white hover:text-black lg:border-2 mx-4 my-4 text-center group rounded-sm p-4 ease-in duration-150 cursor-pointer w-[300px] text-2xl lg:text-3xl xl:text-4xl mt-6 lg:mt-8 pl-12 pr-12">
+              <span className="font-semibold mb-1 font-display rounded-2xl">
+                Apply to hack!        
+              </span>
+            </a>
+            <div className='flex flex-row p-8 pl-16'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -169,13 +166,6 @@ function App() {
               <a href="https://github.com/TreeHacks" target="_blank"><AiFillGithub className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
             </div>
           </div>
-        </div>
-        <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
-          <a target="_blank" href="https://root.treehacks.com/" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
-            <span className="font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs">
-              APPLY NOW!
-            </span>
-          </a>
         </div>
 
       </section>
@@ -186,23 +176,21 @@ function App() {
         </div>
         <div className='flex flex-row'>
           <div>
-            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent
-            from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>FAQs</h1>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-white'>FAQs</h1>
           </div>
         </div>
 
 
-        <div class="bg-white p-10 border">
-          <h3 class="text-lg font-medium text-gray-800 font-CerealBD">Did we miss anything?</h3>
-          <p class="text-sm font-light text-gray-600 my-3 font-CerealBK">
+        <div class="bg-#121212 text-white p-10 border">
+          <h3 class="text-lg font-medium text-white-800 font-CerealBD">Did we miss anything?</h3>
+          <p class="text-sm font-light text-white-600 my-3 font-CerealBK">
             Let us know! Send an email to <span className="underline">hello@treehacks.com</span>.
           </p>
 
           <div class="h-1 w-full mx-auto border-b my-5"></div>
 
-          <div class="transition hover:bg-indigo-50 font-CerealBK">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50 font-CerealBK">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
               <h3>What is a Hackathon?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -212,8 +200,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>Is TreeHacks 2024 going to be in-person or virtual?</h3>
             </div>
@@ -223,8 +211,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>Who can attend?</h3>
             </div>
@@ -234,8 +222,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>What if I don't know how to code?</h3>
             </div>
@@ -245,8 +233,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>What if I don't have a team or idea?</h3>
             </div>
@@ -257,8 +245,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>What can I build?</h3>
             </div>
@@ -268,8 +256,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>What does it cost?</h3>
             </div>
@@ -280,8 +268,8 @@ function App() {
             </div>
           </div>
 
-          <div class="transition hover:bg-indigo-50">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+          <div class="transition hover:text-black hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer hover:text-black transition flex space-x-5 px-5 items-center h-16">
 
               <h3>What is the TreeHacks code of conduct?</h3>
             </div>
@@ -292,8 +280,8 @@ function App() {
             </div>
           </div>
 
-        <div class="transition hover:bg-indigo-50">
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+        <div class="transition hover:text-black hover:bg-indigo-50">
+          <div class="accordion-header cursor-pointer transition hover:text-black flex space-x-5 px-5 items-center h-16">
 
             <h3>How do travel reimbursements work?</h3>
           </div>
@@ -306,8 +294,8 @@ function App() {
       </div>
 
       </section>
-      <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
-        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
+      <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-#121212">
+        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center text-white'>Made with ❤️ by the TreeHacks team</h1>
       </div>
     </div >
   );
