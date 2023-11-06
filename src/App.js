@@ -171,9 +171,6 @@ function App() {
       </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
-        <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
-          <CircleIntersection />
-        </div>
         <div className='flex flex-row'>
           <div>
             <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-white'>FAQs</h1>
