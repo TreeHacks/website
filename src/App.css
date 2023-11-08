@@ -10,7 +10,6 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /*background-color: #121212;*/
 }
 
 @keyframes fadeInAnimation {
@@ -22,6 +21,19 @@ body {
         opacity: 1;
     }
 }
+
+.image-section {
+    width: 100%; /* Use the full width of the container */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center image horizontally */
+    padding: 20px 0; /* Add some padding above and below the image */
+  }
+  
+.responsive-img {
+    max-width: 100%; /* Ensure the image is not wider than the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 #outlineBack {
@@ -117,18 +129,6 @@ body {
 }
 
 /* APPLY NOW BUTTON */
-.apply-btn {
-    padding: 10px 20px;        /* Add some padding to make it larger */
-    background-color: #51DF9B; /* Change the background color to make it stand out */
-    color: white;              /* Set the text color to white */
-    border-radius: 8px;       /* Add some border-radius for aesthetics */
-    transition: background-color 0.3s ease; /* Optional: smooth transition effect for hover state */
-}
-
-.apply-btn:hover {
-    background-color: #40C482; /* Darker shade for hover effect */
-}
-
 
 .background-animate {
     background-size: 400%;
@@ -156,3 +156,4 @@ body {
 #site-header {
     transition: all 0.5s;
 }
+
