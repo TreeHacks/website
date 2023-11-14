@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
-import CustomCursor from './CustomCursor';
-import {BrowserView, MobileView} from 'react-device-detect';
+import Countdown from './Countdown';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
 import { ReactComponent as Branch2 } from './assets/branch2.svg';
@@ -11,10 +10,29 @@ import { ReactComponent as Square } from './assets/squares.svg';
 import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
+import statsImage from './assets/statsTree.png';
+
+import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
+import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
+import { ReactComponent as NeuralHashSVG } from './assets/neural.svg';
+import { ReactComponent as PowerHouseSVG } from './assets/plug.svg';
+import { ReactComponent as DocodialSVG } from './assets/medical.svg';
+import { ReactComponent as MarvelSCG } from './assets/man.svg';
+import { ReactComponent as AEye } from './assets/skin.svg';
+import { ReactComponent as LucidSVG } from './assets/drum.svg';
 
 import mainImage from './assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
+
+import sajith from './assets/photos/sajith.webp';
+import karpathy from './assets/photos/karpathy.webp';
+import dan from './assets/photos/dan_schwartz.webp';
+import tim from './assets/photos/tim_chou.webp';
+import katz from './assets/photos/katz.webp';
+import jen from './assets/photos/jen_king.webp';
+import john from './assets/photos/john.webp';
+import leslie from './assets/photos/leslie.webp';
 
 
 import scroll1 from './assets/photos/scroll1.webp';
@@ -31,6 +49,56 @@ import introVideo from './assets/videos/compressed_intro.mp4';
 import signVideo from './assets/videos/sign_compressed.mp4';
 import particlevid from './assets/videos/particles_compressed.mp4';
 import './App.css';
+
+import Otsuka from './assets/logos/otsuka.webp';
+import Estuary from './assets/logos/estuary.webp';
+import Convex from './assets/logos/convex.webp';
+import InterSystems from './assets/logos/intersystems.webp';
+import OpenAI from './assets/logos/OpenAI.webp';
+import Vercel from './assets/logos/vercel.webp';
+import Citadel from './assets/logos/citadel.webp';
+import You from './assets/logos/you.webp';
+import Skydio from './assets/logos/skydio.webp';
+import Cadence from './assets/logos/cadence.webp';
+import Arduino from './assets/logos/arduino.webp';
+import Zetachain from './assets/logos/zetachain.webp';
+import Phri from './assets/logos/phri.webp';
+import Mem from './assets/logos/mem.webp';
+import Cotopaxi from './assets/logos/cotopaxi.webp';
+import HRT from './assets/logos/hrt.webp';
+import Meta from './assets/logos/meta.webp';
+import Cisco from './assets/logos/cisco.webp';
+import SquareL from './assets/logos/square.webp';
+import Retool from './assets/logos/retool.webp';
+import Dolby from './assets/logos/dolby.webp';
+import Warp from './assets/logos/warp.webp';
+import Bnb from './assets/logos/bnb.webp';
+import Checkbook from './assets/logos/checkbook.webp';
+import Parrot from './assets/logos/parrot.webp';
+import YCombinator from './assets/logos/ycombinator.webp';
+import Neo from './assets/logos/neo.webp';
+import Pear from './assets/logos/pear.webp';
+import GeneralTask from './assets/logos/generaltask.webp';
+import Replit from './assets/logos/replit.webp';
+import Algolia from './assets/logos/algolia.webp';
+import Wolfram from './assets/logos/wolfram.webp';
+import Makerbot from './assets/logos/makerbot.webp';
+import Twilio from './assets/logos/twilio.webp';
+import Supabase from './assets/logos/supabase.webp';
+import Voiceflow from './assets/logos/voiceflow.webp';
+import Aptos from './assets/logos/aptos.webp';
+import Near from './assets/logos/near.webp';
+import Aspecta from './assets/logos/aspecta.webp';
+import Brave from './assets/logos/brave.webp';
+import Palantir from './assets/logos/palantir.webp';
+import HumanCapital from './assets/logos/human_capital.webp';
+import EIS from './assets/logos/EIS.webp';
+import RDV from './assets/logos/rdv.webp';
+import Modal from './assets/logos/modal.webp';
+import Sequoia from './assets/logos/sequoia.webp';
+import FV from './assets/logos/FVs.webp';
+
+import { prizes } from './prizes';
 
 import { AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter, AiFillStar } from "react-icons/ai";
 
@@ -79,6 +147,94 @@ function App() {
     }
   }, []);
 
+
+  // Horizontal scroller
+
+  useEffect(() => {
+    if (count2 === 0) {
+      (function horizontalScrollingBanner() {
+        var banners = document.getElementsByClassName('horizontal-scrolling-banner');
+        if (!banners || banners.length === 0) {
+          return;
+        }
+        var pxPerSecond = 50;
+        setUpElements();
+        scrollTheBanners();
+        window.addEventListener('resize', setUpElements);
+
+        function setUpElements() {
+          for (var i = 0; i < banners.length; i++) {
+            var currentBanner = banners[i];
+            var helperWrapperClass = 'horizontal-scrolling-banner__helper-wrapper';
+            var currentHelperWrapper = currentBanner.querySelector('.' + helperWrapperClass);
+            if (currentHelperWrapper) {
+              var clones = currentHelperWrapper.querySelectorAll('[data-clone]');
+              Array.prototype.forEach.call(clones, function (clone) {
+                clone.remove();
+              });
+              var childrenCount = currentHelperWrapper.children.length;
+              for (var i = 0; i < childrenCount; i++) {
+                currentBanner.appendChild(currentHelperWrapper.children[0]);
+              }
+              currentHelperWrapper.remove();
+            }
+
+            var children = currentBanner.children;
+
+            var bannerWidth = currentBanner.getBoundingClientRect().width;
+            var minWidthToCoverBanner = (bannerWidth * 2) + children[0].getBoundingClientRect().width;
+            var childrenWidth = Array.prototype.reduce.call(children, function (r, child) {
+              return r + child.getBoundingClientRect().width;
+            }, 0);
+            var currentWidth = childrenWidth;
+
+
+            do {
+              Array.prototype.forEach.call(children, function (child) {
+                var clone = child.cloneNode();
+                clone.setAttribute('aria-hidden', true);
+                clone.dataset.clone = true;
+                currentBanner.appendChild(clone);
+              });
+              currentWidth += childrenWidth;
+            } while (currentWidth < minWidthToCoverBanner);
+
+            var transitionHelperWrapper = document.createElement('div');
+            transitionHelperWrapper.classList.add('horizontal-scrolling-banner__helper-wrapper');
+            var childrenCount = children.length;
+            for (var i = 0; i < childrenCount; i++) {
+              transitionHelperWrapper.appendChild(children[0]);
+            }
+            currentBanner.appendChild(transitionHelperWrapper);
+            transitionHelperWrapper.dataset.childrenWidth = childrenWidth;
+          }
+        }
+
+        function scrollTheBanners() {
+          for (var i = 0; i < banners.length; i++) {
+            var helperWrapper = banners[i].firstElementChild;
+            var childrenWidth = helperWrapper.dataset.childrenWidth;
+            var offsetLeft = helperWrapper.offsetLeft;
+
+            if (offsetLeft <= (childrenWidth * -1)) {
+              helperWrapper.style.transitionDuration = '0s';
+              helperWrapper.style.left = '0px';
+              helperWrapper.style.removeProperty('transition-duration');
+            } else if (helperWrapper.style.left === '' || helperWrapper.style.left === '0px') {
+              setTimeout(function () {
+                helperWrapper.style.transitionDuration = (childrenWidth / pxPerSecond).toFixed() + 's';
+                helperWrapper.style.left = (childrenWidth * -1) + 'px';
+              }, 0);
+            }
+          }
+          requestAnimationFrame(scrollTheBanners);
+        }
+      })();
+
+      count2 = 1;
+    }
+  }, []);
+
   // Header
 
   useEffect(() => {
@@ -99,7 +255,7 @@ function App() {
         } else {
           header.style.backgroundColor = "transparent";
           for (let i = 0; i < links.length; i++) {
-            links[i].style.color = "white";
+            links[i].style.color = "black";
           }
         }
       });
@@ -110,11 +266,11 @@ function App() {
     return (
       <a disabled={disabled} href={section ? "#" + section : link} target={section ? "" : "_blank"} className={`border mb-2 py-4 px-6 ${disabled ? "" : "lg:hover:bg-black hover:bg-gray-100 ease-in duration-300 cursor-pointer"} lg:bg-transparent bg-white w-full lg:h-32`}>
         <div className={`${disabled ? "opacity-40" : ""}`}>
-          <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent
+          <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
             from-emerald-500 via-emerald-500 to-indigo-500
             animate-text'>{title}</h1>
           <div className="relative flex flex-col justify-center">
-            <p className="font-CerealMd text-sm lg:text-white text-gray-500">
+            <p className="font-CerealMd text-sm lg:text-black text-gray-500">
               {description}
             </p>
           </div>
@@ -125,43 +281,41 @@ function App() {
 
   return (
     <div className="overflow-hidden scroll-smooth ">
-      <BrowserView>
-        <CustomCursor />
-      </BrowserView>
-      <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
+      <div className="h-20 flex items-center lg:pl-20 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://2023.treehacks.com/'>2023 Site</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023 Site</a>
         </div>
         <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
-        <video src={introVideo} autoPlay muted loop className="brightness-[0.4] xl:w-screen xl:h-screen lg:w-screen lg:h-screen md:w-screen h-full object-cover xl:visible lg:visible md:visible visible w-12/12 absolute top-0" />
-        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
-          <CircleIntersection />
+        <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[2rem] left-1/2 transform -translate-x-1/2">
+          <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full" />
         </div>
-        <div className='flex flex-row items-center'>
-          <div className="xl:mr-14 lg:mr-14 md:mr-10 mr-0 invisible lg:visible xl:visible md:visible z-10">
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>0</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>2</h1>
-            <h1 className='xl:text-8xl lg:text-8xl md:text-6xl leading-none bg-gradient-to-r bg-clip-text text-transparent from-indigo-200 via-emerald-200 to-emerald-200 animate-text'>4</h1>
-          </div>
+
+        <div className='flex flex-row items-center w-full justify-content: start'>
           <div className='lg:w-5/6 z-auto'>
             <div className="inline-block">
-              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 2024 @ Stanford University</p>
+              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 16th-18th 2024 @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
-            </div>
-            <h1 className='font-semibold xl:text-7xl lg:text-6xl text-4xl mb-4 font-CerealBD'><span className="bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 via-emerald-400 to-emerald-400 animate-text">TreeHacks turns 10!</span></h1>
-            <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'>Stanford's premier hackathon is back! Join us for our 10th anniversary with 1,600+ hackers from across the globe</h1>
-            <div className="xl:mt-8 lg:mt-8 md:mt-8 mt-4 mb-6">
-              <span className="font-CerealMd xl:text-lg md:text-lg text-sm lg:text-lg xl:text-gray-200 lg:text-gray-200 md:text-gray-200 text-gray-200"><a className="underline" href="mailto:lmoberly@stanford.edu">Interested in sponsoring? Contact us!</a></span>
-            </div>
-            <div className='flex flex-row'>
+            </div> 
+            <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-12T00:00:00" />
+            <h1 className='mb-8 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
+            <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
+              <span>Apply to hack!</span>
+            </a>
+            <a target="_blank" href="YOUR_LINK_FOR_JUDGES_AND_MENTORS" class="secondary-button">
+              <span>Judge/Mentor</span>
+            </a>
+            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
+              <span>Sponsor</span>
+            </a>
+    
+            <div className='flex flex-row p-8 pl-4'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -170,15 +324,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='w-full flex flex-col justify-center items-center xl:mt-0 lg:mt-0 mt-4'>
-          <a target="_blank" href="https://root.treehacks.com/" className="xl:border-white lg:border-white md:border-white border-white hover:-translate-y-1 lg:border-2 border mx-4 mt-4 text-center group rounded-sm xl:p-6 lg:p-4 p-4 hover:bg-emerald-500 ease-in duration-150 cursor-pointer w-full xl:w-auto lg:w-auto md:w-auto">
-            <span className="font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs">
-              APPLY NOW!
-            </span>
-          </a>
-        </div>
 
       </section>
+
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
         <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
@@ -186,9 +334,7 @@ function App() {
         </div>
         <div className='flex flex-row'>
           <div>
-            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent
-            from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>FAQs</h1>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-black'>FAQs</h1>
           </div>
         </div>
 
@@ -215,18 +361,18 @@ function App() {
           <div class="transition hover:bg-indigo-50">
             <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
 
-              <h3>Is TreeHacks 2024 going to be in-person or virtual?</h3>
+              <h3>Is TreeHacks 2023 going to be in-person or virtual?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks 2024 will be in-person.</p>
+                TreeHacks 2023 will be in-person.</p>
             </div>
           </div>
 
           <div class="transition hover:bg-indigo-50">
             <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
 
-              <h3>Who can attend?</h3>
+              <h3>Who can come?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -241,7 +387,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks is the perfect time and place to learn. We provide starter code <a href="https://github.com/TreeHacks" target="_blank" className="underline">“hack packs”</a> on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
+                TreeHacks is the perfect time and place to learn. We provide starter code “hack packs,” as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
             </div>
           </div>
 
@@ -264,7 +410,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! </p>
+                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you.</p>
             </div>
           </div>
 
@@ -287,27 +433,15 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank" className="underline">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
+                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
               </p>
             </div>
           </div>
-
-        <div class="transition hover:bg-indigo-50">
-          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
-
-            <h3>How do travel reimbursements work?</h3>
-          </div>
-          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-            <p class="leading-6 font-light pl-9 text-justify pb-8">
-              We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon!!
-            </p>
-          </div>
         </div>
-      </div>
 
       </section>
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
-        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
+        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks 2023 team</h1>
       </div>
     </div >
   );
