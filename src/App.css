@@ -13,6 +13,19 @@ body {
     background-color: #121212;
 }
 
+@keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 60s linear infinite;
+  }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
