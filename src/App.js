@@ -306,11 +306,16 @@ function App() {
             </div> 
             <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-12T00:00:00" />
             <h1 className='mb-8 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
-            <a target="_blank" href="https://root.treehacks.com/" className="rounded-3xl border hover:bg-white text-white hover:text-black lg:border-2 mx-4 my-4 text-center group rounded-sm p-4 ease-in duration-150 cursor-pointer w-[300px] text-2xl lg:text-3xl xl:text-4xl mt-6 lg:mt-8 pl-12 pr-12">
-              <span className="font-semibold mb-1 font-display rounded-2xl">
-                Apply to hack!        
-              </span>
+            <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
+              <span>Apply to hack!</span>
             </a>
+            <a target="_blank" href="YOUR_LINK_FOR_JUDGES_AND_MENTORS" class="secondary-button">
+              <span>Judges and Mentors</span>
+            </a>
+            <a target="_blank" href="YOUR_LINK_FOR_SPONSORS" class="secondary-button">
+              <span>Sponsor</span>
+            </a>
+    
             <div className='flex flex-row p-8 pl-16'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
