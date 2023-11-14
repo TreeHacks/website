@@ -157,3 +157,29 @@ body {
     transition: all 0.5s;
 }
 
+.apply-button, .secondary-button {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px 24px;
+    margin: 6px;
+    text-align: center;
+    border-radius: 3xl;
+    transition: background-color 0.15s ease-in;
+    color: white;
+    font-family: 'CerealMd';
+  }
+  
+  .secondary-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .apply-button {
+    background-color: white;
+    color: black;
+  }
+
+  .secondary-button {
+    font-size: smaller; /* Adjust as needed */
+  }
+
