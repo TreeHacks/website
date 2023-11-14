@@ -22,6 +22,19 @@ body {
     }
 }
 
+.image-section {
+    width: 100%; /* Use the full width of the container */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center image horizontally */
+    padding: 20px 0; /* Add some padding above and below the image */
+  }
+  
+.responsive-img {
+    max-width: 100%; /* Ensure the image is not wider than the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 
 #outlineBack {
     color: white;
@@ -116,18 +129,6 @@ body {
 }
 
 /* APPLY NOW BUTTON */
-.apply-btn {
-    padding: 10px 20px;        /* Add some padding to make it larger */
-    background-color: #51DF9B; /* Change the background color to make it stand out */
-    color: white;              /* Set the text color to white */
-    border-radius: 8px;       /* Add some border-radius for aesthetics */
-    transition: background-color 0.3s ease; /* Optional: smooth transition effect for hover state */
-}
-
-.apply-btn:hover {
-    background-color: #40C482; /* Darker shade for hover effect */
-}
-
 
 .background-animate {
     background-size: 400%;
@@ -155,3 +156,31 @@ body {
 #site-header {
     transition: all 0.5s;
 }
+
+.apply-button, .secondary-button {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px 24px;
+    margin: 6px;
+    text-align: center;
+    border-radius: 3xl;
+    transition: background-color 0.15s ease-in;
+    color: white;
+    font-family: 'CerealMd';
+  }
+  
+  .secondary-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .apply-button {
+    background-color: white;
+    color: black;
+  }
+
+  .secondary-button {
+    font-size: smaller; /* Adjust as needed */
+  }
+
+
