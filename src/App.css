@@ -131,11 +131,11 @@ body {
 /* APPLY NOW BUTTON */
 
 .apply-header {
-    padding: 10px 20px;        /* Add some padding to make it larger */
-    background-color: #51DF9B; /* Change the background color to make it stand out */
-    color: white;              /* Set the text color to white */
-    border-radius: 8px;       /* Add some border-radius for aesthetics */
-    transition: background-color 0.3s ease; /* Optional: smooth transition effect for hover state */
+    padding: 10px 20px;       
+    background-color: #51DF9B; 
+    color: black;              /* Set the text color to white */
+    border-radius: 8px;       
+    transition: background-color 0.3s ease; 
 }
 
 .apply-header:hover {
