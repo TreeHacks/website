@@ -310,9 +310,9 @@ function App() {
               <span>Apply to hack!</span>
             </a>
             <a target="_blank" href="YOUR_LINK_FOR_JUDGES_AND_MENTORS" class="secondary-button">
-              <span>Judges and Mentors</span>
+              <span>Judge/Mentor</span>
             </a>
-            <a target="_blank" href="YOUR_LINK_FOR_SPONSORS" class="secondary-button">
+            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
               <span>Sponsor</span>
             </a>
     
@@ -335,9 +335,7 @@ function App() {
         </div>
         <div className='flex flex-row'>
           <div>
-            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-transparent 
-            from-emerald-500 via-indigo-500 to-emerald-500
-            animate-text'>FAQs</h1>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-black'>FAQs</h1>
           </div>
         </div>
 
