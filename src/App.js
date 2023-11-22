@@ -367,7 +367,7 @@ function App() {
           <div className="flex flex-col lg:w-6/12 justify-center lg:pt-0 pt-16">
             <h1 className='font-CerealXBd lg:text-4xl text-3xl mb-4 bg-clip-text text-black'>The Hackathon</h1>
             <p className='font-CerealBK text-slate-500'>
-              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more, we'll help you flesh out your idea and get you started on the right path.
+              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more or are interested in learning, we'll help you flesh out your idea and get you started on the right path! 
             </p>
           </div>
         </div>
