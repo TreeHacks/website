@@ -484,11 +484,11 @@ function App() {
           <div class="transition hover:bg-indigo-50">
             <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
 
-              <h3>Is TreeHacks 2023 going to be in-person or virtual?</h3>
+              <h3>Is TreeHacks 2024 going to be in-person or virtual?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks 2023 will be in-person.</p>
+                TreeHacks 2024 will be in-person.</p>
             </div>
           </div>
 
@@ -510,7 +510,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks is the perfect time and place to learn. We provide starter code “hack packs,” as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
+                TreeHacks is the perfect time and place to learn. We provide starter code <a href="https://github.com/TreeHacks" target="_blank" className="underline">“hack packs”</a> on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
             </div>
           </div>
 
@@ -533,7 +533,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you.</p>
+                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! </p>
             </div>
           </div>
 
@@ -545,6 +545,18 @@ function App() {
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
                 TreeHacks is free for all admitted hackers! It's our pleasure to bring our virtual workshops, swag, and prizes to our hackers without any cost on your end. We're committed to making TreeHacks accessible!
+              </p>
+            </div>
+          </div>
+
+          <div class="transition hover:bg-indigo-50">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+  
+              <h3>How do travel reimbursements work?</h3>
+            </div>
+            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify pb-8">
+                We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon!!
               </p>
             </div>
           </div>
