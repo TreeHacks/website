@@ -10,7 +10,7 @@ import { ReactComponent as Square } from './assets/squares.svg';
 import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
-import statsImage from './assets/statsTree.png';
+import statsImage from './statsTree.png';
 
 import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
@@ -21,7 +21,9 @@ import { ReactComponent as MarvelSCG } from './assets/man.svg';
 import { ReactComponent as AEye } from './assets/skin.svg';
 import { ReactComponent as LucidSVG } from './assets/drum.svg';
 
-import mainImage from './assets/photos/Treehacks-129.webp';
+
+import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
+import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
 
@@ -104,11 +106,11 @@ import { AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOu
 
 function App() {
   const Tracks = {
-    "Healthcare": 0,
-    "Sustainability": 1,
-    "New_Frontiers": 2,
-    "Web3": 3,
-    "Education": 4,
+    "Education": 0,
+    "Sustainability_and_Development": 1,
+    "Healthcare": 2,
+    "Fintech_and_Blockchain": 3,
+    "Entertainment_and_Interaction": 4,
     "Privacy_and_Safety": 5
   }
 
@@ -281,16 +283,18 @@ function App() {
 
   return (
     <div className="overflow-hidden scroll-smooth ">
-      <div className="h-20 flex items-center lg:pl-20 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
+      <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
         </div>
         <div className='overflow-x-scroll h-20 flex items-center'>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023 Site</a>
         </div>
-        <a className='apply-header ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://root.treehacks.com/'>Apply</a>
+        <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
         <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[2rem] left-1/2 transform -translate-x-1/2">
@@ -308,14 +312,16 @@ function App() {
             <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
               <span>Apply to hack!</span>
             </a>
-            <a target="_blank" href="https://forms.gle/R936eYcAMqHm3xft7" class="secondary-button">
-              <span>Judge/Mentor</span>
+
+            <a target="_blank" href="YOUR_LINK_FOR_JUDGES_AND_MENTORS" class="secondary-button">
+              <span>Judges and Mentors</span>
             </a>
-            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
+
+            <a target="_blank" href="YOUR_LINK_FOR_SPONSORS" class="secondary-button">
               <span>Sponsor</span>
             </a>
-    
-            <div className='flex flex-row p-8 pl-4'>
+            
+            <div className='flex flex-row p-8 pl-20'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://twitter.com/hackwithtrees" target="_blank"><AiOutlineTwitter className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -327,6 +333,124 @@ function App() {
 
       </section>
 
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-2 pt-16 flex flex-col relative" id="about">
+
+        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
+          <Triangle />
+        </div>
+        <div className="absolute -bottom-60 -left-32 opacity-20 scale-150 -z-10">
+          <Square />
+        </div>
+        {/* <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" /> */}
+
+        <div className="flex lg:flex-row flex-col mb-28 pt-12">
+          <div className="flex flex-col lg:w-6/12 lg:pr-14 justify-center">
+            <h1 className='font-CerealXBd text-4xl mb-4 bg-clip-text text-black'>What is TreeHacks?</h1>
+            <p className='font-CerealBK text-slate-500 mb-8'>
+              TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (regional caps), food, and swag for all hackers. Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event! </p>
+            <p className='font-CerealBK text-slate-500 mb-6'>
+              *Stanford students are automatically accepted but need to RSVP
+            </p>
+          </div>
+          <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
+            <div>
+              <img src={mainImage} className="w-full h-full brightness-75 shadow-2xl" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex lg:flex-row flex-col lg:mb-40 mb-10">
+          <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
+            <div>
+              <img src={main2Image} className="w-full h-full brightness-75 shadow-2xl" />
+            </div>
+          </div>
+          <div className="flex flex-col lg:w-6/12 justify-center lg:pt-0 pt-16">
+            <h1 className='font-CerealXBd lg:text-4xl text-3xl mb-4 bg-clip-text text-black'>The Hackathon</h1>
+            <p className='font-CerealBK text-slate-500'>
+              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more, we'll help you flesh out your idea and get you started on the right path.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-15 lg:pb-20 flex flex-col relative" id="tracks">
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex lg:flex-row flex-col'>
+          <div className="lg:w-10/12">
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD'>2024 Tracks</h1>
+            <p className='text-slate-500 lg:text-xl mb-8 font-CerealBK'>
+              TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build!
+            </p>
+            <div className='flex lg:flex-row flex-col lg:mb-8 mb-4'>
+              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Healthcare</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                    Trillions of dollars are spent each year on healthcare, but the system is flawed. How can we improve healthcare at home and abroad?
+                  </p>
+                </div>
+              </div>
+              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Sustainability and Development</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                   How can we address climate change and live more sustainably? How can we find effective solutions for problems in developing countries?
+                  </p>
+                </div>
+              </div>
+              <div className='lg:w-4/12'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Entertainment and Interaction</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                  How can advanced technologies like AR and AI revolutionize entertainment, creating immersive, personalized experiences? 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='flex lg:flex-row flex-col'>
+              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Fintech and Blockchain</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                    Blockchain, DeFi, and more. How can we build a better, more transparent financial system?
+                  </p>
+                </div>
+              </div>
+              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Education</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                  How can we leverage technology to transform learning experiences and outcomes? What are the essential steps to ensure global access to quality education?
+                  </p>
+                </div>
+              </div>
+              <div className='lg:w-4/12'>
+                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
+                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Privacy and Safety</h1>
+                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
+                    Privacy and safety are more important than ever. How can we build a more secure Internet and better protect our personal data?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <div class="horizontal-scrolling-banner lg:pt-20 lg:pb-20">
+        <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll4} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll5} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll6} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
+        <img src={scroll7} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250pxs] w-[250px] mr-12 shadow-2xl brightness-75" />
+      </div>
+
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
         <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
@@ -334,7 +458,7 @@ function App() {
         </div>
         <div className='flex flex-row'>
           <div>
-            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-black'>FAQs</h1>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD text-black bg-clip-text pb-2'>FAQs</h1>
           </div>
         </div>
 
@@ -441,10 +565,11 @@ function App() {
 
       </section>
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
-        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks 2023 team</h1>
+        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
       </div>
     </div >
   );
 }
 
 export default App;
+
