@@ -11,6 +11,7 @@ import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
 import statsImage from './assets/statsTree.png';
+import hexagon from './assets/hexagon.png';
 
 import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
@@ -327,6 +328,43 @@ function App() {
         </div>
 
       </section>
+
+      <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-10" id="stats">
+        <h1 className='font-CerealXBd lg:text-5xl pb-10 text-3xl bg-clip-text text-black text-center'>with over...</h1>
+        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+
+        <div className="flex">
+            <div>
+              <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+        </div>
+
+        <div className="flex">
+          <div>
+            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+          </div>
+          <div>
+            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+          </div>
+          <div>
+            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+          </div>
+        </div>
+
+      <div className="flex">
+          <div>
+            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1 pr-10" />
+          </div>
+          <div>
+            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1 pl-10" />
+          </div>
+      </div>
+    </section>
 
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
