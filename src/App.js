@@ -346,7 +346,7 @@ function App() {
           <div className="flex flex-col lg:w-6/12 lg:pr-14 justify-center">
             <h1 className='font-CerealXBd text-4xl mb-4 bg-clip-text text-black'>What is TreeHacks?</h1>
             <p className='font-CerealBK text-slate-500 mb-8'>
-              TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (regional caps), food, and swag for all hackers. Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event! </p>
+              TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (<a className='text-indigo-500 underline' href="https://docs.google.com/spreadsheets/d/1sQxmLxbQO5ygrYlPqAbxQuV_i2aos_g_k9lnrzt0tBo/edit" target="_blank">regional caps</a>), food, and swag for all hackers. Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event! </p>
             <p className='font-CerealBK text-slate-500 mb-6'>
               *Stanford students are automatically accepted but need to RSVP
             </p>
@@ -556,7 +556,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon!!
+                We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon!! Till then, check out the (<a className='text-indigo-500 underline' href="https://docs.google.com/spreadsheets/d/1sQxmLxbQO5ygrYlPqAbxQuV_i2aos_g_k9lnrzt0tBo/edit" target="_blank">regional caps</a>) for how much you are eligible to get reimbursed for based on where you're flying from.
               </p>
             </div>
           </div>
