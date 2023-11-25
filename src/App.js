@@ -337,22 +337,22 @@ function App() {
 
         <div className="flex">
             <div>
-              <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={hexagon} className="w-30 xs-w-10 s-w-10 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
             <div>
-              <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={hexagon} className="w-30 xs-w-10 s-w-10 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
         </div>
 
         <div className="flex">
           <div>
-            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            <img src={hexagon} className="w-30 xs-w-10 s-w-10 hover:-translate-y-1 hover:-translate-x-1" />
           </div>
           <div>
-            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            <img src={hexagon} className="w-30 xs-w-10 s-w-10 hover:-translate-y-1 hover:-translate-x-1" />
           </div>
           <div>
-            <img src={hexagon} className="w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            <img src={hexagon} className="w-30 xs-w-10 s-w-10 hover:-translate-y-1 hover:-translate-x-1" />
           </div>
         </div>
 
