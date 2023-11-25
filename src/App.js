@@ -348,7 +348,7 @@ function App() {
             <p className='font-CerealBK text-slate-500 mb-8'>
               TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (regional cap details coming soon), food, and swag for all hackers. Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event! </p>
             <p className='font-CerealBK text-slate-500 mb-6'>
-              *Stanford students are automatically accepted but need to RSVP
+              *Stanford students are automatically accepted but need to RSVP by (<a className='text-indigo-500 underline' href="https://root.treehacks.com/" target="_blank">applying</a>)
             </p>
           </div>
           <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
