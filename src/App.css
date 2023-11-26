@@ -39,6 +39,9 @@ body {
     .hexagon-img {
         width: 100px;
     }
+    .accent_confetti{
+        display: none;
+    }
 }
 
 
