@@ -10,7 +10,6 @@ import { ReactComponent as Square } from './assets/squares.svg';
 import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
-import statsImage from './statsTree.png';
 
 import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
