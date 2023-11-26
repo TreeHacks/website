@@ -383,8 +383,8 @@ function App() {
 
           <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
 
-          <Accent className='absolute -right-20 top-60' />
-          <Accent2 className='absolute -left-20 top-60' />
+          <Accent className='absolute -right-20 top-60 accent_confetti' />
+          <Accent2 className='absolute -left-20 top-60 accent_confetti' />
           <div className="flex">
               <div>
                 <img src={mentors_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
