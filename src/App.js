@@ -10,6 +10,7 @@ import { ReactComponent as Square } from './assets/squares.svg';
 import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
+import statsImage from './statsTree.png';
 
 import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
@@ -25,6 +26,15 @@ import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
+
+
+import countries_stat from './assets/hexagons/countries.png';
+import universities_stat from './assets/hexagons/universities.png';
+import companies_stat from './assets/hexagons/companies.png';
+import prizes_stat from './assets/hexagons/prizes.png';
+import projects_stat from './assets/hexagons/projects.png';
+import hackers_stat from './assets/hexagons/hackers.png';
+import mentors_stat from './assets/hexagons/mentors.png';
 
 import sajith from './assets/photos/sajith.webp';
 import karpathy from './assets/photos/karpathy.webp';
@@ -333,22 +343,18 @@ function App() {
       </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-2 pt-16 flex flex-col relative" id="about">
-
-        <div className="absolute top-60 -left-32 opacity-20 scale-150 -z-10">
-          <Triangle />
-        </div>
         <div className="absolute -bottom-60 -left-32 opacity-20 scale-150 -z-10">
           <Square />
         </div>
         {/* <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" /> */}
 
-        <div className="flex lg:flex-row flex-col mb-28 pt-12">
+        <div className="flex lg:flex-row flex-col pt-5">
           <div className="flex flex-col lg:w-6/12 lg:pr-14 justify-center">
             <h1 className='font-CerealXBd text-4xl mb-4 bg-clip-text text-black'>What is TreeHacks?</h1>
             <p className='font-CerealBK text-slate-500 mb-8'>
-              TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (regional cap details coming soon), food, and swag for all hackers. Not to mention, we present some incredible prizes you can't find anywhere else. Get ready to hear from world-renowned guest speakers, work with incredible mentors, learn from deeply technical workshops, and participate in fun activities throughout the event! </p>
-            <p className='font-CerealBK text-slate-500 mb-6'>
-              *Stanford students are automatically accepted but need to RSVP by <a className='text-indigo-500 underline' href="https://root.treehacks.com/" target="_blank">applying</a>
+              TreeHacks is Stanford’s premier hackathon and one of the biggest in the world! This year we turn 10- and we're going ALL OUT!  TreeHacks covers flights (regional caps), food, and swag for all hackers. Not to mention, some incredible prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event! Most of all, you'll be learning and building in an energetic environment with people as passionate as you!</p>
+            <p className='font-CerealBK text-slate-500 mb-10'>
+              *Stanford students are auto-accepted but need to RSVP by <a className='text-indigo-500 underline' href="https://root.treehacks.com/" target="_blank">applying</a>
             </p>
           </div>
           <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
@@ -358,7 +364,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col lg:mb-40 mb-10">
+        <div className="flex lg:flex-row flex-col lg:mb-2 mb-10">
           <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
             <div>
               <img src={main2Image} className="w-full h-full brightness-75 shadow-2xl" />
@@ -367,13 +373,52 @@ function App() {
           <div className="flex flex-col lg:w-6/12 justify-center lg:pt-0 pt-16">
             <h1 className='font-CerealXBd lg:text-4xl text-3xl mb-4 bg-clip-text text-black'>The Hackathon</h1>
             <p className='font-CerealBK text-slate-500'>
-              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more or are interested in learning, we'll help you flesh out your idea and get you started on the right path! 
+              If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more, we'll help you flesh out your idea and get you started on the right path.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-15 lg:pb-20 flex flex-col relative" id="tracks">
+      <section class="xl:h-screen mb-10 lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-15 pt-10" id="stats">
+          <h1 className='font-CerealXBd lg:text-5xl pb-5 text-3xl bg-clip-text text-black text-center'>Last year we had...</h1>
+
+          <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
+
+          <Accent className='absolute -right-20 top-60' />
+          <Accent2 className='absolute -left-20 top-60' />
+          <div className="flex">
+              <div>
+                <img src={mentors_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              </div>
+              <div>
+                <img src={projects_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              </div>
+          </div>
+
+          <div className="flex">
+            <div>
+              <img src={prizes_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={hackers_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={companies_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+          </div>
+
+        <div className="flex">
+            <div>
+              <img src={universities_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={countries_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-15 lg:pb-10 flex flex-col relative" id="tracks">
         <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
           <Circle />
         </div>
@@ -440,7 +485,7 @@ function App() {
         </div>
       </section>
 
-      <div class="horizontal-scrolling-banner lg:pt-20 lg:pb-20">
+      <div class="horizontal-scrolling-banner lg:pt-20 lg:pb-15">
         <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
@@ -449,7 +494,6 @@ function App() {
         <img src={scroll6} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll7} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250pxs] w-[250px] mr-12 shadow-2xl brightness-75" />
       </div>
-
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
         <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
@@ -521,7 +565,7 @@ function App() {
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Not a problem! We'll have team-forming activities to help you find teammates and idea brainstorming sessions for all our tracks. Some of our best hacks have been from teams that met and formed an idea on the spot!
+                Not a problem! We're currently working on a platform to help you find teammates and other hackers once you've confirmed your spot at the hackathon. We'll also have a ton of team-forming activities to help you find teammates and idea brainstorming sessions for all our tracks. Some of our best hacks have been from teams that met and formed an idea on the spot!
               </p>
             </div>
           </div>
@@ -575,6 +619,7 @@ function App() {
         </div>
 
       </section>
+
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
         <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
       </div>
@@ -583,4 +628,3 @@ function App() {
 }
 
 export default App;
-
