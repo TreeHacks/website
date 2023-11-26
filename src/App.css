@@ -35,6 +35,12 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+    .hexagon-img {
+        width: 100px;
+    }
+}
+
 
 #outlineBack {
     color: white;
