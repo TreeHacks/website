@@ -312,11 +312,11 @@ function App() {
               <span>Apply to hack!</span>
             </a>
 
-            <a target="_blank" href="YOUR_LINK_FOR_JUDGES_AND_MENTORS" class="secondary-button">
+            <a target="_blank" href="https://forms.gle/R936eYcAMqHm3xft7" class="secondary-button">
               <span>Judges and Mentors</span>
             </a>
 
-            <a target="_blank" href="YOUR_LINK_FOR_SPONSORS" class="secondary-button">
+            <a target="_blank" href="mailto:lmoberly@stannford.edu" class="secondary-button">
               <span>Sponsor</span>
             </a>
             
