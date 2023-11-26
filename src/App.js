@@ -113,6 +113,23 @@ function App() {
     "Education": 4,
     "Privacy_and_Safety": 5
   }
+  
+  const [showAccents, setShowAccents] = useState(window.innerWidth > 768);
+  
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set showAccents based on window width
+      setShowAccents(window.innerWidth > 768);
+  }
+  
+  window.addEventListener('resize', handleResize);
+
+  // Call handler right away so state gets updated with initial window size
+  handleResize();
+  
+  return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty array ensures effect is only run on mount and unmount
 
   const [activePrizePage, setActivePrizePage] = useState(1);
 
@@ -334,6 +351,13 @@ function App() {
           <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
             <Circle />
           </div>
+          
+          {showAccents && (
+          <>
+            <Accent className='absolute -right-20 top-60 accent_confetti' />
+            <Accent2 className='absolute -left-20 top-60 accent_confetti' />
+          </>
+          )}
   
           <div className="flex">
               <div>
