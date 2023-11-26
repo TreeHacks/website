@@ -34,7 +34,11 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
-
+@media screen and (max-width: 768px) {
+    .hexagon-img {
+        width: 150px;
+    }
+}
 
 #outlineBack {
     color: white;
