@@ -436,7 +436,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
+              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-8 mb-4'>
                 <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
                   <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Sustainability and Development</h1>
                   <p className='text-black text-md font-CerealBK group-hover:text-white'>
@@ -484,7 +484,7 @@ function App() {
         </div>
       </section>
 
-      <div class="horizontal-scrolling-banner lg:pt-20 lg:pb-15">
+      <div class="horizontal-scrolling-banner lg:pt-10 lg:pb-15">
         <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
