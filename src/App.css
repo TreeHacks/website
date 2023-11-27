@@ -40,7 +40,7 @@ body {
         width: 100px;
     }
     .accent_confetti{
-        display: none;
+        width: 1px;
     }
 }
 
