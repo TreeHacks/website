@@ -325,7 +325,7 @@ function App() {
               <span>Judges and Mentors</span>
             </a>
 
-            <a target="_blank" href="mailto:lmoberly@stannford.edu" class="secondary-button">
+            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
               <span>Sponsor</span>
             </a>
             
