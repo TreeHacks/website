@@ -41,6 +41,8 @@ body {
     }
     .accent_confetti{
         width: 1px;
+        bottom: 0px;
+        left: 0px;
     }
 }
 
