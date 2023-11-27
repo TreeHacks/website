@@ -306,7 +306,7 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
             </div> 
             <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-12T00:00:00" />
-            <h1 className='xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
+            <h1 className='mb-3 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
             <h4 className='mb-8 xl:text-white lg:text-white md:text-white text-white font-CerealMd'> Stanford students deadline- Dec 30th</h4>
             <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
               <span>Apply to hack!</span>
