@@ -38,6 +38,9 @@ body {
     .hexagon-img {
         width: 100px;
     }
+    .accent_confetti {
+        width: 50px;
+    }
 }
 
 #outlineBack {
