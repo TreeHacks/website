@@ -29,7 +29,8 @@ import blockchainTrack  from './assets/tracks/blockchain.png';
 import healthcareTrack  from './assets/tracks/healthcare.png';
 import privacyTrack  from './assets/tracks/privacy.png';
 import entertainmentTrack  from './assets/tracks/entertainment.png';
-import sustainabilityTrack  from './assets/tracks/sustainability.png';
+import sustainabilityTrack  from './assets/tracks/education.png';
+import educationTrack  from './assets/tracks/sustainability.png';
 
 import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
@@ -428,7 +429,7 @@ function App() {
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={blockchainTrack} />
+                  <img src={educationTrack} />
                   <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -467,21 +468,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='pl-40 flex lg:flex-row flex-col'>
-          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
-            <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                <img src={privacyTrack} />
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Privacy & Safety</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Jenny and Aidan developed a live-streaming web app that allows doctors to communicate with interpreters, empowering non-native speakers to get the health coverage they need. They won Best User Interface and Best Live Video App at TreeHacks 2018.</p>
-                  <a href='https://devpost.com/software/docodial' className='text-black text-md font-CerealBK underline'>Check it out here</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className='pl-80 flex lg:flex-row flex-col'>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
