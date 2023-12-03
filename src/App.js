@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
 import Countdown from './Countdown';
+import Dropdown from './Dropdown';
+import DropdownBox from './DropdownBox';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
 import { ReactComponent as Branch2 } from './assets/branch2.svg';
@@ -11,21 +13,33 @@ import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
 
-import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
+import { ReactComponent as EntertainmentSVG } from './assets/tracks/entertainment.svg';
+import { ReactComponent as BlockchainSVG } from './assets/tracks/blockchain.svg';
+import { ReactComponent as HealthcareSVG } from './assets/tracks/healthcare.svg';
+import { ReactComponent as SustainabilitySVG } from './assets/tracks/sustainability.svg';
+import { ReactComponent as EducationSVG } from './assets/tracks/education.svg';
+
+import entertainmentTrack from './assets/tracks/entertainment.png'; 
+import healthcareTrack from './assets/tracks/healthcare.png'; 
+import blockchainTrack from './assets/tracks/privacy.png'; 
+import sustainabilityTrack from './assets/tracks/sustainability.png'; 
+import educationTrack from './assets/tracks/education.png'; 
+
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
 import { ReactComponent as NeuralHashSVG } from './assets/neural.svg';
 import { ReactComponent as PowerHouseSVG } from './assets/plug.svg';
 import { ReactComponent as DocodialSVG } from './assets/medical.svg';
 import { ReactComponent as MarvelSCG } from './assets/man.svg';
+
 import { ReactComponent as AEye } from './assets/skin.svg';
 import { ReactComponent as LucidSVG } from './assets/drum.svg';
-
 
 import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
-
+import globeImage from './assets/globe.png';
+import hootowImg from './assets/hootow.png'
 
 import countries_stat from './assets/hexagons/countries.png';
 import universities_stat from './assets/hexagons/universities.png';
@@ -290,7 +304,7 @@ function App() {
   }
 
   return (
-    <div className="overflow-hidden scroll-smooth ">
+    <div className="overflow-hidden scroll-smooth">
       <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div>
           <Logo />
@@ -300,11 +314,14 @@ function App() {
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023 Site</a>
         </div>
         <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-black' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
+        <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
         <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[2rem] left-1/2 transform -translate-x-1/2">
           <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full" />
         </div>
@@ -316,8 +333,7 @@ function App() {
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
             </div> 
             <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-12T00:00:00" />
-            <h1 className='mb-3 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
-            <h4 className='mb-8 xl:text-white lg:text-white md:text-white text-white font-CerealMd'> Stanford students deadline- Dec 30th</h4>
+            <h1 className='mb-8 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to apply (by Dec 11th)</h1>
             <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
               <span>Apply to hack!</span>
             </a>
@@ -326,7 +342,7 @@ function App() {
               <span>Judges and Mentors</span>
             </a>
 
-            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
+            <a target="_blank" href="mailto:lmoberly@stannford.edu" class="secondary-button">
               <span>Sponsor</span>
             </a>
             
@@ -348,7 +364,7 @@ function App() {
         </div>
         {/* <Branch2 className="lg:w-96 lg:h-80 w-52 h-40 absolute lg:-top-52 -top-16 opacity-30 -left-10 lg:opacity-100 lg:block hidden" /> */}
 
-        <div className="flex lg:flex-row flex-col pt-5">
+        <div className="flex lg:flex-row flex-col">
           <div className="flex flex-col lg:w-6/12 lg:pr-14 justify-center">
             <h1 className='font-CerealXBd text-4xl mb-4 bg-clip-text text-black'>What is TreeHacks?</h1>
             <p className='font-CerealBK text-slate-500 mb-8'>
@@ -359,7 +375,7 @@ function App() {
           </div>
           <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
             <div>
-              <img src={mainImage} className="w-full h-full brightness-75 shadow-2xl" />
+              <img src={mainImage} className="w-full h-full brightness-75" />
             </div>
           </div>
         </div>
@@ -367,7 +383,7 @@ function App() {
         <div className="flex lg:flex-row flex-col lg:mb-2 mb-10">
           <div className="flex flex-col lg:w-6/12 lg:pr-14 relative">
             <div>
-              <img src={main2Image} className="w-full h-full brightness-75 shadow-2xl" />
+              <img src={main2Image} className="w-full h-full brightness-75" />
             </div>
           </div>
           <div className="flex flex-col lg:w-6/12 justify-center lg:pt-0 pt-16">
@@ -379,104 +395,105 @@ function App() {
         </div>
       </section>
 
-      <section class="xl:h-screen mb-10 lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-15 pt-10" id="stats">
-          <h1 className='font-CerealXBd lg:text-4xl pb-5 text-3xl bg-clip-text text-black text-center'>Last year we had...</h1>
 
-          <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
 
-          <Accent className='absolute -right-20 top-60 accent_confetti' />
-          <Accent2 className='absolute -left-20 top-60 accent_confetti' />
-          <div className="flex">
-              <div>
-                <img src={mentors_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-              </div>
-              <div>
-                <img src={projects_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-              </div>
+      <section className="w-full pt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative lg:mt-8 pb-40">
+          <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
+            <CircleIntersection />
+          </div>
+          <div className="lg:items-center flex flex-col ">
+            <h1 className='font-CerealXBd lg:text-5xl text-4xl mb-6 bg-gradient-to-r bg-clip-text'>Stanford's premier hackathon</h1>
+            <p className='font-CerealBK text-black mb-20 lg:text-center lg:text-lg text-md'>
+              It’s simple. The country’s brightest engineering students are flown to Stanford’s campus to build solutions to the world’s largest challenges for 36 hours straight.
+            </p>
+          </div>
+          <img src={globeImage} className="globe_img top-28 z-0 w-120 mb-160 -left-20 absolute lg:-ml-16 animate-spin-slow" alt="Revolving Globe" />
+
+          <div className="left-1/2">
+            <DropdownBox />
           </div>
 
-          <div className="flex">
-            <div>
-              <img src={prizes_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={hackers_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={companies_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-          </div>
-
-        <div className="flex">
-            <div>
-              <img src={universities_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={countries_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-        </div>
-        </div>
       </section>
 
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-15 lg:pb-10 flex flex-col relative" id="tracks">
-        <div className="absolute -top-20 -left-40 opacity-30 scale-150 -z-10">
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 lg:pb-15 pb-15 flex flex-col relative " id="projects">
+        <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
           <Circle />
         </div>
-        <div className='flex lg:flex-row flex-col'>
-          <div className="lg:w-10/12">
+        <div className='flex flex-row'>
+          <div className="lg:items-center flex flex-col ">
             <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD'>2024 Tracks</h1>
-            <p className='text-slate-500 lg:text-xl mb-8 font-CerealBK'>
+            <p className='pb-4 text-slate-500 text-center lg:text-xl mb-8 font-CerealBK'>
               TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build!
             </p>
-            <div className='flex lg:flex-row flex-col lg:mb-8 mb-4'>
-              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Healthcare</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Trillions of dollars are spent each year on healthcare, but the system is flawed. How can we improve healthcare at home and abroad?
-                  </p>
+          </div>
+        </div>
+        <div className='pl-40 flex lg:flex-row flex-col lg:mb-12 mb-4'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={educationTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
                 </div>
-              </div>
-              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-8 mb-4'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Sustainability and Development</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                   How can we address climate change and live more sustainably? How can we find effective solutions for problems in developing countries?
-                  </p>
-                </div>
-              </div>
-              <div className='lg:w-4/12'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Entertainment and Interaction</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                  How can advanced technologies like AR and AI revolutionize entertainment, creating immersive, personalized experiences? 
-                  </p>
+                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021.</p>
+                  <a href='https://devpost.com/software/catiator' target="_blank" className='text-black text-md font-CerealBK underline'>Check it out here</a>
                 </div>
               </div>
             </div>
-            <div className='flex lg:flex-row flex-col'>
-              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Fintech and Blockchain</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Blockchain, DeFi, and more. How can we build a better, more transparent financial system?
-                  </p>
+          </div>
+          <div className='lg:w-3/12'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
                 </div>
               </div>
-              <div className='lg:w-4/12 lg:mr-6 mb-4 lg:mb-0'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Education</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                  How can we leverage technology to transform learning experiences and outcomes? What are the essential steps to ensure global access to quality education?
-                  </p>
+            </div>
+          </div>
+          <div className='lg:w-3/12'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability</h1>
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
                 </div>
               </div>
-              <div className='lg:w-4/12'>
-                <div className='border-black border p-10 h-full bg-white group hover:bg-black ease-in duration-300 cursor-pointer hover:-translate-y-1'>
-                  <h1 className='font-semibold text-xl font-CerealBD text-black mb-4 group-hover:text-white'>Privacy and Safety</h1>
-                  <p className='text-black text-md font-CerealBK group-hover:text-white'>
-                    Privacy and safety are more important than ever. How can we build a more secure Internet and better protect our personal data?
-                  </p>
+            </div>
+          </div>
+        </div>
+        <div className='pl-80 flex lg:flex-row flex-col'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={blockchainTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>FinTech & Blockchain</h1>
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018.</p>
+                  <a href='https://devpost.com/software/marvel-medical-dictionary' className='text-black text-md font-CerealBK underline'>Check it out here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='lg:w-3/12'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={entertainmentTrack} className="lg:w-80 md:w-20 s:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Entertainment & Interaction</h1>
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon.</p>
+                  <a href='https://devpost.com/software/energy-awareness-app' className='text-black text-md font-CerealBK underline'>Check it out here</a>
                 </div>
               </div>
             </div>
@@ -485,7 +502,7 @@ function App() {
         </div>
       </section>
 
-      <div class="horizontal-scrolling-banner lg:pt-10 lg:pb-15">
+      <div class="horizontal-scrolling-banner pt-16 lg:pb-16">
         <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
         <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12 shadow-2xl brightness-75" />
@@ -495,7 +512,399 @@ function App() {
         <img src={scroll7} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250pxs] w-[250px] mr-12 shadow-2xl brightness-75" />
       </div>
 
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
+
+      <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center" id="stats">
+          <h1 className='font-CerealXBd lg:text-5xl pb-5 text-3xl bg-clip-text text-black text-center'>Last year we had...</h1>
+          <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
+
+          <Accent className='absolute -right-20 top-60 accent_confetti' />
+          <Accent2 className='absolute -left-20 top-60 accent_confetti' />
+          <div className="flex">
+              <div>
+                <img src={mentors_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+              </div>
+              <div>
+                <img src={projects_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+              </div>
+          </div>
+
+          <div className="flex">
+            <div>
+              <img src={prizes_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={hackers_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={companies_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+          </div>
+
+        <div className="flex">
+            <div>
+              <img src={universities_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+            <div>
+              <img src={countries_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative" id="sponsors">
+        <div className="absolute -top-20 -right-40 opacity-30 scale-150 -z-10">
+          <Circle />
+        </div>
+        <div className='flex flex-row'>
+          <div>
+            <h1 className='font-semibold lg:text-7xl text-3xl mb-8 font-CerealBD bg-gradient-to-r bg-clip-text pb-2 text-black'>Sponsors</h1>
+          </div>
+        </div>
+        <div className="w-full">
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://openai.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={OpenAI} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://vercel.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Vercel} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      We enable teams to iterate quickly and develop, preview, and ship delightful user experiences. Vercel has zero-configuration support for 35+ frontend frameworks and integrates with your headless content, commerce, or database of choice.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://citadel.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Citadel} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://you.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={You} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://skydio.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Skydio} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://www.cadence.com/en_US/home.html" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Cadence} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Cadence is a pivotal leader in electronic systems design, building upon more than 30 years of computational software expertise. The company applies its underlying Intelligent System Design strategy to deliver software, hardware, and IP that turn design concepts into reality.
+                    </p>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      Cadence customers are the world’s most innovative companies, delivering extraordinary electronic products from chips to boards to complete systems for the most dynamic market applications including hyperscale computing, 5G communications, automotive, mobile, aerospace, consumer, industrial, and healthcare.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      For eight years in a row, Fortune magazine has named Cadence one of the 100 Best Companies to Work For.                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://arduino.cc/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Arduino} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://zetachain.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Zetachain} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK'>
+                      ZetaChain is the only decentralized blockchain and smart contract platform built for omnichain interoperability.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="http://www.patientsafetytech.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Phri} className="object-contain" />
+                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
+                    <p className='text-sm font-CerealBK mb-2'>
+                      The Patient Safety Technology Challenge is designed to fuel the engagement of students and innovators in creating solutions and envisioning transformational approaches to reduce preventable harm from medical errors and reimagine a vastly safer healthcare system. The initiative injects patient safety awards into existing local, regional, and national competitions and produce a documentary to help increase awareness of the patient safety crisis.
+                    </p>
+                    <p className='text-sm font-CerealBK'>
+                      Guided by national partners experienced in safety technology and advanced healthcare analytics, the Challenge will fund awards within existing competitions, hackathons, and startup weekends as either an off-the-shelf award package or as a new award.                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.aptoslabs.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Aptos} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.near.org/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-11 relative'>
+                  <img src={Near} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://aspecta.id/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Aspecta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.hudsonrivertrading.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={HRT} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://meta.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Meta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://cisco.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Cisco} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://square.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={SquareL} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://retool.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Retool} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://dolby.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Dolby} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://warp.dev/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Warp} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://binance.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Bnb} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://sequoiacap.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Sequoia} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://pear.vc/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Pear} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://ycombinator.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={YCombinator} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://neo.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Neo} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://parrot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                  <img src={Parrot} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://brave.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={Brave} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://generaltask.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={GeneralTask} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="http://www.cotopaxi.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                  <img src={Cotopaxi} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://ethicsinsociety.stanford.edu/undergraduate-offerings-overview" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-6 relative'>
+                  <img src={EIS} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://roughdraft.vc" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                  <img src={RDV} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://modal.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                  <img src={Modal} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://checkbook.io" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+                  <img src={Checkbook} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Special donations from</h1>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://replit.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-4 relative'>
+                  <img src={Replit} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://algolia.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Algolia} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://wolfram.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Wolfram} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://makerbot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-2 relative'>
+                  <img src={Makerbot} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://twilio.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Twilio} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://supabase.io/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-6 relative'>
+                  <img src={Supabase} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Technology Partners</h1>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full'>
+              <a href="https://aspecta.id/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-white h-20 p-4 relative'>
+                  <img src={Aspecta} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pb-20 flex flex-col relative overflow-hidden border-b" id="faqs">
         <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
           <CircleIntersection />
         </div>
@@ -620,7 +1029,7 @@ function App() {
 
       </section>
 
-      <div className="w-full py-10 flex flex-col relative overflow-hidden border-b bg-white">
+      <div className="w-full py-10 flex flex-col relative overflow-hidden border-b">
         <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
       </div>
     </div >
