@@ -1,0 +1,30 @@
+.dropdown {
+    position: relative;
+  }
+  
+.dropdown-trigger {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-trigger:hover {
+    text-decoration: underline;
+} 
+ 
+.dropdown-content {
+    display: none; /* Start with dropdown content hidden */
+    padding: 12px; 
+    /*width: 100%;*/
+    width: 50%; /* Set your desired width */
+    height: auto; /* Height can be auto for dynamic content */
+    word-wrap: break-word; /* Ensures long words are broken and wrapped to the next line */
+    overflow-wrap: break-word; /* Similar to word-wrap, but with better support */
+}
+  
+  .dropdown-content.open {
+    display: block; /* Show dropdown content */
+  }
