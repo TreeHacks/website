@@ -37,7 +37,6 @@ import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-12
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
 import globeImage from './assets/globe.png';
-import hootowImg from './assets/hootow.png'
 
 import countries_stat from './assets/hexagons/countries.png';
 import universities_stat from './assets/hexagons/universities.png';
