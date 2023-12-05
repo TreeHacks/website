@@ -13,7 +13,19 @@ import { ReactComponent as Accent } from './assets/accent.svg';
 import { ReactComponent as Accent2 } from './assets/accent2.svg';
 import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
 
-import { ReactComponent as CatiatorSVG } from './assets/cat.svg';
+import { ReactComponent as EntertainmentSVG } from './assets/tracks/entertainment.svg';
+import { ReactComponent as BlockchainSVG } from './assets/tracks/blockchain.svg';
+import { ReactComponent as HealthcareSVG } from './assets/tracks/healthcare.svg';
+import { ReactComponent as SustainabilitySVG } from './assets/tracks/sustainability.svg';
+import { ReactComponent as EducationSVG } from './assets/tracks/education.svg';
+
+import entertainmentTrack from './assets/tracks/entertainment.png'; 
+import healthcareTrack from './assets/tracks/healthcare.png'; 
+import blockchainTrack from './assets/tracks/privacy.png'; 
+import privacyTrack from './assets/tracks/blch.png'; 
+import sustainabilityTrack from './assets/tracks/sustainability.png'; 
+import educationTrack from './assets/tracks/education.png'; 
+
 import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
 import { ReactComponent as NeuralHashSVG } from './assets/neural.svg';
 import { ReactComponent as PowerHouseSVG } from './assets/plug.svg';
@@ -23,20 +35,12 @@ import { ReactComponent as MarvelSCG } from './assets/man.svg';
 import { ReactComponent as AEye } from './assets/skin.svg';
 import { ReactComponent as LucidSVG } from './assets/drum.svg';
 
-
-/* Tracks */
-import blockchainTrack  from './assets/tracks/blockchain.png';
-import healthcareTrack  from './assets/tracks/healthcare.png';
-import privacyTrack  from './assets/tracks/privacy.png';
-import entertainmentTrack  from './assets/tracks/entertainment.png';
-import sustainabilityTrack  from './assets/tracks/education.png';
-import educationTrack  from './assets/tracks/sustainability.png';
-
 import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
 import globeImage from './assets/globe.png';
+import hootowImg from './assets/hootow.png'
 
 import countries_stat from './assets/hexagons/countries.png';
 import universities_stat from './assets/hexagons/universities.png';
@@ -393,6 +397,7 @@ function App() {
       </section>
 
 
+
       <section className="w-full pt-10 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative lg:mt-8 pb-40">
           <div className="absolute top-96 -left-40 opacity-30 scale-150 -z-10">
             <CircleIntersection />
@@ -428,7 +433,7 @@ function App() {
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={educationTrack} />
+                  <img src={educationTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -438,16 +443,15 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+          <div className='lg:w-3/12'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                <img src={sustainabilityTrack} />
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability & Development</h1>
+                  <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Isaac, Nikhil, Evani, and Rohan used machine learning to develop a decoder model that acts as a cryptographically-secure, transformation-invariant hash function to identify image ownership. This team won the Security Grand Prize and Most Technically Complex Hack at TreeHacks 2018.</p>
-                  <a href='https://devpost.com/software/neuralhash' className='text-black text-md font-CerealBK underline'>Check it out here</a>
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
                 </div>
               </div>
             </div>
@@ -456,23 +460,32 @@ function App() {
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack}/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Entertainment & Interaction</h1>
+                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon.</p>
-                  <a href='https://devpost.com/software/energy-awareness-app' className='text-black text-md font-CerealBK underline'>Check it out here</a>
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className='pl-80 flex lg:flex-row flex-col'>
+        <div className=' flex lg:flex-row flex-col'>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={blockchainTrack} />
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                  <img src={blockchainTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>FinTech & Blockchain</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -486,11 +499,22 @@ function App() {
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={healthcareTrack}/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
+                  <img src={entertainmentTrack} className="lg:w-80 md:w-20 s:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Entertainment & Interaction</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
+                  <p className='text-black text-md mb-8 font-CerealBK overflow-scroll h-full'>Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon.</p>
+                  <a href='https://devpost.com/software/energy-awareness-app' className='text-black text-md font-CerealBK underline'>Check it out here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+              <div class="card__content">
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
+                </div>
+                <div class="card__back bg-white flex flex-col justify-end p-10 ">
                 </div>
               </div>
             </div>
@@ -511,38 +535,37 @@ function App() {
 
       <section class="xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center" id="stats">
           <h1 className='font-CerealXBd lg:text-5xl pb-5 text-3xl bg-clip-text text-black text-center'>Last year we had...</h1>
-
           <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
 
           <Accent className='absolute -right-20 top-60 accent_confetti' />
           <Accent2 className='absolute -left-20 top-60 accent_confetti' />
           <div className="flex">
               <div>
-                <img src={mentors_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+                <img src={mentors_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
               </div>
               <div>
-                <img src={projects_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+                <img src={projects_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
               </div>
           </div>
 
           <div className="flex">
             <div>
-              <img src={prizes_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={prizes_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
             <div>
-              <img src={hackers_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={hackers_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
             <div>
-              <img src={companies_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={companies_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
           </div>
 
         <div className="flex">
             <div>
-              <img src={universities_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={universities_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
             <div>
-              <img src={countries_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
+              <img src={countries_stat} className="hexagon-img w-56 hover:-translate-y-1 hover:-translate-x-1" />
             </div>
         </div>
         </div>
