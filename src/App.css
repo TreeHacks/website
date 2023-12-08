@@ -264,7 +264,6 @@ body, html {
     transition: all 0.5s;
 }
 
-
 .apply-button, .secondary-button {
     display: inline-block;
     border: 2px solid white;

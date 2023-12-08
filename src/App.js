@@ -350,34 +350,34 @@ useEffect(() => {
 }, []);
 
 
+const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
 
   // Header
-
   useEffect(() => {
-    if (count3 === 0) {
-      let header = document.getElementById('site-header');
-      let links = document.getElementsByClassName('link');
+    const header = document.getElementById('site-header');
 
-      document.addEventListener('scroll', function () {
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Get the scroll position
-        let scrollPos = window.pageYOffset;
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        header.style.transform = 'translateY(-100%)'; 
+      } else {
+        // Scrolling up
+        header.style.transform = 'translateY(0)'; 
+        header.style.backgroundColor = 'white'; // setting background to white when shown
+      }
 
-        if (scrollPos > 100) {
-          header.style.backgroundColor = "white";
-          for (let i = 0; i < links.length; i++) {
-            links[i].style.color = "black";
-          }
-        } else {
-          header.style.backgroundColor = "transparent";
-          for (let i = 0; i < links.length; i++) {
-            links[i].style.color = "black";
-          }
-        }
-      });
-    }
-  }, []);
+      setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
 
   const QuickOption = ({ disabled, title, section, link, description }) => {
     return (
@@ -412,7 +412,7 @@ useEffect(() => {
         <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-white' href='https://root.treehacks.com/'>Apply</a>
       </div>
       <section class="bg-white xl:h-screen lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
-        <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[4rem] left-1/2 transform -translate-x-1/2">
+        <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[2rem] left-1/2 transform -translate-x-1/2">
           <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full" />
         </div>
 
