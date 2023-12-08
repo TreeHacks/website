@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'CerealBD';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_Bd.otf');
+}
+
+@font-face {
+  font-family: 'CerealBK';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_Bk.otf');
+}
+
+@font-face {
+  font-family: 'CerealBlk';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_Blk.otf');
+}
+
+@font-face {
+  font-family: 'CerealLt';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_Lt.otf');
+}
+
+@font-face {
+  font-family: 'CerealMd';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_Md.otf');
+}
+
+@font-face {
+  font-family: 'CerealXBd';
+  font-style: normal;
+  src: url('./assets/AirbnbCereal_W_XBd.otf');
+}
