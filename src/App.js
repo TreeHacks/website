@@ -367,6 +367,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         // Scrolling up
         header.style.transform = 'translateY(0)'; 
         header.style.backgroundColor = 'white'; // setting background to white when shown
+
       }
 
       setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
@@ -661,39 +662,6 @@ We reimburse flights, have the best-rated hackathon food in the country, bring i
             </div>
           </div>
           {/* New Row */}
-          <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://you.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
-                  <img src={You} className="object-contain" />
-                </div>
-              </a>
-            </div>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://skydio.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
-                  <img src={Skydio} className="object-contain" />
-                </div>
-              </a>
-            </div>
-            <div className='lg:w-4/12 w-full'>
-              <a href="https://www.cadence.com/en_US/home.html" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
-                  <img src={Cadence} className="object-contain" />
-                  <div className='absolute p-8 rounded-md bg-white top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition duration-300 overflow-scroll'>
-                    <p className='text-sm font-CerealBK mb-2'>
-                      Cadence is a pivotal leader in electronic systems design, building upon more than 30 years of computational software expertise. The company applies its underlying Intelligent System Design strategy to deliver software, hardware, and IP that turn design concepts into reality.
-                    </p>
-                    <p className='text-sm font-CerealBK mb-2'>
-                      Cadence customers are the world’s most innovative companies, delivering extraordinary electronic products from chips to boards to complete systems for the most dynamic market applications including hyperscale computing, 5G communications, automotive, mobile, aerospace, consumer, industrial, and healthcare.
-                    </p>
-                    <p className='text-sm font-CerealBK'>
-                      For eight years in a row, Fortune magazine has named Cadence one of the 100 Best Companies to Work For.                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
             <div className='lg:w-4/12 w-full lg:mr-4'>
@@ -726,30 +694,6 @@ We reimburse flights, have the best-rated hackathon food in the country, bring i
                     <p className='text-sm font-CerealBK'>
                       Guided by national partners experienced in safety technology and advanced healthcare analytics, the Challenge will fund awards within existing competitions, hackathons, and startup weekends as either an off-the-shelf award package or as a new award.                    </p>
                   </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          {/* New Row */}
-          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://www.aptoslabs.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
-                  <img src={Aptos} className="object-contain" />
-                </div>
-              </a>
-            </div>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://www.near.org/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-11 relative'>
-                  <img src={Near} className="object-contain" />
-                </div>
-              </a>
-            </div>
-            <div className='lg:w-4/12 w-full'>
-              <a href="https://aspecta.id/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
-                  <img src={Aspecta} className="object-contain" />
                 </div>
               </a>
             </div>
