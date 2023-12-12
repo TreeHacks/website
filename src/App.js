@@ -1,24 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import moment from 'moment';
 import Countdown from './Countdown';
-import Dropdown from './Dropdown';
-import DropdownBox from './DropdownBox';
 
 import { ReactComponent as Logo } from './assets/logo.svg';
-import { ReactComponent as Branch2 } from './assets/branch2.svg';
-import { ReactComponent as Circle } from './assets/circle_pattern.svg';
-import { ReactComponent as Triangle } from './assets/trianglepattern.svg';
-import { ReactComponent as Square } from './assets/squares.svg';
-import { ReactComponent as Accent } from './assets/accent.svg';
-import { ReactComponent as Accent2 } from './assets/accent2.svg';
-import { ReactComponent as CircleIntersection } from './assets/circleintersection.svg';
-
-import { ReactComponent as EntertainmentSVG } from './assets/tracks/entertainment.svg';
-import { ReactComponent as BlockchainSVG } from './assets/tracks/blockchain.svg';
-import { ReactComponent as HealthcareSVG } from './assets/tracks/healthcare.svg';
-import { ReactComponent as SustainabilitySVG } from './assets/tracks/sustainability.svg';
-import { ReactComponent as EducationSVG } from './assets/tracks/education.svg';
-
 import entertainmentTrack from './assets/tracks/entertainment.png'; 
 import healthcareTrack from './assets/tracks/healthcare.png'; 
 import blockchainTrack from './assets/tracks/privacy.png'; 
@@ -26,30 +10,11 @@ import privacyTrack from './assets/tracks/blch.png';
 import sustainabilityTrack from './assets/tracks/sustainability.png'; 
 import educationTrack from './assets/tracks/education.png'; 
 
-import { ReactComponent as ComputerTopSVG } from './assets/projector.svg';
-import { ReactComponent as NeuralHashSVG } from './assets/neural.svg';
-import { ReactComponent as PowerHouseSVG } from './assets/plug.svg';
-import { ReactComponent as DocodialSVG } from './assets/medical.svg';
-import { ReactComponent as MarvelSCG } from './assets/man.svg';
-
-import { ReactComponent as AEye } from './assets/skin.svg';
-import { ReactComponent as LucidSVG } from './assets/drum.svg';
-
 import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
-import sideImage1 from './assets/photos/Treehacks-181.webp';
-import sideImage2 from './assets/photos/Treehacks-347.webp';
 import globeImage from './assets/globe.svg';
 import hootowImg from './assets/hootow.png'
 import stats from './assets/stats.png';
-
-import countries_stat from './assets/hexagons/countries.png';
-import universities_stat from './assets/hexagons/universities.png';
-import companies_stat from './assets/hexagons/companies.png';
-import prizes_stat from './assets/hexagons/prizes.png';
-import projects_stat from './assets/hexagons/projects.png';
-import hackers_stat from './assets/hexagons/hackers.png';
-import mentors_stat from './assets/hexagons/mentors.png';
 
 import scroll1 from './assets/photos/scroll1.webp';
 import scroll2 from './assets/photos/scroll2.webp';
@@ -59,11 +24,7 @@ import scroll5 from './assets/photos/scroll5.webp';
 import scroll6 from './assets/photos/scroll6.webp';
 import scroll7 from './assets/photos/scroll7.webp';
 
-import backgroundVideo from './assets/videos/treehacks_compressed.mp4';
-import robotVideo from './assets/videos/robot_compressed.mp4';
 import introVideo from './assets/videos/compressed_intro.mp4';
-import signVideo from './assets/videos/sign_compressed.mp4';
-import particlevid from './assets/videos/particles_compressed.mp4';
 import './App.css';
 
 import Convex from './assets/logos/convex.webp';
@@ -74,7 +35,7 @@ import Roblox from './assets/logos/roblox.webp';
 import Neo from './assets/logos/neo.webp';
 import Parrot from './assets/logos/parrot.webp';
 
-import { prizes } from './prizes';
+// import { prizes } from './prizes';
 
 import { AiFillGithub, AiFillInstagram, AiOutlineFacebook, AiOutlineMedium, AiOutlineTwitter, AiFillStar } from "react-icons/ai";
 
@@ -475,7 +436,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative pb-32" id="tracks">
+      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32" id="tracks">
         <div className="lg:items-center flex flex-col">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
           from-green-400 via-teal-300 to-green-400
@@ -507,7 +468,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
-                  <p className='text-white text-md font-CerealBK'><i>Powered by Terra</i></p>
+                  <p className='text-white text-md font-CerealBK'><i>Powered by TerraAPI</i></p>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
                   <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
@@ -583,7 +544,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         </section>
 
-        <section className="w-full lg:pl-40 pr450 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative 8 pb-32" id="sponsors">
+        <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative 8 pb-32" id="sponsors">
         <div className="lg:items-center flex flex-col">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
           from-green-400 via-teal-300 to-green-400
@@ -794,7 +755,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
 
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b">
-        <h1 className='font-semibold text-md font-CerealBK text-slate-500 text-center'>Made with ❤️ by the TreeHacks team</h1>
+        <h1 className='font-semibold text-md font-CerealBK text-white text-center'>Made with ❤️ by the TreeHacks team</h1>
       </div>
     </div >
   );
