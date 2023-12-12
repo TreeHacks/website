@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 const calculateTimeLeft = (targetDate) => {
-  // UTC offset for Pacific Standard Time (PST) is -8 hours
-  const utcOffset = -8;
+  // Convert the target date to a Date object in the user's local time zone
+  const targetDateLocal = new Date(targetDate);
 
-  // Convert target date to UTC and adjust for PST
-  const targetDateUTC = new Date(targetDate).getTime() + (utcOffset * 60 * 60 * 1000);
+  // Adjust the target time to 12 AM (midnight) PST
+  targetDateLocal.setHours(0, 0, 0, 0); // Set the time to midnight
+  const offsetPST = 8; // PST is UTC-8 hours
+  targetDateLocal.setHours(targetDateLocal.getHours() + offsetPST);
 
-  // Get current UTC time
-  const nowUTC = new Date().getTime();
+  // Get the current time in UTC
+  const nowUTC = new Date();
 
-  // Calculate the difference
-  const difference = targetDateUTC - nowUTC;
+  // Calculate the difference in milliseconds
+  const difference = targetDateLocal - nowUTC;
 
   let timeLeft = {};
 
@@ -46,7 +48,10 @@ const Countdown = ({ targetDate }) => {
     <div className="countdown">
       <h1 className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white'>
         {days}d {hours}h {minutes}m {seconds}s
-        {timeLeft.value} {timeLeft.unit}
       </h1>
     </div>
   );
+};
+
+export default Countdown;
+
