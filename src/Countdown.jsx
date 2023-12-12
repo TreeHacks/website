@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-const calculateTimeLeft = (targetDate) => {
-  // Convert the target date to a Date object in the user's local time zone
-  const targetDateLocal = new Date(targetDate);
-
-  // Adjust the target time to 12 AM (midnight) PST
-  targetDateLocal.setHours(0, 0, 0, 0); // Set the time to midnight
-  const offsetPST = 8; // PST is UTC-8 hours
-  targetDateLocal.setHours(targetDateLocal.getHours() + offsetPST);
+const calculateTimeLeft = (targetDateUTCString) => {
+  // Convert the target UTC date string to a Date object
+  const targetDateUTC = new Date(targetDateUTCString);
 
   // Get the current time in UTC
   const nowUTC = new Date();
 
   // Calculate the difference in milliseconds
-  const difference = targetDateLocal - nowUTC;
+  const difference = targetDateUTC - nowUTC;
 
   let timeLeft = {};
 
