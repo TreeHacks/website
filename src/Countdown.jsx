@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react';
 
 const calculateTimeLeft = (targetDate) => {
-  const targetDateUTC = new Date(targetDate).getTime();
+  // UTC offset for Pacific Standard Time (PST) is -8 hours
+  const utcOffset = -8;
+
+  // Convert target date to UTC and adjust for PST
+  const targetDateUTC = new Date(targetDate).getTime() + (utcOffset * 60 * 60 * 1000);
+
+  // Get current UTC time
   const nowUTC = new Date().getTime();
+
+  // Calculate the difference
   const difference = targetDateUTC - nowUTC;
 
   let timeLeft = {};
-  if (difference > 0) {
-    const minutesLeft = Math.floor(difference / (1000 * 60));
-    const hoursLeft = Math.floor(minutesLeft / 60);
-    const daysLeft = Math.floor(hoursLeft / 24);
 
-    if (daysLeft > 0) {
-      timeLeft = { value: daysLeft, unit: daysLeft === 1 ? 'day' : 'days' };
-    } else if (hoursLeft > 0) {
-      timeLeft = { value: hoursLeft, unit: hoursLeft === 1 ? 'hour' : 'hours' };
-    } else {
-      timeLeft = { value: minutesLeft, unit: minutesLeft === 1 ? 'minute' : 'minutes' };
-    }
+  if (difference > 0) {
+    timeLeft = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
   }
+
   return timeLeft;
 };
 
@@ -30,17 +35,18 @@ const Countdown = ({ targetDate }) => {
       setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
 
+    // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
   });
+
+  // Destructure the timeLeft object
+  const { days, hours, minutes, seconds } = timeLeft;
 
   return (
     <div className="countdown">
       <h1 className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white'>
+        {days}d {hours}h {minutes}m {seconds}s
         {timeLeft.value} {timeLeft.unit}
       </h1>
     </div>
   );
-};
-
-export default Countdown;
-
