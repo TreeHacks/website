@@ -447,17 +447,14 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! </p>
         </div>
 
-        <div className='pl-40 flex lg:flex-row flex-col lg:mb-12 mb-4'>
+        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4'>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={educationTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021.</p>
-                  <a href='https://devpost.com/software/catiator' target="_blank" className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -468,10 +465,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
-                  <p className='text-white text-md font-CerealBK'><i>Powered by TerraAPI</i></p>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
+                  <p className='text-white text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
                 </div>
               </div>
             </div>
@@ -482,9 +476,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -496,8 +488,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                 </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10">
-                </div>
               </div>
             </div>
           </div>
@@ -507,11 +497,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
-                  <p className='text-white text-md font-CerealBK'><i>Powered by Taisu</i></p>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018.</p>
-                  <a href='https://devpost.com/software/marvel-medical-dictionary' className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <p className='text-white text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
                 </div>
               </div>
             </div>
@@ -520,12 +506,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack} className="track_img lg:w-80 md:w-20 s:w-20"/>
+                  <img src={entertainmentTrack} className="track_img lg:w-60 md:w-20 s:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Entertainment & Interaction</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon.</p>
-                  <a href='https://devpost.com/software/energy-awareness-app' className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -534,8 +517,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 ">
                 </div>
               </div>
             </div>

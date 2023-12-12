@@ -103,6 +103,7 @@ body, html {
     display:none;
 }
 
+
 @media screen and (max-width: 768px) {
     .hexagon-img {
         width: 100px;
@@ -201,27 +202,14 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: all 1s;
-    transform-style: preserve-3d;
 }
 
 
-.card__front,
-.card__back {
+.card__front{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    color: white;
 }
-
-.card__back {
-    transform: rotateY(180deg);
-}
-
-
-
 
 *,
 *::before,
