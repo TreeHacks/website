@@ -483,7 +483,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
         </div>
         <div className=' flex lg:flex-row flex-col'>
-          <div className='last_box lg:w-4/12 lg:mr-8 mb-4 lg:mb-0'>
+          <div className='last_box lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
