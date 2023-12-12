@@ -103,6 +103,12 @@ body, html {
     display:none;
 }
 
+.card__front img {
+    max-width: 300px; 
+    max-height: 300px; 
+    height: auto; 
+}
+
 @media screen and (max-width: 768px) {
     .hexagon-img {
         width: 100px;
