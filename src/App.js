@@ -418,7 +418,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </div>
 
 
-      <section className="w-full flex flex-col relative lg:mt-8 pb-20" id="stats">
+      <section className="w-full flex flex-col relative lg:mt-8 lg:pb-20 xl:pb-10" id="stats">
 
         <div className="lg:items-center flex flex-col pl-40 pr-40">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
