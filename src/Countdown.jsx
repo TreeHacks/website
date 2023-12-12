@@ -30,17 +30,13 @@ const Countdown = ({ targetDate }) => {
       setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
 
-    // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
   });
-
-  // Destructure the timeLeft object
-  const { days, hours, minutes, seconds } = timeLeft;
 
   return (
     <div className="countdown">
       <h1 className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white'>
-        {days}d {hours}h {minutes}m {seconds}s
+        {timeLeft.value} {timeLeft.unit}
       </h1>
     </div>
   );
