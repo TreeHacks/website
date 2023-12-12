@@ -6,7 +6,6 @@ import { ReactComponent as Logo } from './assets/logo.svg';
 import entertainmentTrack from './assets/tracks/entertainment.png'; 
 import healthcareTrack from './assets/tracks/healthcare.png'; 
 import blockchainTrack from './assets/tracks/privacy.png'; 
-import privacyTrack from './assets/tracks/blch.png'; 
 import sustainabilityTrack from './assets/tracks/sustainability.png'; 
 import educationTrack from './assets/tracks/education.png'; 
 
@@ -314,7 +313,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         <div>
           <Logo />
         </div>
-        <div className='overflow-x-scroll h-20 flex items-center'>
+        <div className='h-20 flex items-center'>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
@@ -346,7 +345,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <span>Judges and Mentors</span>
             </a>
 
-            <a target="_blank" href="mailto:lmoberly@stannford.edu" class="secondary-button">
+            <a target="_blank" href="mailto:lmoberly@stanford.edu" class="secondary-button">
               <span>Sponsor</span>
             </a>
             
@@ -381,10 +380,10 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                   <div className="gradient-border w-3/4 rounded-lg right-20">
                     <img src={mainImage} className="small_img w-full h-full rounded-lg  z-10" />
                   </div>
-                  <div className="gradient-border z-20 absolute rounded-lg lg:right-20 lg:-bottom-32 scale-50 lg:scale-100 -bottom-16 right-10">
+                  <div className="gradient-border z-20 absolute rounded-lg lg:right-20 lg:-bottom-32 xl:-bottom-40 scale-50 lg:scale-100 -bottom-16 right-10">
                     <img src={main2Image} className=" small_img h-full rounded-lg  z-10" />
                   </div>
-                  <div className="absolute translucent-green-background w-300 rounded-lg lg:left-32 right-0 lg:-top-64  -top-20 -left-20 text_box">
+                  <div className="absolute translucent-green-background w-300 rounded-lg lg:left-32 right-0 lg:-top-64 xl:-top-50 -top-20 -left-20 text_box">
                     <p class="gradient-border-p p-8 font-CerealBK text-white text-lg text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
                   </div>
                 </div>
@@ -418,7 +417,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </div>
 
 
-      <section className="w-full flex flex-col relative lg:mt-8 pb-20" id="stats">
+      <section className="w-full flex flex-col relative lg:mt-8 lg:pb-20 xl:pb-10" id="stats">
 
         <div className="lg:items-center flex flex-col pl-40 pr-40">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
@@ -431,6 +430,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
 
         <div className="scroll-container">
+            <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
         </div>
@@ -491,7 +491,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
         </div>
         <div className=' flex lg:flex-row flex-col'>
-          <div className='last_box lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+          <div className='last_box lg:w-4/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
