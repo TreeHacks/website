@@ -314,7 +314,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         <div>
           <Logo />
         </div>
-        <div className='overflow-x-scroll h-20 flex items-center'>
+        <div className='h-20 flex items-center'>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
