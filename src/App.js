@@ -26,15 +26,6 @@ import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-12
 import sideImage1 from './assets/photos/Treehacks-181.webp';
 import sideImage2 from './assets/photos/Treehacks-347.webp';
 
-
-import countries_stat from './assets/hexagons/countries.png';
-import universities_stat from './assets/hexagons/universities.png';
-import companies_stat from './assets/hexagons/companies.png';
-import prizes_stat from './assets/hexagons/prizes.png';
-import projects_stat from './assets/hexagons/projects.png';
-import hackers_stat from './assets/hexagons/hackers.png';
-import mentors_stat from './assets/hexagons/mentors.png';
-
 import sajith from './assets/photos/sajith.webp';
 import karpathy from './assets/photos/karpathy.webp';
 import dan from './assets/photos/dan_schwartz.webp';
@@ -376,45 +367,6 @@ function App() {
               If you've ever had an idea that you wanted to bring to life, TreeHacks is the place to do it. We've got mentors from companies like Google, Facebook, and Microsoft to help you along the way. And if you're looking to see if your project can be something more, we'll help you flesh out your idea and get you started on the right path.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section class="xl:h-screen mb-10 lg:h-screen flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-15 pt-10" id="stats">
-          <h1 className='font-CerealXBd lg:text-4xl pb-5 text-3xl bg-clip-text text-black text-center'>Last year we had...</h1>
-
-          <div className="flex flex-col justify-center align-middle items-center px-10 py-8 relative mt-4 mx-10 lg:mx-0">
-
-          <Accent className='absolute -right-20 top-60 accent_confetti' />
-          <Accent2 className='absolute -left-20 top-60 accent_confetti' />
-          <div className="flex">
-              <div>
-                <img src={mentors_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-              </div>
-              <div>
-                <img src={projects_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-              </div>
-          </div>
-
-          <div className="flex">
-            <div>
-              <img src={prizes_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={hackers_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={companies_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-          </div>
-
-        <div className="flex">
-            <div>
-              <img src={universities_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-            <div>
-              <img src={countries_stat} className="hexagon-img w-30 hover:-translate-y-1 hover:-translate-x-1" />
-            </div>
-        </div>
         </div>
       </section>
 
