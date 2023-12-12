@@ -73,6 +73,12 @@ body, html {
     border-image: linear-gradient(to right, #1AF8F8, #00FF0A) 1 stretch;
 }
 
+.card__front img {
+    max-width: 100%; /* This ensures the image is responsive and scales with the parent container */
+    max-height: 300px; /* Replace 60px with your desired maximum height */
+    height: auto; /* This ensures the image keeps its aspect ratio */
+}
+
 /* Spinning for globe */
 @keyframes spin-slow {
     from {
