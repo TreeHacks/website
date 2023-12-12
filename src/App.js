@@ -443,7 +443,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           animate-text'>
             the tracks...
           </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
+          <p className='font-CerealBK text-white mb-32 lg:text-center lg:text-2xl text-md'>
           TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! </p>
         </div>
 
