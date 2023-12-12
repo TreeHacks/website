@@ -452,7 +452,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={educationTrack} className="lg:w-60 md:w-20"/>
+                  <img src={educationTrack} className="lg:w-60 xl:w-80 md:w-20"/>
                   <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -466,7 +466,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
+                  <img src={healthcareTrack} className="lg:w-60 md:w-20 xl:w-80"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
                   <p className='text-white text-md font-CerealBK'><i>Powered by TerraAPI</i></p>
                 </div>
@@ -480,7 +480,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
+                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20 xl:w-80"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
@@ -505,7 +505,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20"/>
+                  <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20 xl:w-60"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
                   <p className='text-white text-md font-CerealBK'><i>Powered by Taisu</i></p>
                 </div>
@@ -520,7 +520,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack} className="track_img lg:w-80 md:w-20 s:w-20"/>
+                  <img src={entertainmentTrack} className="track_img lg:w-80 md:w-20 s:w-20 xl:w-60"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Entertainment & Interaction</h1>
                 </div>
                 <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
