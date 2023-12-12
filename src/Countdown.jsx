@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const calculateTimeLeft = (targetDate) => {
   const difference = +new Date(targetDate) - +new Date();
-
   let timeLeft = {};
 
   if (difference > 0) {
@@ -12,6 +11,8 @@ const calculateTimeLeft = (targetDate) => {
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
+  } else {
+    console.error('Target date is either invalid or in the past');
   }
 
   return timeLeft;
@@ -25,12 +26,14 @@ const Countdown = ({ targetDate }) => {
       setTimeLeft(calculateTimeLeft(targetDate));
     }, 1000);
 
-    // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
   });
 
-  // Destructure the timeLeft object
   const { days, hours, minutes, seconds } = timeLeft;
+
+  if (!days && !hours && !minutes && !seconds) {
+    return <div>Loading...</div>; // or any placeholder
+  }
 
   return (
     <div className="countdown">
@@ -42,3 +45,4 @@ const Countdown = ({ targetDate }) => {
 };
 
 export default Countdown;
+
