@@ -69,13 +69,13 @@ function App() {
           // Condition handling
           if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
             accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
-            header.querySelector(".fas").classList.remove("fa-plus");
-            header.querySelector(".fas").classList.add("fa-minus");
+            header.querySelector(".faqs").classList.remove("fa-plus");
+            header.querySelector(".faqs").classList.add("fa-minus");
             header.parentElement.classList.add("bg-indigo-50");
           } else {
             accordionContent.style.maxHeight = `0px`;
-            header.querySelector(".fas").classList.add("fa-plus");
-            header.querySelector(".fas").classList.remove("fa-minus");
+            header.querySelector(".faqs").classList.add("fa-plus");
+            header.querySelector(".faqs").classList.remove("fa-minus");
             header.parentElement.classList.remove("bg-indigo-50");
           }
         });
@@ -711,7 +711,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </p>
 
         <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is a Hackathon?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -723,7 +723,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>How do I apply?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -734,7 +734,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>Who can come?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -744,7 +744,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What does it cost?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -755,7 +755,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>How do travel reimbursements work?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -766,7 +766,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is the TreeHacks code of conduct?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -782,7 +782,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </p>
 
           <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What if I don't know how to code?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -792,7 +792,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What if I don't have a team or idea?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -802,7 +802,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What can I build?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -812,7 +812,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is the max team size?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
