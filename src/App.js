@@ -392,21 +392,35 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
       </section>
 
-      <section className=" pt-16 lg:pl-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative lg:mt-8 about mobile_about">
-          <div className="lg:items-center flex flex-col pr-20 ">
+      <section className="pt-16 flex flex-col relative pb-8 lg:mt-8 about mobile_about">
+          <div className="items-center flex flex-col">
             <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
             from-green-400 via-teal-300 to-green-400
             animate-text'>
               Stanford's premier hackathon
             </h1>
-            <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
+            <p className='font-CerealBK text-white text-center lg:text-2xl text-md'>
               It’s simple. The country’s brightest engineering students are flown to Stanford’s campus to build solutions to the world’s largest challenges for 36 hours straight.
             </p>
-            <p class="font-CerealBK text-white text-lg text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
+          </div>
+          <div className="z-20 absolute rounded-lg lg:right-20 lg:-bottom-32 xl:-bottom-40 scale-50 lg:scale-100 -bottom-16 right-10">
+              <img src={main2Image} className=" small_img h-full rounded-lg  z-10" />
+          </div>
+          <div className="items-center flex flex-col lg:w-6/12 lg:pr-14 pt-10 relative">
+            <div>
+              <img src={mainImage} className="rounded-lg brightness-75 shadow-2xl" />
+              <div className="absolute overflow-hidden rounded-lg shadow-2xl lg:right-20 lg:-bottom-16 scale-50 lg:scale-100 -bottom-16 right-0">
+                <img src={main2Image} className="object-cover" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col lg:w-6/12 justify-center lg:pt-0 pt-16">
+          <p class="pb-10 font-CerealBK text-white text-md text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
+
           </div>
       </section>
 
-      <div class="horizontal-scrolling-banner pt-72 lg:pb-32">
+      <div class="scrollImg horizontal-scrolling-banner lg:pt-72 lg:pb-32">
         <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
         <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
         <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
@@ -416,8 +430,26 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         <img src={scroll7} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250pxs] w-[250px] mr-12" />
       </div>
 
+      <section className="pt-16 flex flex-col relative pb-8 lg:mt-8 about mobile_about">
+          <div className="items-center flex flex-col">
+            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
+            from-green-400 via-teal-300 to-green-400
+            animate-text'>
+              at treehacks...
+            </h1>
+            <p className='font-CerealBK text-white text-center lg:text-2xl text-md'>
+            We reimburse flights, have the best-rated hackathon food in the country, bring in world-renowned guest speakers, throw fun events (hello puppy hour), and will have over...
+            </p>
+          </div>
+          <div className="scroll-container">
+            <img src={stats} alt="Scrolling Image" />
+            <img src={stats} alt="Scrolling Image" />
+            <img src={stats} alt="Scrolling Image" />
+        </div>
+      </section>
 
-      <section className="w-full flex flex-col relative lg:mt-8 lg:pb-20 xl:pb-10" id="stats">
+
+      <section className="w-full flex flex-col relative lg:mt-8 lg:pb-20 xl:pb-10 about" id="stats">
 
         <div className="lg:items-center flex flex-col pl-40 pr-40">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
@@ -436,7 +468,64 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32" id="tracks">
+      <section className="w-full lex flex-col relative pb-16 lg:pb-32 mobile_about" id="tracks">
+        <div className="items-center flex flex-col">
+            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
+            from-green-400 via-teal-300 to-green-400
+            animate-text'>
+            the tracks...
+            </h1>
+            <p className='font-CerealBK text-white text-center lg:text-2xl text-md'>
+            TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! </p>
+        </div>
+
+        <div className='flex flex-col'>
+          <div className='flex lg:flex-row flex-col'>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={educationTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
+              <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={sustainabilityTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
+              <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={healthcareTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
+              <p className='text-white text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
+            </div>
+
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={blockchainTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
+              <p className='text-white text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
+            </div>
+
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={entertainmentTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Entertainment and Interaction</h1>
+              <p className='text-white text-md font-CerealBK'><i> placeholder </i></p>
+            </div>
+
+          </div>
+
+        </div>
+
+        </section>
+
+      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32 about" id="tracks">
         <div className="lg:items-center flex flex-col">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
           from-green-400 via-teal-300 to-green-400
@@ -525,21 +614,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         </section>
 
-        <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative 8 pb-32" id="sponsors">
-        <div className="lg:items-center flex flex-col">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
+        <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-32" id="sponsors">
+        <div className="items-center flex flex-col">
+            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
+            from-green-400 via-teal-300 to-green-400
+            animate-text'>
             our sponsors...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-          TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
-          </p>
+            </h1>
+            <p className='font-CerealBK lg:mb-20 text-white text-center lg:text-2xl text-md'>
+            TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
+            </p>
         </div>
-        <div className="w-full">
+        <div className="pt-16 lg:pt-8 sponsorSection">
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-12/12 w-full lg:mr-0'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="https://tryterra.co/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
                   <img src={Terra} className="object-contain" />
@@ -549,7 +638,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
             {/* New Row */}
             <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-12/12 w-full lg:mr-0'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="http://www.taisu.io/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
                   <img src={Taisu} className="object-contain" />
@@ -559,15 +648,15 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='lg:w-6/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
               <a href="https://convex.dev/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
                   <img src={Convex} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-6/12 w-full'>
-              <a href="www.trychroma.com" target="_blank">
+            <div className='sponsorCard lg:w-6/12 w-full'>
+              <a href="https://www.trychroma.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
                   <img src={Chroma} className="object-contain" />
                 </div>
@@ -576,21 +665,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
             {/* New Row */}
             <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
               <a href="https://corp.roblox.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
                   <img src={Roblox} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
               <a href="https://neo.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
                   <img src={Neo} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-4/12 w-full'>
+            <div className='sponsorCard lg:w-4/12 w-full'>
               <a href="https://www.parrot.com/us/drones" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
                   <img src={Parrot} className="object-contain" />
@@ -602,26 +691,27 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
       <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 -right-10 absolute" alt="Hoover Tower" />
-        <div className="lg:items-center flex flex-col">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
+      <div className="items-center flex flex-col">
+            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
+            from-green-400 via-teal-300 to-green-400
+            animate-text'>
             faqs...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-xl text-md'>
+            </h1>
+            <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-xl text-md'>
           Email us at hello@treehacks.com if we missed anything!
           </p>
         </div>
 
+        <div className="faqSection">
         <p className='font-CerealXBd mb-20r lg:text-2xl text-md bg-gradient-to-r bg-clip-text text-transparent
           text-teal-300'>
           logistics
         </p>
 
         <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is a Hackathon?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -633,7 +723,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>How do I apply?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -644,7 +734,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>Who can come?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -654,7 +744,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What does it cost?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -665,7 +755,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>How do travel reimbursements work?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -676,7 +766,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is the TreeHacks code of conduct?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -692,7 +782,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </p>
 
           <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What if I don't know how to code?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -702,7 +792,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What if I don't have a team or idea?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -712,7 +802,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What can I build?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -722,7 +812,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
               <h3>What is the max team size?</h3>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
@@ -731,6 +821,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 </p>
             </div>
           </div>
+
+        </div>
 
       </section>
 
