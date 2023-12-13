@@ -103,6 +103,24 @@ body, html {
     display:none;
 }
 
+@media screen and (min-width: 1500px) {
+    .text_box {
+        position: absolute;
+        right: 80px;
+    }
+
+    .mainImg {
+        width: 50%;
+        position: relative;
+        right: 40px;
+        top: -60px;
+    }
+
+    .main2Img {
+        position: absolute;
+        right: 240px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .hexagon-img {
