@@ -32,6 +32,7 @@ import Terra from './assets/logos/terra.webp';
 import Chroma from './assets/logos/chroma.webp';
 import Roblox from './assets/logos/roblox.webp';
 import Neo from './assets/logos/neo.webp';
+import Canva from './assets/logos/canva.webp';
 import Parrot from './assets/logos/parrot.webp';
 
 // import { prizes } from './prizes';
@@ -673,9 +674,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               </a>
             </div>
             <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://neo.com/" target="_blank">
+              <a href="https://www.canva.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
-                  <img src={Neo} className="object-contain" />
+                  <img src={Canva} className="object-contain" />
                 </div>
               </a>
             </div>
