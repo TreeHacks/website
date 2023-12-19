@@ -122,7 +122,23 @@ body, html {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1247px) {
+    .text_box {
+        position: absolute;
+        right: 80px;      
+        font-size: small;  
+    }
+}
+
+@media screen and (min-width: 1248px) {
+    .text_box {
+        position: absolute;
+        right: 80px;      
+        font-size: medium;  
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .hexagon-img {
         width: 100px;
     }
