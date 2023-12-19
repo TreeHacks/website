@@ -385,7 +385,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                     <img src={main2Image} className="small_img h-full rounded-lg  z-10" />
                   </div>
                   <div className="absolute translucent-green-background w-300 rounded-lg lg:left-32 right-0 lg:-top-64 xl:-top-50 -top-20 -left-20 text_box">
-                    <p class="gradient-border-p p-8 font-CerealBK text-white text-lg text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
+                    <p class="gradient-border-p p-8 font-CerealBK text-white text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
                   </div>
                 </div>
               </div>
