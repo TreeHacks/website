@@ -318,7 +318,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Sponsors</a>
+          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#sponsors'>Sponsors</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023</a>
           <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://root.treehacks.com/'>Apply</a>
@@ -385,7 +385,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                     <img src={main2Image} className="small_img h-full rounded-lg  z-10" />
                   </div>
                   <div className="absolute translucent-green-background w-300 rounded-lg lg:left-32 right-0 lg:-top-64 xl:-top-50 -top-20 -left-20 text_box">
-                    <p class="gradient-border-p p-8 font-CerealBK text-white text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
+                    <p class="gradient-border-p p-8 font-CerealBK text-white"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
                   </div>
                 </div>
               </div>
@@ -469,6 +469,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
+        {/* Tracks Section */}
+        <section  id="tracks" />
       <section className="w-full lex flex-col relative pb-16 lg:pb-32 mobile_about" id="tracks">
         <div className="items-center flex flex-col">
             <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
@@ -517,7 +519,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <img src={entertainmentTrack} className='w-40 h-auto'/>
               </div>
               <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Entertainment and Interaction</h1>
-              <p className='text-white text-md font-CerealBK'><i> placeholder </i></p>
             </div>
 
           </div>
@@ -526,7 +527,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32 about" id="tracks">
+      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32 about">
         <div className="lg:items-center flex flex-col">
           <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
           from-green-400 via-teal-300 to-green-400
@@ -537,36 +538,37 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! </p>
         </div>
 
-        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4'>
+        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4 justify-beg'>
+        <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={educationTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Education </h1>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={educationTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                <div className="track-icon">
+                  <img src={healthcareTrack} className="track-icon lg:w-60 md:w-20"/>
+                  </div>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Healthcare </h1>
+                  <p className='text-white text-md text-center font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI </a> </i></p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='lg:w-3/12'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
-                  <p className='text-white text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='lg:w-3/12'>
-            <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={sustainabilityTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Sustainability </h1>
+                  <p className='text-white text-md text-center font-CerealBK'><i>by <a href="https://ecopreneurship.stanford.edu/" className='underline'>Stanford Ecopreneurship </a> </i></p>
                 </div>
               </div>
             </div>
@@ -583,22 +585,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20"/>
+              <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                  <img src={blockchainTrack} className="track-icon lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
                   <p className='text-white text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='lg:w-3/12'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack} className="track_img lg:w-60 md:w-20 s:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Entertainment & Interaction</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={entertainmentTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Entertainment & Interaction </h1>
                 </div>
               </div>
             </div>
@@ -612,9 +613,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
         </div>
-
         </section>
 
+        {/* Sponsors Section */}
         <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-32" id="sponsors">
         <div className="items-center flex flex-col">
             <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
@@ -692,6 +693,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
+      {/* FAQs SECTION */}
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
       <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 -right-10 absolute" alt="Hoover Tower" />
       <div className="items-center flex flex-col">

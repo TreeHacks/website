@@ -365,3 +365,23 @@ body, html {
   .secondary-button {
     font-size: smaller; /* Adjust as needed */
   }
+
+
+/* Images */
+.track-icon {
+    display: block;
+    width: auto !important;
+    max-height: 160px !important;
+}
+.track-container {
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+
+
+.justify-beg {
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
+}
