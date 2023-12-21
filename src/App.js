@@ -12,7 +12,7 @@ import educationTrack from './assets/tracks/education.png';
 import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129.webp';
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import globeImage from './assets/globe.svg';
-import hootowImg from './assets/hootow.png'
+import hootowImg from './assets/lightbulb.png'
 import sechootowImg from './assets/sec1_hootow.png'
 import stats from './assets/stats.png';
 
@@ -330,13 +330,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
     <div className="overflow-hidden scroll-smooth">
       <div className="h-20 flex items-center lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
         <div className='pt-10'>
-          <Logo />
+          <a href="#home"><Logo /> </a>
         </div>
         <div className='h-20 flex items-center pt-10'>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
-          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Sponsors</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#sponsors'>Sponsors</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://root.treehacks.com/'>Apply</a>
@@ -344,7 +344,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </div>
 
       <section className="w-full pt-36 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb lg:items-center">
-      <img src={sechootowImg} className="z-0 right-5 top-4 absolute" alt="Hoover Tower" />
+      <img src={sechootowImg} className="z-0 right-5 top-4 absolute dissapearWhenSmall" alt="Hoover Tower" />
 
         <div className="container mx-auto px-4">
             <h1 className='text-center font-Raleway font-extrabold mb-4 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
@@ -353,10 +353,12 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <p className='description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%', margin: 'auto'}}>
                 The country’s brightest engineering students are flown to Stanford’s campus <br></br> to build solutions to the world’s largest challenges for 36 hours straight.           
             </p>
+            <p className='description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%', margin: 'auto'}}>
+            </p>
             <div className="button-container text-center mt-4">
-                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]">Apply to Hack</button>
-                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]">Sponsor</button>
-                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]">Judges/Mentor</button>
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://root.treehacks.com/"> Apply to Hack </a> </button>
+                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="mailto:lmoberly@stanford.edu"> Sponsor </a></button>
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://forms.gle/R936eYcAMqHm3xft7">Judges/Mentor</a></button>
               </div>
         </div>
       </section>
@@ -373,7 +375,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         <div className='translate-x-[10%] flex flex-row items-center w-full justify-content: start'>
           <div className='lg:w-5/6 z-auto'>
             <div className="inline-block">
-              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 16th-18th 2024 @ Stanford University</p>
+              <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-lg'>February 16th-18th 2024 @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
             </div> 
             <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2024-02-16T00:00:00" />            
@@ -398,18 +400,18 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </h1>        
           <div className='z-10 w-full flex relative lg:flex-row flex-col'>
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Applying" section="prizes" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
-            <QuickOption disabled={false} title="Learning" section="sponsors" description="Workshops beginning a week before the hackathon, hackpacks, and workshops during give you a ton of opportunites to learn new skills! Plus amazing mentors from the most innovative companies!" />
+            <QuickOption disabled={false} title="Applying" link="https://root.treehacks.com/" section="prizes" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
+            <QuickOption disabled={false} title="Learning" link="https://github.com/TreeHacks" description="Workshops beginning a week before the hackathon, hackpacks, and workshops during give you a ton of opportunites to learn new skills! Plus amazing mentors from the most innovative companies!" />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Transportation" link="https://treehacks-2023.devpost.com/" description="We provide a bus for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
-            <QuickOption disabled={false} title="Hacking" link="https://treehacks.notion.site/Pre-hackathon-Workshops-be7248185a4a406e99fb238ce624c5d4" description="Verticals over horizontals- focus on the problem, dream big. Check out Tracks to begin ideating! Hardware, resources, APIs, prizes, mentors, sponsors- we've got you covered!" />
+            <QuickOption disabled={false} title="Transportation" link="https://docs.google.com/document/d/16Vq6pqmCXeriatfDwxq8TBbw4yeUs_LurH7URjh5IOw/edit?usp=sharing" description="We provide a bus for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
+            <QuickOption disabled={false} title="Hacking" link="https://treehacks-2023.devpost.com/"  description="Verticals over horizontals- focus on the problem, think big. Check out Tracks to begin ideating! Hardware, resources, APIs, prizes, mentors, sponsors- we've got you covered!" />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Teams" link="https://treehacks.notion.site/Problem-Statements-b51eb030b1934d6c9dcd557de6428652" description="Teams can be 1-4 people. You are accepted individually, not as a team. Once accepted, you'll have access to our new team-matching portal and we'll also have events at the hackathon to help you form teams!" />
-            <QuickOption disabled={false} title="The Rest" link="https://live.treehacks.com/apisresources" description="We've got some yummmm food planned for the event and have designated sleeping spaces. On top of that, some fun events for you to relax- hello puppy hour, stargazing, the Stanford dish hike!" />
+            <QuickOption disabled={false} title="Teams" description="Teams can be 1-4 people. You are accepted individually, not as a team. Once accepted, you'll have access to our new team-matching portal and we'll also have events at the hackathon to help you form teams!" />
+            <QuickOption disabled={false} title="The Rest" description="We've got some yummmm food planned for the event and have designated sleeping spaces. On top of that, some fun events for you to relax- hello puppy hour, stargazing, the Stanford dish hike!" />
           </div>
         </div>
       </section>
@@ -419,7 +421,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 The Tracks
           </h1>   
-          <p className='mb-16 description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+          <p className='tracksDesc mb-16 description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
           Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
             </p>
         </div>
@@ -505,13 +507,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
       <section className="w-full lex flex-col relative pb-8 mobile_about" id="tracks">
         <div className="items-center flex flex-col">
-            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-            from-green-400 via-teal-300 to-green-400
-            animate-text'>
-            the tracks...
-            </h1>
-            <p className='font-CerealBK text-white text-center lg:text-2xl text-md'>
-            TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
+        <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                The Tracks
+          </h1>  
+            <p className='mb-16 description font-bold text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+          Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
             </p>
         </div>
 
@@ -521,37 +521,37 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div className="flex justify-center items-center">
                 <img src={educationTrack} className='w-40 h-auto'/>
               </div>
-              <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
+              <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
               <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
             </div>
             <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
               <div className="flex justify-center items-center">
                 <img src={sustainabilityTrack} className='w-40 h-auto'/>
               </div>
-              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability</h1>
               <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
             </div>
             <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
               <div className="flex justify-center items-center">
                 <img src={healthcareTrack} className='w-40 h-auto'/>
               </div>
-              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
-              <p className='text-white text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
+              <p className='text-black text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
             </div>
 
             <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
               <div className="flex justify-center items-center">
                 <img src={blockchainTrack} className='w-40 h-auto'/>
               </div>
-              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
-              <p className='text-white text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Blockchain & Security </h1>
+              <p className='text-black text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
             </div>
 
             <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
               <div className="flex justify-center items-center">
                 <img src={entertainmentTrack} className='w-40 h-auto'/>
               </div>
-              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Entertainment and Interaction</h1>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Entertainment and Interaction</h1>
             </div>
 
           </div>
@@ -569,7 +569,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
-            
+            <img src={stats} alt="Scrolling Image" />
         </div>
       </section>
 
@@ -649,9 +649,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
-
-      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
-      <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 -right-10 absolute" alt="Hoover Tower" />
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative" id="faqs">
+      <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
         <div className="lg:items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 FAQs
@@ -668,7 +667,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         <div class="font-CerealBK text-lg text-black pt-5">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What is a Hackathon?
               </p>
             </div>
@@ -682,7 +681,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+              <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 How do I apply?
               </p>
             </div>
@@ -695,7 +694,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 Who can come?
               </p>
             </div>
@@ -707,7 +706,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What does it cost?
               </p>
             </div>
@@ -720,7 +719,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 How do travel reimbursements work?
               </p>
             </div>
@@ -733,7 +732,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What is the TreeHacks code of conduct?
               </p>
             </div>
@@ -750,7 +749,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black pt-5">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What if I don't know how to code?
               </p>
             </div>
@@ -762,7 +761,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What if I don't have a team or idea?
               </p>
             </div>
@@ -774,7 +773,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What can I build?
               </p>
             </div>
@@ -786,7 +785,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What is the max team size?
               </p>
             </div>

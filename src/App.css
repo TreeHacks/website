@@ -104,6 +104,17 @@ body, html {
     display:none;
 }
 
+@media screen and (max-width: 1200px) {
+    .dissapearWhenSmall{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .tracksDesc{
+        margin-bottom: 200px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .hexagon-img {
