@@ -405,7 +405,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Transportation" link="https://docs.google.com/document/d/16Vq6pqmCXeriatfDwxq8TBbw4yeUs_LurH7URjh5IOw/edit?usp=sharing" description="We provide busses for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
+            <QuickOption disabled={false} title="Transportation" description="We provide busses for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap.More details soon!" />
             <QuickOption disabled={false} title="Hacking" link="https://treehacks-2023.devpost.com/"  description="Verticals over horizontals- focus on the problem, think big. Check out Tracks to begin ideating! Hardware, resources, APIs, prizes, mentors, sponsors- we've got you covered!" />
           </div>
 
