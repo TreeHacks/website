@@ -400,17 +400,17 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </h1>        
           <div className='z-10 w-full flex relative lg:flex-row flex-col'>
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Applying" link="https://root.treehacks.com/" section="prizes" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
+            <QuickOption disabled={false} title="Applying" link="https://root.treehacks.com/" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
             <QuickOption disabled={false} title="Learning" link="https://github.com/TreeHacks" description="Workshops beginning a week before the hackathon, hackpacks, and workshops during give you a ton of opportunites to learn new skills! Plus amazing mentors from the most innovative companies!" />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Transportation" link="https://docs.google.com/document/d/16Vq6pqmCXeriatfDwxq8TBbw4yeUs_LurH7URjh5IOw/edit?usp=sharing" description="We provide a bus for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
+            <QuickOption disabled={false} title="Transportation" link="https://docs.google.com/document/d/16Vq6pqmCXeriatfDwxq8TBbw4yeUs_LurH7URjh5IOw/edit?usp=sharing" description="We provide busses for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
             <QuickOption disabled={false} title="Hacking" link="https://treehacks-2023.devpost.com/"  description="Verticals over horizontals- focus on the problem, think big. Check out Tracks to begin ideating! Hardware, resources, APIs, prizes, mentors, sponsors- we've got you covered!" />
           </div>
 
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Teams" description="Teams can be 1-4 people. You are accepted individually, not as a team. Once accepted, you'll have access to our new team-matching portal and we'll also have events at the hackathon to help you form teams!" />
+            <QuickOption disabled={false} title="Teams" description="Teams are 1-4 people. You are accepted individually, not as a team. Find and register teams on our new 'teams' portal and we'll have events at the hackathon for team-forming!" />
             <QuickOption disabled={false} title="The Rest" description="We've got some yummmm food planned for the event and have designated sleeping spaces. On top of that, some fun events for you to relax- hello puppy hour, stargazing, the Stanford dish hike!" />
           </div>
         </div>
@@ -665,7 +665,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 What is a Hackathon?
               </p>
             </div>
-            <div class="accordion-header-content px-5 pt-0 overflow-hidden max-h-0">
+            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
               A hackathon is where you turn your crazy ideas into real projects. 
               At TreeHacks, for 36 hours (February 16th to 18th) on Stanford's campus, you'll be learning and building in an energetic environment with people as passionate as you are! This year is our 10th anniversary- and we're going ALL OUT! We cover flights (regional caps), food, and swag for all hackers, and also have designated sleeping spaces for hackers. Not to mention, some epic prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event. Basically, you take care of hacking and we'll take care of you!
