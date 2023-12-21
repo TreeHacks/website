@@ -110,11 +110,7 @@ body, html {
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .tracksDesc{
-        margin-bottom: 200px;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .hexagon-img {

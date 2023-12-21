@@ -503,7 +503,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </section>
 
 
-      <section className="w-full lex flex-col relative pb-8 mobile_about" id="tracks">
+      <section className="w-full lex flex-col relative pb-8 mobile_about">
         <div className="items-center flex flex-col">
         <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 The Tracks
