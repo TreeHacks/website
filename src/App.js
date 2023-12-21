@@ -574,7 +574,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </section>
 
 
-      <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-32" id="sponsors">
+      <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-16" id="sponsors">
         <div className="lg:items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 Sponsors
@@ -650,7 +650,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative" id="faqs">
-      <img src={hootowImg} className="globe_img top-30 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
+      <img src={hootowImg} className="dissapearWhenSmall globe_img top-30 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
         <div className="lg:items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 FAQs
@@ -662,90 +662,95 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         <div className="faqSection">
         <div class="font-CerealBK text-lg text-black pt-5">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What is a Hackathon?
               </p>
             </div>
-            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                A hackathon is where you turn your crazy ideas into real projects. 
+            <div class="accordion-header-content px-5 pt-0 overflow-hidden max-h-0">
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+              A hackathon is where you turn your crazy ideas into real projects. 
               At TreeHacks, for 36 hours (February 16th to 18th) on Stanford's campus, you'll be learning and building in an energetic environment with people as passionate as you are! This year is our 10th anniversary- and we're going ALL OUT! We cover flights (regional caps), food, and swag for all hackers, and also have designated sleeping spaces for hackers. Not to mention, some epic prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event. Basically, you take care of hacking and we'll take care of you!
               </p>
             </div>
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 Who can come?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks applications are open to any enrolled college student (undergrad or grad) from all over the world. All current Stanford students that register by appropriate deadlines will be guaranteed admission.</p>
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+                TreeHacks applications are open to any enrolled college student (undergrad or grad) from all over the world. All current Stanford students that register by appropriate deadlines will be guaranteed admission.
+              </p>
             </div>
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What does it cost?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks is free for all admitted hackers! It's our pleasure to bring our virtual workshops, swag, and prizes to our hackers without any cost on your end. We're committed to making TreeHacks accessible!
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+              TreeHacks is free for all admitted hackers! It's our pleasure to bring our virtual workshops, swag, and prizes to our hackers without any cost on your end. We're committed to making TreeHacks accessible!
               </p>
             </div>
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What is the TreeHacks code of conduct?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+              TreeHacks abides by this <a href="https://github.com/TreeHacks/policies" target="_blank">Code of Conduct</a>, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.
               </p>
             </div>
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What if I don't know how to code?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                TreeHacks is the perfect time and place to learn. We provide starter code <a href="https://github.com/TreeHacks" target="_blank" className="underline">“hack packs”</a> on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.</p>
+                <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+                TreeHacks is the perfect time and place to learn. We provide starter code <a href="https://github.com/TreeHacks" target="_blank" className="underline">“hack packs”</a> on our github as well as beginner-friendly workshops and mentors to help you build something you can be proud of.
+                </p>
             </div>
+            
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What if I don't have a team or idea?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-              Many of our hackers don't have a team coming in, and find them at the event! Once your admission is confirmed, we open up a team-matching platform for you to find other teammates. We also have a ton of team-forming activities to help you find teammates and idea brainstorming sessions for all our tracks.               </p>
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+              Many of our hackers don't have a team coming in, and find them at the event! Once your admission is confirmed, we open up a team-matching platform for you to find other teammates. We also have a ton of team-forming activities to help you find teammates and idea brainstorming sessions for all our tracks.               
+              </p>
             </div>
           </div>
 
           <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What can I build?
               </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! </p>
+              <p className='bg-[#B8CCBA] p-5 mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858'}}>
+                Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! 
+              </p>
             </div>
           </div>
         </div>
