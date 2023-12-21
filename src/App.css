@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;1000&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,7 +11,7 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background-color: #133334;
+    background-color: #E3EBDD;
 }
 
 body, html {
@@ -103,6 +104,7 @@ body, html {
     display:none;
 }
 
+
 @media screen and (max-width: 768px) {
     .hexagon-img {
         width: 100px;
@@ -112,6 +114,18 @@ body, html {
     }
     .small_img {
         width: 1px;
+    }
+
+    .faqSection {
+        padding-left: 50px;
+    }
+
+    .sponsorSection {
+        padding: 30px;
+    }
+
+    .sponsorCard {
+        margin-bottom: 20px;
     }
 
     .last_box {
@@ -201,27 +215,14 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: all 1s;
-    transform-style: preserve-3d;
 }
 
 
-.card__front,
-.card__back {
+.card__front{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    color: white;
 }
-
-.card__back {
-    transform: rotateY(180deg);
-}
-
-
-
 
 *,
 *::before,
@@ -331,3 +332,42 @@ body, html {
   .secondary-button {
     font-size: smaller; /* Adjust as needed */
   }
+
+
+/* NEW CODE */
+
+
+  .video-and-block-container {
+    position: relative; /* This makes sure that the absolute positioning of children is relative to this container */
+  }
+  
+  .background-block {
+    position: absolute;
+    width: 100%; /* Adjust the size as needed */
+    height: 100%; /* Adjust the size as needed */
+    background-color: #4EB389; /* Replace with your desired color */
+    z-index: 0; /* Ensures it's behind the video */
+    top: 60px; /* Adjust the value to move the block up or down */
+    right: 20px; /* Adjust to move left or right, creating the offset */
+  }
+  
+
+  .hack-button {
+    color: white; /* White Text */
+    border: none;
+    border-radius: 32px; /* Slightly Rounded Corners */
+    padding: 20px;
+    margin: 10px; /* Space Between Buttons */
+    cursor: pointer;
+    width: 150px; /* Fixed Width for All Buttons */
+    transition: background-color 0.3s;
+}
+
+.hack-button:hover {
+    background-color: #388F6B; /* Darker Green on Hover */
+}
+
+
+
+
+

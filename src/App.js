@@ -6,7 +6,6 @@ import { ReactComponent as Logo } from './assets/logo.svg';
 import entertainmentTrack from './assets/tracks/entertainment.png'; 
 import healthcareTrack from './assets/tracks/healthcare.png'; 
 import blockchainTrack from './assets/tracks/privacy.png'; 
-import privacyTrack from './assets/tracks/blch.png'; 
 import sustainabilityTrack from './assets/tracks/sustainability.png'; 
 import educationTrack from './assets/tracks/education.png'; 
 
@@ -14,6 +13,7 @@ import mainImage from './assets/image_234.png'; //'./assets/photos/Treehacks-129
 import main2Image from './assets/image_233.png'; //'./assets/photos/Treehacks-129.webp';
 import globeImage from './assets/globe.svg';
 import hootowImg from './assets/hootow.png'
+import sechootowImg from './assets/sec1_hootow.png'
 import stats from './assets/stats.png';
 
 import scroll1 from './assets/photos/scroll1.webp';
@@ -32,7 +32,7 @@ import Taisu from './assets/logos/taisu.webp';
 import Terra from './assets/logos/terra.webp';
 import Chroma from './assets/logos/chroma.webp';
 import Roblox from './assets/logos/roblox.webp';
-import Neo from './assets/logos/neo.webp';
+import Canva from './assets/logos/canva.webp';
 import Parrot from './assets/logos/parrot.webp';
 
 // import { prizes } from './prizes';
@@ -270,6 +270,10 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
     const handleScroll = () => {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      let scrollPos = window.pageYOffset;
+      if (scrollPos <= 100) {
+        header.style.backgroundColor = "transparent";
+      }
 
       if (currentScroll > lastScrollTop) {
         // Scrolling down
@@ -278,7 +282,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         // Scrolling up
         header.style.transform = 'translateY(0)'; 
         header.style.backgroundColor = 'white'; // setting background to white when shown
-
+        if (scrollPos <= 100) {
+          header.style.backgroundColor = "transparent";
+        }
       }
 
       setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
@@ -293,14 +299,26 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
   const QuickOption = ({ disabled, title, section, link, description }) => {
     return (
-      <a disabled={disabled} href={section ? "#" + section : link} target={section ? "" : "_blank"} className={`border mb-2 py-4 px-6 ${disabled ? "" : "lg:hover:bg-black hover:bg-gray-100 ease-in duration-300 cursor-pointer"} lg:bg-transparent bg-white w-full lg:h-32`}>
+      <a disabled={disabled} href={section ? "#" + section : link} target={section ? "" : "_blank"} className={` mb-2 py-4 px-6 ${disabled ? "" : "lg:hover:bg-[#B8CCBA] hover:bg-[#B8CCBA] ease-in duration-300 cursor-pointer"} lg:bg-transparent w-full lg:h-48`}>
         <div className={`${disabled ? "opacity-40" : ""}`}>
-          <h1 className='font-CerealXBd text-lg bg-gradient-to-r bg-clip-text text-transparent 
-            from-emerald-500 via-emerald-500 to-indigo-500
-            animate-text'>{title}</h1>
+          <h1 className='font-Raleway font-bold text-2xl mb-2 bg-gradient-to-r bg-clip-text' style={{color: '#232323'}}>{title}</h1>
           <div className="relative flex flex-col justify-center">
-            <p className="font-CerealMd text-sm lg:text-white text-gray-500">
+            <p className="font-CerealMd text-sm lg:text-black text-gray-500">
               {description}
+            </p>
+          </div>
+        </div>
+      </a>
+    )
+  }
+
+  const OurRoots = ({ disabled, title, section, link }) => {
+    return (
+      <a disabled={disabled} href={section ? "#" + section : link} target={section ? "" : "_blank"} className={` mb-2 py-4 px-6 ${disabled ? "" : "lg:hover:bg-[#B8CCBA] hover:bg-[#B8CCBA] ease-in duration-300 cursor-pointer"} lg:bg-transparent w-full lg:h-10`}>
+        <div className={`${disabled ? "opacity-40" : ""}`}>
+          <div className="relative flex flex-col justify-center">
+            <p className="font-Raleway font-bold text-2xl text-[#585858] text-gray-500">
+              {title}
             </p>
           </div>
         </div>
@@ -310,46 +328,55 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
   return (
     <div className="overflow-hidden scroll-smooth">
-      <div className="h-20 flex items-center lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
-        <div>
+      <div className="h-20 flex items-center lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
+        <div className='pt-10'>
           <Logo />
         </div>
-        <div className='overflow-x-scroll h-20 flex items-center'>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Sponsors</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023</a>
-          <a className='ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://root.treehacks.com/'>Apply</a>
+        <div className='h-20 flex items-center pt-10'>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Sponsors</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#faqs'>FAQs</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://2023.treehacks.com/'>2023</a>
+          <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='https://root.treehacks.com/'>Apply</a>
         </div>
-        <a className='apply-btn ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-white lg:text-white md:text-white text-white' href='https://root.treehacks.com/'>Apply</a>
       </div>
-      <section class="bg-white xl:h-[105vh] lg:h-[105vh] flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center xl:pt-24 pt-24" id="home">
-        <div class="w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[5rem] bottom-[5rem] left-1/2 transform -translate-x-1/2">
-          <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full" />
+
+      <section className="w-full pt-36 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb lg:items-center">
+      <img src={sechootowImg} className="z-0 right-5 top-4 absolute" alt="Hoover Tower" />
+
+        <div className="container mx-auto px-4">
+            <h1 className='text-center font-Raleway font-extrabold mb-4 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                TreeHacks is Stanford’s premier hackathon. Join<br></br> us for our 10th year to dream and build the future!
+            </h1>
+            <p className='description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%', margin: 'auto'}}>
+                The country’s brightest engineering students are flown to Stanford’s campus <br></br> to build solutions to the world’s largest challenges for 36 hours straight.           
+            </p>
+            <div className="button-container text-center mt-4">
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]">Apply to Hack</button>
+                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]">Sponsor</button>
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]">Judges/Mentor</button>
+              </div>
+        </div>
+      </section>
+
+
+      <section class="xl:h-[105vh] lg:h-[90vh] flex w-screen lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 flex-col justify-center items-center" id="home">
+        <div class="scale-90 w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[2rem] bottom-[5rem] bottom-5 transform -translate-x-[2%]">
+          <div class="rounded-2xl background-block left-0"></div> 
+        </div>
+        <div class="scale-90 w-11/12 mx-auto aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl absolute top-[2rem] bottom-[5rem] left-1/2 transform -translate-x-[48%]">
+          <video src={introVideo} autoPlay muted loop class="brightness-[0.4] object-cover w-full h-full " />
         </div>
 
-        <div className='flex flex-row items-center w-full justify-content: start'>
+        <div className='translate-x-[10%] flex flex-row items-center w-full justify-content: start'>
           <div className='lg:w-5/6 z-auto'>
             <div className="inline-block">
               <p className='font-semibold xl:text-white lg:text-white md:text-white text-white mb-1 font-display xl:text-lg lg:text-md text-xs'>February 16th-18th 2024 @ Stanford University</p>
               <div class="h-[2px] bg-gradient-to-r xl:bg-white lg:bg-white md:bg-white bg-white rounded-full mb-4"></div>
             </div> 
-            <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2023-12-16T00:00:00" />
-            <h1 className='mb-8 xl:text-3xl lg:text-xl text-md xl:text-white lg:text-white md:text-white text-white font-CerealMd'> left to hack!</h1>
-            <a target="_blank" href="https://root.treehacks.com/" class="apply-button">
-              <span>Apply to hack!</span>
-            </a>
-
-            <a target="_blank" href="https://forms.gle/R936eYcAMqHm3xft7" class="secondary-button">
-              <span>Judges and Mentors</span>
-            </a>
-
-            <a target="_blank" href="mailto:lmoberly@stannford.edu" class="secondary-button">
-              <span>Sponsor</span>
-            </a>
-            
+            <Countdown className='xl:text-7xl lg:text-6xl text-8xl mb-4 font-CerealBD text-white' targetDate="2024-02-16T00:00:00" />            
             <div className='flex flex-row p-8 pl-20'>
               <a href="https://medium.com/@hackwithtrees" target="_blank"><AiOutlineMedium className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
               <a href="https://www.facebook.com/treehacks" target="_blank"><AiOutlineFacebook className="mr-4 text-gray-200 xl:text-gray-200 lg:text-gray-200 md:text-gray-200" size={30} /></a>
@@ -362,102 +389,49 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
       </section>
 
-      <section className="w-full pt-16 lg:pl-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative lg:mt-8 pb-40 about" id="about">
-          <div className="lg:items-center flex flex-col pr-20 ">
-            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-            from-green-400 via-teal-300 to-green-400
-            animate-text'>
-              Stanford's premier hackathon
-            </h1>
-            <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-              It’s simple. The country’s brightest engineering students are flown to Stanford’s campus to build solutions to the world’s largest challenges for 36 hours straight.
-            </p>
+      
+
+      <section className="w-full xl:pt-8 lg:pt-8 md:pt-14 pt-14 xl:pl-40 xl:pr-40 lg:pl-10 lg:pr-10 md:pl-20 md:pr-20 pl-4 pr-4 pb-12 flex flex-col relative justify-center items-center" id="about">
+          <img src={globeImage} className="small_img top-10 z-0 w-120 mb-160 -left-16 absolute lg:-ml-16 animate-spin-slow" alt="Revolving Globe" />
+          <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                The Basics
+          </h1>        
+          <div className='z-10 w-full flex relative lg:flex-row flex-col'>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
+            <QuickOption disabled={false} title="Applying" section="prizes" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
+            <QuickOption disabled={false} title="Learning" section="sponsors" description="Workshops beginning a week before the hackathon, hackpacks, and workshops during give you a ton of opportunites to learn new skills! Plus amazing mentors from the most innovative companies!" />
           </div>
-          <img src={globeImage} className="small_img top-60 z-0 w-120 mb-160 -left-48 absolute lg:-ml-16 animate-spin-slow" alt="Revolving Globe" />
 
-          <div className="flex lg:flex-row flex-col lg:mb-40 mb-10 left-1/2 top-72">
-              <div className="flex flex-col lg:w-6/12  relative">
-                <div>
-                  <div className="gradient-border w-3/4 rounded-lg right-20">
-                    <img src={mainImage} className="small_img w-full h-full rounded-lg  z-10" />
-                  </div>
-                  <div className="gradient-border z-20 absolute rounded-lg lg:right-20 lg:-bottom-32 scale-50 lg:scale-100 -bottom-16 right-10">
-                    <img src={main2Image} className=" small_img h-full rounded-lg  z-10" />
-                  </div>
-                  <div className="absolute translucent-green-background w-300 rounded-lg lg:left-32 right-0 lg:-top-64  -top-20 -left-20 text_box">
-                    <p class="gradient-border-p p-8 font-CerealBK text-white text-lg text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-      </section>
-
-      <section className=" pt-16 lg:pl-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative lg:mt-8 about mobile_about">
-          <div className="lg:items-center flex flex-col pr-20 ">
-            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-            from-green-400 via-teal-300 to-green-400
-            animate-text'>
-              Stanford's premier hackathon
-            </h1>
-            <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-              It’s simple. The country’s brightest engineering students are flown to Stanford’s campus to build solutions to the world’s largest challenges for 36 hours straight.
-            </p>
-            <p class="font-CerealBK text-white text-lg text-center"> TreeHacks covers flights (up to regional caps), food, and swag for all hackers. We have mentors from the world’s most innovative companies, speakers with decades of industry experience, deeply technical workshops, and jolly good fun (hello puppy hour, lightsaber battle, llamas?). Most importantly, you'll be learning and building in an energetic environment with people as passionate as you! </p>
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
+            <QuickOption disabled={false} title="Transportation" link="https://treehacks-2023.devpost.com/" description="We provide a bus for students from certain schools. The rest are eligible for a flight reimbursement up to a regional cap. Click for more details!" />
+            <QuickOption disabled={false} title="Hacking" link="https://treehacks.notion.site/Pre-hackathon-Workshops-be7248185a4a406e99fb238ce624c5d4" description="Verticals over horizontals- focus on the problem, dream big. Check out Tracks to begin ideating! Hardware, resources, APIs, prizes, mentors, sponsors- we've got you covered!" />
           </div>
-      </section>
 
-      <div class="horizontal-scrolling-banner pt-72 lg:pb-32">
-        <img src={scroll1} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll2} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll3} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll4} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll5} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll6} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250px] w-[250px] mr-12" />
-        <img src={scroll7} className="object-cover overflow-hidden rounded-lg lg:h-80 h-40 lg:min-w-[500px] lg:w-[500px] min-w-[250pxs] w-[250px] mr-12" />
-      </div>
-
-
-      <section className="w-full flex flex-col relative lg:mt-8 pb-20" id="stats">
-
-        <div className="lg:items-center flex flex-col pl-40 pr-40">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
-            at treehacks...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-            We reimburse flights, have the best-rated hackathon food in the country, bring in world-renowned guest speakers, throw fun events (hello puppy hour), and will have over...</p>
-        </div>
-
-        <div className="scroll-container">
-            <img src={stats} alt="Scrolling Image" />
-            <img src={stats} alt="Scrolling Image" />
+          <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
+            <QuickOption disabled={false} title="Teams" link="https://treehacks.notion.site/Problem-Statements-b51eb030b1934d6c9dcd557de6428652" description="Teams can be 1-4 people. You are accepted individually, not as a team. Once accepted, you'll have access to our new team-matching portal and we'll also have events at the hackathon to help you form teams!" />
+            <QuickOption disabled={false} title="The Rest" link="https://live.treehacks.com/apisresources" description="We've got some yummmm food planned for the event and have designated sleeping spaces. On top of that, some fun events for you to relax- hello puppy hour, stargazing, the Stanford dish hike!" />
+          </div>
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-32" id="tracks">
+      <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative pb-16 about" id="tracks">
         <div className="lg:items-center flex flex-col">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
-            the tracks...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-          TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! </p>
+          <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                The Tracks
+          </h1>   
+          <p className='mb-16 description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+          Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
+            </p>
         </div>
 
-        <div className='pl-40 flex lg:flex-row flex-col lg:mb-12 mb-4'>
+        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4'>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={educationTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Nancy, Olivia, Mitchell, and Ryan created an educational VR game that lets players battle gladiator cats by learning and practicing American Sign Language. This team won our Moonshot Prize at TreeHacks 2021.</p>
-                  <a href='https://devpost.com/software/catiator' target="_blank" className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -467,11 +441,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
-                  <p className='text-white text-md font-CerealBK'><i>Powered by TerraAPI</i></p>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
+                  <p className='text-black text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
                 </div>
               </div>
             </div>
@@ -481,10 +452,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Lillian, Kevin, Laura, and Juhi built an interactive VR Oculus Quest game to improve coordination through rhythm for those suffering from motor impairment. They won the Most Creative Hack prize at TreeHacks 2020.</p>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability</h1>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -496,8 +465,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                 </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10">
-                </div>
               </div>
             </div>
           </div>
@@ -506,12 +473,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                   <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
-                  <p className='text-white text-md font-CerealBK'><i>Powered by Taisu</i></p>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Jomo, Kaleb, Ryan, and Khalid built a mobile, augmented reality experience that allows children to learn about health topics from a superhero related to the searched topic. Imagine Spider-Man teaching about spider bites! They won Best Mobile AR Hack at TreeHacks 2018.</p>
-                  <a href='https://devpost.com/software/marvel-medical-dictionary' className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Blockchain & Security </h1>
+                  <p className='text-black text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
                 </div>
               </div>
             </div>
@@ -520,12 +483,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="w-full h-60 card">
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack} className="track_img lg:w-80 md:w-20 s:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Entertainment & Interaction</h1>
-                </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 border-black border">
-                  <p className='text-white text-md mb-8 font-CerealBK overflow-scroll h-full'>Nadya, Lucy, and Diane learned React Native and honed their UI skills while developing an app that informs users about the energy saving costs of various appliances and helps a user select all desired appliances for a home. TreeHacks 2018 was their first hackathon.</p>
-                  <a href='https://devpost.com/software/energy-awareness-app' className='text-white text-md font-CerealBK underline'>Check it out here</a>
+                  <img src={entertainmentTrack} className="track_img lg:w-60 md:w-20 s:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Entertainment & Interaction</h1>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -535,8 +495,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <div class="card__content">
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10">
                 </div>
-                <div class="card__back bg-white flex flex-col justify-end p-10 ">
-                </div>
               </div>
             </div>
           </div>
@@ -544,23 +502,93 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         </section>
 
-        <section className="w-full lg:pl-40 pr-40 lg:pr-40 md:pl-40 md:pr-20 flex flex-col relative 8 pb-32" id="sponsors">
-        <div className="lg:items-center flex flex-col">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
-            our sponsors...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-2xl text-md'>
-          TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
-          </p>
+
+      <section className="w-full lex flex-col relative pb-8 mobile_about" id="tracks">
+        <div className="items-center flex flex-col">
+            <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
+            from-green-400 via-teal-300 to-green-400
+            animate-text'>
+            the tracks...
+            </h1>
+            <p className='font-CerealBK text-white text-center lg:text-2xl text-md'>
+            TreeHacks is an incredible opportunity to build something you're passionate about. Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
+            </p>
         </div>
-        <div className="w-full">
+
+        <div className='flex flex-col'>
+          <div className='flex lg:flex-row flex-col'>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={educationTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='font-semibold text-xl pt-2 font-CerealBD text-white'>Education</h1>
+              <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={sustainabilityTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Sustainability</h1>
+              <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            </div>
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={healthcareTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white'>Healthcare</h1>
+              <p className='text-white text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
+            </div>
+
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={blockchainTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Blockchain & Security </h1>
+              <p className='text-white text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
+            </div>
+
+            <div className='lg:w-6/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="flex justify-center items-center">
+                <img src={entertainmentTrack} className='w-40 h-auto'/>
+              </div>
+              <h1 className='pt-2 font-semibold text-xl font-CerealBD text-white text-center'>Entertainment and Interaction</h1>
+            </div>
+
+          </div>
+
+        </div>
+
+        </section>
+
+
+      <section className="w-full xl:pl-40 xl:pr-40 lg:pl-10 lg:pr-10 md:pl-20 md:pr-20 pl-4 pr-4 pb-12 flex flex-col relative justify-center items-center" id="about">
+          <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                This year we'll have
+          </h1>        
+          <div className="scroll-container pt-10 z-0">
+            <img src={stats} alt="Scrolling Image" />
+            <img src={stats} alt="Scrolling Image" />
+            <img src={stats} alt="Scrolling Image" />
+            
+        </div>
+      </section>
+
+
+      <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-32" id="sponsors">
+        <div className="lg:items-center flex flex-col">
+          <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                Sponsors
+          </h1>   
+          <p className=' description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+          TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
+            </p>
+        </div>
+        <div className="pt-16 lg:pt-8 sponsorSection">
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-12/12 w-full lg:mr-0'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="https://tryterra.co/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Terra} className="object-contain" />
                 </div>
               </a>
@@ -568,9 +596,9 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
             {/* New Row */}
             <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-12/12 w-full lg:mr-0'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="http://www.taisu.io/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-8 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Taisu} className="object-contain" />
                 </div>
               </a>
@@ -578,16 +606,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='lg:w-6/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
               <a href="https://convex.dev/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Convex} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-6/12 w-full'>
-              <a href="www.trychroma.com" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-12 relative'>
+            <div className='sponsorCard lg:w-6/12 w-full'>
+              <a href="https://www.trychroma.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
                   <img src={Chroma} className="object-contain" />
                 </div>
               </a>
@@ -595,23 +623,23 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
             {/* New Row */}
             <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
               <a href="https://corp.roblox.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Roblox} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-4/12 w-full lg:mr-4'>
-              <a href="https://neo.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
-                  <img src={Neo} className="object-contain" />
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://canva.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Canva} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-4/12 w-full'>
+            <div className='sponsorCard lg:w-4/12 w-full'>
               <a href="https://www.parrot.com/us/drones" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Parrot} className="object-contain" />
                 </div>
               </a>
@@ -621,27 +649,28 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
       </section>
 
-      <section className="w-full lg:pl-40 pr-40 lg:pr-20 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
+
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative pb-40" id="faqs">
       <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 -right-10 absolute" alt="Hoover Tower" />
         <div className="lg:items-center flex flex-col">
-          <h1 className='font-CerealX lg:text-6xl text-4xl mb-6 bg-gradient-to-r bg-clip-text text-transparent
-          from-green-400 via-teal-300 to-green-400
-          animate-text'>
-            faqs...
-          </h1>
-          <p className='font-CerealBK text-white mb-20 lg:text-center lg:text-xl text-md'>
+          <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+                FAQs
+          </h1>   
+          <p className=' description font-bold pb-10 lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
           Email us at hello@treehacks.com if we missed anything!
-          </p>
+            </p>
         </div>
 
-        <p className='font-CerealXBd mb-20r lg:text-2xl text-md bg-gradient-to-r bg-clip-text text-transparent
-          text-teal-300'>
+        <div className="faqSection">
+        <p className=' description font-bold lg:left font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
           logistics
         </p>
 
-        <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What is a Hackathon?</h3>
+        <div class="font-CerealBK text-lg text-black pt-5">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                What is a Hackathon?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -651,9 +680,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>How do I apply?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                How do I apply?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -662,9 +693,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>Who can come?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                Who can come?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -672,9 +705,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What does it cost?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                What does it cost?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -683,9 +718,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>How do travel reimbursements work?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                How do travel reimbursements work?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -694,9 +731,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What is the TreeHacks code of conduct?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+                What is the TreeHacks code of conduct?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -705,14 +744,15 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <p className='font-CerealXBd mb-20r lg:text-2xl text-md bg-gradient-to-r bg-clip-text text-transparent
-          text-teal-300 pt-8'>
+          <p className='pt-8 description font-bold lg:left font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
           the event
-          </p>
+        </p>
 
-          <div class="font-CerealBK text-lg text-white pt-5">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What if I don't know how to code?</h3>
+          <div class="font-CerealBK text-lg text-black pt-5">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+              What if I don't know how to code?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -720,9 +760,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What if I don't have a team or idea?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+              What if I don't have a team or idea?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -730,9 +772,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What can I build?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+              What can I build?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -740,9 +784,11 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <div class="font-CerealBK text-lg text-white">
-            <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
-              <h3>What is the max team size?</h3>
+          <div class="font-CerealBK text-lg text-black">
+            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
+              <p className='mb-2 description font-semibold text-left font-Raleway' style={{color: '#585858', fontSize: '16px', width: '80%'}}>
+              What is the max team size?
+              </p>
             </div>
             <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
               <p class="leading-6 font-light pl-9 text-justify pb-8">
@@ -751,11 +797,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
+        </div>
+
       </section>
 
 
       <div className="w-full py-10 flex flex-col relative overflow-hidden border-b">
-        <h1 className='font-semibold text-md font-CerealBK text-white text-center'>Made with ❤️ by the TreeHacks team</h1>
+        <h1 className='font-semibold text-md font-CerealBK text-black text-center'>Made with ❤️ by the TreeHacks team</h1>
       </div>
     </div >
   );
