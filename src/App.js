@@ -650,7 +650,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       </section>
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative" id="faqs">
-      <img src={hootowImg} className="globe_img top-60 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
+      <img src={hootowImg} className="globe_img top-30 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
         <div className="lg:items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 FAQs
@@ -661,10 +661,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         </div>
 
         <div className="faqSection">
-        <p className=' description font-bold lg:left font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
-          logistics
-        </p>
-
         <div class="font-CerealBK text-lg text-black pt-5">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
@@ -675,19 +671,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <p class="leading-6 font-light pl-9 text-justify pb-8">
                 A hackathon is where you turn your crazy ideas into real projects. 
               At TreeHacks, for 36 hours (February 16th to 18th) on Stanford's campus, you'll be learning and building in an energetic environment with people as passionate as you are! This year is our 10th anniversary- and we're going ALL OUT! We cover flights (regional caps), food, and swag for all hackers, and also have designated sleeping spaces for hackers. Not to mention, some epic prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event. Basically, you take care of hacking and we'll take care of you!
-              </p>
-            </div>
-          </div>
-
-          <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-              <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
-                How do I apply?
-              </p>
-            </div>
-            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-              The application deadline is December 11th, 11:59 PST for non-Stanford students, and December 30th, 11:59 PST for Stanford students. Go to our application portal today to apply- we can't wait to learn more about you! Note that we accept people individually and not as whole teams. We look for a mix of beginners and more experienced people- so even if you're new to the space, apply apply apply! *Stanford students are auto-accepted but need to RSVP by applying.
               </p>
             </div>
           </div>
@@ -720,19 +703,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
-                How do travel reimbursements work?
-              </p>
-            </div>
-            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                We are completely overhauling the travel reimbursement process for the 2024 year to make it easier for hackers! More details coming soon.
-              </p>
-            </div>
-          </div>
-
-          <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
                 What is the TreeHacks code of conduct?
               </p>
             </div>
@@ -743,11 +713,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
 
-          <p className='pt-8 description font-bold lg:left font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
-          the event
-        </p>
-
-          <div class="font-CerealBK text-lg text-black pt-5">
+          <div class="font-CerealBK text-lg text-black">
             <div class="cursor-pointer transition flex space-x-5 items-center h-16">
             <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
               What if I don't know how to code?
@@ -782,20 +748,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 Anything your heart desires! Hardware, web, mobile, gaming, VR...you name it, we'll support it. We have six tracks that will have extra resources, sponsored challenges, and other events to inspire you. Check out our <a href="https://treehacks-2023.devpost.com/" target="_blank" className="underline">Devpost</a> for examples of what participants built in the past!! </p>
             </div>
           </div>
-
-          <div class="font-CerealBK text-lg text-black">
-            <div class="cursor-pointer transition flex space-x-5 items-center h-16">
-            <p className='mb-2 description font-semibold text-left font-Raleway text-sm' style={{color: '#585858', width: '80%'}}>
-              What is the max team size?
-              </p>
-            </div>
-            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
-              <p class="leading-6 font-light pl-9 text-justify pb-8">
-                You can participate individually or in teams of up to 4 people! 
-                </p>
-            </div>
-          </div>
-
         </div>
 
       </section>
