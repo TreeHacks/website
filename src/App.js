@@ -425,37 +425,37 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           Every year we have a variety of tracks for you to choose from, but you can also create something completely new. We can't wait to see what you build! 
             </p>
         </div>
-
-        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4'>
+        <div className='pl-40 flex lg:flex-row flex-col lg:mb-16 mb-4 justify-beg'>
+        <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
+            <div className="w-full h-60 card">
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={educationTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Education </h1>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={educationTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='font-semibold text-xl pt-2 font-CerealBD text-black'>Education</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                <div className="track-icon">
+                  <img src={healthcareTrack} className="track-icon lg:w-60 md:w-20"/>
+                  </div>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Healthcare </h1>
+                  <p className='text-black text-md text-center font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI </a> </i></p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='lg:w-3/12'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={healthcareTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Healthcare</h1>
-                  <p className='text-black text-md font-CerealBK'><i>by <a href="https://tryterra.co/" className='underline'>TerraAPI</a></i></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='lg:w-3/12'>
-            <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={sustainabilityTrack} className="lg:w-60 md:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Sustainability</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={sustainabilityTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Sustainability </h1>
+                  <p className='text-black text-md text-center font-CerealBK'><i>by <a href="https://ecopreneurship.stanford.edu/" className='underline'>Stanford Ecopreneurship </a> </i></p>
                 </div>
               </div>
             </div>
@@ -472,22 +472,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
           <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={blockchainTrack} className=" track_img lg:w-60 md:w-20"/>
+              <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                  <img src={blockchainTrack} className="track-icon lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Blockchain & Security </h1>
                   <p className='text-black text-md font-CerealBK'><i>by <a href="http://www.taisu.io/" className='underline'>Taisu </a> </i></p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='lg:w-3/12'>
+          <div className='lg:w-3/12 lg:mr-8 mb-4 lg:mb-0'>
             <div className="w-full h-60 card">
-              <div class="card__content">
-                <div class="card__front flex flex-col justify-end align-middle items-center p-10">
-                  <img src={entertainmentTrack} className="track_img lg:w-60 md:w-20 s:w-20"/>
-                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black'>Entertainment & Interaction</h1>
-                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
+            <div class="card__content" style={{maxHeight: '100%'}}>
+                <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
+                    <img src={entertainmentTrack} className="track-icon lg:w-60 md:w-20"/>
+                  <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Entertainment & Interaction </h1>
                 </div>
               </div>
             </div>
@@ -501,7 +500,6 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
         </div>
-
         </section>
 
 
