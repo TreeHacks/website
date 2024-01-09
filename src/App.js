@@ -683,28 +683,28 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.reflex.dev/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-16 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-16 relative'>
                   <img src={Reflex} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://canva.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Canva} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.parrot.com/us/drones" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Parrot} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full'>
               <a href="https://www.hudsonrivertrading.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={HRT} className="object-contain" />
                 </div>
               </a>
