@@ -27,6 +27,14 @@ import scroll7 from './assets/photos/scroll7.webp';
 import introVideo from './assets/videos/compressed_intro.mp4';
 import './App.css';
 
+import Intel from './assets/logos/intel.webp';
+import Intersystems from './assets/logos/intersystems.webp';
+import Vespa from './assets/logos/vespa.webp';
+import Caldera from './assets/logos/caldera.webp';
+import HRT from './assets/logos/HRT.webp';
+import Hakko from './assets/logos/hakko.webp';
+import Reflex from './assets/logos/reflex.webp';
+import TogetherAI from './assets/logos/togetherai.webp';
 import Convex from './assets/logos/convex.webp';
 import Taisu from './assets/logos/taisu.webp';
 import Terra from './assets/logos/terra.webp';
@@ -34,6 +42,7 @@ import Chroma from './assets/logos/chroma.webp';
 import Roblox from './assets/logos/roblox.webp';
 import Canva from './assets/logos/canva.webp';
 import Parrot from './assets/logos/parrot.webp';
+
 
 // import { prizes } from './prizes';
 
@@ -585,6 +594,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
+              <a href="https://www.intel.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={Intel} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="https://tryterra.co/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Terra} className="object-contain" />
@@ -619,12 +638,53 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               </a>
             </div>
           </div>
-            {/* New Row */}
-            <div className='flex lg:flex-row flex-col mb-4'>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
+              <a href="https://www.intersystems.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Intersystems} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='sponsorCard lg:w-6/12 w-full'>
+              <a href="https://www.together.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
+                  <img src={TogetherAI} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
             <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
               <a href="https://corp.roblox.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Roblox} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://vespa.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Vespa} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.caldera.xyz//" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Caldera} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='sponsorCard lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.reflex.dev/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Reflex} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -642,8 +702,25 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 </div>
               </a>
             </div>
+            <div className='sponsorCard lg:w-4/12 w-full'>
+              <a href="https://www.hudsonrivertrading.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={HRT} className="object-contain" />
+                </div>
+              </a>
+            </div>
           </div>
           {/* New Row */}
+          <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Partners</h1>
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-2/12 w-full'>
+              <a href="https://hakkousa.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-20 p-6 relative'>
+                  <img src={Hakko} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
