@@ -659,21 +659,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4'>
             <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://corp.roblox.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Roblox} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-4/12 w-full lg:mr-4'>
               <a href="https://vespa.ai/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
                   <img src={Vespa} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-4/12 w-full'>
               <a href="https://www.caldera.xyz/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-white h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Caldera} className="object-contain" />
                 </div>
               </a>
