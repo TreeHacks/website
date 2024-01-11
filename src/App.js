@@ -290,7 +290,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
       } else {
         // Scrolling up
         header.style.transform = 'translateY(0)'; 
-        header.style.backgroundColor = 'white'; // setting background to white when shown
+        header.style.backgroundColor = '#B8CCBA'; // setting background to white when shown
         if (scrollPos <= 100) {
           header.style.backgroundColor = "transparent";
         }
@@ -338,7 +338,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
   return (
     <div className="overflow-hidden scroll-smooth">
       <div className="h-20 flex items-center lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 z-50 header w-full fixed" id="site-header">
-        <div className='pt-10'>
+        <div className='pt-10 pb-10'>
           <a href="#home"><Logo /> </a>
         </div>
         <div className='h-20 flex items-center pt-10'>
@@ -573,6 +573,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 This year we'll have
           </h1>        
           <div className="scroll-container pt-10 z-0">
+            <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
             <img src={stats} alt="Scrolling Image" />
