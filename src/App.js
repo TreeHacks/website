@@ -341,7 +341,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
         <div className='pt-10 pb-10'>
           <a href="#home"><Logo /> </a>
         </div>
-        <div className='h-20 flex items-center pt-10'>
+        <div className='h-20 flex items-center pt-10 pb-10'>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#home'>Home</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#about'>About</a>
           <a className='font-Raleway ml-8 font-semibold font-display cursor-pointer link link-underline link-underline-black xl:text-black lg:text-black md:text-black text-black' href='#tracks'>Tracks</a>
