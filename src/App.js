@@ -593,13 +593,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
 
       <section className="w-full lg:pl-40 lg:pr-40 flex flex-col relative 8 lg:pb-16" id="sponsors">
-        <div className="lg:items-center flex flex-col">
+        <div className="items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 Sponsors
           </h1>   
-          <p className=' description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
-          TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
-            </p>
+          <p className='description font-bold text-center font-Raleway px-4' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+                TreeHacks would not be possible without the support of our incredible sponsors. Throughout the event, they’ll host workshops, discuss job opportunities, host prizes, and much more.      
+          </p>
         </div>
         <div className="pt-16 lg:pt-8 sponsorSection">
           {/* New Row */}
@@ -826,13 +826,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
       <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 flex flex-col relative" id="faqs">
       <img src={hootowImg} className="dissapearWhenSmall globe_img top-30 z-0 w-120 mb-160 right-20 absolute" alt="Hoover Tower" />
-        <div className="lg:items-center flex flex-col">
+        <div className="items-center flex flex-col">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
                 FAQs
           </h1>   
-          <p className=' description font-bold pb-10 lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
-          Email us at hello@treehacks.com if we missed anything!
-            </p>
+          <p className='description font-bold pb-10 px-4 text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%'}}>
+                Email us at hello@treehacks.com if we missed anything!
+          </p>
         </div>
 
         <div className="faqSection">
