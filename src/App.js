@@ -678,7 +678,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </div>
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4'>
-            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
+            <div className='sponsorCard lg:w-6/12 w-full'>
               <a href="https://qedprotocol.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={QED} className="object-contain" />
