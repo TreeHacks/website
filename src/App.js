@@ -641,7 +641,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
             <div className='sponsorCard lg:w-6/12 w-full'>
               <a href="https://www.trychroma.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={Chroma} className="object-contain" />
                 </div>
               </a>
@@ -651,7 +651,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4'>
             <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
               <a href="https://www.intersystems.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Intersystems} className="object-contain" />
                 </div>
               </a>
@@ -699,7 +699,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://canva.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Canva} className="object-contain" />
                 </div>
               </a>
@@ -723,14 +723,14 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.pinterestcareers.com/en/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-16 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Pinterest} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://en.valuenex.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={OtsVal} className="object-contain" />
                 </div>
               </a>
@@ -744,7 +744,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
             <div className='lg:w-3/12 w-full'>
               <a href="https://www.warp.dev/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Warp} className="object-contain" />
                 </div>
               </a>
@@ -754,14 +754,14 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://pinecone.io" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-16 relative'>
+                <div className='w-full flex justify-center rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Pinecone} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://pear.vc" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Pear} className="object-contain" />
                 </div>
               </a>
@@ -777,21 +777,21 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           {/* New Row */}
           <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Partners</h1>
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='lg:w-2/12 w-full'>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
               <a href="https://hakkousa.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={Hakko} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-2/12 w-full'>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
               <a href="https://www.seeedstudio.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={Seeed} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-2/12 w-full'>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
               <a href="www.doordash.com" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={DoorDash} className="object-contain" />
