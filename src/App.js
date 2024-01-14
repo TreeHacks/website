@@ -51,6 +51,8 @@ import Pear from './assets/logos/pear.webp';
 import Verkada from './assets/logos/verkada.webp';
 import Seeed from './assets/logos/seeed.webp';
 import DoorDash from './assets/logos/doordash.webp';
+import QED from './assets/logos/qed.webp';
+import StanfordEco from './assets/logos/stanfordeco.webp';
 
 // import { prizes } from './prizes';
 
@@ -603,6 +605,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
+              <a href="https://ecopreneurship.stanford.edu/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={StanfordEco} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
               <a href="https://www.intel.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Intel} className="object-contain" />
@@ -660,6 +672,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://www.together.ai/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
                   <img src={TogetherAI} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
+              <a href="https://qedprotocol.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={QED} className="object-contain" />
                 </div>
               </a>
             </div>
