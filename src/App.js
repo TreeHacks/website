@@ -42,7 +42,15 @@ import Chroma from './assets/logos/chroma.webp';
 import Roblox from './assets/logos/roblox.webp';
 import Canva from './assets/logos/canva.webp';
 import Parrot from './assets/logos/parrot.webp';
-
+import Pinterest from './assets/logos/pinterest.webp';
+import OtsVal from './assets/logos/otsval.webp';
+import DEShaw from './assets/logos/deshaw.webp';
+import Warp from './assets/logos/warp.webp';
+import Pinecone from './assets/logos/pinecone.webp';
+import Pear from './assets/logos/pear.webp';
+import Verkada from './assets/logos/verkada.webp';
+import Seeed from './assets/logos/seeed.webp';
+import DoorDash from './assets/logos/doordash.webp';
 
 // import { prizes } from './prizes';
 
@@ -712,12 +720,81 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
           {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.pinterestcareers.com/en/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-16 relative'>
+                  <img src={Pinterest} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://en.valuenex.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={OtsVal} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.deshaw.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={DEShaw} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://www.warp.dev/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Warp} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://pinecone.io" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-16 relative'>
+                  <img src={Pinecone} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://pear.vc" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Pear} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.verkada.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Verkada} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
           <h1 className='font-semibold lg:text-2xl text-xl text-center mt-16 mb-6 font-CerealBD'>Partners</h1>
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-2/12 w-full'>
               <a href="https://hakkousa.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={Hakko} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full'>
+              <a href="https://www.seeedstudio.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
+                  <img src={Seeed} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full'>
+              <a href="www.doordash.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
+                  <img src={DoorDash} className="object-contain" />
                 </div>
               </a>
             </div>
