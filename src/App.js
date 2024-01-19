@@ -40,7 +40,7 @@ import Taisu from './assets/logos/taisu.webp';
 import Terra from './assets/logos/terra.webp';
 import Chroma from './assets/logos/chroma.webp';
 import Roblox from './assets/logos/roblox.webp';
-import Canva from './assets/logos/canva.webp';
+import Canva from './assets/logos/canvaDev.webp';
 import Parrot from './assets/logos/parrot.webp';
 import Pinterest from './assets/logos/pinterest.webp';
 import OtsVal from './assets/logos/otsval.webp';
@@ -51,8 +51,10 @@ import Pear from './assets/logos/pear.webp';
 import Verkada from './assets/logos/verkada.webp';
 import Seeed from './assets/logos/seeed.webp';
 import DoorDash from './assets/logos/doordash.webp';
+import EdStem from './assets/logos/edStem.webp';
 import QED from './assets/logos/qed.webp';
 import StanfordEco from './assets/logos/stanfordeco.webp';
+import fetchAI from './assets/logos/fetchAI.webp';
 
 // import { prizes } from './prizes';
 
@@ -632,6 +634,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               </a>
             </div>
           </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
+              <a href="https://fetch.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={fetchAI} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
             {/* New Row */}
             <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='sponsorCard lg:w-12/12 w-full lg:mr-0'>
@@ -720,7 +732,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
-              <a href="https://canva.com/" target="_blank">
+              <a href="www.canva.com/developers" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Canva} className="object-contain" />
                 </div>
@@ -817,6 +829,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="www.doordash.com" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={DoorDash} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://edstem.org/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
+                  <img src={EdStem} className="object-contain" />
                 </div>
               </a>
             </div>
