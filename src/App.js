@@ -732,7 +732,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
-              <a href="www.canva.com/developers" target="_blank">
+              <a href="https://www.canva.com/developers/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Canva} className="object-contain" />
                 </div>
