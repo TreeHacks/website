@@ -55,6 +55,10 @@ import EdStem from './assets/logos/edStem.webp';
 import QED from './assets/logos/qed.webp';
 import StanfordEco from './assets/logos/stanfordeco.webp';
 import fetchAI from './assets/logos/fetchAI.webp';
+import HumanCap from './assets/logos/humanCap.webp';
+import Avalanche from './assets/logos/avalanche.webp';
+import Bun from './assets/logos/bun.webp';
+
 
 // import { prizes } from './prizes';
 
@@ -689,11 +693,18 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </div>
           </div>
           {/* New Row */}
-          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
-            <div className='sponsorCard lg:w-6/12 w-full'>
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
               <a href="https://qedprotocol.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={QED} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='sponsorCard lg:w-6/12 w-full'>
+              <a href="https://human.capital/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
+                  <img src={HumanCap} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -718,6 +729,30 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://www.caldera.xyz/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Caldera} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4'>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://pear.vc" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Pear} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full lg:mr-4'>
+              <a href="https://www.avalabs.org/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-14 relative'>
+                  <img src={Avalanche} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-4/12 w-full'>
+              <a href="https://bun.sh/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Bun} className="object-contain" />
                 </div>
               </a>
             </div>
