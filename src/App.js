@@ -59,6 +59,12 @@ import HumanCap from './assets/logos/humanCap.webp';
 import Avalanche from './assets/logos/avalanche.webp';
 import Bun from './assets/logos/bun.webp';
 import Codegen from './assets/logos/codegen.webp';
+import BGB from './assets/logos/bgb.webp';
+import CrossMint from './assets/logos/crossmint.webp';
+import Samsung from './assets/logos/samsung.webp';
+import Monster from './assets/logos/monster.webp';
+import Endex from './assets/logos/endex.webp';
+import Reazon from './assets/logos/reazon.webp';
 
 
 // import { prizes } from './prizes';
@@ -823,9 +829,47 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://reazon.jp/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={Reazon} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://endex.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={Endex} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://monsterapi.ai/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Monster} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full'>
+              <a href="https://www.samsungnext.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={Samsung} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://pinecone.io" target="_blank">
                 <div className='w-full flex justify-center rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Pinecone} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.bgbgroup.com/" target="_blank">
+                <div className='w-full flex justify-center rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                  <img src={BGB} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -840,6 +884,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://www.verkada.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Verkada} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.crossmint.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={CrossMint} className="object-contain" />
                 </div>
               </a>
             </div>
