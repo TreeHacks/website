@@ -464,6 +464,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 <div class="card__front flex flex-col justify-end align-middle items-center p-10" style={{maxHeight: '100%', padding: 0}}>
                     <img src={educationTrack} className="track-icon lg:w-60 md:w-20"/>
                   <h1 className='pt-2 font-semibold text-xl font-CerealBD text-black text-center'>Education </h1>
+                  <p className='text-transparent text-md font-CerealBK'><i>placeholder</i></p>
                 </div>
               </div>
             </div>
@@ -861,28 +862,28 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://pinecone.io" target="_blank">
-                <div className='w-full flex justify-center rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Pinecone} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.bgbgroup.com/" target="_blank">
-                <div className='w-full flex justify-center rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={BGB} className="object-contain" />
                 </div>
               </a>
             </div>
             <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.codegen.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={Codegen} className="object-contain" />
                 </div>
               </a>
             </div>
-            <div className='lg:w-3/12 w-full lg:mr-4'>
+            <div className='lg:w-3/12 w-full'>
               <a href="https://www.verkada.com/" target="_blank">
-                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-8 relative'>
                   <img src={Verkada} className="object-contain" />
                 </div>
               </a>
