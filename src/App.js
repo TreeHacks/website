@@ -390,7 +390,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <div className="button-container text-center mt-4">
                   <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://root.treehacks.com/"> Apply to Hack </a> </button>
                   <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="mailto:lmoberly@stanford.edu"> Sponsor </a></button>
-                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://forms.gle/R936eYcAMqHm3xft7">Judges/Mentor</a></button>
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://forms.gle/z4sikSkaxnikQnw36">Judges/Mentor</a></button>
               </div>
         </div>
       </section>
