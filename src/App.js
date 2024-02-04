@@ -27,6 +27,11 @@ import scroll7 from './assets/photos/scroll7.webp';
 import introVideo from './assets/videos/compressed_intro.mp4';
 import './App.css';
 
+import mira from './assets/photos/mira.webp';
+import kaliszan from './assets/photos/kaliszan.webp';
+import chou from './assets/photos/chou.webp';
+import durumeric from './assets/photos/durumeric.webp';
+
 import Intel from './assets/logos/intel.webp';
 import Intersystems from './assets/logos/intersystems.webp';
 import Vespa from './assets/logos/vespa.webp';
@@ -65,6 +70,8 @@ import Samsung from './assets/logos/samsung.webp';
 import Monster from './assets/logos/monster.webp';
 import Endex from './assets/logos/endex.webp';
 import Reazon from './assets/logos/reazon.webp';
+import Neo from './assets/logos/neo.webp';
+import YC from './assets/logos/ycomb.webp';
 
 
 // import { prizes } from './prizes';
@@ -591,6 +598,56 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
 
         </section>
 
+      <section className="w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 pl-10 pr-10 pt-20 lg:pb-20 flex flex-col relative justify-center items-center" id="speakers">
+        <div className='items-center flex flex-col'>
+          <h1 className='text-center font-Raleway font-extrabold bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
+            Speakers
+          </h1>  
+          <div className='flex lg:flex-row flex-col w-full rounded-lg'>
+            <div className='lg:w-1/2 pt-16 w-full h-full p-8 flex justify-center items-center'>
+              <div className="aspect-square flex justify-center items-center p-2">
+                <img src={mira} className="object-cover h-9/10 w-full" />
+              </div>
+            </div>
+            <div className='lg:w-1/2 w-full p-8 pt-0 flex flex-col justify-center'>
+              <h1 className='font-Raleway font-extrabold text-left pt-8' style={{color: '#232323', fontSize: '24px', lineHeight: '1.2'}}>Mira Murati</h1>
+              <p className="font-Raleway lg:text-md text-sm mt-4">
+              Mira Murati is the Chief Technology Officer at OpenAI and a leader spearheading initiatives in research, development, and the ethical application of artificial intelligence. Murati has guided OpenAI's strategic direction, fostering a culture of collaboration that bridges theoretical research with real-world applications. Her background in engineering and passion for innovation have positioned her as a key player in promoting the responsible development and deployment of products that have and continue to change the world! Murati has not only elevated OpenAI's impact in the AI community but also inspired a new generation of researchers and technologists to pursue the vast possibilities that AI offers, always with an eye towards its vast potential for humanity and intelligence!              </p>
+            </div>
+          </div>
+        </div>
+        {/* New Row */}
+        <div className='flex lg:mt-6 lg:flex-row flex-col rounded-lg basis-0 justify-center'>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center'>
+              <div className="aspect-square h-64 flex justify-center items-center p-2 border-2">
+                <img src={chou} className="object-cover h-full w-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Timothy Chou</h1>
+              <p className="font-CerealBK text-sm text-center mt-4">
+                  Former President of Oracle
+              </p>
+            </div>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-64 flex justify-center items-center p-2 border-2">
+                <img src={durumeric} className="object-cover h-full w-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Zakir Durumeric</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                  Assistant Professor, Stanford CS
+              </p>
+            </div>
+            <div className='lg:w-4/12 w-12/12 h-full p-8 flex flex-col justify-center items-center lg:border-r'>
+              <div className="aspect-square h-64 flex justify-center items-center p-2 border-2">
+                <img src={kaliszan} className="object-cover h-full w-full" />
+              </div>
+              <h1 className='mt-8 font-CerealBD text-xl text-gray-600'>Filip Kaliszan</h1>
+              <p className="font-CerealBK text-center text-sm mt-4">
+                CEO of Verkada
+              </p>
+            </div>
+          </div>
+      </section>
+
 
       <section className="w-full xl:pl-40 xl:pr-40 lg:pl-10 lg:pr-10 md:pl-20 md:pr-20 pl-4 pr-4 pb-12 flex flex-col relative justify-center items-center" id="about">
           <h1 className='text-center font-Raleway font-extrabold mb-8 bg-clip-text' style={{color: '#232323', fontSize: '36px', lineHeight: '1.2'}}>
@@ -713,6 +770,16 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://human.capital/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-12 relative'>
                   <img src={HumanCap} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='sponsorCard lg:w-6/12 w-full lg:mr-4'>
+              <a href="https://www.ycombinator.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={YC} className="object-contain" />
                 </div>
               </a>
             </div>
@@ -895,6 +962,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://www.crossmint.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={CrossMint} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.neo.com" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Neo} className="object-contain" />
                 </div>
               </a>
             </div>
