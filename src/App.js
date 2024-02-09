@@ -72,7 +72,10 @@ import Endex from './assets/logos/endex.webp';
 import Reazon from './assets/logos/reazon.webp';
 import Neo from './assets/logos/neo.webp';
 import YC from './assets/logos/ycomb.webp';
-
+import Merkle from './assets/logos/merkle.webp';
+import Postman from './assets/logos/postman.webp';
+import Wispr from './assets/logos/wispr.webp';
+import Coframe from './assets/logos/coframe.webp';
 
 // import { prizes } from './prizes';
 
@@ -959,6 +962,30 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           {/* New Row */}
           <div className='flex lg:flex-row flex-col mb-4 justify-center'>
             <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://www.postman.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Postman} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://wispr.ai" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Wispr} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
+              <a href="https://coframe.ai" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
+                  <img src={Coframe} className="object-contain" />
+                </div>
+              </a>
+            </div>
+          </div>
+          {/* New Row */}
+          <div className='flex lg:flex-row flex-col mb-4 justify-center'>
+            <div className='lg:w-3/12 w-full lg:mr-4'>
               <a href="https://www.crossmint.com/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-10 relative'>
                   <img src={CrossMint} className="object-contain" />
@@ -1001,6 +1028,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
               <a href="https://edstem.org/" target="_blank">
                 <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
                   <img src={EdStem} className="object-contain" />
+                </div>
+              </a>
+            </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://merklebot.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
+                  <img src={Merkle} className="object-contain" />
                 </div>
               </a>
             </div>
