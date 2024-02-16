@@ -76,7 +76,7 @@ import Merkle from './assets/logos/merkle.webp';
 import Postman from './assets/logos/postman.webp';
 import Wispr from './assets/logos/wispr.webp';
 import Coframe from './assets/logos/coframe.webp';
-import Cotopaxi from './assets/logos/coframe.webp';
+import Cotopaxi from './assets/logos/cotopaxi.webp';
 
 // import { prizes } from './prizes';
 
