@@ -1038,6 +1038,13 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
                 </div>
               </a>
             </div>
+            <div className='lg:w-2/12 w-full lg:mr-4'>
+              <a href="https://www.cotopaxi.com/" target="_blank">
+                <div className='w-full flex justify-center border-2 rounded-md bg-[#B8CCBA] h-40 p-6 relative'>
+                  <img src={Cotopaxi} className="object-contain" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
