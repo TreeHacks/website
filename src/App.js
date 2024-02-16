@@ -400,8 +400,8 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             </p>
             <div className="button-container text-center mt-4">
                   <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://root.treehacks.com/"> Apply to Hack </a> </button>
-                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="mailto:lmoberly@stanford.edu"> Sponsor </a></button>
-                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://forms.gle/z4sikSkaxnikQnw36">Judges/Mentor</a></button>
+                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="https://live.treehacks.com"> Live Schedule </a></button>
+                  <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://docs.google.com/document/d/162lC3yzvkURS1FZcVX-vpMckuWYkbqnoESZcPdxRdHk/edit">Ultimate Guide</a></button>
               </div>
         </div>
       </section>
@@ -443,7 +443,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
           </h1>        
           <div className='z-10 w-full flex relative lg:flex-row flex-col'>
           <div className='flex flex-col lg:w-4/12 w-12/12 pl-1 pr-1'>
-            <QuickOption disabled={false} title="Applying" link="https://root.treehacks.com/" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying by December 30th 11:59 pm" />
+            <QuickOption disabled={false} title="Applying" link="https://root.treehacks.com/" description="Non-Stanford Students: Apply by December 11th 11:59 pm. Stanford Students: Auto-accepted but need to RSVP by applying"/>
             <QuickOption disabled={false} title="Learning" link="https://github.com/TreeHacks" description="Workshops beginning a week before the hackathon, hackpacks, and workshops during give you a ton of opportunites to learn new skills! Plus amazing mentors from the most innovative companies!" />
           </div>
 
