@@ -399,6 +399,7 @@ const [lastScrollTop, setLastScrollTop] = useState(0); // Initialize the state
             <p className='description font-bold lg:text-center font-Raleway' style={{color: '#585858', fontSize: '18px', width: '80%', margin: 'auto'}}>
             </p>
             <div className="button-container text-center mt-4">
+                  <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeXjda0LUCaY1bhUxGkPcFmB6bbBjCNMNFQDBrSQ-081eXxhg/viewform?usp=sf_link"> Join our organizing team </a> </button>
                   <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://root.treehacks.com/"> Apply to Hack </a> </button>
                   <button className="font-Raleway font-bold hack-button bg-[#388F6B]"><a target="_blank" href="https://live.treehacks.com"> Live Schedule </a></button>
                   <button className="font-Raleway font-bold hack-button bg-[#4EB389]"><a target="_blank" href="https://docs.google.com/document/d/162lC3yzvkURS1FZcVX-vpMckuWYkbqnoESZcPdxRdHk/edit">Ultimate Guide</a></button>
