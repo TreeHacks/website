@@ -32,9 +32,9 @@ const ParallaxSection: React.FC = () => {
           <div className="animation_layer parallax" id="layer3"><Layer3 className="animation_image"/></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={1.25}>
-          <div className="animation_layer parallax"><Layer2 id="layer2"/></div>
+          <div className="animation_layer parallax" id="layer2"><Layer2 className='animation_image'/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.3} speed={1.5}>
+        <ParallaxLayer offset={0.25} speed={1.5}>
           <div className="animation_layer parallax" id="layer1"> <Layer1 className="animation_image"/></div>
         </ParallaxLayer>
       </Parallax>

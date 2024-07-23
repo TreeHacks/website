@@ -2,15 +2,13 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
 }
-
-
 
 .animation,
 .animation_layer {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   bottom: 0;
 }
 
@@ -23,7 +21,7 @@
 .animation_layer {
   background-position: bottom center;
   background-repeat: repeat-x;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 5.664%;
 }
@@ -31,6 +29,7 @@
 .animation_image {
     width: 100%;
     height: auto;
+    overflow-y: hidden;
 }
 
 .animation_layer.parallax {
@@ -42,9 +41,11 @@
 }
 #layer2 {
   z-index: 5;
-  left: 15%;
-  width: 90vw;
-  height: 110vh;
+  left: 18%;
+  width: 60%;
+  overflow-y: hidden;
+  position: absolute;
+  transform: translateX(0);
 }
 #layer3 {
   z-index: 4;
@@ -59,14 +60,14 @@
   z-index: 1;
 }
 #titles {
-  z-index: 7; /* Ensure it's above other layers */
+  z-index: 7; 
   flex-direction: column;
   display: inline-flex;
-  position: absolute; /* Ensure proper positioning */
+  position: absolute; 
   align-items: flex-end;
   top: 5%;
-  left: 70%; /* Center from the left */
-  transform: translateX(-50%); /* Translate back by 50% of its own width */
+  left: 70%; 
+  transform: translateX(-50%); 
 }
 
 h1 {
