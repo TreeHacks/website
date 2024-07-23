@@ -6,6 +6,7 @@ import Layer4 from "./layer4.svg?react";
 import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
 import "./Parallax.css";
+import AboutSection from "../About/about";
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
@@ -36,6 +37,9 @@ const ParallaxSection: React.FC = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={0.25} speed={1.5}>
           <div className="animation_layer parallax" id="layer1"> <Layer1 className="animation_image"/></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.99} speed={1.5}>
+          <AboutSection />
         </ParallaxLayer>
       </Parallax>
     </div>

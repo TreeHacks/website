@@ -7,8 +7,8 @@
 
 .animation,
 .animation_layer {
-  height: 100%;
-  width: 100%;
+height: auto;
+  height: 1024px;
   bottom: 0;
 }
 
@@ -16,14 +16,16 @@
   display: block;
   position: relative;
   z-index: 10;
+  height: auto;
 }
 
 .animation_layer {
   background-position: bottom center;
+  background-size: auto 1038px;
   background-repeat: repeat-x;
   width: 100%;
   position: absolute;
-  top: 5.664%;
+  top: 0%;
 }
 
 .animation_image {
@@ -34,10 +36,12 @@
 
 .animation_layer.parallax {
   position: absolute;
+  height: auto;
 }
 
 #layer1 {
   z-index: 6;
+  height: auto;
 }
 #layer2 {
   z-index: 5;
@@ -46,18 +50,23 @@
   overflow-y: hidden;
   position: absolute;
   transform: translateX(0);
+  height: auto;
 }
 #layer3 {
   z-index: 4;
+  height: auto;
 }
 #layer4 {
   z-index: 3;
+  height: auto;
 }
 #layer5 {
   z-index: 2;
+  height: auto;
 }
 #layer6 {
   z-index: 1;
+  height: auto;
 }
 #titles {
   z-index: 7; 

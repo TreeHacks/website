@@ -16,6 +16,7 @@
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.0",
     "serve": "^14.2.3"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "@types/gsap": "^3.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",

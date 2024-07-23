@@ -1,0 +1,62 @@
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  padding: 2px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  padding: 0;
+  gap: 25px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #019153;
+  font-family: Fredoka;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.navbar-sections {
+    padding: 8px 8px;
+}
+
+.navbar-sections a:hover {
+  color: #05502f;
+  cursor: pointer;
+}
+
+.apply-button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fcf8b8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.apply-button a {
+    color: #019153;
+    transition: color 0.3s ease;
+  }
+
+.apply-button:hover{
+    background: #019153;
+}
+
+.apply-button:hover a {
+    color: #fcf8b8;
+  }

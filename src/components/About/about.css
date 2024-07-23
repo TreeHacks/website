@@ -1,0 +1,44 @@
+#textblock {
+    background-color: #0F1E24;
+    height: 100vh;
+  }
+  
+  #textblock-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  
+  #textblock-title {
+    color: #96CE96;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #textblock-content {
+    color: #96CE96;
+    font-size: 20px;
+  }
+  
+  #textblock-footer {
+    color: #96CE96;
+    font-size: 15px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 20px;
+  
+  }
+  
+  #textblock-devsense {
+    text-decoration: none;
+    color: #96CE96;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
