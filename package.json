@@ -11,11 +11,16 @@
     "start": "serve dist -s"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.4",
+    "@react-spring/web": "^9.7.4",
+    "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "serve": "^14.2.3"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/gsap": "^3.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -25,6 +30,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }
