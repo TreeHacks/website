@@ -2,13 +2,11 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden; 
 }
 
 .animation,
 .animation_layer {
-height: auto;
-  height: 1024px;
+  height: 71vw;
   bottom: 0;
 }
 
@@ -21,17 +19,16 @@ height: auto;
 
 .animation_layer {
   background-position: bottom center;
-  background-size: auto 1038px;
+  background-size: 100vw auto;
   background-repeat: repeat-x;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top: 0%;
 }
 
 .animation_image {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    overflow-y: hidden;
 }
 
 .animation_layer.parallax {
@@ -45,11 +42,6 @@ height: auto;
 }
 #layer2 {
   z-index: 5;
-  left: 18%;
-  width: 60%;
-  overflow-y: hidden;
-  position: absolute;
-  transform: translateX(0);
   height: auto;
 }
 #layer3 {
@@ -82,22 +74,22 @@ height: auto;
 h1 {
   color: #05502f;
   font-family: "Fredoka";
-  font-size: 96px;
+  font-size: 5.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 3.84px;
-  line-height: 0px;
+  letter-spacing: 0.3vw;
+  line-height: 0;
 }
 
 h2 {
   color: #05502f;
   font-family: "Fredoka";
-  font-size: 45px;
+  font-size: 2.6vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   line-height: 0.2;
-  line-height: 0px;
+  line-height: 0;
   margin: 0; 
 }

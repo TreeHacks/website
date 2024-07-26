@@ -6,8 +6,8 @@ import './App.css'
 const App: React.FC = () => {
   return (
     <div className="home">
-      <NavigationBar />
-      <ParallaxSection />
+      <div className="section1"><NavigationBar /></div>
+      <div className="section2"><ParallaxSection /></div>
     </div>
   );
 }

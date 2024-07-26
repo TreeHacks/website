@@ -23,24 +23,24 @@ const ParallaxSection: React.FC = () => {
         <ParallaxLayer offset={0} speed={0.25}>
           <div className="animation_layer parallax" id="layer6"><Layer6 className="animation_image"/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.19} speed={0.50}>
+        <ParallaxLayer offset={0} speed={0.50}>
           <div className="animation_layer parallax" id="layer5"><Layer5 className="animation_image"/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.25} speed={0.75}>
+        <ParallaxLayer offset={0} speed={0.75}>
           <div className="animation_layer parallax" id="layer4"><Layer4 className="animation_image"/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.25} speed={1}>
+        <ParallaxLayer offset={0} speed={1}>
           <div className="animation_layer parallax" id="layer3"><Layer3 className="animation_image"/></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={1.25}>
           <div className="animation_layer parallax" id="layer2"><Layer2 className='animation_image'/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.25} speed={1.5}>
+        <ParallaxLayer offset={0} speed={1.5}>
           <div className="animation_layer parallax" id="layer1"> <Layer1 className="animation_image"/></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.99} speed={1.5}>
+        {/* <ParallaxLayer offset={1} speed={1.5}>
           <AboutSection />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
     </div>
   );

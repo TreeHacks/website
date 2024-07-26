@@ -1,3 +1,16 @@
 .home {
   background: linear-gradient(180deg, #96CE96 -5.81%, #FCF8B8 23.29%);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section1 {
+  position: absolute;
+  right: 0;
+}
+
+.section2 {
+  position: absolute;
+  /* top: 2%; */
 }

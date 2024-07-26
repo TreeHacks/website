@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   background: transparent;
-  padding: 2px 0;
+  padding: 0.5vw 0;
   z-index: 1000;
 }
 
@@ -11,39 +11,39 @@
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  margin: 20px;
+  margin: 0.25vw;
   padding: 0;
-  gap: 25px;
+  gap: 1.5vw;
 }
 
 .navbar li {
-  margin: 0 15px;
+  margin: 0 1vw;
 }
 
 .navbar a {
   color: #019153;
   font-family: Fredoka;
-  font-size: 24px;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .navbar-sections {
-    padding: 8px 8px;
+    padding: 0.3vw 0.3vw;
 }
 
 .navbar-sections a:hover {
-  color: #05502f;
+  color: #fcf8b8;
   cursor: pointer;
 }
 
 .apply-button {
   display: flex;
-  padding: 8px 16px;
+  padding: 0.25vw 0.8vw;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   background: #fcf8b8;
   transition: background 0.3s ease, color 0.3s ease;
 }
