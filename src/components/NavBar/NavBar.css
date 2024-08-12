@@ -1,6 +1,6 @@
 .navbar {
-  position: relative;
-  top: 0;
+  position: static;
+  /* top: 0; */
   width: 100%;
   background: transparent;
   padding: 0.5vw 0;
@@ -11,7 +11,7 @@
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  margin: 0.25vw;
+  margin: 0.5vw;
   padding: 0;
   gap: 1.5vw;
 }
@@ -23,14 +23,14 @@
 .navbar a {
   color: #019153;
   font-family: Fredoka;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .navbar-sections {
-    padding: 0.3vw 0.3vw;
+    padding: 0.1vw 0.1vw;
 }
 
 .navbar-sections a:hover {

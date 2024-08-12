@@ -1,16 +1,21 @@
 .home {
-  background: linear-gradient(180deg, #96CE96 -5.81%, #FCF8B8 23.29%);
-  position: relative;
+  /* background: #0F1E24; */
+  background: transparent;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
+.section {
+  width: 100%;
+  height: 100vh; /* You can adjust this to the desired height */
+}
+
 .section1 {
-  position: absolute;
-  right: 0;
+  z-index: 0;
 }
 
 .section2 {
-  position: absolute;
-  /* top: 2%; */
+  z-index: 1;
 }
