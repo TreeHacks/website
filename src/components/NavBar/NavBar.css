@@ -1,9 +1,11 @@
 .navbar {
-  position: static;
-  /* top: 0; */
-  width: 100%;
-  background: transparent;
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  right: 0;
+  border-radius: 1em;
   padding: 0.5vw 0;
+  margin: 0.5em 1em;
   z-index: 1000;
 }
 

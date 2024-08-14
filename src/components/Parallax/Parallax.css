@@ -1,40 +1,13 @@
 .parallax {
   width: 100vw;
-  height: 64vw;
-  /* overflow: hidden; */
+  height: 100vh;
   position: relative;
 }
 
-.animation,
-.animation_layer {
-  height: 60vw;
-  bottom: 0;
-}
-
-
-.animation {
-  display: block;
-	position: relative;
-	z-index: 10;
-}
-
-.animation_layer {
-  background-position: bottom center;
-  background-size: auto 50vw;
-  background-repeat: repeat-x;
-  width: 100vw;
-  position: absolute;
-  top: 0%;
-}
-
 .animation_image {
-    width: 100vw;
-    height: auto;
-}
-
-.animation_layer.parallax {
-  position: fixed;
-  /* height: 55vw; */
+  width: 100vw;
+  height: auto;
+  display: block;
 }
 
 #layer1 {
