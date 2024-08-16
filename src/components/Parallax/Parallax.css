@@ -1,46 +1,12 @@
-.parallax {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.animation_image {
-  width: 100vw;
-  height: auto;
-  display: block;
-}
-
-#layer1 {
-  z-index: 6;
-  height: auto;
-}
-#layer2 {
-  z-index: 5;
-  height: auto;
-}
-#layer3 {
-  z-index: 4;
-  height: auto;
-}
-#layer4 {
-  z-index: 3;
-  height: auto;
-}
-#layer5 {
-  z-index: 2;
-  height: auto;
-}
-#layer6 {
-  z-index: 1;
-  height: auto;
-}
 #titles {
+  --parallax-aspect-ratio: calc(1117 / 1728);
+
   z-index: 7; 
   flex-direction: column;
   display: inline-flex;
   position: absolute; 
   align-items: flex-end;
-  top: 9%;
+  top: calc(100vw * var(--parallax-aspect-ratio) * 0.1);
   left: 70%; 
   transform: translateX(-50%); 
 }

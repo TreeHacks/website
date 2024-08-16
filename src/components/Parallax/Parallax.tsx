@@ -1,7 +1,4 @@
-/// <reference types="vite-plugin-svgr/client" />
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import About from "./about.svg?react";
-import Layer1 from "./layer1.svg?react";
+import { Parallax } from 'react-scroll-parallax';
 import Layer2 from "./layer2.svg?react";
 import Layer3 from "./layer3.svg?react";
 import Layer4 from "./layer4.svg?react";
@@ -9,46 +6,48 @@ import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
 import "./Parallax.css";
 
-const SCROLL_SPEED = 1 / 6;
+const SCROLL_INCREMENT = -4;
 
-const ParallaxSection: React.FC = () => {
+const LAYERS = [
+  Layer6,
+  Layer5,
+  Layer4,
+  Layer3,
+  Layer2
+];
+
+type LayerProps = {
+  speed: number;
+  SVG: typeof Layer2;
+};
+
+const Layer: React.FC<LayerProps> = ({ speed, SVG }) => {
+  const end = speed * SCROLL_INCREMENT;
 
   return (
-    <div className="parallax">
-      <Parallax pages={2}>
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED}>
-          <div id="layer6"><Layer6 className="animation_image"/></div>
-          <div id='titles'>
-            <h1>TREEHACKS</h1>
-            <h2>Feb 14-16, 2025</h2>
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED * 2}>
-          <div id="layer5"><Layer5 className="animation_image"/></div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED * 3}>
-          <div id="layer4"><Layer4 className="animation_image"/></div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED * 4}>
-          <div id="layer3"><Layer3 className="animation_image"/></div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED * 5}>
-          <div id="layer2"><Layer2 className="animation_image"/></div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0} speed={SCROLL_SPEED * 6}>
-          <div id="layer1" className="about">
-            <Layer1 className="animation_image"/>
-            <About className="animation_image" />
-          </div>
-        </ParallaxLayer>
-      </Parallax>
-    </div>
+    <Parallax
+      startScroll={0}
+      endScroll={300}
+      translateY={[0, -end]}
+      style={{
+        position: 'absolute',
+        width: '100%',
+        zIndex: -speed
+      }}
+    >
+      <SVG width="100%" height="auto" />
+    </Parallax> 
   );
-};
+}
+
+const ParallaxSection: React.FC = () => (
+  <div style={{ position: 'absolute', width: '100%' }}>
+    <div id='titles'>
+      <h1>TREEHACKS</h1>
+      <h2>Feb 14-16, 2025</h2>
+    </div>
+    {LAYERS.map((layer, i) => <Layer speed={LAYERS.length - i} SVG={layer} />)}
+  </div>
+);
 
 export default ParallaxSection;

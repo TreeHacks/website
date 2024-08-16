@@ -1,5 +1,5 @@
 .navbar {
-  position: absolute;
+  position: fixed;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   right: 0;

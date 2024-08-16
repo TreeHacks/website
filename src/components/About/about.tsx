@@ -10,7 +10,6 @@ const AboutSection: React.FC = () => {
                 textextext
                 </p>
             </div>
-            <footer id='textblock-footer'>Demo Created With 🧡 By&nbsp;<a id="textblock-devsense" href="https://youtube.com/c/DevSense19">DevSense</a></footer>
         </div>
     );
 }
