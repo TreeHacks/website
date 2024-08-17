@@ -72,3 +72,13 @@
   line-height: normal;
   letter-spacing: 0.05vw;
 }
+
+.firefly-container {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 65vw;
+  background: transparent;
+  overflow: show;
+}

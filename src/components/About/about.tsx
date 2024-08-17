@@ -1,9 +1,15 @@
 import "./about.css";
 import About from "./about.svg?react";
+import FireflySection from "../Firefly/firefly";
+import FireflySmallSection from "../Firefly/fireflySmall";
 
 const AboutSection: React.FC = () => {
   return (
     <div className="about-section">
+      <div className="firefly-container">
+        <FireflySection />
+        <FireflySmallSection />
+      </div>
       <About className="background-svg" />
       <div className="section-title">ABOUT</div>
       <div className="section-text">

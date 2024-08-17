@@ -5,10 +5,18 @@ import Healthcare from "./healthcare.svg?react";
 import Sustainability from "./sustainability.svg?react";
 import Fintech from "./fintech.svg?react";
 import Entertainment from "./entertainment.svg?react";
+import FireflySection from "../Firefly/firefly";
+import FireflySmallSection from "../Firefly/fireflySmall";
 
 const TrackSection: React.FC = () => {
+  
   return (
     <div className="track-section">
+      <div className="firefly-container">
+        <FireflySection />
+        <FireflySmallSection />
+      </div>
+
       <Track className="background-svg" />
       <div className="track-title">TRACKS</div>
       <div className="track-icons-container">

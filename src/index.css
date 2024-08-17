@@ -6,3 +6,7 @@ html, body {
 .homepage {
   position: relative;  /* Ensure sections stay in flow */
 }
+
+section {
+  overflow: show;
+}
