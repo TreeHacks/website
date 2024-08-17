@@ -1,12 +1,18 @@
 html, body {
   margin: 0px;
   padding: 0;
+  background-color: #0F1E24;
 }
 
 .homepage {
   position: relative;  /* Ensure sections stay in flow */
+  z-index: 1;
 }
 
 section {
   overflow: show;
+}
+
+.section1 {
+  z-index: 5;
 }
