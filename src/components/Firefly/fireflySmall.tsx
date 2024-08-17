@@ -37,15 +37,15 @@ const FireflySmallSection: React.FC = () => {
 
     fireflies.forEach((firefly, index) => {
       const startX = Math.random() * 100; // Random starting X position
-      const startY = Math.random() * 100; // Random starting Y position
+      const startY = Math.random() * 65; // Random starting Y position
 
       firefly.style.left = `${startX}vw`;
-      firefly.style.top = `${startY}vh`;
+      firefly.style.top = `${startY}vw`;
 
       const endX = Math.random() * 100; // Random ending X position
-      const endY = Math.random() * 100; // Random ending Y position
+      const endY = Math.random() * 65; // Random ending Y position
 
-      const duration = 60; // Set duration to 20 seconds for faster movement
+      const duration = 30; // Set duration to 20 seconds for faster movement
 
       // Create unique keyframes for each firefly
       const keyframesName = `move-${index}`;
@@ -55,7 +55,7 @@ const FireflySmallSection: React.FC = () => {
             transform: translate(0, 0);
           }
           to {
-            transform: translate(${endX - startX}vw, ${endY - startY}vh);
+            transform: translate(${endX - startX}vw, ${endY - startY}vw);
           }
         }
       `;
