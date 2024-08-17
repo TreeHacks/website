@@ -19,6 +19,7 @@ const App: React.FC = () => {
       </section>
       
       <Layer1 width="100%" height="auto" display="block"/>
+      
       <section id="section2">
         <AboutSection />
       </section>
