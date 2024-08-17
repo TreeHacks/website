@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './firefly.css';
+import React, { useEffect } from "react";
+import "./firefly.css";
 
 interface FireflyProps {
   className?: string;
@@ -33,7 +33,9 @@ const Firefly: React.FC<FireflyProps> = ({ className }) => (
 
 const FireflySection: React.FC = () => {
   useEffect(() => {
-    const fireflies = document.querySelectorAll('.firefly') as NodeListOf<HTMLElement>;
+    const fireflies = document.querySelectorAll(
+      ".firefly"
+    ) as NodeListOf<HTMLElement>;
 
     fireflies.forEach((firefly, index) => {
       const startX = Math.random() * 100; // Random starting X position
@@ -61,7 +63,7 @@ const FireflySection: React.FC = () => {
       `;
 
       // Insert the keyframes into a new style element to ensure it's correctly added
-      const styleElement = document.createElement('style');
+      const styleElement = document.createElement("style");
       styleElement.innerHTML = keyframes;
       document.head.appendChild(styleElement);
 
@@ -75,11 +77,7 @@ const FireflySection: React.FC = () => {
     <Firefly key={index} className="firefly" />
   ));
 
-  return (
-    <div className="firefly-container">
-      {fireflies}
-    </div>
-  );
+  return <div className="firefly-container">{fireflies}</div>;
 };
 
 export default FireflySection;
