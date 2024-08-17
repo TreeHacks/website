@@ -12,14 +12,16 @@ const App: React.FC = () => {
     <div>
       <NavigationBar />
 
-      <ParallaxProvider>
-        <ParallaxSection />
-      </ParallaxProvider>
-
-      <div>
-        <Layer1 width="100%" height="auto" display="block" />
+      <section id="section1">
+        <ParallaxProvider>
+          <ParallaxSection />
+        </ParallaxProvider>
+      </section>
+      
+      <Layer1 width="100%" height="auto" display="block"/>
+      <section id="section2">
         <AboutSection />
-      </div>
+      </section>
     </div>
   );
 }

@@ -59,6 +59,7 @@
 
 .apply-button:hover{
     background: #019153;
+    cursor: pointer;
 }
 
 .apply-button:hover a {
