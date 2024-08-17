@@ -9,17 +9,15 @@
 }
 
 .background-svg {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: auto;
   display: block;
   object-fit: cover;
-  /* Makes sure the SVG scales properly */
   z-index: 0;
   pointer-events: none;
-  /* Makes sure the SVG doesn't interfere with any clicks */
 }
 
 .section-title {
