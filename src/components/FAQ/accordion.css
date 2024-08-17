@@ -1,0 +1,60 @@
+.item {
+    padding-top: 2.5vw;
+    cursor: pointer;
+}
+
+.title {
+    color: #FCF8B8;
+    font-family: Fredoka;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12vw;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+  
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 1vw; /* Space between the icon and the title text */
+}
+
+.img-scale {
+    width: 2vw;
+    height: auto;
+}
+
+.selected {
+    background-color: transparent;
+}
+
+.content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-left: 3vw;
+    color: #FCF8B8;
+    font-family: Fredoka;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    letter-spacing: 0.05vw;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    max-height: 500px; /* Set a value that covers the expected content height */
+    opacity: 1;
+    padding-top: 1vw;
+}
+
+.accordion {
+    width: 50vw;
+    z-index: 10;
+}

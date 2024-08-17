@@ -6,3 +6,15 @@ html, body {
 .homepage {
   position: relative;  /* Ensure sections stay in flow */
 }
+
+.footer {
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5vw;
+  position: absolute;
+  bottom: 0;
+}

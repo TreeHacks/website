@@ -1,34 +1,57 @@
 .faq-section {
-    width: 100vw;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .background-svg {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    z-index: 0;
-    pointer-events: none;
-  }
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
 
-.section-title {
-    position: absolute;
-    color: #FCF8B8;
-    font-family: Fredoka;
-    font-size: 3vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.12vw;
-    left: 10vw;
-    top: 8.5vw;
-  }
+.faq-title {
+  position: absolute;
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4vw;
+}
+
+.accordionContainer {
+  position: absolute;
+  top: 17vw;
+  left: 24%;
+  gap: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01vw;
+  position: absolute;
+  bottom: 1.5vw;
+}

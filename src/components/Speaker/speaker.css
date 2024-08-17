@@ -1,34 +1,48 @@
 .speaker-section {
-    width: 100vw;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .background-svg {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    z-index: 0;
-    pointer-events: none;
-  }
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
 
-.section-title {
-    position: absolute;
-    color: #FCF8B8;
-    font-family: Fredoka;
-    font-size: 3vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.12vw;
-    left: 10vw;
-    top: 8.5vw;
-  }
+.speaker-title {
+  position: absolute;
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6vw;
+}
+
+.speaker-text {
+  position: absolute;
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10vw;
+}

@@ -1,14 +1,14 @@
 /// <reference types="vite-plugin-svgr/client" />
-import React from 'react';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import ParallaxSection from './components/Parallax/Parallax';
-import NavigationBar from './components/NavBar/NavBar';
-import AboutSection from './components/About/about';
+import React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxSection from "./components/Parallax/Parallax";
+import NavigationBar from "./components/NavBar/NavBar";
+import AboutSection from "./components/About/about";
 import Layer1 from "./components/Parallax/layer1.svg?react";
-import TrackSection from './components/Track/track';
-import SpeakerSection from './components/Speaker/speaker';
-import SponsorSection from './components/Sponsor/sponsor';
-import FAQSection from './components/FAQ/faq';
+import TrackSection from "./components/Track/track";
+import SpeakerSection from "./components/Speaker/speaker";
+import SponsorSection from "./components/Sponsor/sponsor";
+import FAQSection from "./components/FAQ/faq";
 
 const App: React.FC = () => {
   return (
@@ -20,8 +20,12 @@ const App: React.FC = () => {
           <ParallaxSection />
         </ParallaxProvider>
       </section>
-      
-      <Layer1 width="100%" height="auto" style={{ display: 'block', position: 'relative', zIndex: 1 }} />
+
+      <Layer1
+        width="100%"
+        height="auto"
+        style={{ display: "block", position: "relative", zIndex: 1 }}
+      />
 
       <section id="section2">
         <AboutSection />
@@ -44,6 +48,6 @@ const App: React.FC = () => {
       </section>
     </div>
   );
-}
+};
 
 export default App;
