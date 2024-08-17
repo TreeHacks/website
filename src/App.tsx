@@ -18,7 +18,6 @@ const App: React.FC = () => {
 
       <div>
         <Layer1 width="100%" height="auto" display="block" />
-        <About width="100%" height="auto" display="block" />
         <AboutSection />
       </div>
     </div>

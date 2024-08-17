@@ -6,7 +6,7 @@ import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
 import "./Parallax.css";
 
-const SCROLL_INCREMENT = -4;
+const SCROLL_INCREMENT = -5;
 
 const LAYERS = [
   Layer6,

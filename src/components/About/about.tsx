@@ -1,14 +1,48 @@
 import './about.css';
+import About from "./about.svg?react";
 
 const AboutSection: React.FC = () => {
+
     return (
-        <div id="textblock">
-            <div id="textblock-container">
-                <h1 id="textblock-title">What is TreeHacks?</h1>
-                <p id="textblock-content">
-                TreeHacks is Stanford's student-run hackathon.<br/><br/>
-                textextext
-                </p>
+        <div className="about-section">
+            <About className="background-svg" />
+            <div className='section-title'>ABOUT</div>
+            <div className='section-text'>TreeHacks is Stanford’s premier hackathon. The 
+                country’s brightest engineering students are flown to Stanford’s campus 
+                to build solutions to the world’s largest challenges for 36 hours straight. 
+                Join us for our 10th year to dream and build the future! 
+            </div>
+            <div className='section-stats-row1'>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>1600</div>
+                    <div className='about-captions'>Hackers</div>
+                </div>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>30</div>
+                    <div className='about-captions'>Universities</div>
+                </div>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>12</div>
+                    <div className='about-captions'>Countries</div>
+                </div>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>40</div>
+                    <div className='about-captions'>Companies</div>
+                </div>
+            </div>
+            <div className='section-stats-row2'>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>350</div>
+                    <div className='about-captions'>Projects</div>
+                </div>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>$160k</div>
+                    <div className='about-captions'>Prizes</div>
+                </div>
+                <div className='stat-caption-pair'>
+                    <div className='about-numbers'>36</div>
+                    <div className='about-captions'>Hours</div>
+                </div>
             </div>
         </div>
     );

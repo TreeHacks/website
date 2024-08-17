@@ -1,44 +1,112 @@
-#textblock {
-    background-color: #0F1E24;
-    height: 100vh;
-  }
-  
-  #textblock-container {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 70px;
-  }
-  
-  #textblock-title {
-    color: #96CE96;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: "Helvetica Neue";
-  }
-  
-  #textblock-content {
-    color: #96CE96;
-    font-size: 20px;
-  }
-  
-  #textblock-footer {
-    color: #96CE96;
-    font-size: 15px;
-    font-weight: 400;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    margin-bottom: 20px;
-  
-  }
-  
-  #textblock-devsense {
-    text-decoration: none;
-    color: #96CE96;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  
+.about-section {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Makes sure the SVG scales properly */
+  z-index: 0;
+  pointer-events: none; /* Makes sure the SVG doesn't interfere with any clicks */
+}
+
+.section-title {
+  position: absolute;
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12vw;
+  left: 10vw;
+  top: 8.5vw;
+}
+
+.section-text {
+  position: absolute;
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  left: 10vw;
+  top: 12vw;
+  width: 35vw;
+}
+
+.section-stats-row1 {
+  position: absolute;
+  left: 47.5vw;
+  top: 27.5vw;
+  display: inline-flex;
+  align-items: center;
+  gap: 3.5vw;
+  width: 30vw;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-stats-row2 {
+  position: absolute;
+  left: 47.5vw;
+  top: 37.5vw;
+  display: inline-flex;
+  align-items: center;
+  gap: 4.5vw;
+  width: 30vw;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stat-caption-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about-numbers {
+  color: #FCF8B8;
+  text-shadow:0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.20);
+  font-family: Fredoka;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-captions {
+  color: #FCF8B8;
+  text-shadow:0px 0px 8.5px rgba(252, 248, 184, 0.18),
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
+              0px 0px 8.5px rgba(252, 248, 184, 0.18);
+  font-family: Fredoka;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
