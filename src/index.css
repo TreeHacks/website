@@ -1,5 +1,5 @@
 html, body {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   background-color: #0F1E24;
 }
@@ -13,6 +13,12 @@ section {
   overflow: show;
 }
 
+#section1, #section2, #section3, #section4, #section5, #section6 {
+  margin: 0;
+  padding: 0;
+}
+
 .section1 {
   z-index: 5;
 }
+
