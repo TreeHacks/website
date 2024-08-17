@@ -1,23 +1,25 @@
 .about-section {
-    width: 100vw;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .background-svg {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
   height: auto;
   display: block;
-  object-fit: cover; /* Makes sure the SVG scales properly */
+  object-fit: cover;
+  /* Makes sure the SVG scales properly */
   z-index: 0;
-  pointer-events: none; /* Makes sure the SVG doesn't interfere with any clicks */
+  pointer-events: none;
+  /* Makes sure the SVG doesn't interfere with any clicks */
 }
 
 .section-title {
@@ -79,14 +81,14 @@
 
 .about-numbers {
   color: #FCF8B8;
-  text-shadow:0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.20);
+  text-shadow: 0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20),
+    0px 0px 8.5px rgba(252, 248, 184, 0.20);
   font-family: Fredoka;
   font-size: 5vw;
   font-style: normal;
@@ -96,14 +98,14 @@
 
 .about-captions {
   color: #FCF8B8;
-  text-shadow:0px 0px 8.5px rgba(252, 248, 184, 0.18),
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18), 
-              0px 0px 8.5px rgba(252, 248, 184, 0.18);
+  text-shadow: 0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18),
+    0px 0px 8.5px rgba(252, 248, 184, 0.18);
   font-family: Fredoka;
   font-size: 2vw;
   font-style: normal;

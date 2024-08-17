@@ -2,3 +2,7 @@ html, body {
   margin: 0px;
   padding: 0;
 }
+
+.homepage {
+  position: relative;  /* Ensure sections stay in flow */
+}
