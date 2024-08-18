@@ -43,6 +43,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .footer {
@@ -60,7 +61,7 @@
 .firefly-container {
   position: absolute;
   top: 0;
-  z-index: 20;
+  z-index: 1;
   width: 100vw;
   height: 65vw;
   background: transparent;
