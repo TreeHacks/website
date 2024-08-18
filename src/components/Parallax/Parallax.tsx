@@ -6,7 +6,12 @@ import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
 import "./Parallax.css";
 
-const SCROLL_INCREMENT = -5;
+const SCROLL_INCREMENT = -7;
+const CLIENT_WIDTH = document.documentElement.clientWidth;
+const CLIENT_HEIGHT = document.documentElement.clientHeight;
+const SVG_ASPECT_RATIO = 1728 / 1117;
+const CLIENT_ASPECT_RATIO = CLIENT_WIDTH / CLIENT_HEIGHT;
+const PARALLAX_PORTION = 0.75; // portion of the parallax element to animate
 
 const LAYERS = [
   Layer6,
@@ -23,11 +28,12 @@ type LayerProps = {
 
 const Layer: React.FC<LayerProps> = ({ speed, SVG }) => {
   const end = speed * SCROLL_INCREMENT;
+  const height = PARALLAX_PORTION * CLIENT_HEIGHT * CLIENT_ASPECT_RATIO / SVG_ASPECT_RATIO;
 
   return (
     <Parallax
       startScroll={0}
-      endScroll={300}
+      endScroll={height}
       translateY={[0, -end]}
       style={{
         position: 'absolute',
