@@ -7,6 +7,7 @@ import Fintech from "./fintech.svg?react";
 import Entertainment from "./entertainment.svg?react";
 import FireflySection from "../Firefly/firefly";
 import FireflySmallSection from "../Firefly/fireflySmall";
+import Jar from "./jar.svg?react";
 
 const TrackSection: React.FC = () => {
   
@@ -21,25 +22,33 @@ const TrackSection: React.FC = () => {
       <div className="track-title">TRACKS</div>
       <div className="track-icons-container">
         <div className="icon-caption-pair">
-          <Education className="track-icon" />
+          <Jar className="track-icon" />
           <div className="track-caption">education</div>
         </div>
         <div className="icon-caption-pair">
-          <Healthcare className="track-icon" />
+          <Jar className="track-icon" />
           <div className="track-caption">healthcare</div>
         </div>
         <div className="icon-caption-pair">
-          <Sustainability className="track-icon" />
+          <Jar className="track-icon" />
           <div className="track-caption">sustainability</div>
         </div>
         <div className="icon-caption-pair">
-          <Fintech className="track-icon" />
+          <Jar className="track-icon" />
           <div className="track-caption">fintech & security</div>
         </div>
         <div className="icon-caption-pair">
-          <Entertainment className="track-icon" />
+          <Jar className="track-icon" />
           <div className="track-caption">entertainment</div>
         </div>
+      </div>
+
+      <div className="icons-container">
+          <Education className="icon" />
+          <Healthcare className="icon" />
+          <Sustainability className="icon" />
+          <Fintech className="icon" />
+          <Entertainment className="icon" />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
         to the world’s largest challenges for 36 hours straight. Join us for our
         10th year to dream and build the future!
       </div>
-      <div className="section-stats-row1">
+      <div className="section-stats">
         <div className="stat-caption-pair">
           <div className="about-numbers">1600</div>
           <div className="about-captions">Hackers</div>
@@ -35,8 +35,6 @@ const AboutSection: React.FC = () => {
           <div className="about-numbers">40</div>
           <div className="about-captions">Companies</div>
         </div>
-      </div>
-      <div className="section-stats-row2">
         <div className="stat-caption-pair">
           <div className="about-numbers">350</div>
           <div className="about-captions">Projects</div>

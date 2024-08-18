@@ -62,6 +62,26 @@
   height: auto;
 }
 
+.icons-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  z-index: 10;
+  display: flex;
+  width: 60vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 13vw;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 11vw;
+  height: auto;
+}
+
 .track-caption {
   color: #FCF8B8;
   text-align: center;
@@ -81,4 +101,52 @@
   height: 65vw;
   background: transparent;
   overflow: show;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon:nth-child(1) {
+  animation: float-up 3s ease-in-out infinite;
+}
+
+.icon:nth-child(2) {
+  animation: float-down 4s ease-in-out infinite;
+}
+
+.icon:nth-child(3) {
+  animation: float-up 2.5s ease-in-out infinite;
+}
+
+.icon:nth-child(4) {
+  animation: float-down 3.5s ease-in-out infinite;
+}
+
+.icon:nth-child(5) {
+  animation: float-up 4.5s ease-in-out infinite;
+}
+
+.icon:nth-child(6) {
+  animation: float-down 2.8s ease-in-out infinite;
 }
