@@ -41,7 +41,7 @@ const FireflySection: React.FC<FireflySectionProps> = ({ variant }) => {
     const fireflies = document.querySelectorAll(`.${variant}`) as NodeListOf<HTMLElement>;
 
     const VIEWPORT_WIDTH = 100;
-    const VIEWPORT_HEIGHT = 100;
+    const VIEWPORT_HEIGHT = 65;
     const X_MARGIN = 5;
     const Y_MARGIN = 5;
     const DURATION = variant === "firefly" ? 45 : 30; // seconds for the animation duration
@@ -51,7 +51,7 @@ const FireflySection: React.FC<FireflySectionProps> = ({ variant }) => {
       const startY = Math.random() * (VIEWPORT_HEIGHT - Y_MARGIN);
 
       firefly.style.left = `${startX}vw`;
-      firefly.style.top = `${startY}vh`;
+      firefly.style.top = `${startY}vw`;
 
       // Randomize direction, but constrain to stay within the viewport
       const maxXMove = Math.min(startX, VIEWPORT_WIDTH - startX - X_MARGIN);
@@ -68,7 +68,7 @@ const FireflySection: React.FC<FireflySectionProps> = ({ variant }) => {
             transform: translate(0, 0);
           }
           to {
-            transform: translate(${endX - startX}vw, ${endY - startY}vh);
+            transform: translate(${endX - startX}vw, ${endY - startY}vw);
           }
         }
       `;
