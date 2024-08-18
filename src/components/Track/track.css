@@ -38,7 +38,6 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
   top: 55%;
   z-index: 10;
   display: flex;
@@ -108,7 +107,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-0.5vw);
   }
   100% {
     transform: translateY(0);
@@ -120,7 +119,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(0.5vw);
   }
   100% {
     transform: translateY(0);
