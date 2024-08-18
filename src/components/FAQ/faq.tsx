@@ -2,14 +2,13 @@ import "./faq.css";
 import FAQ from "./faq.svg?react";
 import Accordion from "./accordion.tsx";
 import FireflySection from "../Firefly/firefly";
-import FireflySmallSection from "../Firefly/fireflySmall";
 
 const FAQSection: React.FC = () => {
   return (
     <div className="faq-section">
       <div className="firefly-container">
-        <FireflySection />
-        <FireflySmallSection />
+        <FireflySection variant="firefly" />
+        <FireflySection variant="fireflySmall" />
       </div>
       <FAQ className="background-svg" />
       <div className="faq-title">FAQs</div>

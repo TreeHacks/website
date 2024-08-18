@@ -1,5 +1,5 @@
 #titles {
-  --parallax-aspect-ratio: calc(1117 / 1728);
+  --parallax-aspect-ratio: calc(1117 / 1728); /* inverse aspect ratio */
 
   z-index: 7; 
   flex-direction: column;

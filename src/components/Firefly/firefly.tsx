@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./firefly.css";
 
 interface FireflyProps {
@@ -31,50 +32,57 @@ const Firefly: React.FC<FireflyProps> = ({ className }) => (
   </svg>
 );
 
-const FireflySection: React.FC = () => {
-  useEffect(() => {
-    const fireflies = document.querySelectorAll(
-      ".firefly"
-    ) as NodeListOf<HTMLElement>;
+type FireflySectionProps = {
+  variant: "firefly" | "fireflySmall";
+}
 
-    fireflies.forEach((firefly, index) => {
-      const startX = Math.random() * 100; // Random starting X position
-      const startY = Math.random() * 65; // Random starting Y position
+const FireflySection: React.FC<FireflySectionProps> = ({ variant }) => {
+  useEffect(() => {
+    const fireflies = document.querySelectorAll(`.${variant}`) as NodeListOf<HTMLElement>;
+
+    const VIEWPORT_WIDTH = 100;
+    const VIEWPORT_HEIGHT = 100;
+    const X_MARGIN = 5;
+    const Y_MARGIN = 5;
+    const DURATION = variant === "firefly" ? 45 : 30; // seconds for the animation duration
+
+    fireflies.forEach((firefly) => {
+      const startX = Math.random() * (VIEWPORT_WIDTH - X_MARGIN);
+      const startY = Math.random() * (VIEWPORT_HEIGHT - Y_MARGIN);
 
       firefly.style.left = `${startX}vw`;
-      firefly.style.top = `${startY}vw`;
+      firefly.style.top = `${startY}vh`;
 
-      const endX = Math.random() * 100; // Random ending X position
-      const endY = Math.random() * 65; // Random ending Y position
+      // Randomize direction, but constrain to stay within the viewport
+      const maxXMove = Math.min(startX, VIEWPORT_WIDTH - startX - X_MARGIN);
+      const maxYMove = Math.min(startY, VIEWPORT_HEIGHT - startY - Y_MARGIN);
+      const endX = startX + (Math.random() - 0.5) * maxXMove * 2;
+      const endY = startY + (Math.random() - 0.5) * maxYMove * 2;
 
-      const duration = 45; // Set duration to 20 seconds for faster movement
-
-      // Create unique keyframes for each firefly
-      const keyframesName = `move-${index}`;
+      // TODO: this is a hacky way to prevent duplicate keyframes
+      // should probably not use JS to modify innerHTML and append elements to the document
+      const keyframesName = `move-${uuidv4()}`;
       const keyframes = `
         @keyframes ${keyframesName} {
           from {
             transform: translate(0, 0);
           }
           to {
-            transform: translate(${endX - startX}vw, ${endY - startY}vw);
+            transform: translate(${endX - startX}vw, ${endY - startY}vh);
           }
         }
       `;
 
-      // Insert the keyframes into a new style element to ensure it's correctly added
       const styleElement = document.createElement("style");
       styleElement.innerHTML = keyframes;
       document.head.appendChild(styleElement);
 
-      // Apply the animation to the firefly
-      firefly.style.animation = `${keyframesName} ${duration}s ease-in-out infinite, glow 2s ease-in-out infinite alternate`;
+      firefly.style.animation = `${keyframesName} ${DURATION}s ease-in-out infinite, glow 2s ease-in-out infinite alternate`;
     });
-  }, []);
+  }, [variant]);
 
-  // Generate 15 Firefly components
   const fireflies = Array.from({ length: 15 }, (_, index) => (
-    <Firefly key={index} className="firefly" />
+    <Firefly key={index} className={variant} />
   ));
 
   return <div className="firefly-container">{fireflies}</div>;
