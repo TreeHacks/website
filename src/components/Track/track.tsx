@@ -6,7 +6,6 @@ import Sustainability from "./sustainability.svg?react";
 import Fintech from "./fintech.svg?react";
 import Entertainment from "./entertainment.svg?react";
 import FireflySection from "../Firefly/firefly";
-import FireflySmallSection from "../Firefly/fireflySmall";
 import Jar from "./jar.svg?react";
 
 const TrackSection: React.FC = () => {
@@ -14,8 +13,8 @@ const TrackSection: React.FC = () => {
   return (
     <div className="track-section">
       <div className="firefly-container">
-        <FireflySection />
-        <FireflySmallSection />
+        <FireflySection variant="firefly" />
+        <FireflySection variant="fireflySmall" />
       </div>
 
       <Track className="background-svg" />
