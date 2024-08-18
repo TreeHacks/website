@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
         TreeHacks is Stanford’s premier hackathon. The country’s brightest
         engineering students are flown to Stanford’s campus to build solutions
         to the world’s largest challenges for 36 hours straight. Join us for our
-        10th year to dream and build the future!
+        11th year to dream and build the future!
       </div>
       <div className="section-stats">
         <div className="stat-caption-pair">
