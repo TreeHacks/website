@@ -60,7 +60,7 @@ type ParallaxSectionProps = {
 };
 
 const ParallaxSection: React.FC<ParallaxSectionProps> = ({ clientWidth, clientHeight, isMobile }) => (
-  <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
+  <div style={{ position: 'absolute', width: '100%', height: '100%', overflow: 'hidden' }}>
     <div id='titles'>
       <h1>TREEHACKS</h1>
       <h2>Feb 14-16, 2025</h2>

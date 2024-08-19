@@ -30,16 +30,18 @@ const App: React.FC = () => {
         </ParallaxProvider>
       </section>
 
-      <Layer1
-        width={isMobile ? "130%" : "100%"}
-        height="auto"
-        style={{
-          display: "block",
-          position: "relative",
-          zIndex: 1,
-          transform: isMobile ? "translateX(-15%)" : "none",
-        }}
-      />
+      <section style={{ overflow: "hidden" }}>
+        <Layer1
+          width={isMobile ? "130%" : "100%"}
+          height="auto"
+          style={{
+            display: "block",
+            position: "relative",
+            zIndex: 1,
+            transform: isMobile ? "translateX(-15%)" : "none",
+          }}
+        />
+      </section>
 
       <section id="section2">
         <AboutSection />
