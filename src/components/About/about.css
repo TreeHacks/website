@@ -76,42 +76,39 @@
 }
 
 .section-title {
-  position: absolute;
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 3vw;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12vw;
-  left: 10vw;
-  top: 8.5vw;
 }
 
 .section-text {
-  position: absolute;
+  padding-bottom: 0.75rem;
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 1.6vw;
+  font-size: var(--body-font-size);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  left: 10vw;
-  top: 12vw;
-  width: 35vw;
 }
 
 .section-stats {
-  position: absolute;
-  left: 38vw;
-  top: 27.5vw;
+  padding-top: 0.75rem;
   display: inline-flex;
   align-items: center;
   gap: 3.5vw;
-  width: 50vw;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-content {
+    padding: 0 5vw;
+  }
 }
 
 .about-numbers {
@@ -125,7 +122,7 @@
     0px 0px 8.5px rgba(252, 248, 184, 0.20),
     0px 0px 8.5px rgba(252, 248, 184, 0.20);
   font-family: Fredoka;
-  font-size: 5vw;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -142,7 +139,7 @@
     0px 0px 8.5px rgba(252, 248, 184, 0.18),
     0px 0px 8.5px rgba(252, 248, 184, 0.18);
   font-family: Fredoka;
-  font-size: 2vw;
+  font-size: var(--body-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -156,4 +153,36 @@
   height: 65vw;
   background: transparent;
   overflow: show;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    position: absolute;
+    font-size: 3vw;
+    left: 10vw;
+    top: 8.5vw;
+  }
+
+  .section-text {
+    position: absolute;
+    left: 10vw;
+    top: 12vw;
+    width: 35vw;
+    font-size: 1.6vw;
+  }
+
+  .section-stats {
+    position: absolute;
+    left: 38vw;
+    top: 27.5vw;
+    width: 50vw;
+  }
+
+  .about-numbers {
+    font-size: 5vw;
+  }
+
+  .about-captions {
+    font-size: 2vw;
+  }
 }

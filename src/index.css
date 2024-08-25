@@ -1,3 +1,8 @@
+:root {
+  --title-font-size: clamp(1.5rem, 1.2391rem + 1.3043vw, 2.25rem);
+  --body-font-size: clamp(0.75rem, 0.6196rem + 0.6522vw, 1.125rem);
+}
+
 html, body {
   margin: 0;
   padding: 0;
