@@ -1,7 +1,5 @@
 .navbar {
   position: fixed;
-  /* -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
   right: 0;
   border-radius: 1vw;
   padding: 0.5vw 0;
@@ -27,14 +25,14 @@
 .navbar a {
   color: #019153;
   font-family: Fredoka;
-  font-size: 1.5vw;
+  font-size: var(--subtitle-font-size);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .navbar-sections {
-    padding: 0.1vw 0.1vw;
+  padding: 0.1vw 0.1vw;
 }
 
 .navbar-sections a:hover {
@@ -53,16 +51,30 @@
 }
 
 .apply-button a {
-    color: #019153;
-    transition: color 0.3s ease;
-    text-decoration: none;
-  }
+  color: #019153;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
 
 .apply-button:hover{
-    background: #019153;
-    cursor: pointer;
+  background: #019153;
+  cursor: pointer;
 }
 
 .apply-button:hover a {
-    color: #fcf8b8;
+  color: #fcf8b8;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar a {
+    display: none;
   }
+
+  .navbar .apply-button a {
+    display: initial;
+  }
+
+  .apply-button {
+    border-radius: 2vw;
+  }
+}

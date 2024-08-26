@@ -8,7 +8,7 @@
   align-items: flex-end;
   top: calc(100vw * var(--parallax-aspect-ratio) * 0.1);
   left: 70%; 
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
 }
 
 h1 {
@@ -32,4 +32,14 @@ h2 {
   line-height: 0.2;
   line-height: 0;
   margin: 0; 
+}
+
+@media only screen and (max-width: 768px) {
+  #titles h1 {
+    font-size: var(--title-font-size);
+  }
+
+  #titles h2 {
+    font-size: var(--subtitle-font-size);
+  }
 }
