@@ -11,8 +11,8 @@ const FAQSection: React.FC = () => {
         <FireflySection variant="fireflySmall" />
       </div>
       <FAQ className="background-svg" />
-      <div className="faq-title">FAQs</div>
       <div className="accordionContainer">
+        <div className="faq-title">FAQs</div>
         <Accordion />
       </div>
       <div className="footer"> Made with 💚 by the TreeHacks team </div>

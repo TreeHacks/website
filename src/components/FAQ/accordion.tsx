@@ -1,12 +1,7 @@
 import "./accordion.css";
 import { useState } from "react";
 
-interface DataItem {
-  title: string;
-  content: string;
-}
-
-const data: DataItem[] = [
+const data = [
   {
     title: "What is a Hackathon?",
     content:

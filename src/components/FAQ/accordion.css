@@ -6,7 +6,7 @@
 .title {
     color: #FCF8B8;
     font-family: Fredoka;
-    font-size: 1.5vw;
+    font-size: var(--subtitle-font-size);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -40,7 +40,7 @@
     padding-left: 3vw;
     color: #FCF8B8;
     font-family: Fredoka;
-    font-size: 1.2vw;
+    font-size: var(--body-font-size);
     font-style: normal;
     font-weight: 350;
     line-height: normal;
@@ -57,4 +57,18 @@
 .accordion {
     width: 50vw;
     z-index: 10;
+}
+
+@media only screen and (max-width: 500px) {
+    .accordion {
+        width: 90vw;
+    }
+
+    .title {
+        font-size: var(--body-font-size);
+    }
+
+    .content {
+        font-size: var(--body-small-font-size);
+    }
 }
