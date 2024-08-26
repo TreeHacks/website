@@ -105,7 +105,7 @@
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .section-content {
     padding: 0 5vw;
   }
@@ -155,7 +155,7 @@
   overflow: show;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
   .section-title {
     position: absolute;
     font-size: 3vw;
