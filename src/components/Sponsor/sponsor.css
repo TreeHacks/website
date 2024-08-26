@@ -1,10 +1,6 @@
 .sponsor-section {
   width: 100vw;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -20,29 +16,30 @@
   pointer-events: none;
 }
 
-.sponsor-title {
+.sponsor-section-content {
+  margin-top: 5%;
   position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.sponsor-title {
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 3vw;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12vw;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 4vw;
+  text-align: center;
 }
 
 .sponsor-text {
-  position: absolute;
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 1.6vw;
+  font-size: var(--body-font-size);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 8vw;
+  text-align: center;
 }
