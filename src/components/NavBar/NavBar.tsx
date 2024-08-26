@@ -24,8 +24,8 @@ const NavigationBar: React.FC = () => {
         <li className="navbar-sections">
           <ScrollLink to="section6" smooth={true} duration={500}>FAQs</ScrollLink>
         </li>
-        <li className="apply-button">
-          <a href="https://root.treehacks.com" target="_blank">Apply</a>
+        <li className="apply-button" data-tooltip="Applications will open soon!">
+          <a href="https://root.treehacks.com" target="_blank" rel="noopener noreferrer">Apply</a>
         </li>
       </ul>
     </nav>
