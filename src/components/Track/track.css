@@ -21,30 +21,23 @@
 }
 
 .track-title {
-  position: absolute;
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 3vw;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12vw;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 5vw;
+  margin-bottom: 1rem;
 }
 
 .track-icons-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 55%;
   z-index: 10;
   display: flex;
   width: 80%;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 2vw;
   flex-wrap: wrap;
 }
@@ -61,31 +54,18 @@
   height: auto;
 }
 
-.icons-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 55%;
-  z-index: 10;
-  display: flex;
-  width: 60vw;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 13vw;
-  flex-wrap: wrap;
-}
-
 .icon {
+  position: absolute;
   width: 11vw;
   height: auto;
+  margin-top: 6vw;
 }
 
 .track-caption {
   color: #FCF8B8;
   text-align: center;
   font-family: Fredoka;
-  font-size: 2vw;
+  font-size: var(--body-font-size);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -95,11 +75,10 @@
 .firefly-container {
   position: absolute;
   top: 0;
+  bottom: 0;
   z-index: 20;
   width: 100vw;
-  height: 65vw;
   background: transparent;
-  overflow: show;
 }
 
 @keyframes float-up {
@@ -148,4 +127,24 @@
 
 .icon:nth-child(6) {
   animation: float-down 2.8s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  .track-icons-container {
+    width: 95%;
+  }
+
+  .track-title {
+    top: 0;
+  }
+
+  .icon-caption-pair, .track-icon {
+    width: 30vw;
+  }
+
+  .icon {
+    width: 15vw;
+    margin-top: 8vw;
+  }
+  /* jar width should be 33 vw */
 }
