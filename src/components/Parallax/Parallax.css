@@ -7,7 +7,7 @@
   position: absolute; 
   align-items: flex-end;
   top: calc(100vw * var(--parallax-aspect-ratio) * 0.1);
-  left: 70%; 
+  left: 70%;
   transform: translateX(-50%);
 }
 
@@ -35,6 +35,11 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  #titles {
+    top: calc(100vw * var(--parallax-aspect-ratio) * 0.05);
+    left: 75%;
+  }
+
   #titles h1 {
     font-size: var(--title-font-size);
   }
