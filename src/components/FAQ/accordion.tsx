@@ -10,7 +10,7 @@ const data = [
   {
     title: "Who can come?",
     content:
-      "TreeHacks applications are open to any enrolled college student (undergrad or grad) from all over the world. All current Stanford students that register by appropriate deadlines will be guaranteed admission.",
+      "TreeHacks applications are open to any enrolled college student (undergrad or grad) from all over the world. Due to venue space and capacity limitations, we are unable to offer automatic acceptance to Stanford students. This decision ensures that hackers from around the world have a fair opportunity to participate in the event. However, to maintain a valuable experience for Stanford students, we offer priority consideration to Stanford students who submit their applications by the priority deadline.",
   },
   {
     title: "What does it cost?",
