@@ -5,8 +5,7 @@
   padding: 0.5vw 0;
   margin: 0.5vw 1vw;
   z-index: 1000;
-  position: absolute;
-  top:0;
+  top: 0;
 }
 
 .navbar ul {
@@ -29,6 +28,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-decoration: none;
 }
 
 .navbar-sections {
@@ -40,70 +40,8 @@
   cursor: pointer;
 }
 
-.apply-button {
-  display: inline-flex;
-  padding: 0.25vw 0.8vw;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5vw;
-  background: #e0e0e0;
-  opacity: 0.6;
-  transition: none;
-  cursor: not-allowed;
-  position: relative;
-}
-
-.apply-button a {
-  color: #019153;
-  transition: color 0.3s ease;
-  text-decoration: none;
-  pointer-events: none;
-}
-
 @media only screen and (max-width: 768px) {
   .navbar a {
     display: none;
   }
-
-  .navbar .apply-button a {
-    display: initial;
-  }
-
-  .apply-button {
-    border-radius: 2vw;
-  }
-}
-
-.apply-button:hover {
-  background: #e0e0e0;
-}
-
-.apply-button:hover a {
-  color: #777777;
-}
-
-.apply-button::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: var(--body-small-font-size);
-  white-space: normal;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  margin-top: 5px;
-}
-
-.apply-button:hover::after {
-  opacity: 1;
-  visibility: visible;
 }

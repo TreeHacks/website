@@ -1,4 +1,5 @@
 import { Parallax } from 'react-scroll-parallax';
+import ApplyButton from '../NavBar/ApplyButton';
 import Layer2 from "./layer2.svg?react";
 import Layer3 from "./layer3.svg?react";
 import Layer4 from "./layer4.svg?react";
@@ -64,6 +65,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ clientWidth, clientHe
     <div id='titles'>
       <h1>TREEHACKS</h1>
       <h2>Feb 14-16, 2025</h2>
+      {isMobile && <ApplyButton />}
     </div>
     {LAYERS.map((layer, i) =>
       <Layer
