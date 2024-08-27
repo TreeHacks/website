@@ -97,12 +97,15 @@
 
 .section-stats {
   padding-top: 0.75rem;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 3.5vw;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 500px) {
