@@ -43,3 +43,13 @@
   line-height: normal;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .speaker-section {
+    margin-top: var(--title-font-size);
+  }
+
+  .speaker-section-content {
+    margin-top: 0;
+  }
+}
