@@ -10,10 +10,18 @@ import SpeakerSection from "./components/Speaker/speaker";
 import SponsorSection from "./components/Sponsor/sponsor";
 import FAQSection from "./components/FAQ/faq";
 
+const ORGANIZER_APP_URL = 'https://form.typeform.com/to/qq5pgpA3';
+
 const App: React.FC = () => {
   const [clientWidth, setClientWidth] = useState(document.documentElement.clientWidth);
   const [clientHeight, setClientHeight] = useState(document.documentElement.clientHeight);
   const isMobile = clientWidth <= 768;
+
+  useEffect(() => {
+    if (window.location.pathname === '/join') {
+      window.location.href = ORGANIZER_APP_URL;
+    }
+  }, [window.location]);
 
   useEffect(() => {
     setClientWidth(document.documentElement.clientWidth);
