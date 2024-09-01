@@ -5,7 +5,6 @@ import Layer3 from "./layer3.svg?react";
 import Layer4 from "./layer4.svg?react";
 import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
-import Logo from './logo.svg?react';
 import "./Parallax.css";
 
 const SCROLL_INCREMENT = -7;
@@ -64,7 +63,7 @@ type ParallaxSectionProps = {
 const ParallaxSection: React.FC<ParallaxSectionProps> = ({ clientWidth, clientHeight, isMobile }) => (
   <div style={{ position: 'absolute', width: '100%', height: '100%', overflow: 'hidden' }}>
     <div id='titles'>
-      <Logo className='logo' width='auto' height='100%' />
+      <h1>TREEHACKS</h1>
       <h2>Feb 14-16, 2025</h2>
       {isMobile && <ApplyButton />}
     </div>

@@ -11,9 +11,15 @@
   transform: translateX(-50%);
 }
 
-.logo {
-  height: 5.5vw;
-  margin-bottom: 0.5vw;
+h1 {
+  color: #05502f;
+  font-family: "Fredoka";
+  font-size: 5.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3vw;
+  line-height: 0;
 }
 
 h2 {
@@ -30,22 +36,15 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   #titles {
-    top: calc(100vw * var(--parallax-aspect-ratio) * 0.05);
-    width: 50%;
-    left: 65%;
+    top: calc(100vw * var(--parallax-aspect-ratio) * 0.025);
+    left: 75%;
   }
 
-  #titles .logo {
-    height: calc(var(--title-font-size) * 2);
+  #titles h1 {
+    font-size: var(--title-font-size);
   }
 
   #titles h2 {
     font-size: var(--subtitle-font-size);
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #titles h2 {
-    font-size: calc(var(--subtitle-font-size) * (3/4));
   }
 }
