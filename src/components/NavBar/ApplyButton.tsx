@@ -2,10 +2,10 @@ import './ApplyButton.css';
 
 const ApplyButton = () => (
     <a
-        href="javascript:void(0);"
+        href="https://root.treehacks.com"
         rel="noopener noreferrer"
         className="apply-button"
-        data-tooltip="Open soon!"
+        // data-tooltip="Open soon!"
     >
         Apply
     </a>

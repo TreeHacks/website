@@ -4,10 +4,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.5vw;
-    background: #e0e0e0;
-    opacity: 0.6;
-    transition: background 0.3s, color 0.3s;
-    cursor: not-allowed;
+    background: #fcf8b8;
+    transition: background 0.3s ease, color 0.3s ease;
     color: #019153;
     position: relative;
     text-decoration: none;
@@ -26,12 +24,7 @@
     }
 }
 
-.apply-button:hover {
-    background: #e0e0e0;
-    border-color: #777777;
-    color: #777777;
-}
-
+/* Adds tooltip below apply button
 .apply-button::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -56,3 +49,5 @@
     opacity: 1;
     visibility: visible;
 }
+
+*/
