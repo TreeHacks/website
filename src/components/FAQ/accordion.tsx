@@ -20,7 +20,7 @@ const data = [
   {
     title: "What is the TreeHacks code of conduct?",
     content:
-      "TreeHacks abides by this Code of Conduct, adapted from the Hack Code of Conduct. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.",
+      "TreeHacks abides by this <a href='https://github.com/TreeHacks/policies/blob/master/code-of-conduct.md' target='_blank'>Code of Conduct</a>, adapted from the <a href='https://hackcodeofconduct.org/' target='_blank'>Hack Code of Conduct</a>. Every TreeHacks applicant must agree to this Code of Conduct to be considered for admission. TreeHacks is a safe place where everyone is welcome ❤️.",
   },
   {
     title: "What if I don't know how to code?",
@@ -92,9 +92,7 @@ const Accordion: React.FC = () => {
                 {item.title}
               </span>
             </div>
-            <div className={`content ${selected === index ? "show" : ""}`}>
-              {item.content}
-            </div>
+            <div className={`content ${selected === index ? "show" : ""}`} dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
         ))}
       </div>

@@ -48,6 +48,10 @@
     transition: opacity 1s ease-in-out;
 }
 
+.content a {
+    color: inherit;
+}
+
 .show {
     max-height: 500px; /* Set a value that covers the expected content height */
     opacity: 1;
