@@ -1,0 +1,25 @@
+.button {
+    display: inline-flex;
+    padding: 0.25vw 0.8vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vw;
+    background: #fcf8b8;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #019153;
+    position: relative;
+    text-decoration: none;
+    font-family: Fredoka;
+    font-size: var(--subtitle-font-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        border-radius: 2vw;
+        margin-top: 2.5vw;
+        border: 1.5px solid #019153;
+    }
+}

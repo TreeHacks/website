@@ -1,4 +1,4 @@
-.judge-mentor-button {
+.button {
     display: inline-flex;
     padding: 0.25vw 0.8vw;
     justify-content: center;
@@ -14,12 +14,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    margin-top: 2.5vw;
+    border: 1.5px solid #019153;
 }
 
 @media only screen and (max-width: 768px) {
-    .judge-mentor-button {
+    .button {
         border-radius: 2vw;
-        margin-top: 2.5vw;
-        border: 1.5px solid #019153;
     }
 }

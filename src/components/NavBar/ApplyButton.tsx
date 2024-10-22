@@ -1,10 +1,10 @@
-import './ApplyButton.css';
+import classes from './ApplyButton.module.css';
 
 const ApplyButton = () => (
     <a
         href="https://root.treehacks.com"
         rel="noopener noreferrer"
-        className="apply-button"
+        className={classes.button}
         // data-tooltip="Open soon!"
     >
         Apply
