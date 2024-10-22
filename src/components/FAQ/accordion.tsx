@@ -5,7 +5,7 @@ const data = [
   {
     title: "What is a Hackathon?",
     content:
-      "A hackathon is where you turn your crazy ideas into real projects. At TreeHacks, for 36 hours (February 16th to 18th) on Stanford's campus, you'll be learning and building in an energetic environment with people as passionate as you are! This year is our 11th anniversary, and we're going ALL OUT! We cover flights (regional caps), food, and swag for all hackers, and also have designated sleeping spaces for hackers. Not to mention, some epic prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event. Basically, you take care of hacking and we'll take care of you!",
+      "A hackathon is where you turn your crazy ideas into real projects. At TreeHacks, for 36 hours (February 14th to 16th) on Stanford's campus, you'll be learning and building in an energetic environment with people as passionate as you are! This year is our 11th anniversary, and we're going ALL OUT! We cover flights (regional caps), food, and swag for all hackers, and also have designated sleeping spaces for hackers. Not to mention, some epic prizes, world-renowned guest speakers, incredible mentors, and deeply technical workshops and fun activities throughout the event. Basically, you take care of hacking and we'll take care of you!",
   },
   {
     title: "Who can come?",
