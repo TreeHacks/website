@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import ApplyButton from './ApplyButton';
+import JudgeMentorButton from './JudgeMentorButton';
 import Logo from './logo.svg?react';
 import './NavBar.css';
 
@@ -13,9 +13,6 @@ const NavigationBar: React.FC = () => {
         </a>
 
         <ul className="navbar-menu">
-          <li className="navbar-sections">
-            <ScrollLink to="section1" smooth={true} duration={500}>Home</ScrollLink>
-          </li>
           <li className="navbar-sections">
             <ScrollLink to="section2" smooth={true} duration={500}>About</ScrollLink>
           </li>
@@ -31,8 +28,8 @@ const NavigationBar: React.FC = () => {
           <li className="navbar-sections">
             <ScrollLink to="section6" smooth={true} duration={500}>FAQs</ScrollLink>
           </li>
-          <li>
-            <ApplyButton />
+          <li className="navbar-button">
+            <JudgeMentorButton />
           </li>
         </ul>
       </div>

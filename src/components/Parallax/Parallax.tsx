@@ -5,6 +5,7 @@ import Layer3 from "./layer3.svg?react";
 import Layer4 from "./layer4.svg?react";
 import Layer5 from "./layer5.svg?react";
 import Layer6 from "./layer6.svg?react";
+import JudgeMentorButton from '../NavBar/JudgeMentorButton';
 import "./Parallax.css";
 
 const SCROLL_INCREMENT = -7;
@@ -65,7 +66,10 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ clientWidth, clientHe
     <div id='titles'>
       <h1>TREEHACKS</h1>
       <h2>Feb 14-16, 2025</h2>
-      {isMobile && <ApplyButton />}
+      <div className="buttons-container">
+        <ApplyButton />
+        {isMobile && <JudgeMentorButton />}
+      </div>
     </div>
     {LAYERS.map((layer, i) =>
       <Layer

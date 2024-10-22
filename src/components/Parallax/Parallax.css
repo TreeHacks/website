@@ -11,6 +11,13 @@
   transform: translateX(-50%);
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 h1 {
   color: #05502f;
   font-family: "Fredoka";
