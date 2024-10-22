@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="section-stats">
             <div className="stat-caption-pair">
-              <div className="about-numbers">1600</div>
+              <div className="about-numbers">1000</div>
               <div className="about-captions">Hackers</div>
             </div>
             <div className="stat-caption-pair">
