@@ -1,5 +1,4 @@
 import JudgeMentorButton from '../NavBar/JudgeMentorButton';
-import ApplyButton from '../NavBar/ApplyButton';
 import { Parallax } from 'react-scroll-parallax';
 import Layer2 from "./layer2.svg?react";
 import Layer3 from "./layer3.svg?react";
@@ -67,8 +66,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ clientWidth, clientHe
       <h1>TREEHACKS</h1>
       <h2>Feb 14-16, 2025</h2>
       <div className="buttons-container">
-        <ApplyButton />
-        {isMobile && <JudgeMentorButton />}
+        <JudgeMentorButton />
       </div>
     </div>
     {LAYERS.map((layer, i) =>
