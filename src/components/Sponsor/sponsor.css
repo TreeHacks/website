@@ -66,6 +66,11 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
+.nvidia-tier .sponsor-grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 3rem;
+}
+
 .sponsor-logo-container {
   display: flex;
   justify-content: center;
@@ -101,6 +106,10 @@
 
 .oak-tier .sponsor-logo {
   max-width: 150px;
+}
+
+.nvidia-tier .sponsor-logo {
+  max-width: 500px;
 }
 
 /* Responsive adjustments */
@@ -139,6 +148,14 @@
 
   .oak-tier .sponsor-logo {
     max-width: 120px;
+  }
+
+  .nvidia-tier .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nvidia-tier .sponsor-logo {
+    max-width: 400px;
   }
 }
 
@@ -181,5 +198,9 @@
 
   .oak-tier .sponsor-logo {
     max-width: 100px;
+  }
+
+  .nvidia-tier .sponsor-logo {
+    max-width: 300px;
   }
 }

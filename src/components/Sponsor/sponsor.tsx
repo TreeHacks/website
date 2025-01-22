@@ -4,12 +4,14 @@ import Sponsor from "./sponsor.svg?react";
 interface SponsorData {
   name: string;
   logo: string;
-  tier: "cedar" | "redwood" | "willow" | "oak";
+  tier: "nvidia" | "cedar" | "redwood" | "willow" | "oak";
 }
 
 const sponsors: SponsorData[] = [
+  // Nvidia (Top Tier)
+  { name: "NVIDIA", logo: "/sponsors/nvidia.png", tier: "nvidia" },
+
   // Cedar
-  { name: "NVIDIA", logo: "/sponsors/nvidia.png", tier: "cedar" },
   { name: "Google", logo: "/sponsors/google.png", tier: "cedar" },
   { name: "Tesla", logo: "/sponsors/tesla.png", tier: "cedar" },
   { name: "Taisu Ventures", logo: "/sponsors/taisu.png", tier: "cedar" },
@@ -73,7 +75,7 @@ const SponsorTier: React.FC<{ tier: string; sponsors: SponsorData[] }> = ({ tier
 );
 
 const SponsorSection: React.FC = () => {
-  const tiers = ["cedar", "redwood", "willow", "oak"];
+  const tiers = ["nvidia", "cedar", "redwood", "willow", "oak"];
   
   return (
     <div className="sponsor-section">
