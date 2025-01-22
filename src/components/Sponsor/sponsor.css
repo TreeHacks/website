@@ -1,45 +1,206 @@
 .sponsor-section {
-  width: 100vw;
-  height: auto;
   position: relative;
-}
-
-.background-svg {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 2rem;
 }
 
 .sponsor-section-content {
-  margin-top: 5%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background-svg {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1;
+  height: 100%;
 }
 
 .sponsor-title {
-  color: #FCF8B8;
-  font-family: Fredoka;
-  font-size: var(--title-font-size);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.12vw;
   text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FCF8B8;
+  font-family: Fredoka, sans-serif;
+  letter-spacing: 0.12vw;
+  margin-bottom: rem;
 }
 
-.sponsor-text {
-  color: #FCF8B8;
-  font-family: Fredoka;
-  font-size: var(--body-font-size);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+.sponsor-tier {
+  margin-top: 2rem;
+}
+
+.tier-title {
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #FCF8B8;
+  font-family: Fredoka, sans-serif;
+  opacity: 0.9;
+}
+
+.sponsor-grid {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Tier-specific grid layouts */
+.cedar-tier .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.redwood-tier .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.willow-tier .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.oak-tier .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.nvidia-tier .sponsor-grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 3rem;
+}
+
+.sponsor-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sponsor-logo-container:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.sponsor-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Tier-specific logo sizes */
+.cedar-tier .sponsor-logo {
+  max-width: 300px;
+}
+
+.redwood-tier .sponsor-logo {
+  max-width: 250px;
+}
+
+.willow-tier .sponsor-logo {
+  max-width: 200px;
+}
+
+.oak-tier .sponsor-logo {
+  max-width: 150px;
+}
+
+.nvidia-tier .sponsor-logo {
+  max-width: 500px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsor-section {
+    padding-top: 4rem;
+  }
+
+  .sponsor-title {
+    font-size: 2.5rem;
+  }
+
+  .tier-title {
+    font-size: 1.8rem;
+  }
+
+  .cedar-tier .sponsor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .willow-tier .sponsor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .oak-tier .sponsor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .cedar-tier .sponsor-logo {
+    max-width: 250px;
+  }
+
+  .willow-tier .sponsor-logo {
+    max-width: 150px;
+  }
+
+  .oak-tier .sponsor-logo {
+    max-width: 120px;
+  }
+
+  .nvidia-tier .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nvidia-tier .sponsor-logo {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-section {
+    padding-top: 1rem;
+  }
+
+  .sponsor-grid {
+    gap: 1rem;
+  }
+
+  .sponsor-title {
+    font-size: 2rem;
+  }
+
+  .tier-title {
+    font-size: 1.5rem;
+  }
+
+  .cedar-tier .sponsor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .willow-tier .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .oak-tier .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cedar-tier .sponsor-logo {
+    max-width: 200px;
+  }
+
+  .willow-tier .sponsor-logo {
+    max-width: 120px;
+  }
+
+  .oak-tier .sponsor-logo {
+    max-width: 100px;
+  }
+
+  .nvidia-tier .sponsor-logo {
+    max-width: 300px;
+  }
 }

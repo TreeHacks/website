@@ -2,8 +2,9 @@ import "./track.css";
 import Education from "./education.svg?react";
 import Healthcare from "./healthcare.svg?react";
 import Sustainability from "./sustainability.svg?react";
-import Fintech from "./fintech.svg?react";
-import Entertainment from "./entertainment.svg?react";
+import Web3 from "./web3.svg?react";
+import AutonomousSystems from "./auto-systems.svg?react";
+import EdgeAI from "./edge-ai.svg?react";
 import FireflySection from "../Firefly/firefly";
 import Jar from "./jar.svg?react";
 
@@ -35,13 +36,18 @@ const TrackSection: React.FC = () => {
         </div>
         <div className="icon-caption-pair">
           <Jar className="track-icon" />
-          <Fintech className="icon" />
-          <div className="track-caption">fintech & security</div>
+          <Web3 className="icon" />
+          <div className="track-caption">web3</div>
         </div>
         <div className="icon-caption-pair">
           <Jar className="track-icon" />
-          <Entertainment className="icon" />
-          <div className="track-caption">entertainment</div>
+          <AutonomousSystems className="icon" />
+          <div className="track-caption">autonomous systems</div>
+        </div>
+        <div className="icon-caption-pair">
+          <Jar className="track-icon" />
+          <EdgeAI className="icon" />
+          <div className="track-caption">edge AI</div>
         </div>
       </div>
     </div>
