@@ -32,13 +32,13 @@ const SpeakerSection: React.FC = () => {
     {
       name: "JOHN HENNESSY",
       day: "SATURDAY",
-      description: `John L. Hennessy, Alphabet chairman and co-founder of MIPS and Atheros, is a Turing Award-winning computer scientist. Stanford's 10th president (2000-2016), he's been called 'the godfather of Silicon Valley' for his contributions to RISC architecture and Wi-Fi technology.`,
+      description: `John L. Hennessy, Alphabet chairman and co-founder of MIPS and Atheros, is a Turing Award-winning computer scientist. Stanford's 10th president (2000-2016), he's been called "the godfather of Silicon Valley" for his contributions to RISC architecture and Wi-Fi technology.`,
       imagePath: "/speakers/JOHN HENNESSY.jpeg"
     },
     {
       name: "WOJCIECH ZAREMBA",
       day: "SUNDAY",
-      description: "Wojciech Zaremba, co-founder of OpenAI, leads research on Codex and Language models. A math prodigy with two master's degrees and a PhD in deep learning, he works on advancing AI's capabilities in coding and language understanding.",
+      description: "Wojciech Zaremba, co-founder of OpenAI, leads research on Codex and language models. A math prodigy with two master's degrees and a PhD in deep learning, he works on advancing AI's capabilities in coding and language understanding.",
       imagePath: "/speakers/WOJCIECH ZAREMBA.jpeg"
     }
   ];
