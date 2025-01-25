@@ -2,6 +2,7 @@
   width: 100vw;
   height: auto;
   position: relative;
+  padding: 2rem 0;
 }
 
 .background-svg {
@@ -32,16 +33,94 @@
   line-height: normal;
   letter-spacing: 0.12vw;
   text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px #FCF8B8;
+  margin-top: 2rem;
 }
 
-.speaker-text {
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.day-label {
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: var(--body-font-size);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #FCF8B8;
+}
+
+.speaker-image-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: 0 0 20px #FCF8B8;
+  transition: transform 0.3s ease;
+}
+
+.speaker-image-container:hover {
+  transform: scale(1.05);
+}
+
+.speaker-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speaker-name {
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 10px #FCF8B8;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+  padding: 0 1rem;
+  white-space: initial;
+  line-height: 3rem;
+}
+
+.speaker-description {
+  color: #FCF8B8;
+  font-family: Fredoka;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -51,5 +130,25 @@
 
   .speaker-section-content {
     margin-top: 0;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 3rem;
+  }
+
+  .speaker-image-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .speaker-name {
+    font-size: 1.5rem;
+  }
+
+  .speaker-description {
+    font-size: 0.9rem;
+    max-width: 280px;
   }
 }
