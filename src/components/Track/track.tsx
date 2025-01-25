@@ -42,7 +42,7 @@ const TrackSection: React.FC = () => {
         <div className="icon-caption-pair">
           <Jar className="track-icon" />
           <AutonomousSystems className="icon" />
-          <div className="track-caption">autonomous systems</div>
+          <div className="track-caption">autonomy</div>
         </div>
         <div className="icon-caption-pair">
           <Jar className="track-icon" />
