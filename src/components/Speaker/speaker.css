@@ -3,23 +3,13 @@
   height: auto;
   position: relative;
   padding: 2rem 0;
-}
-
-.background-svg {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .speaker-section-content {
   margin-top: 5%;
-  position: absolute;
   width: 100%;
   z-index: 1;
 }
@@ -42,7 +32,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -60,15 +50,14 @@
 .day-label {
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px #FCF8B8;
 }
 
 .speaker-image-container {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -90,12 +79,12 @@
 .speaker-name {
   color: #FCF8B8;
   font-family: Fredoka;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin: 0.5rem 0;
   text-shadow: 0 0 10px #FCF8B8;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   white-space: normal;
   word-wrap: break-word;
   hyphens: auto;

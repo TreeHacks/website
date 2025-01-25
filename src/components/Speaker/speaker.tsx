@@ -1,5 +1,5 @@
 import "./speaker.css";
-import Speaker from "./speaker.svg?react";
+import Speaker from "./speaker.svg";
 
 interface SpeakerCardProps {
   name: string;
@@ -44,7 +44,7 @@ const SpeakerSection: React.FC = () => {
   ];
 
   return (
-    <div className="speaker-section">
+    <div className="speaker-section" style={{ backgroundImage: `url(${Speaker})` }}>
       <div className="speaker-section-content">
         <div className="speaker-title">KEYNOTE SPEAKERS</div>
         <div className="speakers-grid">
@@ -59,7 +59,6 @@ const SpeakerSection: React.FC = () => {
           ))}
         </div>
       </div>
-      <Speaker className="background-svg" />
     </div>
   );
 };
